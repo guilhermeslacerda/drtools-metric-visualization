@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>:: drtools-metric-visualization ::</title>
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="./js/drtools/loader.js"></script>
+    <script src="./js/drtools/jquery.min.js"></script>
+    <script src="./js/drtools/jquery.csv.min.js"></script>
+    <script src="./drtools-properties.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+	  <link rel="stylesheet" href="css/style.css">
+    <style>
+      .bubbles {
+        stroke-width: 2px;
+        stroke: white;
+      }
+      .bubbles:hover {
+        stroke: black;
+      }
+    </style>
+</head>
+<body>
+  <section class="ftco-section" id="header-section">
+    <div class="col-md-12 text-center heading-section ftco-animate">
+      <h2 class="mb-4"><script>document.write(graphTitles.titleNamespace)</script></h2>
+      <script>document.write(graphTitles.titleNamespaceExplanation)</script>
+    </div>
+    <div class="col-md-12 text-center heading-section ftco-animate">
+      Project: <script>document.write(optionsProject.projectName)</script>
+    </div>
+    <div class="nav-item text-center cta mr-md-2">
+        <a href="index.html" class="nav-link"><span>Back</span></a>
+    </div>
+
+  </section>
+
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+google.charts.load('current', {packages: ['corechart', 'bar']});
+
+function drawBar() {
+$.get(optionsProject.datasetNamespaces, function(csvString) {
+      var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
+      var data = new google.visualization.arrayToDataTable(arrayData);
+
+      var options = {
+        width: 1400,
+        height: 600,
+        legend: { position: 'top', maxLines: 3 },
+        bar: { groupWidth: '75%' },
+        fontName: 'Poppins',
+        isStacked: true
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    });
+
+}   
+google.charts.setOnLoadCallback(drawBar);
+</script>
+<div id="chart_div" style="width: 1500px; height: 700px; font-family: 'Poppins', sans-serif"></div>
+</body>
+</html>

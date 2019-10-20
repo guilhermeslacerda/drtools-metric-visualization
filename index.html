@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>:: drtools-metric-visualization ::</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="./drtools-properties.js"></script>
+	<script src="./js/drtools/d3.v4.js"></script>
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb" id="department-section">
+
+		<section class="ftco-section" id="logo-section">
+			<div class="container-fluid px-5">
+				<div class="row justify-content-center mb-5 pb-2">
+          			<div class="col-md-12 text-center heading-section ftco-animate">
+						<div class="img align-self-stretch">
+							<img src="images/logo_drtools.png" width="400">
+						</div> 
+					
+						<h2 class="mb-4">Metric Visualization</h2>
+            			<p>A tool quality suite to help the developers to maintain health and code evolution</p>
+          			</div>
+				</div>
+			</div>
+		</section>
+			
+		<section class="ftco-facts img ftco-counter" style="background-image: url(images/bg_2.jpg);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row d-flex align-items-center">
+					<div class="col-md-5 heading-section heading-section-white">
+						<span class="subheading">Project Summary</span>
+						<h2 class="mb-4"><script>document.write(optionsProject.projectName)</script></h2>
+						<p class="mb-0"><a href="drtools-thresholds.html" class="btn btn-secondary px-4 py-3">View Thresholds</a></p>
+					</div>
+					<div class="col-md-7">
+						<div class="row pt-4">
+		          <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18">
+		              <div class="text">
+		                <strong class="number"><div id="numberNamespaces"></div></strong>
+		                <span>Namespaces</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18">
+		              <div class="text">
+		                <strong class="number"><div id="numberSLOC"></div></strong>
+		                <span>SLOC</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18">
+		              <div class="text">
+		                <strong class="number"><div id="numberTypes"></div></strong>
+		                <span>Number of Types</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18">
+		              <div class="text">
+		                <strong class="number"><div id="numberMethods"></div></strong>
+		                <span>Number of Methods</span>
+		              </div>
+		            </div>
+		          </div>
+	          </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-section ftco-no-pt ftco-no-pb" id="department-section">
+    	<div class="container-fluid px-0">
+    		<div class="row no-gutters">
+    			<div class="col-md-12">
+    				<div class="row no-gutters">
+    					<div class="col-md-4">
+    						<div class="department-wrap p-4 ftco-animate">
+    							<div class="text p-2 text-center">
+    								<div class="icon">
+    									<span class="flaticon-stethoscope"></span>
+    								</div>
+    								<h3><a href="drtools-thermometer.html">Thermometer</a></h3>
+    								<p>Summary Visualization</p>
+    							</div>
+    						</div>
+    						<div class="department-wrap p-4 ftco-animate">
+    							<div class="text p-2 text-center">
+    								<div class="icon">
+    									<span class="flaticon-stethoscope"></span>
+    								</div>
+    								<h3><a href="drtools-method.html">Methods</a></h3>
+    								<p>Using CYCLO, MLOC, and CALLS</p>
+    							</div>
+    						</div>
+    						<div class="department-wrap p-4 ftco-animate">
+    							<div class="text p-2 text-center">
+    								<div class="icon">
+    									<span class="flaticon-stethoscope"></span>
+    								</div>
+    								<h3><a href="drtools-namespace-coupling.html">Namespace Coupling</a></h3>
+    								<p>Using CA and CE</p>
+    							</div>
+    						</div>
+    					</div>
+
+    					<div class="col-md-4">
+    						<div class="department-wrap p-4 ftco-animate">
+    							<div class="text p-2 text-center">
+    								<div class="icon">
+    									<span class="flaticon-stethoscope"></span>
+    								</div>
+    								<h3><a href="drtools-namespaces.html">Namespaces</a></h3>
+    								<p>Using NOC and NAC</p>
+    							</div>
+    						</div>
+    						<div class="department-wrap p-4 ftco-animate">
+    							<div class="text p-2 text-center">
+    								<div class="icon">
+    									<span class="flaticon-stethoscope"></span>
+    								</div>
+    								<h3><a href="drtools-internal-dependencies.html">Internal Dependencies</a></h3>
+    								<p>Internal dependencies of types/classes</p>
+    							</div>
+    						</div>
+    						<div class="department-wrap p-4 ftco-animate">
+    							<div class="text p-2 text-center">
+    								<div class="icon">
+    									<span class="flaticon-stethoscope"></span>
+    								</div>
+    								<h3><a href="drtools-namespace-i-a-d.html">Instability/Abstractness/Distance</a></h3>
+    								<p>Using I, A, and D</p>
+    							</div>
+    						</div>
+    					</div>
+
+    					<div class="col-md-4">
+    						<div class="department-wrap p-4 ftco-animate">
+    							<div class="text p-2 text-center">
+    								<div class="icon">
+    									<span class="flaticon-stethoscope"></span>
+    								</div>
+    								<h3><a href="drtools-type.html">Types</a></h3>
+    								<p>Using NOM, SLOC, and WMC</p>
+    							</div>
+    						</div>
+    						<div class="department-wrap p-4 ftco-animate">
+    							<div class="text p-2 text-center">
+    								<div class="icon">
+    									<span class="flaticon-stethoscope"></span>
+    								</div>
+    								<h3><a href="drtools-coupling.html">Type Coupling</a></h3>
+    								<p>Coupling between types/classes (input/output)</p>
+    							</div>
+    						</div>
+    						<div class="department-wrap p-4 ftco-animate">
+								<div class="text p-2 text-center">
+									<div class="icon">
+										<span class="flaticon-stethoscope"></span>
+									</div>
+									<h3><a href="drtools-instability-abstractness.html">Instability and Abstractness</a></h3>
+									<p>Using I and A</p>
+								</div>
+						</div>
+						</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+		
+    <footer class="ftco-footer ftco-section">
+        <div class="row">
+          <div class="col-md-12 text-center">
+			<ul class="ftco-footer-social list-unstyled mt-5">
+				<li class="ftco-animate"><a href="https://www.github.com/guilhermeslacerda/drtools/" target="_blank"><span class="icon-github"></span></a></li>
+				<li class="ftco-animate"><a href="https://drtools.dev" target="_blank"><span class="icon-home"></span></a></li>
+			</ul>
+				
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  This template is based on <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+  <script src="js/drtools/drtools-summary.js"></script>
+    
+  </body>
+</html>

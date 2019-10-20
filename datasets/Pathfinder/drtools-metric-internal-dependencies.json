@@ -1,0 +1,543 @@
+[
+  {
+    "type": "com.softwarepathfinder.model.Access",
+    "size": 43,
+    "dependencies": []
+  },
+  {
+    "type": "com.softwarepathfinder.model.Field",
+    "size": 53,
+    "dependencies": []
+  },
+  {
+    "type": "com.softwarepathfinder.model.Inheritance",
+    "size": 38,
+    "dependencies": []
+  },
+  {
+    "type": "com.softwarepathfinder.model.Invocation",
+    "size": 75,
+    "dependencies": [
+      "com.softwarepathfinder.persistence.jpa.PersistenceManager"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.model.Locus",
+    "size": 109,
+    "dependencies": [
+      "com.softwarepathfinder.persistence.jpa.PersistenceManager",
+      "com.softwarepathfinder.utils.Log"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.model.Method",
+    "size": 146,
+    "dependencies": [
+      "com.softwarepathfinder.persistence.jpa.PersistenceManager",
+      "com.softwarepathfinder.utils.Log"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.model.Namespace",
+    "size": 57,
+    "dependencies": [
+      "com.softwarepathfinder.persistence.jpa.PersistenceManager"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.model.Path",
+    "size": 140,
+    "dependencies": [
+      "com.softwarepathfinder.persistence.jpa.PersistenceManager"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.model.Project",
+    "size": 175,
+    "dependencies": [
+      "com.softwarepathfinder.persistence.jpa.PersistenceManager",
+      "com.softwarepathfinder.utils.Log"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.model.Type",
+    "size": 246,
+    "dependencies": [
+      "com.softwarepathfinder.persistence.jpa.PersistenceManager",
+      "com.softwarepathfinder.utils.Log"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.java.AccessParser",
+    "size": 38,
+    "dependencies": [
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.model.Type",
+      "com.softwarepathfinder.utils.Log"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.java.AccessVisitor",
+    "size": 18,
+    "dependencies": [
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.model.Type"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.java.GenerateJava2JPA",
+    "size": 154,
+    "dependencies": [
+      "com.softwarepathfinder.model.Invocation",
+      "com.softwarepathfinder.model.Project",
+      "com.softwarepathfinder.model.Type",
+      "com.softwarepathfinder.parsing.PathMaker",
+      "com.softwarepathfinder.parsing.PolymorphismParser",
+      "com.softwarepathfinder.persistence.jpa.PersistenceManager",
+      "com.softwarepathfinder.utils.Log",
+      "com.softwarepathfinder.utils.SystemUtils"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.java.InheritanceParser",
+    "size": 25,
+    "dependencies": [
+      "com.softwarepathfinder.model.Type"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.java.InheritanceVisitor",
+    "size": 40,
+    "dependencies": [
+      "com.softwarepathfinder.model.Type"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.java.InvocationParser",
+    "size": 36,
+    "dependencies": [
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.model.Type",
+      "com.softwarepathfinder.utils.Log"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.java.InvocationVisitor",
+    "size": 220,
+    "dependencies": [
+      "com.softwarepathfinder.model.Field",
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.model.Project",
+      "com.softwarepathfinder.model.Type",
+      "com.softwarepathfinder.utils.Log"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.java.NamespaceParser",
+    "size": 52,
+    "dependencies": [
+      "com.softwarepathfinder.model.Namespace",
+      "com.softwarepathfinder.model.Project",
+      "com.softwarepathfinder.persistence.jpa.PersistenceManager",
+      "com.softwarepathfinder.utils.Log"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.java.NamespaceVisitor",
+    "size": 17,
+    "dependencies": [
+      "com.softwarepathfinder.model.Namespace",
+      "com.softwarepathfinder.utils.Log"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.java.TypeParser",
+    "size": 41,
+    "dependencies": [
+      "com.softwarepathfinder.model.Project",
+      "com.softwarepathfinder.model.Type",
+      "com.softwarepathfinder.persistence.jpa.PersistenceManager"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.java.TypeVisitor",
+    "size": 91,
+    "dependencies": [
+      "com.softwarepathfinder.model.Field",
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.model.Namespace",
+      "com.softwarepathfinder.model.Type",
+      "com.softwarepathfinder.persistence.jpa.PersistenceManager"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.PathMaker",
+    "size": 59,
+    "dependencies": [
+      "com.softwarepathfinder.model.Invocation",
+      "com.softwarepathfinder.model.Locus",
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.model.Path",
+      "com.softwarepathfinder.model.Type",
+      "com.softwarepathfinder.persistence.jpa.PersistenceManager",
+      "com.softwarepathfinder.utils.Log"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.php.AccessParser",
+    "size": 31,
+    "dependencies": [
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.model.Type"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.php.AccessVisitor",
+    "size": 31,
+    "dependencies": [
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.model.Type"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.php.GenerateAstPhp",
+    "size": 170,
+    "dependencies": [
+      "com.softwarepathfinder.model.Field",
+      "com.softwarepathfinder.model.Invocation",
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.model.Namespace",
+      "com.softwarepathfinder.model.Project",
+      "com.softwarepathfinder.model.Type",
+      "com.softwarepathfinder.parsing.PathMaker",
+      "com.softwarepathfinder.parsing.PolymorphismParser",
+      "com.softwarepathfinder.persistence.jpa.PersistenceManager",
+      "com.softwarepathfinder.utils.Conf",
+      "com.softwarepathfinder.utils.SystemUtils",
+      "com.softwarepathfinder.utils.exceptions.ConfException"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.php.InheritanceParser",
+    "size": 17,
+    "dependencies": [
+      "com.softwarepathfinder.model.Type"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.php.InheritanceVisitor",
+    "size": 38,
+    "dependencies": [
+      "com.softwarepathfinder.model.Type"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.php.InvocationParser",
+    "size": 20,
+    "dependencies": [
+      "com.softwarepathfinder.model.Project",
+      "com.softwarepathfinder.model.Type"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.php.InvocationVisitor",
+    "size": 181,
+    "dependencies": [
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.model.Project",
+      "com.softwarepathfinder.model.Type"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.php.NamespaceParser",
+    "size": 42,
+    "dependencies": [
+      "com.softwarepathfinder.model.Namespace",
+      "com.softwarepathfinder.model.Project",
+      "com.softwarepathfinder.persistence.jpa.PersistenceManager"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.php.TypeParser",
+    "size": 28,
+    "dependencies": [
+      "com.softwarepathfinder.model.Project",
+      "com.softwarepathfinder.model.Type",
+      "com.softwarepathfinder.utils.SystemUtils"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.php.TypeVisitor",
+    "size": 97,
+    "dependencies": [
+      "com.softwarepathfinder.model.Field",
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.model.Type",
+      "com.softwarepathfinder.persistence.jpa.PersistenceManager"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.parsing.PolymorphismParser",
+    "size": 24,
+    "dependencies": [
+      "com.softwarepathfinder.model.Invocation",
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.model.Type"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.persistence.jpa.PersistenceManager",
+    "size": 43,
+    "dependencies": []
+  },
+  {
+    "type": "com.softwarepathfinder.utils.Conf",
+    "size": 40,
+    "dependencies": [
+      "com.softwarepathfinder.utils.exceptions.ConfException"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.utils.exceptions.ConfException",
+    "size": 7,
+    "dependencies": []
+  },
+  {
+    "type": "com.softwarepathfinder.utils.Log",
+    "size": 45,
+    "dependencies": []
+  },
+  {
+    "type": "com.softwarepathfinder.utils.LogFormatter",
+    "size": 29,
+    "dependencies": []
+  },
+  {
+    "type": "com.softwarepathfinder.utils.SystemUtils",
+    "size": 25,
+    "dependencies": [
+      "com.softwarepathfinder.utils.exceptions.ConfException"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.blender.Blender",
+    "size": 32,
+    "dependencies": [
+      "com.softwarepathfinder.model.Project",
+      "com.softwarepathfinder.model.Type",
+      "com.softwarepathfinder.parsing.java.TypeParser",
+      "com.softwarepathfinder.utils.SystemUtils"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.blender.Geometry",
+    "size": 51,
+    "dependencies": [
+      "com.softwarepathfinder.model.Type"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.jgraph.PathfinderLayout",
+    "size": 9,
+    "dependencies": []
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.jgraph.PathView",
+    "size": 116,
+    "dependencies": [
+      "com.softwarepathfinder.model.Invocation",
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.model.Path",
+      "com.softwarepathfinder.model.Project",
+      "com.softwarepathfinder.model.Type"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.prefuse.AggregateDragControl",
+    "size": 300,
+    "dependencies": [
+      "com.softwarepathfinder.model.Invocation",
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.model.Path",
+      "com.softwarepathfinder.model.Project",
+      "com.softwarepathfinder.model.Type"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.prefuse.Example",
+    "size": 81,
+    "dependencies": []
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.prefuse.InverseWheelZoomControl",
+    "size": 22,
+    "dependencies": []
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.prefuse.MethodGraph",
+    "size": 115,
+    "dependencies": [
+      "com.softwarepathfinder.model.Invocation",
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.model.Project",
+      "com.softwarepathfinder.model.Type"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.prefuse.NamespaceGraph",
+    "size": 114,
+    "dependencies": [
+      "com.softwarepathfinder.model.Invocation",
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.model.Namespace",
+      "com.softwarepathfinder.model.Project",
+      "com.softwarepathfinder.model.Type"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.prefuse.NamespaceGraphByPath",
+    "size": 115,
+    "dependencies": [
+      "com.softwarepathfinder.model.Invocation",
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.model.Namespace",
+      "com.softwarepathfinder.model.Path",
+      "com.softwarepathfinder.model.Project",
+      "com.softwarepathfinder.model.Type"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.prefuse.PathGraph",
+    "size": 92,
+    "dependencies": [
+      "com.softwarepathfinder.model.Invocation",
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.model.Path",
+      "com.softwarepathfinder.model.Project",
+      "com.softwarepathfinder.model.Type"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.prefuse.PathMethodLayout",
+    "size": 69,
+    "dependencies": [
+      "com.softwarepathfinder.model.Locus",
+      "com.softwarepathfinder.model.Path"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.prefuse.PathMethodsGraph",
+    "size": 141,
+    "dependencies": [
+      "com.softwarepathfinder.model.Invocation",
+      "com.softwarepathfinder.model.Path",
+      "com.softwarepathfinder.model.Project"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.prefuse.SimpleGraph",
+    "size": 80,
+    "dependencies": []
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.prefuse.TypeGraph",
+    "size": 142,
+    "dependencies": [
+      "com.softwarepathfinder.model.Invocation",
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.model.Path",
+      "com.softwarepathfinder.model.Project",
+      "com.softwarepathfinder.model.Type"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.prefuse.TypeRenderer",
+    "size": 4,
+    "dependencies": []
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.yEd.AccessGraphML",
+    "size": 25,
+    "dependencies": [
+      "com.softwarepathfinder.model.Access",
+      "com.softwarepathfinder.utils.exceptions.ConfException"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.yEd.FieldGraphML",
+    "size": 21,
+    "dependencies": [
+      "com.softwarepathfinder.utils.exceptions.ConfException"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.yEd.GraphML",
+    "size": 22,
+    "dependencies": [
+      "com.softwarepathfinder.utils.Conf",
+      "com.softwarepathfinder.utils.exceptions.ConfException"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.yEd.GraphmlBuilder",
+    "size": 71,
+    "dependencies": [
+      "com.softwarepathfinder.model.Locus",
+      "com.softwarepathfinder.model.Namespace",
+      "com.softwarepathfinder.model.Path",
+      "com.softwarepathfinder.model.Project",
+      "com.softwarepathfinder.utils.Log",
+      "com.softwarepathfinder.utils.exceptions.ConfException"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.yEd.GroundGraphML",
+    "size": 15,
+    "dependencies": [
+      "com.softwarepathfinder.utils.exceptions.ConfException"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.yEd.InvocationGraphML",
+    "size": 29,
+    "dependencies": [
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.utils.exceptions.ConfException"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.yEd.MethodGraphML",
+    "size": 25,
+    "dependencies": [
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.utils.exceptions.ConfException"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.yEd.ModelGraphML",
+    "size": 18,
+    "dependencies": [
+      "com.softwarepathfinder.utils.exceptions.ConfException"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.yEd.NamespaceGraphML",
+    "size": 16,
+    "dependencies": [
+      "com.softwarepathfinder.model.Namespace",
+      "com.softwarepathfinder.utils.exceptions.ConfException"
+    ]
+  },
+  {
+    "type": "com.softwarepathfinder.visualization.yEd.TypeGraphML",
+    "size": 199,
+    "dependencies": [
+      "com.softwarepathfinder.model.Field",
+      "com.softwarepathfinder.model.Invocation",
+      "com.softwarepathfinder.model.Locus",
+      "com.softwarepathfinder.model.Method",
+      "com.softwarepathfinder.model.Type",
+      "com.softwarepathfinder.utils.exceptions.ConfException"
+    ]
+  }
+]

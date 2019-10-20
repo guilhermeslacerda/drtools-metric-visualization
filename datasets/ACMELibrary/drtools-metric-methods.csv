@@ -1,0 +1,77 @@
+"method","loc","cyclo","calls","nbd","param"
+"library.Book.removeAuthor(Author author)",9,3,4,2,1
+"library.Magazine.removePaper(Paper paper)",9,3,4,2,1
+"library.Paper.removeAuthor(Author author)",9,3,4,2,1
+"library.Author.equals(Object object)",10,2,8,0,1
+"library.Paper.equals(Object object)",9,2,5,2,1
+"repository.InMemoryRepository.findAuthor(int id)",7,2,2,0,1
+"repository.InMemoryRepository.findEditor(int id)",7,2,2,0,1
+"repository.InMemoryRepository.findPublication(int id)",7,2,2,0,1
+"repository.InMemoryRepository.removePublication(int id)",6,2,2,0,1
+"library.Publication.Publication(int id, String title, Editor editor, Date datePub)",5,1,4,0,4
+"library.Author.Author(int id, String name, String lastName)",4,1,2,0,3
+"library.Book.Book(int id, String title, Editor editor, Date datePub, Subject subject)",4,1,1,2,5
+"library.Paper.Paper(int id, String title, Editor editor, Date datePub)",4,1,0,2,4
+"library.Author.toString()",3,1,2,0,0
+"library.Editor.toString()",3,1,2,0,0
+"library.Subject.Subject(int id, String description)",3,1,2,0,2
+"repository.InMemoryRepository.addAuthor(Author author)",3,1,2,0,1
+"repository.InMemoryRepository.addEditor(Editor editor)",3,1,2,0,1
+"repository.InMemoryRepository.addPublication(Publication pub)",3,1,2,0,1
+"library.Editor.Editor(int id, String name)",3,1,1,0,2
+"repository.InMemoryRepository.sizeAgents()",3,1,1,0,0
+"repository.InMemoryRepository.sizePublications()",3,1,1,0,0
+"library.Magazine.Magazine(int id, String title, Editor editor, Date datePub)",3,1,0,2,4
+"library.Agent.Agent(int id)",2,1,1,0,1
+"library.Book.addAuthor(Author author)",2,1,1,2,1
+"library.Magazine.addPaperIn(Paper paper)",2,1,1,2,1
+"library.Paper.addAuthor(Author author)",2,1,1,2,1
+"library.Paper.addKeyWord(String keyWord)",2,1,1,2,1
+"services.LibraryService.addAuthor(Author author)",2,1,1,0,1
+"services.LibraryService.addEditor(Editor editor)",2,1,1,0,1
+"services.LibraryService.findAuthor(int id)",2,1,1,0,1
+"services.LibraryService.findEditor(int id)",2,1,1,0,1
+"services.LibraryService.addPublication(Publication pub)",2,1,1,0,1
+"services.LibraryService.findPublication(int id)",2,1,1,0,1
+"services.LibraryService.removePublication(int id)",2,1,1,0,1
+"library.Agent.getId()",2,1,0,0,0
+"library.Agent.setId(int id)",2,1,0,0,1
+"library.Author.getName()",2,1,0,0,0
+"library.Author.setName(String name)",2,1,0,0,1
+"library.Author.getLastName()",2,1,0,0,0
+"library.Author.setLastName(String lastName)",2,1,0,0,1
+"library.Book.setSubject(Subject subject)",2,1,0,2,1
+"library.Book.getSubject()",2,1,0,2,0
+"library.Book.getAuthors()",2,1,0,2,0
+"library.Editor.setName(String name)",2,1,0,0,1
+"library.Editor.getName()",2,1,0,0,0
+"library.exceptions.InvalidAuthorException.InvalidAuthorException(String message)",2,1,0,0,1
+"library.exceptions.InvalidEditorException.InvalidEditorException(String message)",2,1,0,0,1
+"library.exceptions.InvalidPublicationException.InvalidPublicationException(String message)",2,1,0,0,1
+"library.Magazine.getPapers()",2,1,0,2,0
+"library.Paper.getAuthors()",2,1,0,2,0
+"library.Paper.getKeyWords()",2,1,0,2,0
+"library.Publication.getId()",2,1,0,0,0
+"library.Publication.setId(int id)",2,1,0,0,1
+"library.Publication.getTitle()",2,1,0,0,0
+"library.Publication.setTitle(String title)",2,1,0,0,1
+"library.Publication.getEditor()",2,1,0,0,0
+"library.Publication.setEditor(Editor editor)",2,1,0,0,1
+"library.Publication.getDatePub()",2,1,0,0,0
+"library.Publication.setDatePub(Date datePub)",2,1,0,0,1
+"library.Subject.getId()",2,1,0,0,0
+"library.Subject.setId(int id)",2,1,0,0,1
+"library.Subject.getDescription()",2,1,0,0,0
+"library.Subject.setDescription(String description)",2,1,0,0,1
+"services.LibraryService.getInstance()",2,1,0,0,0
+"services.LibraryService.defineRepository(DataRepository repository)",2,1,0,0,1
+"services.LibraryService.getRepository()",2,1,0,0,0
+"repository.DataRepository.addAuthor(Author author)",0,1,0,0,1
+"repository.DataRepository.addEditor(Editor editor)",0,1,0,0,1
+"repository.DataRepository.findAuthor(int id)",0,1,0,0,1
+"repository.DataRepository.findEditor(int id)",0,1,0,0,1
+"repository.DataRepository.addPublication(Publication pub)",0,1,0,0,1
+"repository.DataRepository.removePublication(int id)",0,1,0,0,1
+"repository.DataRepository.findPublication(int id)",0,1,0,0,1
+"repository.DataRepository.sizeAgents()",0,1,0,0,0
+"repository.DataRepository.sizePublications()",0,1,0,0,0
