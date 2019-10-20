@@ -1,5 +1,4 @@
-# ![DR-Tools Suite] 
-<img src="https://guilhermeslacerda.github.io/drtools-site/images/logo_drtools.png" width="300"/>
+<img src="https://guilhermeslacerda.github.io/drtools-site/images/logo_drtools.png" alt="DR-Tools Suite" title="DR-Tools Suite" width="350"/>
 
 # drtools-metric visualization 
 
