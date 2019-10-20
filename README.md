@@ -1,4 +1,4 @@
-# ![DR-Tools Suite](https://guilhermeslacerda.github.io/drtools-site/images/logo_drtools.png) {:width="300"}
+# ![DR-Tools Suite](https://guilhermeslacerda.github.io/drtools-site/images/logo_drtools.png) {:width="300px"}
 
 # drtools-metric visualization 
 
