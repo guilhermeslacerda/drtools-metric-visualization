@@ -137,6 +137,11 @@
             <td>Good: &lt;= 6; Regular: between 6 and 14; Bad: &gt; 14</td>
             </tr>
             <tr>
+            <th scope="row">NPM</th>
+            <td>Number of Public Methods</td>
+            <td>Good: &lt;= 10; Regular: between 11 and 40; Bad: &gt; 40</td>
+            </tr>
+            <tr>
             <th scope="row">WMC</th>
             <td>Weighted Methods per Class</td>
             <td>Good: &lt;= 11; Regular: between 11 and 34; Bad: &gt; 34</td>
@@ -148,19 +153,19 @@
             </tr>
             <tr>
             <th scope="row">I-DEP</th>
-            <td>Number of other internal types/classes dependencies referenced by a type (Fan-Out)</td>
+            <td>Number of other internal types/classes dependencies</td>
             <td>Bad: &gt; 15</td>
             </tr>
             <tr>
             <th scope="row">FAN-IN</th>
-            <td>number of other types that reference a type</td>
+            <td>Number of other types that depend on a given type</td>
             <td>Bad: &gt; 10</td>
             </tr>    
             <tr>
-            <th scope="row">NPM</th>
-            <td>Number of Public Methods</td>
-            <td>Good: &lt;= 10; Regular: between 11 and 40; Bad: &gt; 40</td>
-            </tr>
+            <th scope="row">FAN-OUT</th>
+            <td>Number of other types referenced by a type</td>
+            <td>Bad: &gt; 15</td>
+            </tr>            
             <tr>
             <th scope="row">NOA</th>
             <td>Number of Attributes/Fields</td>
@@ -215,9 +220,9 @@
     </div>
 </section>
     
-<section class="ftco-section" id="coupling-section">
+<section class="ftco-section" id="namespace-coupling-section">
     <div class="col-md-12 text-center heading-section ftco-animate">
-        <b>COUPLING</b>
+        <b>NAMESPACE COUPLING</b>
     </div>
     <div>    
         <table class="table table-hover text_table">
@@ -259,6 +264,45 @@
     </div>
 </section>   
 
+<section class="ftco-section" id="type-coupling-section">
+        <div class="col-md-12 text-center heading-section ftco-animate">
+            <b>TYPE COUPLING</b>
+        </div>
+        <div>    
+            <table class="table table-hover text_table">
+            <thead>
+                <tr>
+                <th scope="col">Acronym</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">DEP</th>
+                <td>Number of external (external APIs, frameworks, libs) types/classes dependencies</td>
+                <td>Bad: &gt; 20</td>
+                </tr>
+                <tr>
+                <th scope="row">I-DEP</th>
+                <td>Number of other internal types/classes dependencies</td>
+                <td>Bad: &gt; 15</td>
+                </tr>
+                <tr>
+                <th scope="row">FAN-IN</th>
+                <td>Number of other types that depend on a given type</td>
+                <td>Bad: &gt; 10</td>
+                </tr>    
+                <tr>
+                <th scope="row">FAN-OUT</th>
+                <td>Number of other types referenced by a type</td>
+                <td>Bad: &gt; 15</td>
+                </tr>            
+            </tbody>
+            </table>
+        </div>
+</section>
+    
 <section class="ftco-section" id="references-section">
     <div class="col-md-12 text-center heading-section ftco-animate">
         <b>REFERENCES USED TO METRIC THRESHOLDS</b>

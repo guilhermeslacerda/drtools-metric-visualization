@@ -75,8 +75,8 @@
   <body class="text-center">
     <section class="ftco-section" id="header-section">
         <div class="col-md-12 text-center heading-section ftco-animate">
-            <h2 class="mb-4"><script>document.write(graphTitles.titleCoupling)</script></h2>
-            <script>document.write(graphTitles.titleCouplingExplanation)</script>
+            <h2 class="mb-4"><script>document.write(graphTitles.titleTypeCoupling1)</script></h2>
+            <script>document.write(graphTitles.titleTypeCoupling1Explanation)</script>
         </div>
         <div class="col-md-12 text-center heading-section ftco-animate">
             Project: <script>document.write(optionsProject.projectName)</script>
@@ -84,6 +84,9 @@
         <div class="nav-item text-center cta mr-md-2">
             <a href="index.html" class="nav-link"><span>Back</span></a>
         </div>
+        <div class="text">
+            <strong class="text-error"><div id="errorMessage"></div></strong>
+        </div>			                
     </section>
     
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -101,6 +104,10 @@
     
 
 <script>
+if (!optionsProject.datasetInternalTypeDependencies || 0 === optionsProject.datasetInternalTypeDependencies.length === '') {
+  $("#errorMessage").text(errorMessage.msgTypeCoupling1)
+}
+else {
     var diameter = 1300,
         radius = diameter / 2,
         innerRadius = radius - 280;
@@ -224,7 +231,7 @@
 
         return imports;
     }
-
+}
 </script>
 </body>
 </html>

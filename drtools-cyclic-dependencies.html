@@ -39,8 +39,8 @@
 <body>
 		<section class="ftco-section" id="header-section">
       <div class="col-md-12 text-center heading-section ftco-animate">
-        <h2 class="mb-4"><script>document.write(graphTitles.titleType)</script></h2>
-        <script>document.write(graphTitles.titleTypeExplanation)</script>
+        <h2 class="mb-4"><script>document.write(graphTitles.titleCyclicDependencies)</script></h2>
+        <script>document.write(graphTitles.titleCyclicDependencies)</script>
       </div>
       <div class="col-md-12 text-center heading-section ftco-animate">
         Project: <script>document.write(optionsProject.projectName)</script>
@@ -67,49 +67,40 @@
   <script src="js/main.js"></script>
       
 <script>
-if (!optionsProject.datasetTypes || 0 === optionsProject.datasetTypes.length === '') {
-  $("#errorMessage").text(errorMessage.msgTypes)
+if (!optionsProject.datasetCyclicDependencies || 0 === optionsProject.datasetCyclicDependencies.length === '') {
+  $("#errorMessage").text(errorMessage.msgCyclicDependencies)
 }
 else {
-      google.charts.load('current', {
-        'packages': ['corechart']
-      });
+  google.charts.load('current', {'packages':['sankey']});
 
   function drawVisualization() {
-   $.get(optionsProject.datasetTypes, function(csvString) {
+   $.get(optionsProject.datasetCyclicDependencies, function(csvString) {
       var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
       var data = new google.visualization.arrayToDataTable(arrayData);
       
       var dataView = new google.visualization.DataView(data);
-      dataView.setColumns([0, 1, 2, 4, 5]);
 
-
-      var options = {
-          hAxis: {
-            title: 'sloc'
-          },
-          vAxis: {
-            title: 'nom'
-          },
-          bubble: {
-            textStyle: {
-              fontName: 'Poppins',
-              fontSize: 11
-            }
-          },
-          colorAxis: {colors: ['yellow', 'red']}
+        // Sets chart options.
+        var options = {
+          width: 1200,
+          sankey: {
+            node: { label: { fontName: 'Poppins',
+                         fontSize: 12,
+             } } },
         };
 
-        var chart = new google.visualization.BubbleChart(document.getElementById('series_chart_div'));
+        // Instantiates and draws our chart, passing in some options.
+        var chart = new google.visualization.Sankey(document.getElementById('series_chart_div'));
         chart.draw(dataView, options);
-   });    
+      });
+
 
   }
   
   google.setOnLoadCallback(drawVisualization);
 }
 </script>
-<div id="series_chart_div" style="width: 1500px; height: 600px;"></div>
+<div id="series_chart_div" style="padding:60px; width: 1500px; height: 800px;"></div>
 
 </body>
 </html>

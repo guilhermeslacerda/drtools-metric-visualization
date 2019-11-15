@@ -47,7 +47,9 @@
     <div class="nav-item text-center cta mr-md-2">
         <a href="index.html" class="nav-link"><span>Back</span></a>
     </div>
-
+		<div class="text">
+        <strong class="text-error"><div id="errorMessage"></div></strong>
+    </div>			  
   </section>
 
 <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -64,29 +66,32 @@
 <script src="js/main.js"></script>
 
 <script>
-google.charts.load('current', {packages: ['corechart', 'bar']});
+if (!optionsProject.datasetNamespaces || 0 === optionsProject.datasetNamespaces.length === '') {
+  $("#errorMessage").text(errorMessage.msgNamespaces)
+}
+else {
+  google.charts.load('current', {packages: ['corechart', 'bar']});
 
-function drawBar() {
-$.get(optionsProject.datasetNamespaces, function(csvString) {
-      var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
-      var data = new google.visualization.arrayToDataTable(arrayData);
+  function drawBar() {
+  $.get(optionsProject.datasetNamespaces, function(csvString) {
+        var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
+        var data = new google.visualization.arrayToDataTable(arrayData);
 
-      var options = {
-        width: 1400,
-        height: 600,
-        legend: { position: 'top', maxLines: 3 },
-        bar: { groupWidth: '75%' },
-        fontName: 'Poppins',
-        isStacked: true
-      };
+        var options = {
+          legend: { position: 'top', maxLines: 3 },
+          bar: { groupWidth: '75%' },
+          fontName: 'Poppins',
+          isStacked: true
+        };
 
-      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
 
-      chart.draw(data, options);
-    });
+        chart.draw(data, options);
+      });
 
-}   
-google.charts.setOnLoadCallback(drawBar);
+  }   
+  google.charts.setOnLoadCallback(drawBar);
+}
 </script>
 <div id="chart_div" style="width: 1500px; height: 700px; font-family: 'Poppins', sans-serif"></div>
 </body>

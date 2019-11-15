@@ -38,7 +38,9 @@
     <div class="nav-item text-center cta mr-md-2">
         <a href="index.html" class="nav-link"><span>Back</span></a>
     </div>
-
+    <div class="text">
+        <strong class="text-error"><div id="errorMessage"></div></strong>
+    </div>			        
   </section>
 
 <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -55,6 +57,10 @@
 <script src="js/main.js"></script>
 
 <script type="text/javascript">
+if (!optionsProject.datasetNamespaceCoupling || 0 === optionsProject.datasetNamespaceCoupling.length === '') {
+  $("#errorMessage").text(errorMessage.msgNamespaceCoupling)
+}
+else {
     google.charts.load('current', {'packages':['bar']});
     google.charts.setOnLoadCallback(drawStuff);
 
@@ -79,6 +85,7 @@
         chart.draw(dataView, options);
     });
   };
+}
 </script>
 <div id="chart_div" style="width: 1400px; height: 700px; font-family: 'Poppins', sans-serif"></div>
 </body>

@@ -81,6 +81,9 @@
 		<div class="nav-item text-center cta mr-md-2">
 				<a href="index.html" class="nav-link"><span>Back</span></a>
 		</div>		
+		<div class="text">
+			<strong class="text-error"><div id="errorMessage"></div></strong>
+		</div>			
 	</section>
 
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -120,7 +123,11 @@
 	</div>		
 </div>
 <script>
-		
+if (!optionsProject.datasetSummary || 0 === optionsProject.datasetSummary.length === '') {
+	$("#errorMessage").text(errorMessage.msgSummary)
+}
+else {
+
 	d3.csv(optionsProject.datasetSummary, function(data) {
 		listSummary = data.map(function(d) {
     	return[d["description"],
@@ -128,7 +135,7 @@
            +d["percent"]]
   		});
 		
-		var types = listSummary[0][1];
+	    var types = listSummary[0][1];
 		var typesPerNamespaces = listSummary[0][2];
 		var namespaces = Math.trunc(types / typesPerNamespaces) 
 		
@@ -174,7 +181,7 @@
 			.html("Total of Complexity: " + cyclos + "<br/>Complexity/Types: " + cyclosPerTypes);	
 
 	});
-
+}
 </script>
 </body>
 </html>

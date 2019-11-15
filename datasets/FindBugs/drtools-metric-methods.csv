@@ -1,0 +1,31 @@
+"method","loc","cyclo","calls","nbd","param"
+"edu.umd.cs.findbugs.detect.DumbMethods.sawOpcode(int seen)",769,339,526,5,1
+"edu.umd.cs.findbugs.detect.FindPuzzlers.sawOpcode(int seen)",542,240,383,6,1
+"edu.umd.cs.findbugs.detect.UnreadFields.sawOpcode(int seen)",382,168,235,11,1
+"edu.umd.cs.findbugs.detect.FindUselessObjects.analyzeMethod(ClassContext classContext, Method method)",232,141,68,8,2
+"edu.umd.cs.findbugs.OpcodeStack.processMethodCall(DismantleBytecode dbc, int seen)",277,124,191,5,2
+"edu.umd.cs.findbugs.detect.FindDeadLocalStores.analyzeMethod(ClassContext classContext, Method method)",413,118,227,9,2
+"edu.umd.cs.findbugs.detect.UnreadFields.report()",394,114,237,11,0
+"edu.umd.cs.findbugs.detect.DroppedException.visit(Code obj)",229,86,70,5,1
+"edu.umd.cs.findbugs.detect.FindHEmismatch.visitAfter(JavaClass obj)",212,82,96,6,1
+"edu.umd.cs.findbugs.workflow.Filter$FilterCommandLine.evaluate(BugCollection collection, BugInstance bug)",153,80,65,4,2
+"edu.umd.cs.findbugs.detect.FindSelfComparison.sawOpcode(int seen)",163,75,74,5,1
+"edu.umd.cs.findbugs.detect.FindDoubleCheck.sawOpcode(int seen)",130,75,43,4,1
+"edu.umd.cs.findbugs.detect.Noise.sawOpcode(int seen)",100,66,31,2,1
+"edu.umd.cs.findbugs.detect.FindHEmismatch.visit(Method obj)",100,62,61,6,1
+"edu.umd.cs.findbugs.detect.SwitchFallthrough.sawOpcode(int seen)",163,62,97,4,1
+"edu.umd.cs.findbugs.detect.InfiniteRecursiveLoop.sawOpcode(int seen)",152,62,72,4,1
+"edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical.sawOpcode(int seen)",117,61,87,9,1
+"edu.umd.cs.findbugs.detect.StringConcatenation.sawOpcode(int seen)",171,61,70,3,1
+"edu.umd.cs.findbugs.detect.SerializableIdiom.visit(Field obj)",136,58,87,8,1
+"edu.umd.cs.findbugs.detect.CrossSiteScripting.sawOpcode(int seen)",129,53,93,4,1
+"edu.umd.cs.findbugs.detect.SerializableIdiom.visit(Method obj)",96,52,86,8,1
+"edu.umd.cs.findbugs.detect.LazyInit.reportMatch(ClassContext classContext, Method method, ByteCodePatternMatch match)",222,50,99,5,3
+"edu.umd.cs.findbugs.TextUICommandLine.handleOptionWithArgument(String option, String argument)",194,50,109,4,2
+"edu.umd.cs.findbugs.detect.SerializableIdiom.visitAfter(JavaClass obj)",97,46,40,8,1
+"edu.umd.cs.findbugs.detect.DumbMethods$RangeCheckSubDetector.sawOpcode(int seen)",106,46,86,5,1
+"edu.umd.cs.findbugs.detect.RedundantConditions.getPriority(MethodDescriptor methodDescriptor, RedundantCondition condition)",89,46,42,5,2
+"edu.umd.cs.findbugs.detect.InfiniteLoop.sawOpcode(int seen)",133,46,71,4,1
+"edu.umd.cs.findbugs.TextUICommandLine.handleOption(String option, String optionExtraPart)",121,46,67,4,2
+"edu.umd.cs.findbugs.detect.EarlyExitException.hasNoSideEffect(MethodDescriptor m)",69,45,83,8,1
+"edu.umd.cs.findbugs.detect.IncompatMask.sawOpcode(int seen)",137,44,24,2,1

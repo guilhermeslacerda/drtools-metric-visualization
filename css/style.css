@@ -7794,7 +7794,11 @@ button.bg-dark:focus {
 .text-center {
   text-align: center !important; }
 
-@media (min-width: 576px) {
+.text-error {
+    text-align: center !important;
+    color: #fe5f55 !important; }
+  
+ @media (min-width: 576px) {
   .text-sm-left {
     text-align: left !important; }
   .text-sm-right {
