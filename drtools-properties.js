@@ -3,6 +3,7 @@
     "projectName" : "DR Tools Metric",
     "datasetDir": "./datasets/DrToolsMetric/",
     "datasetSummary" : "./datasets/DrToolsMetric/drtools-metric-summary.csv",
+    "datasetResonance" : "./datasets/DrToolsMetric/drtools-metric-resonance.json",
     "datasetNamespaceCoupling" : "./datasets/DrToolsMetric/drtools-metric-coupling.csv",
     "datasetNamespaces" : "./datasets/DrToolsMetric/drtools-metric-namespaces.csv",
     "datasetTypes" : "./datasets/DrToolsMetric/drtools-metric-types.csv",
@@ -16,6 +17,7 @@
     "projectName" : "Software Pathfinder",
     "datasetDir": "./datasets/Pathfinder/",
     "datasetSummary" : "./datasets/Pathfinder/drtools-metric-summary.csv",
+    "datasetResonance" : "./datasets/Pathfinder/drtools-metric-resonance.json",
     "datasetNamespaceCoupling" : "./datasets/Pathfinder/drtools-metric-coupling.csv",
     "datasetNamespaces" : "./datasets/Pathfinder/drtools-metric-namespaces.csv",
     "datasetTypes" : "./datasets/Pathfinder/drtools-metric-typesTop30.csv",
@@ -30,6 +32,7 @@ var optionsProject = {
     "projectName" : "Findbugs 3.0.1",
     "datasetDir": "./datasets/FindBugs/",
     "datasetSummary" : "./datasets/FindBugs/drtools-metric-summary.csv",
+    "datasetResonance" : "./datasets/FindBugs/drtools-metric-resonance.json",
     "datasetNamespaceCoupling" : "./datasets/FindBugs/drtools-metric-coupling.csv",
     "datasetNamespaces" : "./datasets/FindBugs/drtools-metric-namespaces.csv",
     "datasetTypes" : "./datasets/Pathfinder/drtools-metric-types.csv",
@@ -39,24 +42,15 @@ var optionsProject = {
     "datasetCyclicDependencies" : "./datasets/FindBugs/drtools-metric-cyclic-dependencies.csv"
 };
 
-// Project: AcmeLibrary
-/*var optionsProject = {
-    "projectName" : "ACME Library",
-    "datasetDir": "./datasets/ACMELibrary/",
-    "datasetSummary" : "./datasets/ACMELibrary/drtools-metric-summary.csv",
-    "datasetNamespaceCoupling" : "./datasets/ACMELibrary/drtools-metric-coupling.csv",
-    "datasetNamespaces" : "./datasets/ACMELibrary/drtools-metric-namespaces.csv",
-    "datasetTypes" : "./datasets/ACMELibrary/drtools-metric-types.csv",
-    "datasetMethods" : "./datasets/ACMELibrary/drtools-metric-methods.csv",
-    "datasetInternalDependencies" : "./datasets/ACMELibrary/drtools-metric-internal-dependencies.json"
-};*/
-
 // Titles
 var graphTitles = {
     "titleSummary" : "Thermometer Visualization",
 
     "titleNamespace" : "Namespace Visualization",
     "titleNamespaceExplanation" : "NOC (Number of Classes/Types) and NAC (Number of Abstract Classes/Types)",
+
+    "titleResonance" : "Code Resonance",
+    "titleResonanceExplanation" : "Bubble Size (SLOC - Lines of Code) and Bubble Color (The most complex classes are red bubbles, with high WMC)",
 
     "titleIAD" : "Instability/Abstractness/Distance Visualization",
     "titleIADExplanation" : "I (Instability), A (Abstractness Degree), and D (Normalized Distance)",
@@ -91,6 +85,7 @@ var graphTitles = {
 // Titles
 var errorMessage = {
     "msgSummary" : "File not found... It is not possible to visualize data about summary",
+    "msgResonance" : "File not found... It is not possible to visualize data about code resonance",
     "msgNamespaces" : "File not found... It is not possible to visualize data about namespaces",
     "msgTypes" : "File not found... It is not possible to visualize data about types",
     "msgMethods" : "File not found... It is not possible to visualize data about methods",
