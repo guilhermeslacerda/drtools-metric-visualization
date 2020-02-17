@@ -12,4 +12,4 @@ More information at the [official website](http://drtools.site/).
 
 # Requirements, Install Instruction, and Usage
 
-More information at the [drtools-metric visualization page](https://guilhermeslacerda.github.io/drtools-site/drtools-metric-visualization.html). 
+More information at the [drtools-metric visualization page](http://drtools.site/). 
