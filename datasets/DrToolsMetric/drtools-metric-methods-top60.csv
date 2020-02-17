@@ -1,0 +1,61 @@
+"method","loc","cyclo","calls","nbd","param"
+"utils.SourceCodeLineCounter.isSourceCodeLine(String line)",46,11,14,5,1
+"utils.SourceCodeLineCounter.getNumberOfLines(BufferedReader bReader)",28,10,12,5,1
+"structures.results.TypeMetricResult.cleanListOf(Set<String> typesWithCyclos)",16,6,5,2,1
+"structures.results.MethodMetricResult.getTotalCycloBy(String type)",14,6,8,2,1
+"structures.results.TypeMetricResult.getTotalOfAbstractTypesIn(String namespace)",13,6,6,2,1
+"main.Bootstrapper.verifyTopOption(int number, String ranking, String argument)",10,6,7,1,3
+"utils.SourceCodeLineCounter.commentBegan(String line)",24,5,9,5,1
+"utils.SourceCodeLineCounter.commentEnded(String line)",23,5,6,5,1
+"main.Bootstrapper.verifySaveOption()",10,5,8,1,0
+"main.Bootstrapper.verifyOutput()",6,5,6,1,0
+"output.MetricResultConsole.showInternalDependencies()",23,4,15,2,0
+"output.MetricResultConsole.showDependencies()",15,4,12,2,0
+"structures.results.TypeMetricResult.getAfferentCoupling(String namespace)",12,4,7,2,1
+"structures.results.TypeMetricResult.getEfferentCoupling(String namespace)",12,4,7,2,1
+"parser.java.visitors.TypeVisitor.isAbstractType(TypeDeclaration node)",11,4,6,2,1
+"parser.java.visitors.TypeVisitor.visit(MethodDeclaration node)",9,4,6,2,1
+"parser.java.visitors.TypeVisitor.getSuperTypes(TypeDeclaration node)",7,4,9,2,1
+"main.Bootstrapper.getOutputFormat(long startTime)",15,4,6,1,1
+"main.Bootstrapper.verifyOptions()",11,4,3,1,0
+"main.Bootstrapper.verifyNumberOfArguments(String[] args)",5,4,2,1,1
+"output.MetricResultJSON.generateDependencies()",18,3,12,2,0
+"output.MetricResultJSON.generateInternalDependencies()",18,3,12,2,0
+"structures.results.TypeMetricResult.getCyclicDependencies()",18,3,7,2,0
+"parser.java.visitors.TypeVisitor.visit(TypeDeclaration node)",16,3,11,2,1
+"output.MetricResultJSON.generateCyclicDependencies()",16,3,9,2,0
+"parser.java.visitors.MethodVisitor.defineParameters()",15,3,11,2,0
+"output.MetricResultConsole.showCyclicDependencies()",14,3,7,2,0
+"parser.java.visitors.MethodVisitor.visit(MethodDeclaration node)",13,3,5,2,1
+"parser.java.visitors.TypeVisitor.update(TypeMetricResult result)",12,3,10,2,1
+"parser.java.visitors.MethodVisitor.defineMethodSignature(MethodDeclaration node)",11,3,8,2,1
+"parser.java.visitors.TypeVisitor.visit(MethodInvocation node)",10,3,4,2,1
+"parser.java.visitors.TypeVisitor.visit(SuperMethodInvocation node)",10,3,4,2,1
+"parser.java.visitors.TypeVisitor.getImplementedInterfaces(TypeDeclaration node)",7,3,7,2,1
+"structures.results.TypeMetricResult.getInternalDependenciesByType(Set<String> dependencies, Set<String> otherDependencies)",7,3,3,2,2
+"parser.java.visitors.MethodVisitor.visit(SwitchCase node)",7,3,3,2,1
+"structures.results.TypeMetricResult.defineFanIn()",6,3,6,2,0
+"structures.results.TypeMetricResult.identifyAfferentCoupling(String namespace, HashSet<String> afferents, TypeMetric type)",6,3,5,2,3
+"structures.results.TypeMetricResult.identifyEfferentCoupling(String namespace, HashSet<String> efferents, TypeMetric type)",6,3,4,2,3
+"structures.results.TypeMetricResult.hasCyclicDependency(TypeMetric type, TypeMetric otherType, boolean isCyclic)",5,3,3,2,3
+"structures.results.TypeMetricResult.getFanInOf(String typeName)",3,3,2,2,1
+"output.MetricResultCSV.generateCyclicDependencies()",13,3,7,1,0
+"output.Gauge.progress(int number)",5,3,2,1,1
+"structures.metrics.NamespaceMetric.compareTo(NamespaceMetric other)",7,3,4,0,1
+"output.InfoConsole.printElapsedTime(long startTime)",5,3,2,0,1
+"utils.StringFormat.withLimit(String string, int value)",4,3,4,0,2
+"parser.java.visitors.NamespaceVisitor.update(NamespaceMetricResult result)",4,3,2,0,1
+"output.MetricResultJSON.generateNamespaceCoupling()",23,2,22,2,0
+"output.MetricResultJSON.generateTypes()",19,2,26,2,0
+"output.MetricResultJSON.generateMethods()",17,2,17,2,0
+"output.MetricResultJSON.generateThresholds()",17,2,14,2,0
+"output.MetricResultConsole.showNamespaceCoupling()",16,2,18,2,0
+"output.MetricResultConsole.showTypes()",15,2,18,2,0
+"output.MetricResultJSON.generateTypeCoupling()",15,2,15,2,0
+"output.MetricResultConsole.showMethods()",14,2,13,2,0
+"output.MetricResultJSON.generateNamespaces()",14,2,12,2,0
+"output.MetricResultConsole.showTypeCoupling()",13,2,12,2,0
+"structures.results.TypeMetricResult.defineInternalDependencies()",13,2,5,2,0
+"output.MetricResultJSON.addTypesToNamespace(JsonArray namespaceList)",12,2,9,2,1
+"output.MetricResultConsole.showNamespaces()",11,2,11,2,0
+"structures.results.TypeMetricResult.addToResonance(TypeMetric metric)",11,2,10,2,1
