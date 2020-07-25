@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="text-center">
   <section class="ftco-section" id="header-section">
     <div class="col-md-12 text-center heading-section ftco-animate">
       <h2 class="mb-4"><script>document.write(graphTitles.titleIAD)</script></h2>
@@ -40,7 +40,16 @@
     </div>
     <div class="text">
         <strong class="text-error"><div id="errorMessage"></div></strong>
-    </div>			                
+    </div>
+    <div class="text">
+      <label class="mr-sm-2" for="limitRegisters">Namespaces</label>
+      <select class="form-select" id="limitRegisters">
+        <option value="0" selected>All Namespaces</option>
+        <option value="11">Top 10</option>
+        <option value="31">Top 30</option>
+        <option value="61">Top 60</option>
+      </select>
+    </div>      
   </section>
 
 <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -62,19 +71,20 @@ if (!optionsProject.datasetNamespaceCoupling || 0 === optionsProject.datasetName
 }
 else {
     google.charts.load('current', {'packages':['bar']});
-    google.charts.setOnLoadCallback(drawStuff);
+    google.charts.setOnLoadCallback(drawBar);
 
-    function drawStuff() {
+    function drawBar() {
 
       $.get(optionsProject.datasetNamespaceCoupling, function(csvString) {
-        var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
+        var arrayAllData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
+        var arrayData = arrayAllData;
         var data = new google.visualization.arrayToDataTable(arrayData);
 
         var dataView = new google.visualization.DataView(data);
         dataView.setColumns([0, 3, 4, 5]);
 
         var options = {
-            width: 1200,
+            width: 1300,
             height: 600,
             legend: { position: 'top', maxLines: 3 },
             bar: { groupWidth: '75%' },
@@ -83,10 +93,25 @@ else {
         };
         var chart = new google.charts.Bar(document.getElementById('chart_div'));
         chart.draw(dataView, options);
+
+        $(function(){
+          $("#limitRegisters").change(function(){
+              var status = this.value;
+              if (status > 0 && arrayAllData.length >= status)
+                arrayData = arrayAllData.slice(0, status);
+              else arrayData = arrayAllData;
+                
+                data = new google.visualization.arrayToDataTable(arrayData);
+                dataView = new google.visualization.DataView(data);
+                dataView.setColumns([0, 3, 4, 5]);
+                chart.draw(dataView, options);
+          });
+      });        
     });
   };
+  google.charts.setOnLoadCallback(drawBar);
 }
 </script>
-<div id="chart_div" style="width: 1300px; height: 600px; font-family: 'Poppins', sans-serif"></div>
+<div id="chart_div" style="width: 1500px; height: 700px; font-family: 'Poppins', sans-serif"></div>
 </body>
 </html>
