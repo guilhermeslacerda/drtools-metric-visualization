@@ -71,7 +71,6 @@ if (!optionsProject.datasetNamespaceCoupling || 0 === optionsProject.datasetName
 }
 else {
     google.charts.load('current', {'packages':['bar']});
-    google.charts.setOnLoadCallback(drawBar);
 
     function drawBar() {
 
@@ -85,7 +84,7 @@ else {
 
         var options = {
             width: 1300,
-            height: 600,
+            height: 700,
             legend: { position: 'top', maxLines: 3 },
             bar: { groupWidth: '75%' },
             fontName: 'Poppins',
