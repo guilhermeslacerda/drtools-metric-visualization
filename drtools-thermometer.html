@@ -7,7 +7,9 @@
 	<script src="./js/drtools/jquery.min.js"></script>
  	<script src="./js/drtools/d3.v4.js"></script>
 	<script src="./js/drtools/thermometer.min.js"></script>
-    <script src="./drtools-properties.js"></script>
+	<script src="./drtools-properties.js"></script>
+
+	<script src="./js/radar-chart.js"></script>
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -26,11 +28,26 @@
     <link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
 
+	<link rel="stylesheet" href="https://yui-s.yahooapis.com/pure/0.5.0/pure-min.css">
+	<link rel="stylesheet" href="css/radar-chart.css">
 	<style>
 		svg {
 			border: 1px dashed #AAA;
 		}
-		#supercontainer	{ width : 100% }
+
+		#supercontainer {
+			display: table;
+		}
+		#boxThermometer	{ 
+			width : 100%;
+			margin: auto;
+			text-align: center;
+		}
+		#boxRadar { 
+			width: 100%;
+			left: 35%;
+			text-align: center;
+		}
 		#boxType {
     		float: left;
 			width: 450px; height: 400px;
@@ -67,6 +84,14 @@
 			text-align: center;
     		margin: 10px 10px;
 		}
+		#infoScale {
+			width: 100%; 
+			text-align: center;
+    		margin: 10px 10px;
+		}
+		.tooltip {
+				fill: #333333;
+		}
 	</style>
 
 </head>
@@ -98,29 +123,39 @@
 	<script src="js/jquery.animateNumber.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/drtools/drtools-utils.js"></script>
 	  
 <div id="supercontainer">
-	<div id="boxType">
-		<p>
-			<h3>Types (types/namespaces)</h3>
-		</p>
-		<div id="containerType"></div>
-		<div id="infoType"></div>		
+	<div id="boxThermometer">
+		<div id="boxType">
+			<p>
+				<h3>Types (types/namespaces)</h3>
+			</p>
+			<div id="containerType"></div>
+			<div id="infoType"></div>		
+		</div>
+		<div id="boxMethod">
+			<p>
+				<h3>Methods (methods/types)</h3>
+			</p>
+			<div id="containerMethod"></div>
+			<div id="infoMethod"></div>		
+		</div>		
+		<div id="boxCyclo">
+			<p>
+				<h3>Complexity (WMC/types)</h3>
+			</p>
+			<div id="containerCyclo"></div>
+			<div id="infoCyclo"></div>		
+		</div>
 	</div>
-	<div id="boxMethod">
+	<div id="boxRadar">
 		<p>
-			<h3>Methods (methods/types)</h3>
+			<h3>Distribution of SLOC, Namespaces, Types, Methods, and Complexity
+							<div id="infoScale"></div></h3>		
 		</p>
-		<div id="containerMethod"></div>
-		<div id="infoMethod"></div>		
-	</div>		
-	<div id="boxCyclo">
-		<p>
-			<h3>Complexity (WMC/types)</h3>
-		</p>
-		<div id="containerCyclo"></div>
-		<div id="infoCyclo"></div>		
-	</div>		
+		<div id="radar_chart"></div>		
+	</div>
 </div>
 <script>
 if (!optionsProject.datasetSummary || 0 === optionsProject.datasetSummary.length === '') {
@@ -134,19 +169,21 @@ else {
            +d["value"],
            +d["percent"]]
   		});
-		
-	    var types = listSummary[0][1];
-		var typesPerNamespaces = listSummary[0][2];
-		var namespaces = Math.trunc(types / typesPerNamespaces) 
-		
-		var slocs = listSummary[1][1];
-		var slocsPerTypes = listSummary[1][2];
 
-		var methods = listSummary[2][1];
-		var methodsPerTypes = listSummary[2][2];
+	  	var namespaces = listSummary[0][1];
+		var percentNamespaces = listSummary[0][2];
 
-		var cyclos = listSummary[3][1];
-		var cyclosPerTypes = listSummary[3][2];
+	    var types = listSummary[1][1];
+		var typesPerNamespaces = listSummary[1][2];
+		
+		var slocs = listSummary[2][1];
+		var slocsPerTypes = listSummary[2][2];
+
+		var methods = listSummary[3][1];
+		var methodsPerTypes = listSummary[3][2];
+
+		var cyclos = listSummary[4][1];
+		var cyclosPerTypes = listSummary[4][2];
 
 		var temperatureTypes = typesPerNamespaces > 35 ? 35 : typesPerNamespaces; 
 		var temperatureMethods = methodsPerTypes > 20 ? 20: methodsPerTypes; 
@@ -180,6 +217,59 @@ else {
 			.style("color", "#207dff")
 			.html("Total of Complexity: " + cyclos + "<br/>Complexity/Types: " + cyclosPerTypes);	
 
+		var config = {
+			radius: 4,
+			w: 300,
+			h: 300,
+			factor: 1,
+			factorLegend: .80,
+			levels: 5,
+			maxValue: 100,
+			radians: 2 * Math.PI,
+			opacityArea: 0.6,
+			ToRight: 5,
+			TranslateX: 80,
+			TranslateY: 30,
+			ExtraWidthX: 160,
+			ExtraWidthY: 50		
+		};
+
+		var infoScale = d3.select("#infoScale")
+			.style("font-family", "'Poppins', sans-serif")
+			.style("font-size", "16px")
+			.style("color", "black")
+			.html("Scale used: " + returnFactorUsed(slocs) + " SLOC (Total SLOC/Scale)");
+
+		var perSLOC = calculateRating(slocs);
+		var perTypes = calculateRating(types);
+		var perNamespaces = typesPerNamespaces;
+		var perMethods = methodsPerTypes;
+		var perComplexity = cyclosPerTypes;
+
+		perSLOC = perSLOC > 100 ? 100: perSLOC;
+		perTypes = perTypes > 100 ? 100: perTypes;
+		perNamespaces = perNamespaces > 100 ? 100: perNamespaces;
+		perMethods = perMethods > 100 ? 100: perMethods;
+		perComplexity = perComplexity > 100 ? 100: perComplexity;
+		
+		var data = [
+			[
+			{"area": "SLOC ", "value": perSLOC},
+			{"area": "Namespaces ", "value": perNamespaces},
+			{"area": "Types", "value": perTypes},
+			{"area": "Methods ", "value": perMethods},
+			{"area": "Complexity", "value": perComplexity}
+			]
+		];
+
+		RadarChart.draw("#radar_chart", data, config);
+		var svg = d3.select('body')
+			.selectAll('svg')
+			.append('svg')
+			.style("font-family", "'Poppins', sans-serif")
+			.style("font-size", "10px")
+			.attr("width", 300)
+			.attr("height", 300);
 	});
 }
 </script>
