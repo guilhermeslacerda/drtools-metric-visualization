@@ -52,14 +52,19 @@
           <strong class="text-error"><div id="errorMessage"></div></strong>
       </div>		
       <div class="text">
-        <label class="mr-sm-2" for="limitRegisters">Types</label>
-        <select class="form-select" id="limitRegisters">
-          <option value="0" selected>All types</option>
-          <option value="11">Top 10</option>
-          <option value="51">Top 50</option>
-          <option value="101">Top 100</option>
-        </select>
-      </div>      
+        <table>
+          <tr>
+            <td><div class="mr-sm-2" id="filterNOM" style="padding-left: 50px"></div></td>
+            <td><div class="mr-sm-2" id="filterSLOC"></div></td>
+          </tr>
+          <tr>
+            <td><div class="mr-sm-2" id="filterWMC" style="padding-left: 250px"></div></td>
+            <td><div class="mr-sm-2" id="filterDEP"></div></td>
+          </tr>
+        </table>
+        <div id="chart_div"></div>
+        <div id="dashboard_div"></div>
+    </div>            
     </section>
 
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -80,56 +85,89 @@ if (!optionsProject.datasetTypes || 0 === optionsProject.datasetTypes.length ===
   $("#errorMessage").text(errorMessage.msgTypes)
 }
 else {
-      google.charts.load('current', {
-        'packages': ['corechart']
-      });
+  google.charts.load('current', {'packages':['corechart', 'controls']});
+  google.charts.setOnLoadCallback(drawVisualization);
 
   function drawVisualization() {
-   $.get(optionsProject.datasetTypes, function(csvString) {
-      var arrayAllData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
-      var arrayData = arrayAllData;
+    var dashboard = new google.visualization.Dashboard(
+        document.getElementById('dashboard_div'));
+
+    $.get(optionsProject.datasetTypes, function(csvString) {
+      var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
       var data = new google.visualization.arrayToDataTable(arrayData);
-      
-      var dataView = new google.visualization.DataView(data);
-      dataView.setColumns([0, 1, 2, 4, 5]);
-      
-      var options = {
-          hAxis: {
-            title: 'sloc'
-          },
-          vAxis: {
-            title: 'nom'
-          },
-          bubble: {
-            textStyle: {
-              fontName: 'Poppins',
-              fontSize: 11
+
+      var sliderNOM = new google.visualization.ControlWrapper({
+            'controlType': 'NumberRangeFilter',
+            'containerId': 'filterNOM',
+            'options': {
+              'filterColumnIndex': 2,
+              'ui': {
+                'labelStacking': 'horizontal',
+                'label': 'Number of Methods (NOM)'
+              }
             }
-          },
-          colorAxis: {colors: ['yellow', 'red']}
-        };
-
-        var chart = new google.visualization.BubbleChart(document.getElementById('series_chart_div'));
-        chart.draw(dataView, options);
-
-        $(function(){
-          $("#limitRegisters").change(function(){
-              var status = this.value;
-              if (status > 0 && arrayAllData.length >= status)
-                arrayData = arrayAllData.slice(0, status);
-              else arrayData = arrayAllData;
-                
-                data = new google.visualization.arrayToDataTable(arrayData);
-                dataView = new google.visualization.DataView(data);
-                dataView.setColumns([0, 1, 2, 4, 5]);
-                chart.draw(dataView, options);
           });
-        });
-    }); 
 
+          var sliderSLOC = new google.visualization.ControlWrapper({
+            'controlType': 'NumberRangeFilter',
+            'containerId': 'filterSLOC',
+            'options': {
+              'filterColumnIndex': 1,
+              'ui': {
+                'labelStacking': 'horizontal',
+                'label': 'Lines of Code (SLOC)'
+              }
+            }
+          });
+
+          var sliderWMC = new google.visualization.ControlWrapper({
+            'controlType': 'NumberRangeFilter',
+            'containerId': 'filterWMC',
+            'options': {
+              'filterColumnIndex': 4,
+              'ui': {
+                'labelStacking': 'horizontal',
+                'label': 'Complexity (WMC)'
+              }
+            }
+          });
+
+          var sliderDEP = new google.visualization.ControlWrapper({
+            'controlType': 'NumberRangeFilter',
+            'containerId': 'filterDEP',
+            'options': {
+              'filterColumnIndex': 5,
+              'ui': {
+                'labelStacking': 'horizontal',
+                'label': 'Dependencies (DEP)'
+              }
+            }
+          });
+
+          var bubbleChart = new google.visualization.ChartWrapper({
+            'chartType': 'BubbleChart',
+            'containerId': 'chart_div',
+            'options': {
+              'width': 1300,
+              'height': 500,
+              'hAxis': {'title': 'sloc'},
+              'vAxis': {'title': 'nom'},
+              'bubble': {
+                  'textStyle': {
+                    'fontName': 'Poppins',
+                    'fontSize': 11
+                  }
+               },
+               'colorAxis': {'colors': ['yellow', 'red']}
+            },
+            'view': {'columns': [0, 1, 2, 4, 5]}    
+          });
+          
+          dashboard.bind([sliderNOM, sliderSLOC, sliderWMC, sliderDEP], [bubbleChart]);
+          dashboard.draw(data);
+
+     });
   }
-  
-  google.setOnLoadCallback(drawVisualization);
 }
 </script>
 <div id="series_chart_div" style="width: 1500px; height: 600px;"></div>

@@ -51,15 +51,20 @@
         <strong class="text-error"><div id="errorMessage"></div></strong>
     </div>
     <div class="text">
-      <label class="mr-sm-2" for="limitRegisters">Methods</label>
-      <select class="form-select" id="limitRegisters">
-        <option value="0" selected>All methods</option>
-        <option value="11">Top 10</option>
-        <option value="51">Top 50</option>
-        <option value="101">Top 100</option>
-      </select>
-    </div>      
-  </section>
+      <table>
+        <tr>
+          <td><div class="mr-sm-2" id="filterCYCLO" style="padding-left: 50px"></div></td>
+          <td><div class="mr-sm-2" id="filterMLOC"></div></td>
+        </tr>
+        <tr>
+          <td><div class="mr-sm-2" id="filterCALLS" style="padding-left: 50px"></div></td>
+          <td><div class="mr-sm-2" id="filterNBD"></div></td>
+        </tr>
+      </table>
+      <div id="chart_div"></div>
+      <div id="dashboard_div"></div>
+    </div>            
+</section>
 
 <script src="js/jquery-migrate-3.0.1.min.js"></script>
 <script src="js/popper.min.js"></script>
@@ -79,55 +84,93 @@ if (!optionsProject.datasetMethods || 0 === optionsProject.datasetMethods.length
   $("#errorMessage").text(errorMessage.msgMethods)
 }
 else {
-      google.charts.load('current', {
-        'packages': ['corechart']
-      });
+    google.charts.load('current', {'packages':['corechart', 'controls']});
+    google.charts.setOnLoadCallback(drawVisualization);
 
   function drawVisualization() {
-   $.get(optionsProject.datasetMethods, function(csvString) {
-      var arrayAllData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
-      var arrayData = arrayAllData;
+    var dashboard = new google.visualization.Dashboard(
+        document.getElementById('dashboard_div'));
+
+    $.get(optionsProject.datasetMethods, function(csvString) {
+      var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
       var data = new google.visualization.arrayToDataTable(arrayData);
-     // dataView.setColumns([0, 1, 2, 4, 5]);
+      console.log(data);
 
-      var options = {
-          hAxis: {
-            title: 'loc'
-          },
-          vAxis: {
-            title: 'cyclo'
-          },
-          bubble: {
-            textStyle: {
-              fontName: 'Poppins',              
-              fontSize: 11
+          var sliderCYCLO = new google.visualization.ControlWrapper({
+            'controlType': 'NumberRangeFilter',
+            'containerId': 'filterCYCLO',
+            'options': {
+              'filterColumnIndex': 2,
+              'ui': {
+                'labelStacking': 'horizontal',
+                'label': 'Ciclomatic Complexity (CYCLO)'
+              }
             }
-          },
-          colorAxis: {colors: ['yellow', 'red']}
-        };
-
-        var chart = new google.visualization.BubbleChart(document.getElementById('series_chart_div'));
-        chart.draw(data, options);
-        $(function(){
-          $("#limitRegisters").change(function(){
-              var status = this.value;
-              if (status > 0 && arrayAllData.length >= status)
-                arrayData = arrayAllData.slice(0, status);
-              else arrayData = arrayAllData;
-                
-                data = new google.visualization.arrayToDataTable(arrayData);
-                dataView = new google.visualization.DataView(data);
-               // dataView.setColumns([0, 1, 2, 4, 5]);
-                chart.draw(dataView, options);
           });
-        });
-   });    
-  }
 
-  google.setOnLoadCallback(drawVisualization);
+          var sliderMLOC = new google.visualization.ControlWrapper({
+            'controlType': 'NumberRangeFilter',
+            'containerId': 'filterMLOC',
+            'options': {
+              'filterColumnIndex': 1,
+              'ui': {
+                'labelStacking': 'horizontal',
+                'label': 'Lines of Code (MLOC)'
+              }
+            }
+          });
+
+          var sliderCALLS = new google.visualization.ControlWrapper({
+            'controlType': 'NumberRangeFilter',
+            'containerId': 'filterCALLS',
+            'options': {
+              'filterColumnIndex': 3,
+              'ui': {
+                'labelStacking': 'horizontal',
+                'label': 'Invocations (CALLS)'
+              }
+            }
+          });
+
+          var sliderNBD = new google.visualization.ControlWrapper({
+            'controlType': 'NumberRangeFilter',
+            'containerId': 'filterNBD',
+            'options': {
+              'filterColumnIndex': 4,
+              'ui': {
+                'labelStacking': 'horizontal',
+                'label': 'Nested Block Depth (NBD)'
+              }
+            }
+          });
+
+          var bubbleChart = new google.visualization.ChartWrapper({
+            'chartType': 'BubbleChart',
+            'containerId': 'chart_div',
+            'options': {
+              'width': 1300,
+              'height': 500,
+              'hAxis': {'title': 'loc'},
+              'vAxis': {'title': 'cyclo'},
+              'bubble': {
+                  'textStyle': {
+                    'fontName': 'Poppins',
+                    'fontSize': 11
+                  }
+               },
+               'colorAxis': {'colors': ['yellow', 'red']}
+            },
+            'view': {'columns': [0, 1, 2, 4, 5]}    
+          });
+          
+          dashboard.bind([sliderCYCLO, sliderMLOC, sliderCALLS, sliderNBD], [bubbleChart]);
+          dashboard.draw(data);
+
+     });
+  }
 }
 </script>
-<div id="series_chart_div" style="width: 1500px; height: 600px;"></div>
+<div id="series_chart_div" style="width: 1300px; height: 500px;"></div>
 
 </body>
 </html>

@@ -53,7 +53,9 @@
     <div class="text">
       <table>
         <tr>
-          <td><div class="mr-sm-2" id="numNamespaces" style="padding-left: 200px"></div></td>
+          <td><div class="mr-sm-2" id="noc" style="padding-left: 50px"></div></td>
+          <td><div class="mr-sm-2" id="nac"></div></td>
+
         </tr>
       </table>
           <div id="chart_div"></div>
@@ -90,14 +92,26 @@ else {
         var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
         var data = new google.visualization.arrayToDataTable(arrayData);
 
-        var numNamespaces = new google.visualization.ControlWrapper({
+        var noc = new google.visualization.ControlWrapper({
             'controlType': 'NumberRangeFilter',
-            'containerId': 'numNamespaces',
+            'containerId': 'noc',
             'options': {
               'filterColumnIndex': 1,              
               'ui': {
                 'labelStacking': 'horizontal',
-                'label': 'Number of Namespaces (NOC)'
+                'label': 'Number of Types/Classes (NOC)'
+              }
+            }
+          });
+
+          var nac = new google.visualization.ControlWrapper({
+            'controlType': 'NumberRangeFilter',
+            'containerId': 'nac',
+            'options': {
+              'filterColumnIndex': 2,              
+              'ui': {
+                'labelStacking': 'horizontal',
+                'label': 'Number of Abstract Types/Classes (NAC)'
               }
             }
           });
@@ -108,16 +122,16 @@ else {
           'options': {
             'width': 1300,
             'height': 600,
-            'chartArea':{'width':'80%','height':'90%'},
             'legend': { 'position': 'top', 'maxLines': 3 },
             'bar': { 'groupWidth': '75%' },
+            'isStacked': true,
             'fontName': 'Poppins',
             'bars': 'horizontal' 
           },          
           'view': {'columns': [0, 1, 2]}
         });
 
-        dashboard.bind([numNamespaces], [barChart]);
+        dashboard.bind([noc, nac], [barChart]);
         dashboard.draw(data);
     }); 
   }   
