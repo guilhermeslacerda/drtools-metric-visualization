@@ -6,18 +6,20 @@ d3.csv(optionsProject.datasetSummary, function(data) {
         +d["percent"]]
         });
     
-    var types = listSummary[0][1];
-    var typesPerNamespaces = listSummary[0][2];
-    var namespaces = Math.trunc(types / typesPerNamespaces) 
-    
-    var slocs = listSummary[1][1];
-    var slocsPerTypes = listSummary[1][2];
+    var namespaces = listSummary[0][1];
+    var percentNamespaces = listSummary[0][2];
 
-    var methods = listSummary[2][1];
-    var methodsPerTypes = listSummary[2][2];
+    var types = listSummary[1][1];
+    var typesPerNamespaces = listSummary[1][2];
 
-    var cyclos = listSummary[3][1];
-    var cyclosPerTypes = listSummary[3][2];
+    var slocs = listSummary[2][1];
+    var slocsPerTypes = listSummary[2][2];
+
+    var methods = listSummary[3][1];
+    var methodsPerTypes = listSummary[3][2];
+
+    var cyclos = listSummary[4][1];
+    var cyclosPerTypes = listSummary[4][2];
 
     var infoType = d3.select("#numberTypes")
         .html(types);
@@ -31,4 +33,4 @@ d3.csv(optionsProject.datasetSummary, function(data) {
     var infoMethod = d3.select("#numberMethods")
     .html(methods);
 });
-	
+    
