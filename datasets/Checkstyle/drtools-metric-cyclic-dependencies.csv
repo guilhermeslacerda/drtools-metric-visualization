@@ -1,0 +1,3 @@
+"from","to","number"
+"com.puppycrawl.tools.checkstyle.Checker","com.puppycrawl.tools.checkstyle.api.ExternalResourceHolder",1
+"com.puppycrawl.tools.checkstyle.checks.whitespace.emptylineseparator.InputEmptyLineSeparator","com.puppycrawl.tools.checkstyle.checks.whitespace.emptylineseparator.InputEmptyLineSeparator",1

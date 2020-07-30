@@ -1,0 +1,382 @@
+"method","loc","cyclo","calls","nbd","param"
+"utils.SourceCodeLineCounter.isSourceCodeLine(String line)",42,10,13,4,1
+"utils.SourceCodeLineCounter.getNumberOfLines(BufferedReader bReader)",28,8,10,4,1
+"structures.results.TypeMetricResult.cleanListOf(Set<String> typesWithCyclos)",16,6,5,2,1
+"structures.results.MethodMetricResult.getTotalCycloBy(String type)",14,6,8,2,1
+"structures.results.TypeMetricResult.getInternalImportsBy(String namespace)",14,6,8,2,1
+"structures.results.TypeMetricResult.getTotalOfAbstractTypesIn(String namespace)",13,6,6,2,1
+"main.Bootstrapper.verifyTopOption(int number, String ranking, String argument)",10,6,7,1,3
+"utils.SourceCodeLineCounter.commentBegan(String line)",25,5,9,4,1
+"main.Bootstrapper.verifySaveOption()",10,5,8,1,0
+"main.Bootstrapper.verifyOutput()",6,5,6,1,0
+"utils.SourceCodeLineCounter.commentEnded(String line)",22,4,5,4,1
+"output.MetricResultConsole.showInternalDependencies()",23,4,15,2,0
+"output.MetricResultConsole.showDependencies()",15,4,12,2,0
+"structures.results.TypeMetricResult.getAfferentCoupling(String namespace)",12,4,7,2,1
+"structures.results.TypeMetricResult.getEfferentCoupling(String namespace)",12,4,7,2,1
+"output.MetricResultJSON.generateLinksBetweenNamespaces()",12,4,6,2,0
+"parser.java.visitors.TypeVisitor.isAbstractType(TypeDeclaration node)",11,4,6,2,1
+"parser.java.visitors.TypeVisitor.visit(MethodDeclaration node)",9,4,6,2,1
+"parser.java.visitors.TypeVisitor.getSuperTypes(TypeDeclaration node)",7,4,9,2,1
+"main.Bootstrapper.getOutputFormat(long startTime)",15,4,6,1,1
+"main.Bootstrapper.verifyOptions()",11,4,3,1,0
+"main.Bootstrapper.verifyNumberOfArguments(String[] args)",5,4,2,1,1
+"structures.results.TypeMetricResult.getCyclicDependencies()",18,3,7,2,0
+"parser.java.visitors.TypeVisitor.visit(TypeDeclaration node)",16,3,11,2,1
+"parser.java.visitors.MethodVisitor.defineParameters()",15,3,11,2,0
+"output.MetricResultJSON.generateDependencies()",14,3,12,2,0
+"output.MetricResultJSON.generateInternalDependencies()",14,3,12,2,0
+"output.MetricResultConsole.showCyclicDependencies()",14,3,7,2,0
+"parser.java.visitors.MethodVisitor.visit(MethodDeclaration node)",13,3,5,2,1
+"parser.java.visitors.TypeVisitor.update(TypeMetricResult result)",12,3,10,2,1
+"output.MetricResultJSON.generateCyclicDependencies()",12,3,9,2,0
+"parser.java.visitors.MethodVisitor.defineMethodSignature(MethodDeclaration node)",11,3,8,2,1
+"parser.java.visitors.TypeVisitor.visit(MethodInvocation node)",10,3,4,2,1
+"parser.java.visitors.TypeVisitor.visit(SuperMethodInvocation node)",10,3,4,2,1
+"parser.java.visitors.TypeVisitor.getImplementedInterfaces(TypeDeclaration node)",7,3,7,2,1
+"structures.results.TypeMetricResult.getInternalDependenciesByType(Set<String> dependencies, Set<String> otherDependencies)",7,3,3,2,2
+"parser.java.visitors.MethodVisitor.visit(SwitchCase node)",7,3,3,2,1
+"structures.results.TypeMetricResult.defineFanIn()",6,3,6,2,0
+"structures.results.TypeMetricResult.identifyAfferentCoupling(String namespace, HashSet<String> afferents, TypeMetric type)",6,3,5,2,3
+"structures.results.TypeMetricResult.identifyEfferentCoupling(String namespace, HashSet<String> efferents, TypeMetric type)",6,3,4,2,3
+"structures.results.TypeMetricResult.hasCyclicDependency(TypeMetric type, TypeMetric otherType, boolean isCyclic)",5,3,3,2,3
+"structures.results.TypeMetricResult.getFanInOf(String typeName)",3,3,2,2,1
+"output.MetricResultCSV.generateCyclicDependencies()",13,3,7,1,0
+"output.Gauge.progress(int number)",5,3,2,1,1
+"structures.metrics.NamespaceMetric.compareTo(NamespaceMetric other)",7,3,4,0,1
+"output.InfoConsole.printElapsedTime(long startTime)",5,3,2,0,1
+"utils.StringFormat.withLimit(String string, int value)",4,3,4,0,2
+"parser.java.visitors.NamespaceVisitor.update(NamespaceMetricResult result)",4,3,2,0,1
+"output.MetricResultJSON.generateNamespaceCoupling()",18,2,22,2,0
+"output.MetricResultConsole.showNamespaceCoupling()",16,2,18,2,0
+"output.MetricResultConsole.showTypes()",15,2,18,2,0
+"output.MetricResultConsole.showMethods()",14,2,13,2,0
+"output.MetricResultConsole.showTypeCoupling()",13,2,12,2,0
+"structures.results.TypeMetricResult.defineInternalDependencies()",13,2,5,2,0
+"output.MetricResultJSON.generateTypes()",12,2,26,2,0
+"output.MetricResultJSON.generateThresholds()",12,2,14,2,0
+"output.MetricResultJSON.generateMethods()",11,2,17,2,0
+"output.MetricResultJSON.generateTypeCoupling()",11,2,15,2,0
+"output.MetricResultJSON.generateNamespaces()",11,2,12,2,0
+"output.MetricResultConsole.showNamespaces()",11,2,11,2,0
+"parser.java.visitors.MethodVisitor.visit(IfStatement node)",11,2,9,2,1
+"output.MetricResultConsole.showThresholds()",10,2,10,2,0
+"output.MetricResultJSON.generateNamespacesFromProject()",10,2,9,2,0
+"output.MetricResultJSON.addTypesToNamespace(JsonArray namespaceList)",9,2,9,2,1
+"structures.results.TypeMetricResult.getTotalCycloBy(String name)",9,2,4,2,1
+"structures.results.TypeMetricResult.addOrUpdateFanInOf(String name)",8,2,4,2,1
+"output.MetricResultJSON.showCyclicDependencies()",8,2,4,2,0
+"parser.java.visitors.TypeVisitor.visit(ClassInstanceCreation node)",8,2,3,2,1
+"output.MetricResultJSON.addTypesResonance(HashSet<TypeMetric> types)",7,2,9,2,1
+"structures.results.TypeMetricResult.addTypeWithCyclicDependency(Set<String> typesWithCyclos, TypeMetric type, TypeMetric otherType, boolean isCyclic)",7,2,3,2,4
+"structures.results.MethodMetricResult.getTotalCyclo()",7,2,3,2,0
+"structures.results.MethodMetricResult.getTotalMLOC()",7,2,3,2,0
+"structures.results.TypeMetricResult.getTotalNumberOfMethods()",7,2,3,2,0
+"structures.results.TypeMetricResult.getTotalOfVariables()",7,2,3,2,0
+"structures.results.TypeMetricResult.getTotalSLOC()",7,2,3,2,0
+"parser.java.visitors.TypeVisitor.getInternalTypes(TypeDeclaration node)",6,2,9,2,1
+"structures.results.MethodMetricResult.getNamesResult()",6,2,3,2,0
+"structures.results.TypeMetricResult.getNamesResult()",6,2,3,2,0
+"structures.results.TypeMetricResult.getInternalNamesResult()",5,2,8,2,0
+"structures.results.TypeMetricResult.addToResonance(TypeMetric metric)",5,2,7,2,1
+"parser.java.visitors.TypeVisitor.visit(PackageDeclaration node)",5,2,3,2,1
+"parser.java.visitors.MethodVisitor.visit(ConditionalExpression node)",5,2,2,2,1
+"parser.java.visitors.MethodVisitor.visit(DoStatement node)",5,2,2,2,1
+"parser.java.visitors.MethodVisitor.visit(EnhancedForStatement node)",5,2,2,2,1
+"parser.java.visitors.MethodVisitor.visit(ForStatement node)",5,2,2,2,1
+"parser.java.visitors.MethodVisitor.visit(WhileStatement node)",5,2,2,2,1
+"parser.java.visitors.MethodVisitor.visit(MethodInvocation node)",5,2,1,2,1
+"parser.java.visitors.MethodVisitor.visit(SuperMethodInvocation node)",5,2,1,2,1
+"structures.results.MethodMetricResult.getSortedMethodMetricsWithLimit()",4,2,5,2,0
+"structures.results.TypeMetricResult.getSortedTypeMetricsWithLimit()",4,2,5,2,0
+"parser.java.visitors.TypeVisitor.getAllMethods(TypeDeclaration node)",4,2,2,2,1
+"parser.java.visitors.MethodVisitor.defineNumberOfParameters(MethodDeclaration node)",3,2,4,2,1
+"output.MetricResultCSV.generateNamespaceCoupling()",17,2,17,1,0
+"output.MetricResultCSV.generateTypeCoupling()",13,2,11,1,0
+"output.MetricResultCSV.generateThresholds()",12,2,14,1,0
+"output.MetricResultCSV.generateTypes()",11,2,17,1,0
+"output.MetricResultCSV.generateMethods()",10,2,12,1,0
+"output.MetricResultCSV.generateNamespaces()",10,2,10,1,0
+"structures.results.NamespaceMetricResult.add(NamespaceMetric metric)",9,2,9,1,1
+"general.ProjectInfo.parsingTypes()",8,2,4,1,0
+"output.MetricResultCSV.showCyclicDependencies()",8,2,4,1,0
+"parser.java.JavaParser.parseMethods(TypeVisitor tv)",7,2,3,1,1
+"structures.results.NamespaceMetricResult.getTotalNumberOfAbstractTypes()",7,2,3,1,0
+"structures.results.NamespaceMetricResult.getTotalNumberOfTypes()",7,2,3,1,0
+"main.Bootstrapper.verifyCouplingWithTopOption(String[] args)",6,2,2,1,1
+"main.Bootstrapper.verifyDevelopmentInformationOption()",5,2,3,1,0
+"main.Bootstrapper.verifyMetricThresholdsOption()",5,2,3,1,0
+"main.Bootstrapper.verifyValidDirectory()",5,2,3,1,0
+"structures.results.NamespaceMetricResult.getNamesResult()",5,2,3,1,0
+"output.Gauge.end()",5,2,2,1,0
+"structures.results.NamespaceMetricResult.getSortedNamespaceMetricsWithLimit()",4,2,5,1,0
+"output.Gauge.start(MetricOutput output)",4,2,1,1,1
+"main.Bootstrapper.verifyUseOfTopOption()",3,2,1,1,0
+"structures.results.NamespaceMetricResult.getDistance(double abstractness, double instability)",3,2,0,1,2
+"structures.results.NamespaceMetricResult.getInstability(double ca, double ce)",2,2,0,1,2
+"parser.java.visitors.NamespaceVisitor.visit(PackageDeclaration node)",7,2,3,0,1
+"output.MetricResultFile.showCyclicDependencies()",4,2,3,0,0
+"output.MetricResultFile.showInternalDependencies()",4,2,3,0,0
+"output.MetricResultFile.showMethods()",4,2,3,0,0
+"output.MetricResultFile.showNamespaceCoupling()",4,2,3,0,0
+"output.MetricResultFile.showNamespaces()",4,2,3,0,0
+"output.MetricResultFile.showSummary()",4,2,3,0,0
+"output.MetricResultFile.showThresholds()",4,2,3,0,0
+"output.MetricResultFile.showTypeCoupling()",4,2,3,0,0
+"output.MetricResultFile.showTypes()",4,2,3,0,0
+"utils.StringFormat.getTypeFrom(String fullName, String separator)",3,2,3,0,2
+"output.MetricResultFile.showNamespacesDependencies()",3,2,3,0,0
+"output.MetricResultFile.showTypesResonance()",3,2,3,0,0
+"utils.StringFormat.getNamespaceFrom(String fullName, String separator)",3,2,2,0,2
+"structures.metrics.MethodMetric.getNestedBlockDepth()",2,2,0,0,0
+"utils.SourceCodeLineCounter.getNumberOfLines(String code)",5,1,1,4,1
+"utils.SourceCodeLineCounter.isEmptyOrLineComment(String line)",2,1,2,4,1
+"output.MetricResultJSON.generateSummary()",35,1,34,2,0
+"output.MetricResultConsole.showSummary()",16,1,25,2,0
+"parser.java.visitors.MethodVisitor.MethodVisitor(CompilationUnit unit, MethodDeclaration method)",10,1,0,2,2
+"parser.java.visitors.TypeVisitor.TypeVisitor(String sourceCodeFile, TypeMetricResult tmr)",10,1,0,2,2
+"output.MetricResultJSON.generateTypesResonance()",9,1,4,2,0
+"output.MetricResultJSON.generateNamespacesDependencies()",7,1,5,2,0
+"parser.java.visitors.MethodVisitor.update(MethodMetricResult result)",6,1,4,2,1
+"output.MetricResultConsole.show()",6,1,4,2,0
+"output.MetricResultJSON.setResults(NamespaceMetricResult nmr, TypeMetricResult tmr, MethodMetricResult mmr)",6,1,2,2,3
+"parser.java.visitors.TypeVisitor.visit(ImportDeclaration node)",5,1,6,2,1
+"output.MetricResultConsole.setResults(NamespaceMetricResult nmr, TypeMetricResult tmr, MethodMetricResult mmr)",5,1,0,2,3
+"structures.results.TypeMetricResult.add(TypeMetric metric)",4,1,3,2,1
+"parser.java.visitors.MethodVisitor.visit(PackageDeclaration node)",4,1,2,2,1
+"output.MetricResultConsole.showAllCoupling()",4,1,2,2,0
+"parser.java.visitors.MethodVisitor.endVisit(Block node)",4,1,1,2,1
+"parser.java.visitors.MethodVisitor.visit(Block node)",4,1,0,2,1
+"parser.java.visitors.TypeVisitor.visit(FieldDeclaration node)",4,1,0,2,1
+"structures.results.TypeMetricResult.TypeMetricResult()",4,1,0,2,0
+"structures.results.MethodMetricResult.getSortedMethodMetrics()",3,1,8,2,0
+"structures.results.TypeMetricResult.getSortedTypeMetrics()",3,1,8,2,0
+"parser.java.visitors.MethodVisitor.defineNumberOfLines()",3,1,7,2,0
+"structures.results.TypeMetricResult.isEquals(String[] typeFromCyclo, String[] otherTypeFromCyclo)",3,1,2,2,2
+"structures.results.MethodMetricResult.add(MethodMetric metric)",3,1,2,2,1
+"structures.results.TypeMetricResult.getTotalNumberOfMethods(String typeName)",3,1,2,2,1
+"structures.results.TypeMetricResult.getTotalNumberOfPublicMethods(String typeName)",3,1,2,2,1
+"output.MetricResultJSON.showDependencies()",3,1,2,2,0
+"output.MetricResultJSON.showInternalDependencies()",3,1,2,2,0
+"output.MetricResultJSON.showMethods()",3,1,2,2,0
+"output.MetricResultJSON.showNamespaceCoupling()",3,1,2,2,0
+"output.MetricResultJSON.showNamespaces()",3,1,2,2,0
+"output.MetricResultJSON.showSummary()",3,1,2,2,0
+"output.MetricResultJSON.showThresholds()",3,1,2,2,0
+"output.MetricResultJSON.showTypeCoupling()",3,1,2,2,0
+"output.MetricResultJSON.showTypes()",3,1,2,2,0
+"output.MetricResultJSON.show()",3,1,1,2,0
+"output.MetricResultJSON.showAllCoupling()",3,1,1,2,0
+"parser.java.visitors.MethodVisitor.visit(AnonymousClassDeclaration node)",3,1,0,2,1
+"structures.results.MethodMetricResult.setTop(int number)",3,1,0,2,1
+"structures.results.TypeMetricResult.setTop(int number)",3,1,0,2,1
+"output.MetricResultJSON.getTypeMetricResult()",3,1,0,2,0
+"parser.java.visitors.TypeVisitor.isTypeEqualsFileName(TypeDeclaration node)",2,1,5,2,1
+"structures.results.TypeMetricResult.isAbstractType(TypeMetric type)",2,1,2,2,1
+"structures.results.TypeMetricResult.isEmptyOrOneElement(Set<String> typesWithCyclos)",2,1,2,2,1
+"structures.results.MethodMetricResult.getTotalNumberOfMethods()",2,1,2,2,0
+"structures.results.TypeMetricResult.getTotalNumberOfTypes()",2,1,2,2,0
+"structures.results.TypeMetricResult.isNull(String namespace, TypeMetric type)",2,1,1,2,2
+"parser.java.visitors.TypeVisitor.setFanIn(String name)",2,1,1,2,1
+"structures.results.MethodMetricResult.getMethod(String name)",2,1,1,2,1
+"structures.results.TypeMetricResult.getType(String name)",2,1,1,2,1
+"parser.java.visitors.MethodVisitor.increaseCyclo()",2,1,1,2,0
+"structures.results.MethodMetricResult.getMethodsName()",2,1,1,2,0
+"structures.results.TypeMetricResult.getFanIn()",2,1,1,2,0
+"structures.results.TypeMetricResult.getTypesName()",2,1,1,2,0
+"parser.java.visitors.MethodVisitor.increaseCyclo(int count)",2,1,0,2,1
+"structures.results.TypeMetricResult.setMethodMetricResult(MethodMetricResult mmr)",2,1,0,2,1
+"output.MetricResultConsole.getTypeMetricResult()",2,1,0,2,0
+"parser.java.visitors.TypeVisitor.getAllMethods()",2,1,0,2,0
+"structures.results.MethodMetricResult.MethodMetricResult()",2,1,0,2,0
+"structures.results.MethodMetricResult.getMethodMetrics()",2,1,0,2,0
+"structures.results.TypeMetricResult.getTypeMetrics()",2,1,0,2,0
+"structures.results.TypeMetricResult.getTypesResonance()",2,1,0,2,0
+"output.MetricResultCSV.generateSummary()",16,1,28,1,0
+"utils.SystemUtils.writeFile(String fileName, String content)",13,1,5,1,2
+"structures.metrics.TypeMetric.compareTo(TypeMetric other)",12,1,12,1,1
+"parser.java.JavaParser.configAndParse(String source)",11,1,12,1,1
+"parser.java.JavaParser.parsing()",11,1,5,1,0
+"main.Bootstrapper.runApp(String[] args)",8,1,5,1,1
+"parser.java.JavaParser.JavaParser(File file, NamespaceMetricResult namespaceMetricResult, TypeMetricResult typeMetricResult, MethodMetricResult methodMetricResult)",8,1,1,1,4
+"utils.SystemUtils.getFiles(String path, String platform)",7,1,2,1,2
+"structures.metrics.TypeMetric.setSloc(String sourceCode)",7,1,1,1,1
+"main.Bootstrapper.verifyAllSituations(String[] args)",6,1,5,1,1
+"main.Bootstrapper.main(String[] args)",6,1,2,1,1
+"utils.SystemUtils.getJavaFiles(String path)",6,1,2,1,1
+"general.ProjectInfo.ProjectInfo(String path, MetricOutput output)",6,1,0,1,2
+"main.Bootstrapper.analyzeAndShow(long startTime)",5,1,4,1,1
+"parser.java.JavaParser.parseTypesAndMethods()",5,1,4,1,0
+"output.MetricResultCSV.showSummary()",5,1,2,1,0
+"output.MetricResultCSV.setResults(NamespaceMetricResult nmr, TypeMetricResult tmr, MethodMetricResult mmr)",5,1,0,1,3
+"general.ProjectInfo.defineTop(int number)",4,1,3,1,1
+"structures.metrics.TypeMetric.TypeMetric()",4,1,3,1,0
+"output.MetricResultCSV.showMethods()",4,1,2,1,0
+"output.MetricResultCSV.showNamespaceCoupling()",4,1,2,1,0
+"output.MetricResultCSV.showNamespaces()",4,1,2,1,0
+"output.MetricResultCSV.showThresholds()",4,1,2,1,0
+"output.MetricResultCSV.showTypeCoupling()",4,1,2,1,0
+"output.MetricResultCSV.showTypes()",4,1,2,1,0
+"parser.java.JavaParser.parseNamespaces()",4,1,2,1,0
+"structures.results.NamespaceMetricResult.getSortedNamespaceMetrics()",3,1,8,1,0
+"general.ProjectInfo.show(String argument)",3,1,6,1,1
+"general.ProjectInfo.parse(File file)",3,1,4,1,1
+"general.ProjectInfo.analyze()",3,1,2,1,0
+"main.Bootstrapper.isValidDirectory(String option)",3,1,1,1,1
+"general.ProjectInfo.loadProject()",3,1,1,1,0
+"output.MetricResultCSV.show()",3,1,1,1,0
+"output.MetricResultCSV.showAllCoupling()",3,1,1,1,0
+"output.MetricResultCSV.showDependencies()",3,1,1,1,0
+"output.MetricResultCSV.showInternalDependencies()",3,1,1,1,0
+"structures.results.NamespaceMetricResult.setTop(int number)",3,1,0,1,1
+"output.MetricResultCSV.getTypeMetricResult()",3,1,0,1,0
+"structures.metrics.TypeMetric.getFanOut()",2,1,2,1,0
+"structures.metrics.TypeMetric.getFullName()",2,1,2,1,0
+"structures.results.NamespaceMetricResult.getTotalNumberOfNamespaces()",2,1,2,1,0
+"structures.metrics.TypeMetric.addImport(String dependency)",2,1,1,1,1
+"structures.results.NamespaceMetricResult.getNamespace(String name)",2,1,1,1,1
+"structures.metrics.TypeMetric.getNumberOfDependencies()",2,1,1,1,0
+"structures.metrics.TypeMetric.getNumberOfInternalDependencies()",2,1,1,1,0
+"structures.metrics.TypeMetric.getNumberOfInternalTypes()",2,1,1,1,0
+"structures.results.NamespaceMetricResult.getNamespacesName()",2,1,1,1,0
+"structures.results.NamespaceMetricResult.getAbstractness(double nac, double noc)",2,1,0,1,2
+"structures.metrics.TypeMetric.setAbstract(boolean isAbstract)",2,1,0,1,1
+"structures.metrics.TypeMetric.setFanOut(int fanOut)",2,1,0,1,1
+"structures.metrics.TypeMetric.setImports(Set<String> imports)",2,1,0,1,1
+"structures.metrics.TypeMetric.setInterface(boolean isInterface)",2,1,0,1,1
+"structures.metrics.TypeMetric.setInternalImports(Set<String> internalImports)",2,1,0,1,1
+"structures.metrics.TypeMetric.setInternalTypes(Set<String> internalTypes)",2,1,0,1,1
+"structures.metrics.TypeMetric.setName(String name)",2,1,0,1,1
+"structures.metrics.TypeMetric.setNamespace(String namespace)",2,1,0,1,1
+"structures.metrics.TypeMetric.setNumOfMethods(int numOfMethods)",2,1,0,1,1
+"structures.metrics.TypeMetric.setNumOfPublicMethods(int numOfPublicMethods)",2,1,0,1,1
+"structures.metrics.TypeMetric.setNumOfVariables(int numOfVariables)",2,1,0,1,1
+"structures.metrics.TypeMetric.setSloc(int number)",2,1,0,1,1
+"general.ProjectInfo.getMethodMetricResult()",2,1,0,1,0
+"general.ProjectInfo.getNamespaceMetricResult()",2,1,0,1,0
+"general.ProjectInfo.getOutput()",2,1,0,1,0
+"general.ProjectInfo.getTypeMetricResult()",2,1,0,1,0
+"structures.metrics.TypeMetric.getImports()",2,1,0,1,0
+"structures.metrics.TypeMetric.getInternalImports()",2,1,0,1,0
+"structures.metrics.TypeMetric.getInternalTypes()",2,1,0,1,0
+"structures.metrics.TypeMetric.getName()",2,1,0,1,0
+"structures.metrics.TypeMetric.getNamespace()",2,1,0,1,0
+"structures.metrics.TypeMetric.getNumOfMethods()",2,1,0,1,0
+"structures.metrics.TypeMetric.getNumOfPublicMethods()",2,1,0,1,0
+"structures.metrics.TypeMetric.getNumOfVariables()",2,1,0,1,0
+"structures.metrics.TypeMetric.getSloc()",2,1,0,1,0
+"structures.metrics.TypeMetric.isAbstract()",2,1,0,1,0
+"structures.metrics.TypeMetric.isInterface()",2,1,0,1,0
+"structures.results.NamespaceMetricResult.NamespaceMetricResult()",2,1,0,1,0
+"structures.results.NamespaceMetricResult.getNamespaceMetrics()",2,1,0,1,0
+"structures.metrics.MetricThreshold.MetricThreshold()",48,1,24,0,0
+"output.InfoConsole.printCommands()",24,1,22,0,0
+"output.InfoConsole.printMetrics()",23,1,22,0,0
+"general.options.Options.Options()",15,1,13,0,0
+"output.MetricResultFile.show()",14,1,12,0,0
+"structures.metrics.MethodMetric.compareTo(MethodMetric other)",10,1,19,0,1
+"structures.metrics.MetricDefinition.MetricDefinition(String acronym, String name, String description, double min, double max)",6,1,0,0,5
+"general.options.AllMetricsOption.execute(MetricOutput output)",5,1,5,0,1
+"general.options.MetricVisualizationOption.execute(MetricOutput output)",5,1,5,0,1
+"general.options.TypeCouplingOption.execute(MetricOutput output)",5,1,5,0,1
+"general.options.TypeOption.execute(MetricOutput output)",5,1,5,0,1
+"output.InfoConsole.printMetricVisualizationUsage()",5,1,4,0,0
+"output.InfoConsole.printUsageExamples()",5,1,4,0,0
+"output.MetricResultFile.setResults(NamespaceMetricResult nmr, TypeMetricResult tmr, MethodMetricResult mmr)",5,1,2,0,3
+"general.options.AllCouplingOption.execute(MetricOutput output)",4,1,3,0,1
+"general.options.CyclicDependencyOption.execute(MetricOutput output)",4,1,3,0,1
+"general.options.InternalDependencyOption.execute(MetricOutput output)",4,1,3,0,1
+"general.options.NamespaceCouplingOption.execute(MetricOutput output)",4,1,3,0,1
+"general.options.NamespaceOption.execute(MetricOutput output)",4,1,3,0,1
+"output.InfoConsole.printUsage()",4,1,3,0,0
+"utils.JSONBuilder.add(String property, JsonArray list)",3,1,2,0,2
+"output.InfoConsole.printHeader(String message)",3,1,2,0,1
+"utils.JSONBuilder.add(String property, String value)",3,1,1,0,2
+"utils.JSONBuilder.add(String property, double value)",3,1,1,0,2
+"utils.JSONBuilder.add(String property, int value)",3,1,1,0,2
+"general.options.DependencyOption.execute(MetricOutput output)",3,1,1,0,1
+"general.options.MethodOption.execute(MetricOutput output)",3,1,1,0,1
+"general.options.SummaryOption.execute(MetricOutput output)",3,1,1,0,1
+"general.options.ThresholdsOption.execute(MetricOutput output)",3,1,1,0,1
+"output.InfoConsole.printDevelopmentInformation()",3,1,1,0,0
+"output.InfoConsole.printHeader()",3,1,1,0,0
+"output.MetricResultFile.MetricResultFile()",3,1,0,0,0
+"output.MetricResultFile.getTypeMetricResult()",3,1,0,0,0
+"output.MetricResultFile.generateCyclicDependenciesFile(String fileName)",2,1,2,0,1
+"output.MetricResultFile.generateInternalDependenciesFile(String fileName)",2,1,2,0,1
+"output.MetricResultFile.generateMethodsFile(String fileName)",2,1,2,0,1
+"output.MetricResultFile.generateMetricThresholdsFile(String fileName)",2,1,2,0,1
+"output.MetricResultFile.generateNamespaceCouplingFile(String fileName)",2,1,2,0,1
+"output.MetricResultFile.generateNamespacesDependenciesFile(String fileName)",2,1,2,0,1
+"output.MetricResultFile.generateNamespacesFile(String fileName)",2,1,2,0,1
+"output.MetricResultFile.generateSummaryFile(String fileName)",2,1,2,0,1
+"output.MetricResultFile.generateTypeCouplingFile(String fileName)",2,1,2,0,1
+"output.MetricResultFile.generateTypesFile(String fileName)",2,1,2,0,1
+"output.MetricResultFile.generateTypesResonanceFile(String fileName)",2,1,2,0,1
+"structures.metrics.MethodMetric.getLoc()",2,1,2,0,0
+"general.options.Options.selectBy(String argument)",2,1,1,0,1
+"output.InfoConsole.print(String message)",2,1,1,0,1
+"structures.metrics.MethodMetric.setCalls(int calls)",2,1,0,0,1
+"structures.metrics.MethodMetric.setCyclo(int cyclo)",2,1,0,0,1
+"structures.metrics.MethodMetric.setEndLine(int endLine)",2,1,0,0,1
+"structures.metrics.MethodMetric.setName(String name)",2,1,0,0,1
+"structures.metrics.MethodMetric.setNestedBlockDepth(int nestedBlockDepth)",2,1,0,0,1
+"structures.metrics.MethodMetric.setNumOfParameters(int numOfParameters)",2,1,0,0,1
+"structures.metrics.MethodMetric.setStartLine(int startLine)",2,1,0,0,1
+"structures.metrics.MethodMetric.setTypeName(String typeName)",2,1,0,0,1
+"structures.metrics.MetricDefinition.setMax(double max)",2,1,0,0,1
+"structures.metrics.NamespaceMetric.setName(String name)",2,1,0,0,1
+"structures.metrics.NamespaceMetric.setNumOfAbstractTypes(int numOfAbstractTypes)",2,1,0,0,1
+"structures.metrics.NamespaceMetric.setNumOfTypes(int numOfTypes)",2,1,0,0,1
+"output.MetricResultFile.showAllCoupling()",2,1,0,0,0
+"output.MetricResultFile.showDependencies()",2,1,0,0,0
+"parser.java.visitors.NamespaceVisitor.NamespaceVisitor()",2,1,0,0,0
+"structures.metrics.MethodMetric.getCalls()",2,1,0,0,0
+"structures.metrics.MethodMetric.getCyclo()",2,1,0,0,0
+"structures.metrics.MethodMetric.getEndLine()",2,1,0,0,0
+"structures.metrics.MethodMetric.getName()",2,1,0,0,0
+"structures.metrics.MethodMetric.getNumOfParameters()",2,1,0,0,0
+"structures.metrics.MethodMetric.getStartLine()",2,1,0,0,0
+"structures.metrics.MethodMetric.getTypeName()",2,1,0,0,0
+"structures.metrics.MetricDefinition.getAcronym()",2,1,0,0,0
+"structures.metrics.MetricDefinition.getDescription()",2,1,0,0,0
+"structures.metrics.MetricDefinition.getMax()",2,1,0,0,0
+"structures.metrics.MetricDefinition.getMin()",2,1,0,0,0
+"structures.metrics.MetricDefinition.getName()",2,1,0,0,0
+"structures.metrics.MetricThreshold.getThresholds()",2,1,0,0,0
+"structures.metrics.NamespaceMetric.addNumOfAbstractTypes()",2,1,0,0,0
+"structures.metrics.NamespaceMetric.addNumOfTypes()",2,1,0,0,0
+"structures.metrics.NamespaceMetric.getName()",2,1,0,0,0
+"structures.metrics.NamespaceMetric.getNumOfAbstractTypes()",2,1,0,0,0
+"structures.metrics.NamespaceMetric.getNumOfTypes()",2,1,0,0,0
+"utils.JSONBuilder.JSONBuilder()",2,1,0,0,0
+"utils.JSONBuilder.create()",2,1,0,0,0
+"output.InfoConsole.InfoConsole()",1,1,0,0,0
+"output.MetricOutput.setResults(NamespaceMetricResult nmr, TypeMetricResult tmr, MethodMetricResult mmr)",0,1,0,0,3
+"general.options.OptionDefinition.execute(MetricOutput output)",0,1,0,0,1
+"structures.MetricActivator.update(T result)",0,1,0,0,1
+"structures.MetricResultNotifier.add(T metric)",0,1,0,0,1
+"structures.MetricResultNotifier.setTop(int number)",0,1,0,0,1
+"output.MetricFile.generateCyclicDependencies()",0,1,0,0,0
+"output.MetricFile.generateMethods()",0,1,0,0,0
+"output.MetricFile.generateNamespaceCoupling()",0,1,0,0,0
+"output.MetricFile.generateNamespaces()",0,1,0,0,0
+"output.MetricFile.generateSummary()",0,1,0,0,0
+"output.MetricFile.generateThresholds()",0,1,0,0,0
+"output.MetricFile.generateTypeCoupling()",0,1,0,0,0
+"output.MetricFile.generateTypes()",0,1,0,0,0
+"output.MetricOutput.getTypeMetricResult()",0,1,0,0,0
+"output.MetricOutput.show()",0,1,0,0,0
+"output.MetricOutput.showAllCoupling()",0,1,0,0,0
+"output.MetricOutput.showCyclicDependencies()",0,1,0,0,0
+"output.MetricOutput.showDependencies()",0,1,0,0,0
+"output.MetricOutput.showInternalDependencies()",0,1,0,0,0
+"output.MetricOutput.showMethods()",0,1,0,0,0
+"output.MetricOutput.showNamespaceCoupling()",0,1,0,0,0
+"output.MetricOutput.showNamespaces()",0,1,0,0,0
+"output.MetricOutput.showSummary()",0,1,0,0,0
+"output.MetricOutput.showThresholds()",0,1,0,0,0
+"output.MetricOutput.showTypeCoupling()",0,1,0,0,0
+"output.MetricOutput.showTypes()",0,1,0,0,0
+"parser.TypeParser.parsing()",0,1,0,0,0
+"structures.MetricResultNotifier.getNamesResult()",0,1,0,0,0

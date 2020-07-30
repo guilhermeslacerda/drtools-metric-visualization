@@ -1,0 +1,12 @@
+"namespace","ca","ce","instability","abstractness","distance"
+"com.softwarepathfinder.visualization.prefuse",0,1,1.0,0.0,0.0
+"com.softwarepathfinder.parsing.java",1,4,0.8,0.0,0.19999999999999996
+"com.softwarepathfinder.model",40,2,0.047619047619047616,0.0,0.9523809523809523
+"com.softwarepathfinder.parsing.php",0,5,1.0,0.0,0.0
+"com.softwarepathfinder.visualization.yEd",0,3,1.0,0.1,0.10000000000000009
+"com.softwarepathfinder.utils",16,1,0.058823529411764705,0.0,0.9411764705882353
+"com.softwarepathfinder.parsing",2,3,0.6,0.0,0.4
+"com.softwarepathfinder.visualization.blender",0,3,1.0,0.0,0.0
+"com.softwarepathfinder.visualization.jgraph",0,1,1.0,0.0,0.0
+"com.softwarepathfinder.persistence.jpa",15,0,0.0,0.0,1.0
+"com.softwarepathfinder.utils.exceptions",13,0,0.0,0.0,1.0

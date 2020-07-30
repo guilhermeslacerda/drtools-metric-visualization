@@ -1,0 +1,2106 @@
+"method","loc","cyclo","calls","nbd","param"
+"one.util.huntbugs.detect.BadMethodCalls.check(Expression node, MethodReference mr, NodeChain nc, MethodContext ctx, MethodDefinition curMethod)",137,97,179,5,5
+"one.util.huntbugs.util.ExpressionFormatter.format(StringBuilder sb, Expression expr, int outerPrecedence)",199,78,168,3,3
+"one.util.huntbugs.detect.FieldAccess.visit(FieldContext fc, FieldDefinition fd, TypeDefinition td, FieldStats fs)",107,76,96,5,4
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.makeFact(ContextValues ctx, Expression expr)",175,71,88,4,2
+"one.util.huntbugs.detect.DeadLocalStore.visit(Expression expr, NodeChain nc, MethodContext mc, MethodDefinition md, TypeDefinition td)",112,60,109,8,5
+"one.util.huntbugs.detect.BadMath.visit(Expression expr, NodeChain nc, MethodContext mc)",98,51,65,6,3
+"one.util.huntbugs.detect.NullCheck.visit(Expression expr, NodeChain nc, MethodContext mc)",129,47,88,4,3
+"one.util.huntbugs.detect.FieldAccess.visitCode(Expression expr, NodeChain nc, MethodContext mc, MethodDefinition md, TypeDefinition td, Mutability m)",76,42,62,5,6
+"one.util.huntbugs.db.FieldStats.visitType(TypeDefinition td)",102,41,86,6,1
+"one.util.huntbugs.flow.CFG.buildExpr(BasicBlock entry, Expression expr, JumpContext jc)",150,40,93,6,3
+"one.util.huntbugs.detect.EqualsContract.visitClass(TypeDefinition td, ClassContext cc)",70,39,65,5,2
+"one.util.huntbugs.db.MethodStats.visitBody(MethodData mdata, MethodBody body)",71,39,16,3,2
+"one.util.huntbugs.detect.UnusedParameter.visitBody(Block block, MethodContext mc, MethodDefinition md, TypeDefinition td, Hierarchy h)",74,37,74,6,5
+"one.util.huntbugs.flow.SourceAnnotator$SourceDataflow.transferState(Frame target, Expression expr)",93,37,81,5,2
+"one.util.huntbugs.detect.FloatingPointComparison.tweakPriority(Expression expr)",36,35,24,2,1
+"one.util.huntbugs.detect.NumericPromotion.visit(Expression expr, NodeChain nc, MethodContext mc, MethodDefinition md)",99,34,86,6,4
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.processKnownMethods(Expression expr, MethodReference mr)",53,33,81,4,2
+"one.util.huntbugs.detect.InfiniteLoop.checkCondition(MethodContext mc, Loop loop, Expression expr, AstCode parent)",57,32,66,2,4
+"one.util.huntbugs.flow.PurityAnnotator.getOwnPurity(Expression expr, FrameContext fc)",60,30,21,3,2
+"one.util.huntbugs.util.Methods.isSideEffectFree(MethodReference mr)",46,29,45,8,1
+"one.util.huntbugs.detect.NumericComparison.visit(Node node, MethodContext mc)",91,29,52,3,2
+"one.util.huntbugs.detect.RedundantStreamCalls.visit(Expression expr, MethodContext mc)",67,28,69,5,2
+"one.util.huntbugs.detect.UncalledPrivateMethod.visitType(TypeDefinition td, ClassContext cc, NestedAnonymousCalls nac)",59,28,52,4,3
+"one.util.huntbugs.flow.CFG.getConditionalBranches(BasicBlock cond)",80,27,11,6,1
+"one.util.huntbugs.detect.WaitContract.visit(Expression expr, NodeChain parents, MethodContext mc)",42,27,45,5,3
+"one.util.huntbugs.flow.NullAnnotator$NullDataflow.makeFact(ContextNulls state, Expression expr)",54,27,44,4,2
+"one.util.huntbugs.detect.NumericComparison.intRange(Expression arg, Set<Expression> visited)",71,27,42,3,2
+"one.util.huntbugs.util.Equi.equiBlocks(Block left, Block right, EquiContext ctx)",69,27,46,3,3
+"one.util.huntbugs.flow.ETypeAnnotator$ETypeDataflow.makeFact(ContextTypes state, Expression expr)",58,26,62,4,2
+"one.util.huntbugs.flow.NullAnnotator$NullDataflow.transferState(ContextNulls src, Expression expr)",51,25,40,4,2
+"one.util.huntbugs.util.Equi.equiExpressions(Expression left, Expression right, EquiContext ctx)",57,25,62,3,3
+"one.util.huntbugs.flow.CFG.findDeadCode(Expression expr, EdgeType deadEdge)",42,23,23,6,2
+"one.util.huntbugs.detect.VolatileIncrement.visitNode(Expression node, MethodContext ctx, NodeChain parents, MethodDefinition md)",36,23,44,5,4
+"one.util.huntbugs.HuntBugs.parseCommandLine(String[] args)",79,21,41,4,1
+"one.util.huntbugs.detect.CloneContract.visitBody(MethodDefinition md, Block body, TypeDefinition td, MethodContext mc, TypeHierarchy th)",35,21,27,4,5
+"one.util.huntbugs.detect.Naming.visitMethod(MethodDefinition md, TypeDefinition td, MethodContext mc)",37,21,37,2,3
+"one.util.huntbugs.flow.CFG.inlineBooleans()",84,20,59,6,0
+"one.util.huntbugs.detect.SelfAssignment.visit(Expression expr, MethodContext mc, MethodDefinition md, TypeDefinition td)",54,20,46,5,4
+"one.util.huntbugs.detect.DuplicateAssignment.visit(Node node, NodeChain nc, MethodDefinition md, MethodContext mc)",44,20,32,5,4
+"one.util.huntbugs.detect.MinValueHandling.checkAbs(MethodContext mc, Node body, Node parent, int priority, boolean forget)",38,20,35,5,5
+"one.util.huntbugs.flow.ETypeAnnotator$ETypeDataflow.transferConditionalState(ContextTypes src, Expression expr)",50,20,44,4,2
+"one.util.huntbugs.flow.etype.EType.and(EType t1, EType t2)",52,20,20,3,2
+"one.util.huntbugs.flow.CFG.fixBlocks()",44,19,25,6,0
+"one.util.huntbugs.detect.NonShortCircuit.visitNode(Expression node, NodeChain nc, MethodContext ctx)",36,19,53,5,3
+"one.util.huntbugs.detect.SerializationIdiom.visitMethod(MethodDefinition md, MethodContext mc, TypeDefinition td)",37,19,31,3,3
+"one.util.huntbugs.util.Nodes.isBoxing(Node node)",25,19,37,3,1
+"one.util.huntbugs.detect.StaticFieldFromInstanceMethod.visit(Expression expr, NodeChain nc, MethodContext mc, MethodDefinition md, TypeDefinition td)",34,19,28,2,5
+"one.util.huntbugs.detect.InfiniteRecursion.visit(Expression expr, NodeChain nc, MethodContext mc, MethodDefinition md)",20,19,15,2,4
+"one.util.huntbugs.flow.etype.SingleType.is(TypeReference other, boolean exact)",34,19,20,1,2
+"one.util.huntbugs.flow.Nullness$NullGraphSearch.transfer(NullState orig, Expression from, EdgeType edge, Expression to)",27,19,12,1,4
+"one.util.huntbugs.detect.SameBranches.visit(Node node, NodeChain nc, MethodContext mc)",51,18,49,5,3
+"one.util.huntbugs.output.Reports.writeWarning(Document doc, Warning w, Formatter formatter)",107,18,124,3,3
+"one.util.huntbugs.util.Nodes.getOperation(AstCode code)",39,18,1,3,1
+"one.util.huntbugs.util.Nodes.isUnboxing(Node node)",22,18,35,3,1
+"one.util.huntbugs.flow.Nullness.stateAt(CFG cfg, Expression target)",34,18,6,1,2
+"one.util.huntbugs.detect.SelfComputation.visit(Expression expr, MethodContext mc)",16,18,33,1,2
+"one.util.huntbugs.flow.CFG.buildBlock(BasicBlock entry, BasicBlock exit, JumpContext jc, Block block)",52,17,18,6,4
+"one.util.huntbugs.detect.AtomicConcurrent.visit(Expression expr, NodeChain nc, MethodContext mc, MethodDefinition md)",49,17,43,6,4
+"one.util.huntbugs.detect.ArrayRangeCheck.visit(MethodContext mc, NodeChain nc, Expression expr)",44,17,58,4,3
+"one.util.huntbugs.detect.NumberConstructor.visit(Expression expr, MethodContext ctx, MethodDefinition md)",36,17,41,4,3
+"one.util.huntbugs.detect.UnsupportedCall.visit(Expression expr, NodeChain nc, MethodContext mc, MethodStats ms)",33,17,29,4,4
+"one.util.huntbugs.detect.StringConcatInLoop.visit(Expression store, NodeChain nc, MethodContext mc, MethodDefinition md, TypeDefinition td)",38,17,26,3,5
+"one.util.huntbugs.detect.RegexProblems.visit(Expression expr, MethodContext mc)",19,17,34,3,2
+"one.util.huntbugs.detect.WrongMapIterator.visit(Expression expr, NodeChain nc, MethodContext mc)",31,17,35,2,3
+"one.util.huntbugs.detect.SameIfChain.visit(Node node, MethodContext mc, MethodDefinition md, TypeDefinition td)",42,16,40,6,4
+"one.util.huntbugs.detect.EqualsContract.visitEquals(Block body, MethodContext mc, TypeDefinition td)",47,16,34,5,3
+"one.util.huntbugs.detect.UnnecessaryInstanceOf.visit(Expression node, MethodContext mc, TypeDefinition td)",44,16,44,5,3
+"one.util.huntbugs.detect.IteratorContract.visitNext(Block body, MethodContext mc, MethodDefinition md, TypeDefinition td)",33,16,23,5,4
+"one.util.huntbugs.detect.FieldAccess.checkSingleMethod(FieldContext fc, FieldDefinition fd, FieldRecord fieldRecord, int flags)",19,16,17,5,4
+"one.util.huntbugs.detect.Naming.visitClass(TypeDefinition td, ClassContext cc)",20,16,26,2,2
+"one.util.huntbugs.detect.ExposeRepresentation.getField(Expression expr, MethodDefinition md)",19,16,18,2,2
+"one.util.huntbugs.flow.Nullness$NullGraphSearch.merge(NullState f1, NullState f2)",17,16,2,1,2
+"one.util.huntbugs.db.FieldStats$TypeFieldStats.link(MethodDefinition src, FieldReference fr, boolean isStatic, boolean write, boolean hadNull)",22,15,14,6,5
+"one.util.huntbugs.registry.DetectorRegistry.analyzeClass(TypeDefinition type)",78,15,66,5,1
+"one.util.huntbugs.detect.FinalizerContract.visitFinalizer(Block body, MethodContext mc, MethodDefinition md)",40,15,31,5,3
+"one.util.huntbugs.flow.NullAnnotator$NullDataflow.transferConditionalState(ContextNulls src, Expression expr)",43,15,42,4,2
+"one.util.huntbugs.detect.StringIndex.check(Expression node, MethodReference mr, MethodContext mc)",36,15,28,4,3
+"one.util.huntbugs.flow.CFG.buildSwitch(final BasicBlock curBlock, BasicBlock nextBlock, JumpContext jc, Switch switchBlock)",51,14,35,6,4
+"one.util.huntbugs.flow.CFG$BasicBlock.addTarget(EdgeType type, BasicBlock target)",26,14,2,6,2
+"one.util.huntbugs.analysis.Context.preparingClasses(Set<String> classes)",49,14,25,4,1
+"one.util.huntbugs.detect.RoughConstant.visit(Expression expr, MethodContext ctx, NodeChain parents)",34,14,16,4,3
+"one.util.huntbugs.flow.FrameContext.getInitialFields()",32,14,35,3,0
+"one.util.huntbugs.detect.ReturnNull.visit(Expression expr, NodeChain nc, MethodContext mc, MethodDefinition md, TypeDefinition td)",24,14,22,3,5
+"one.util.huntbugs.detect.NumericComparison.getIntegralType(Expression expression)",24,14,4,3,1
+"one.util.huntbugs.util.Nodes.isBinaryMath(Node node)",19,14,3,3,1
+"one.util.huntbugs.input.XmlReportReader.loadAnnotations(Element e)",38,14,61,2,1
+"one.util.huntbugs.detect.InvalidMinMax.visit(Node node, MethodContext mc)",38,14,20,1,2
+"one.util.huntbugs.util.Methods.resolveToBridge(MethodDefinition md)",28,13,24,8,1
+"one.util.huntbugs.detect.UnsafeGetResource.visit(Expression expr, MethodContext mc, TypeHierarchy th)",29,13,25,7,3
+"one.util.huntbugs.detect.Internationalization.visit(Expression expr, MethodContext mc)",31,13,32,6,2
+"one.util.huntbugs.detect.BadMath.checkWrongPriority(Expression expr, MethodContext mc, MethodDefinition md)",29,13,23,6,3
+"one.util.huntbugs.registry.Detector.adapt(Method method, MethodType wantedType, DatabaseRegistry databases)",52,13,35,4,3
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.transferConditionalState(ContextValues src, Expression expr)",27,13,17,4,2
+"one.util.huntbugs.detect.ConditionChain.check(Expression expr, Block block, MethodContext mc, boolean excluding)",31,13,31,3,4
+"one.util.huntbugs.detect.CovariantArrays.visit(Expression expr, MethodContext mc, Hierarchy h)",27,13,18,3,3
+"one.util.huntbugs.flow.etype.AndType.append(SingleType st)",26,13,16,3,1
+"one.util.huntbugs.detect.StaticFieldNonThreadSafe.visitCall(MethodContext mc, Expression expr, MethodDefinition md, NodeChain nc, TypeDefinition td)",27,13,23,2,5
+"one.util.huntbugs.detect.FloatingPointComparison.visit(Expression node, MethodContext ctx, MethodDefinition md)",26,13,23,2,3
+"one.util.huntbugs.detect.ExposeRepresentation.visit(Expression expr, NodeChain nc, MethodContext mc, MethodDefinition md, Mutability m)",22,13,24,2,5
+"one.util.huntbugs.testdata.TestNonShortCircuit.testNormal(int a, int b)",21,13,0,1,2
+"one.util.huntbugs.testdata.TestKnownComparison.testComplexLoop(String ssType, String type)",33,12,10,7,2
+"one.util.huntbugs.flow.CFG$DFARunner.run(int maxIteration)",44,12,18,6,1
+"one.util.huntbugs.flow.CFG$DFARunner.runIteration(List<BasicBlock> blocks)",43,12,20,6,1
+"one.util.huntbugs.filter.AnnotationFilters.getSuppressed(List<CustomAnnotation> annos)",25,12,12,6,1
+"one.util.huntbugs.flow.SourceAnnotator$SourceDataflow.makeFact(Frame state, Expression expr)",38,12,19,5,2
+"one.util.huntbugs.registry.DetectorRegistry.sortConstructors(List<MethodDefinition> ctors)",34,12,18,5,1
+"one.util.huntbugs.flow.SourceAnnotator.makePhiNode(Expression left, Expression right, FrameContext fc)",29,12,19,5,3
+"one.util.huntbugs.detect.SyncOnUpdatedField.visit(Expression expr, NodeChain nc, MethodContext mc)",22,12,18,5,3
+"one.util.huntbugs.HuntBugs.run(String[] args)",91,12,55,4,1
+"one.util.huntbugs.flow.etype.EType.or(EType t1, EType t2)",28,12,7,3,2
+"one.util.huntbugs.assertions.MemberAsserter.analyzeMember(MemberReference md)",27,12,30,3,1
+"one.util.huntbugs.util.Equi.equiLambdas(Lambda left, Lambda right, EquiContext ctx)",27,12,27,3,3
+"one.util.huntbugs.detect.SqlBadArgument.visit(Expression expr, MethodContext mc)",24,12,27,3,2
+"one.util.huntbugs.detect.NegativeRemainder.visit(Expression expr, MethodContext mc)",18,12,20,3,2
+"one.util.huntbugs.detect.CheckReturnValue.visit(Expression expr, NodeChain nc, MethodContext mc)",25,12,30,2,3
+"one.util.huntbugs.detect.UselessVoidMethod.checkMethod(Block root, MethodDefinition md, MethodStats ms, MethodContext mc)",15,12,13,2,4
+"one.util.huntbugs.detect.LockProblems.findReplacement(String name, TypeDefinition target)",13,12,17,1,2
+"one.util.huntbugs.flow.CFG.graphSearch(GraphSearch<T> gs)",36,11,11,6,1
+"one.util.huntbugs.detect.IncorrectVarArg.visit(Expression expr, MethodContext mc)",24,11,23,6,2
+"one.util.huntbugs.flow.CFG.buildNode(final BasicBlock curBlock, BasicBlock nextBlock, JumpContext jc, Node node)",21,11,18,6,4
+"one.util.huntbugs.detect.UnusedParameter.isEmpty(List<Node> body)",20,11,13,6,1
+"one.util.huntbugs.detect.BadMethodCalls.checkConstructor(Expression node, MethodReference mr, MethodContext ctx)",30,11,32,5,3
+"one.util.huntbugs.detect.EqualsContract.visitEqualsExpression(Expression expr, MethodContext mc)",25,11,23,5,2
+"one.util.huntbugs.detect.FieldAccess.checkWrite(FieldContext fc, FieldDefinition fd, TypeDefinition td, FieldRecord fieldRecord, int flags, boolean isConstantType)",24,11,13,5,6
+"one.util.huntbugs.detect.FieldAccess.isMutableCollectionFactory(Expression value, MethodReference mr)",11,11,23,5,2
+"one.util.huntbugs.detect.UnnecessaryBoxing.visit(Expression expr, MethodContext mc)",40,11,63,4,2
+"one.util.huntbugs.ant.HuntBugsTask.createRepository()",40,11,16,4,0
+"one.util.huntbugs.detect.StringUsage.visit(Expression node, MethodContext mc, MethodDefinition md)",27,11,30,4,3
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.fromSource(ContextValues ctx, Expression expr)",26,11,9,4,2
+"one.util.huntbugs.detect.KnownComparison.visit(Expression expr, MethodContext mc)",23,11,29,4,2
+"one.util.huntbugs.detect.StringConcatInLoop.getAppendSource(Expression expr)",29,11,25,3,1
+"one.util.huntbugs.repo.JarRepository.visit(String rootPackage, RepositoryVisitor visitor)",26,11,22,3,2
+"one.util.huntbugs.util.Equi.equiOperands(Object left, Object right, EquiContext ctx)",26,11,9,3,3
+"one.util.huntbugs.flow.FrameContext.getInitialExpression(JvmType simpleType)",21,11,4,3,1
+"one.util.huntbugs.detect.EasyMockProblems.visit(Expression expr, MethodContext mc)",15,11,24,3,2
+"one.util.huntbugs.detect.NumericComparison.checkRem2Eq1(MethodContext mc, JvmType jvmType, AstCode code, Expression arg, long constant)",15,11,18,3,5
+"one.util.huntbugs.util.Types.isInstance(TypeReference type, String wantedType)",23,11,14,2,2
+"one.util.huntbugs.util.Types.mergeTypes(TypeReference t1, TypeReference t2)",22,11,17,2,2
+"one.util.huntbugs.detect.InitializerRefersSubclass.visit(Expression expr, NodeChain nc, MethodContext mc, TypeDefinition td)",15,11,15,2,4
+"one.util.huntbugs.detect.InfiniteRecursion.checkControlFlow(NodeChain nc)",14,11,5,2,1
+"one.util.huntbugs.warning.WarningAnnotation$TypeInfo.getSimpleName()",37,11,5,1,0
+"one.util.huntbugs.flow.etype.SingleType.of(TypeReference tr, What what)",19,11,9,1,2
+"one.util.huntbugs.util.Annotations.hasAnnotation(IAnnotationsProvider fd, boolean ignoreDeprecated)",16,11,13,1,2
+"one.util.huntbugs.testdata.TestKnownComparison.testNestedForFor()",23,10,5,7,0
+"one.util.huntbugs.flow.CFG.isAlwaysReachable(BasicBlock from, Set<BasicBlock> targets)",23,10,7,6,2
+"one.util.huntbugs.detect.BadMath.isLow8BitsClear(Expression arg)",19,10,16,6,1
+"one.util.huntbugs.registry.Detector.Detector(Map<String,WarningType> wts, Class<?> clazz, DatabaseRegistry databases)",28,10,19,4,3
+"one.util.huntbugs.registry.MethodContext.report(String warning, int priority, Node node, Collection<WarningAnnotation<?>> annotations)",33,10,25,3,4
+"one.util.huntbugs.flow.etype.AndType.reduce()",29,10,1,3,0
+"one.util.huntbugs.util.Equi.equiTryCatch(TryCatchBlock leftTry, TryCatchBlock rightTry, EquiContext ctx)",26,10,25,3,3
+"one.util.huntbugs.warning.Formatter.formatLong(long value, String format)",25,10,14,3,2
+"one.util.huntbugs.detect.RegexProblems.checkRegexp(MethodContext mc, Expression regexExpr, int flags)",24,10,22,3,3
+"one.util.huntbugs.detect.SerializationIdiom.visitClass(TypeDefinition td, ClassContext cc)",20,10,12,3,2
+"one.util.huntbugs.detect.CovariantArrays.allImplementationsDerivedFromSubclass(Hierarchy h, TypeReference superClass, TypeReference subClass)",16,10,15,3,3
+"one.util.huntbugs.detect.SwingProblems.visit(Expression expr, NodeChain nc, MethodContext mc)",14,10,19,3,3
+"one.util.huntbugs.flow.etype.OrType.is(TypeReference tr, boolean exact)",26,10,1,2,2
+"one.util.huntbugs.flow.etype.OrType.isArray()",26,10,1,2,0
+"one.util.huntbugs.detect.CompareContract.check(MethodDefinition md, TypeDefinition td)",11,10,15,2,2
+"one.util.huntbugs.detect.LockProblems.visit(Expression expr, MethodContext mc)",18,10,18,1,2
+"one.util.huntbugs.util.Methods.findSuperMethod(TypeDefinition type, MemberInfo mi)",25,9,8,8,2
+"one.util.huntbugs.testdata.TestKnownComparison.testNestedForForSwitch(boolean b)",27,9,7,7,1
+"one.util.huntbugs.util.NodeChain.isInTry(String... wantedExceptions)",17,9,18,5,1
+"one.util.huntbugs.detect.FieldAccess.checkNull(FieldContext fc, FieldDefinition fd, TypeDefinition td, FieldRecord fieldRecord, int flags)",17,9,13,5,5
+"one.util.huntbugs.flow.SourceAnnotator.isExprEqual(Expression left, Expression right)",17,9,7,5,2
+"one.util.huntbugs.detect.BadMethodCalls.isToStringCall(String typeName, String name, String signature)",9,9,8,5,3
+"one.util.huntbugs.flow.ETypeAnnotator$ETypeDataflow.fromSource(ContextTypes ctx, Expression expr)",28,9,11,4,2
+"one.util.huntbugs.detect.ExclusiveConditions.checkEqual(Expression equality, Expression other, MethodContext mc)",27,9,23,4,3
+"one.util.huntbugs.detect.ExclusiveConditions.checkNonEqual(Expression equality, Expression other, MethodContext mc)",27,9,23,4,3
+"one.util.huntbugs.detect.ExclusiveConditions.visit(Expression expr, MethodContext mc)",24,9,20,4,2
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.getArrayLength(Expression expression)",23,9,17,4,1
+"one.util.huntbugs.detect.StartInConstructor.visit(Expression expr, NodeChain nc, MethodContext mc, TypeHierarchy th)",21,9,15,4,4
+"one.util.huntbugs.detect.UncalledPrivateMethod.extractCalls(MethodDefinition md, Predicate<MethodReference> action)",20,9,8,4,2
+"one.util.huntbugs.detect.RoughConstant.getPriority(BadConstant badConstant, Number constValue, double candidate)",19,9,3,4,3
+"one.util.huntbugs.flow.NullAnnotator$ContextNulls.merge(ContextNulls other)",18,9,8,4,1
+"one.util.huntbugs.detect.NoRuntimeRetention.visit(Expression expr, MethodContext mc, DeclaredAnnotations da)",16,9,19,4,3
+"one.util.huntbugs.warning.Formatter.formatMemberInfo(MemberInfo mi, String format)",25,9,24,3,2
+"one.util.huntbugs.registry.MethodData.getLocation(Node node)",25,9,15,3,1
+"one.util.huntbugs.detect.SyncGetClass.visit(Node node, MethodContext mc, TypeHierarchy th, TypeDefinition td)",16,9,10,3,4
+"one.util.huntbugs.util.Nodes.isComparison(Node node)",14,9,3,3,1
+"one.util.huntbugs.detect.Naming.checkSameAsConstructor(Block root, MethodDefinition md, TypeDefinition td, MethodContext mc)",15,9,21,2,4
+"one.util.huntbugs.detect.ToArrayDowncast.visit(Expression expr, MethodContext mc)",18,9,20,0,2
+"one.util.huntbugs.testdata.TestKnownComparison.testNestedSwitch(int i, int j)",25,8,2,7,2
+"one.util.huntbugs.filter.AnnotationFilters.forType(TypeDefinition td)",30,8,33,6,1
+"one.util.huntbugs.flow.CFG$BasicBlock.targetsExcept(EdgeType type)",25,8,14,6,1
+"one.util.huntbugs.db.DeclaredAnnotations.visitType(TypeDefinition td)",20,8,13,6,1
+"one.util.huntbugs.flow.CFG.verify()",15,8,11,6,0
+"one.util.huntbugs.detect.EmptySync.visit(Node node, MethodContext mc)",20,8,14,5,2
+"one.util.huntbugs.flow.SourceAnnotator$Frame.isEqual(Frame left, Frame right)",20,8,14,5,2
+"one.util.huntbugs.registry.DetectorRegistry.sortMethods(List<MethodDefinition> declMethods)",17,8,11,5,1
+"one.util.huntbugs.detect.ArrayRangeCheck.getMaxLength(Expression expression)",25,8,16,4,1
+"one.util.huntbugs.detect.CompareUsage.visit(Expression expr, MethodContext mc)",20,8,15,4,2
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.processCmpEq(Expression expr)",17,8,15,4,1
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.processCmpGe(Expression expr)",17,8,15,4,1
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.processCmpLe(Expression expr)",17,8,15,4,1
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.processCmpNe(Expression expr)",17,8,15,4,1
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.processCmpGt(Expression expr)",16,8,15,4,1
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.processCmpLt(Expression expr)",16,8,15,4,1
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.processAdd(Expression expr)",16,8,5,4,1
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.processDiv(Expression expr)",16,8,5,4,1
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.processMul(Expression expr)",16,8,5,4,1
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.processRem(Expression expr)",16,8,5,4,1
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.processSub(Expression expr)",16,8,5,4,1
+"one.util.huntbugs.detect.CompareUsage.isCompare(Expression child)",11,8,12,4,1
+"one.util.huntbugs.output.Reports.diffWarnings(List<Warning> oldWarnings, List<Warning> newWarnings)",39,8,46,3,2
+"one.util.huntbugs.util.Nodes.isCompoundAssignment(Node node)",32,8,36,3,1
+"one.util.huntbugs.warning.Formatter.formatValue(Object value, String format)",23,8,8,3,2
+"one.util.huntbugs.flow.etype.AndType.shrinkConstraint(TypeReference tr, boolean exact)",21,8,9,3,2
+"one.util.huntbugs.flow.etype.AndType.is(TypeReference tr, boolean exact)",21,8,1,3,2
+"one.util.huntbugs.flow.etype.AndType.isArray()",21,8,1,3,0
+"one.util.huntbugs.flow.etype.AndType.appendAny(EType type)",20,8,7,3,1
+"one.util.huntbugs.detect.BadMonitorObject.visit(Expression expr, MethodContext mc)",19,8,15,3,2
+"one.util.huntbugs.warning.Formatter.formatDouble(double val)",16,8,2,3,1
+"one.util.huntbugs.warning.Formatter.formatFloat(float val)",16,8,2,3,1
+"one.util.huntbugs.detect.VolatileArray.checkField(FieldDefinition fd, FieldStats fs, FieldContext fc)",15,8,14,3,3
+"one.util.huntbugs.util.Nodes.isEmptyOrBreak(Block block)",13,8,10,3,1
+"one.util.huntbugs.util.Nodes.getWrittenVariable(Node node)",13,8,9,3,1
+"one.util.huntbugs.detect.InfiniteRecursion.selfCall(Expression expr, MethodDefinition md)",18,8,10,2,2
+"one.util.huntbugs.detect.WrongMapIterator.usedForGetOnly(Expression key, Expression mapArg)",16,8,17,2,2
+"one.util.huntbugs.detect.InfiniteRecursion.checkArgs(Expression expr)",16,8,13,2,1
+"one.util.huntbugs.detect.StaticFieldNonThreadSafe.visitField(FieldDefinition fd, FieldContext fc, TypeDefinition td)",10,8,12,2,3
+"one.util.huntbugs.flow.etype.SingleType.isArray()",19,8,7,1,0
+"one.util.huntbugs.flow.Nullness.or(NullState other)",8,8,0,1,1
+"one.util.huntbugs.util.Methods.collectSuperMethods(TypeDefinition type, MemberInfo mi, Set<MethodDefinition> list)",22,7,10,8,3
+"one.util.huntbugs.util.Methods.isPure(MethodReference mr)",13,7,22,8,1
+"one.util.huntbugs.util.Methods.isThrower(MethodDefinition md)",12,7,6,8,1
+"one.util.huntbugs.testdata.TestKnownComparison.testComplexLoop(int x)",18,7,3,7,1
+"one.util.huntbugs.detect.UnusedParameter.findOverloadCall(MethodDefinition md, Block block)",13,7,14,6,2
+"one.util.huntbugs.detect.AtomicConcurrent.isGetOrContains(Expression self, Expression key, Expression call)",11,7,13,6,3
+"one.util.huntbugs.util.NodeChain.getSyncObject()",21,7,8,5,0
+"one.util.huntbugs.flow.SourceAnnotator$Frame.mergeSources(Frame other, FrameContext fc)",20,7,17,5,2
+"one.util.huntbugs.detect.SameBranches.check(MethodDefinition md, TypeDefinition td)",10,7,13,5,2
+"one.util.huntbugs.ant.HuntBugsTask.execute()",26,7,14,4,0
+"one.util.huntbugs.testdata.TestSameBranches.testSwitch(int a)",22,7,6,4,1
+"one.util.huntbugs.detect.AbandonedStream.visit(Expression expr, MethodContext mc)",17,7,15,4,2
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.resolve(ContextValues contextValues, Expression expr)",15,7,5,4,2
+"one.util.huntbugs.detect.RandomUsage.checkOnlyOnce(Expression node, MethodContext ctx)",13,7,19,4,2
+"one.util.huntbugs.flow.ETypeAnnotator$ContextTypes.merge(ContextTypes other)",12,7,9,4,1
+"one.util.huntbugs.detect.RandomUsage.isRandomDouble(Node node)",11,7,13,4,1
+"one.util.huntbugs.flow.ConstAnnotator$ContextValues.merge(ContextValues other)",11,7,8,4,1
+"one.util.huntbugs.registry.Detector$VisitorInfo.isApplicable(MethodDefinition md)",8,7,14,4,1
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.resolveConditional(ContextValues contextValues, Expression expr)",8,7,3,4,2
+"one.util.huntbugs.detect.NumericComparison$LongRange.LongRange(AstCode code, long constant)",29,7,0,3,2
+"one.util.huntbugs.registry.MethodData.getOffset(Node node)",18,7,17,3,1
+"one.util.huntbugs.maven.plugin.HuntBugsMojo.addDependency(Artifact art, List<ITypeLoader> deps)",16,7,16,3,2
+"one.util.huntbugs.detect.RegexProblems.checkBadPatterns(MethodContext mc, Expression regexExpr, Object replacementObj)",16,7,10,3,3
+"one.util.huntbugs.detect.NumericComparison.getExpressionRange(JvmType type, Expression arg, Set<Expression> visited)",15,7,12,3,3
+"one.util.huntbugs.detect.AppendObjectOutputStream.isAppendOutput(Expression expr)",13,7,13,3,1
+"one.util.huntbugs.detect.DroppedExceptionObject.visit(Expression expr, NodeChain nc, MethodContext mc)",12,7,14,3,3
+"one.util.huntbugs.detect.NegativeRemainder.check(Expression expr, MethodContext mc)",12,7,13,3,2
+"one.util.huntbugs.db.MethodStats.visitType(TypeDefinition td)",12,7,10,3,1
+"one.util.huntbugs.util.Nodes.dropNarrowing(Expression expression)",12,7,3,3,1
+"one.util.huntbugs.db.MethodStats$MethodData.testAny(long flag, boolean exact)",10,7,1,3,2
+"one.util.huntbugs.detect.ReturnNull.checkMethod(MethodDefinition md)",7,7,14,3,1
+"one.util.huntbugs.flow.ValuesFlow.reduce(Expression input, Function<Expression,T> mapper, BinaryOperator<T> reducer, Predicate<T> pred)",25,7,17,2,4
+"one.util.huntbugs.flow.etype.OrType.appendAny(EType type)",20,7,4,2,1
+"one.util.huntbugs.util.Types.hasCompleteHierarchy(TypeDefinition type)",17,7,10,2,1
+"one.util.huntbugs.detect.RedundantInterfaces.visit(TypeDefinition td, ClassContext cc)",13,7,10,2,2
+"one.util.huntbugs.detect.Naming.getMistakeFix(MethodDefinition md)",11,7,15,2,1
+"one.util.huntbugs.flow.ClassFields.ClassFields(TypeDefinition td, FieldStats fieldStats, MethodStats methodStats)",11,7,7,2,3
+"one.util.huntbugs.flow.ClassFields.mergeConstructor(MethodDefinition md, Frame frame, FrameContext fc)",10,7,10,2,3
+"one.util.huntbugs.flow.ClassFields.setStaticFinalFields(Frame frame)",8,7,8,2,1
+"one.util.huntbugs.db.Hierarchy$TypeHierarchy.isOverridden(IMetadataResolver resolver, MemberInfo mi)",17,7,4,1,2
+"one.util.huntbugs.util.Exprs.findExpressionWithSources(Expression node, Set<Expression> visited, Predicate<Expression> predicate)",15,7,6,1,3
+"one.util.huntbugs.util.Methods.findMethod(TypeDefinition td, MemberInfo mi)",14,6,11,8,2
+"one.util.huntbugs.util.Methods.knownToThrow(MethodReference mr)",7,6,11,8,1
+"one.util.huntbugs.testdata.TestKnownComparison.testSwitchPassthru(int x)",19,6,4,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testComplexLoop3(String type)",17,6,4,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testComplexLoop2(String type)",16,6,4,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testForContinue(boolean b)",9,6,2,7,1
+"one.util.huntbugs.flow.CFG.buildLoop(final BasicBlock curBlock, BasicBlock nextBlock, JumpContext jc, Loop loop)",29,6,24,6,4
+"one.util.huntbugs.flow.CFG$BasicBlock.toString()",15,6,27,6,0
+"one.util.huntbugs.flow.CFG$CatchJumpContext.addExceptional(BasicBlock block, TypeReference exception)",15,6,12,6,2
+"one.util.huntbugs.flow.CFG$DFARunner.updateState(STATE newState, BasicBlock target)",15,6,3,6,2
+"one.util.huntbugs.detect.BadMath.checkSignedByte(Expression expr, MethodContext mc)",9,6,9,6,2
+"one.util.huntbugs.registry.DetectorRegistry.visitChildren(Node node, NodeChain parents, List<MethodContext> list, MethodData mdata)",22,6,7,5,4
+"one.util.huntbugs.flow.SourceAnnotator$Frame.mergeFields(Map<MemberInfo,Expression> other, FrameContext fc)",16,6,10,5,2
+"one.util.huntbugs.util.NodeChain.isInCatch(String wantedException)",14,6,9,5,1
+"one.util.huntbugs.detect.BadMethodCalls.fromFile(Expression expr)",13,6,11,5,1
+"one.util.huntbugs.detect.MinValueHandling.visit(Node node, NodeChain chain, MethodContext mc)",13,6,9,5,3
+"one.util.huntbugs.detect.IteratorContract.visitHasNext(Expression expr, MethodContext mc, TypeDefinition td)",8,6,10,5,3
+"one.util.huntbugs.testdata.TestSameBranches.testSameComplex(int a, int b)",25,6,10,4,2
+"one.util.huntbugs.testdata.TestSameBranches.testDiffComplex(int a, int b)",25,6,4,4,2
+"one.util.huntbugs.warning.Messages.toMap(Document dom)",22,6,12,4,1
+"one.util.huntbugs.testdata.TestSameBranches.testSameSwitch(int a, int b)",19,6,4,4,2
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.processUnaryOp(Expression expr, Class<A> type, Function<A,?> op)",18,6,10,4,3
+"one.util.huntbugs.analysis.Context.getMainType(String internalName)",16,6,9,4,1
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.processBinaryOp(Expression expr, Class<A> leftType, Class<B> rightType, BiFunction<A,B,?> op)",14,6,13,4,4
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.mergeFacts(Object f1, Object f2)",9,6,1,4,2
+"one.util.huntbugs.warning.Formatter.format(String description, Warning warning, String format)",25,6,13,3,3
+"one.util.huntbugs.testdata.TestSelfAssignment.heapify(HeapNode node)",19,6,2,3,1
+"one.util.huntbugs.detect.AppendObjectOutputStream.visit(Expression expr, MethodContext mc)",16,6,15,3,2
+"one.util.huntbugs.registry.MethodContext$WarningInfo.tryMerge(WarningInfo other)",16,6,5,3,1
+"one.util.huntbugs.util.Nodes.getSyncObject(TryCatchBlock tcb)",15,6,11,3,1
+"one.util.huntbugs.detect.NumericComparison.getTypeRange(JvmType type)",15,6,0,3,1
+"one.util.huntbugs.output.Reports.writeError(Document doc, ErrorMessage e)",14,6,20,3,2
+"one.util.huntbugs.detect.FloatingPointNaN.visit(Expression node, MethodContext ctx)",14,6,11,3,2
+"one.util.huntbugs.detect.DubiousCatch.visit(Node node, MethodContext mc)",14,6,9,3,2
+"one.util.huntbugs.assertions.MemberAsserter.checkWarning(Consumer<String> errorConsumer, Warning warning)",14,6,6,3,2
+"one.util.huntbugs.detect.IgnoredException.isTrivial(List<Node> body, Variable variable)",12,6,9,3,2
+"one.util.huntbugs.detect.VolatileArray.getAtomicArrayReplacement(JvmType simpleType)",12,6,0,3,1
+"one.util.huntbugs.detect.BadMethodReferences.check(MethodHandle handle, TypeReference functionalInterface, MethodContext mc, Expression expr)",7,6,13,3,4
+"one.util.huntbugs.db.MethodStats$MethodData.mayHaveSideEffect(boolean exact)",7,6,3,3,1
+"one.util.huntbugs.registry.DatabaseRegistry.resolveDatabase(Class<T> clazz)",23,6,10,2,1
+"one.util.huntbugs.flow.ValuesFlow.annotate(Context ctx, MethodDefinition md, ClassFields cf, CFG cfg)",18,6,13,2,4
+"one.util.huntbugs.input.XmlReportReader.loadNumber(String type, String value)",18,6,4,2,2
+"one.util.huntbugs.flow.etype.OrType.reduce()",16,6,4,2,0
+"one.util.huntbugs.testdata.TestNumericComparison.testArrayLengthSwitch(int[] array)",16,6,0,2,1
+"one.util.huntbugs.flow.etype.OrType.append(SingleType st)",13,6,10,2,1
+"one.util.huntbugs.flow.BackLinkAnnotator.findTransitiveUsages(Expression expr, boolean includePhi)",11,6,11,2,2
+"one.util.huntbugs.db.Mutability.visitType(TypeDefinition td)",10,6,6,2,1
+"one.util.huntbugs.detect.MutableServletField.visitCode(Expression expr, NodeChain nc, MethodContext mc, MethodDefinition md, TypeDefinition td)",9,6,10,2,5
+"one.util.huntbugs.assertions.AssertionData.check(Warning warning)",14,6,9,1,1
+"one.util.huntbugs.detect.InvalidMinMax.detectMethod(Node node)",12,6,11,1,1
+"one.util.huntbugs.testdata.TestKnownComparison.testSwitchMisplacedDefault(int x)",16,5,3,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testSwitchMisplacedDefault2(int x)",15,5,2,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testOrNested(int x)",10,5,4,7,1
+"one.util.huntbugs.detect.NumericPromotion.getMultiplicationConstant(Expression arg)",18,5,15,6,1
+"one.util.huntbugs.flow.CFG.isReachable(BasicBlock from, BasicBlock to)",17,5,4,6,2
+"one.util.huntbugs.flow.CFG$BasicBlock.getId()",13,5,1,6,0
+"one.util.huntbugs.detect.NumericPromotion.getSourceType(Expression expr)",11,5,3,6,1
+"one.util.huntbugs.detect.NumericPromotion.getTargetType(Expression expr)",11,5,3,6,1
+"one.util.huntbugs.filter.AnnotationFilters.and(Predicate<Warning> left, Predicate<Warning> right)",8,5,1,6,2
+"one.util.huntbugs.detect.EqualsContract.isComparison(Expression expr)",16,5,11,5,1
+"one.util.huntbugs.detect.EqualsContract.isInstanceOfAndSuperEquals(Expression expr)",15,5,9,5,1
+"one.util.huntbugs.flow.SourceAnnotator$Frame.replaceField(FieldReference fr, Expression replacement)",15,5,6,5,2
+"one.util.huntbugs.flow.SourceAnnotator$Frame.replaceAll(UnaryOperator<Expression> op)",11,5,6,5,1
+"one.util.huntbugs.detect.EqualsContract.checkGetName(Expression expr, MethodContext mc, Expression getName)",10,5,7,5,3
+"one.util.huntbugs.flow.SourceAnnotator$Frame.merge(Frame other, FrameContext fc)",10,5,2,5,2
+"one.util.huntbugs.detect.FinalizerContract.getSuperfinalizer(TypeDefinition type)",9,5,6,5,1
+"one.util.huntbugs.detect.VolatileIncrement.computePriority(FieldDefinition field, MethodDefinition md, NodeChain parents)",9,5,5,5,3
+"one.util.huntbugs.detect.RandomUsage.visit(Expression node, MethodContext ctx)",24,5,24,4,2
+"one.util.huntbugs.analysis.Context.reportStats(PrintStream app)",22,5,22,4,1
+"one.util.huntbugs.flow.ETypeAnnotator$ContextTypes.add(Variable var, EType value)",13,5,5,4,2
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.processNeg(Expression expr)",13,5,5,4,1
+"one.util.huntbugs.analysis.Context.analyzingClasses(Set<String> classes)",12,5,11,4,1
+"one.util.huntbugs.detect.UncalledPrivateMethod$NestedAnonymousCalls.visitType(TypeDefinition td)",12,5,6,4,1
+"one.util.huntbugs.detect.UnnecessaryBoxing.isBoxedToString(Expression expr)",11,5,8,4,1
+"one.util.huntbugs.detect.CloneContract.afterClass(TypeDefinition td, ClassContext cc)",5,5,4,4,2
+"one.util.huntbugs.maven.plugin.HuntBugsMojo.constructRepository()",37,5,13,3,0
+"one.util.huntbugs.util.Nodes.getChildren(Node node)",20,5,11,3,1
+"one.util.huntbugs.registry.ClassContext.report(String warning, int priority, WarningAnnotation<?>... annotations)",18,5,11,3,3
+"one.util.huntbugs.testdata.TestDeadLocalStore.testLabel(int i, int j)",18,5,1,3,2
+"one.util.huntbugs.db.MethodStats.getMethodData(MethodDefinition md)",15,5,5,3,1
+"one.util.huntbugs.maven.plugin.HuntBugsMojo.writeReports(Context ctx)",14,5,14,3,1
+"one.util.huntbugs.detect.ConditionChain.visit(Node node, MethodContext mc, MethodDefinition md)",14,5,13,3,3
+"one.util.huntbugs.detect.CovariantArrays.toRawType(TypeReference type)",14,5,8,3,1
+"one.util.huntbugs.warning.Formatter.formatInteger(int value, String format)",14,5,5,3,2
+"one.util.huntbugs.detect.SerializationIdiom.visitField(FieldDefinition fd, FieldContext fc)",13,5,9,3,2
+"one.util.huntbugs.detect.IgnoredException.getExceptionPriority(TypeReference tr)",13,5,1,3,1
+"one.util.huntbugs.detect.IgnoredException.visit(Node node, MethodContext mc)",12,5,7,3,2
+"one.util.huntbugs.util.Nodes.isSideEffectFree(Node node)",12,5,3,3,1
+"one.util.huntbugs.assertions.MemberAsserter.checkFinally(Consumer<String> errorConsumer)",11,5,5,3,1
+"one.util.huntbugs.util.Nodes.isEquivalent(Node expr1, Node expr2)",9,5,3,3,2
+"one.util.huntbugs.detect.ConditionChain.check(Expression left, Expression right, AstCode condCode, MethodContext mc)",8,5,13,3,4
+"one.util.huntbugs.testdata.TestNumericComparison.testArrayLengthSwitchOk(int[] array)",14,5,0,2,1
+"one.util.huntbugs.detect.Naming.getFutureKeywordVersion(String name)",13,5,0,2,1
+"one.util.huntbugs.detect.SpinLoop.visit(Node node, MethodContext mc)",11,5,6,2,2
+"one.util.huntbugs.flow.ValuesFlow.findFirst(Expression src, Predicate<Expression> pred)",8,5,16,2,2
+"one.util.huntbugs.detect.SpinLoop.checkCondition(Expression cond, MethodContext mc)",8,5,12,2,2
+"one.util.huntbugs.flow.etype.SingleType.toString()",14,5,4,1,0
+"one.util.huntbugs.flow.etype.SingleType.negate()",13,5,0,1,0
+"one.util.huntbugs.testdata.TestWrongMapIterator.testRegisterReuseBug2(Map<Integer,String> m)",11,5,3,1,1
+"one.util.huntbugs.util.Exprs.isParameter(Expression expr)",8,5,5,1,1
+"one.util.huntbugs.util.Exprs.getThis(Expression node)",6,5,6,1,1
+"one.util.huntbugs.detect.JcipProblems.visitField(FieldDefinition fd, FieldContext fc)",5,5,3,1,2
+"one.util.huntbugs.testdata.TestExclusiveConditions.testComplex(int x, int y, int z)",5,5,1,1,3
+"one.util.huntbugs.testdata.TestExclusiveConditions.testComplexOr(int x, int y, int z)",5,5,1,1,3
+"one.util.huntbugs.detect.AverageComputation.visitExpression(Expression expr, MethodContext mc)",11,5,7,0,2
+"one.util.huntbugs.testdata.TestKnownComparison.testLoopBreak()",11,4,1,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.testIfConstStringsNot(String x)",9,4,5,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testIfConstNotCompare(int a, int b)",9,4,2,7,2
+"one.util.huntbugs.testdata.TestKnownComparison.testArray(boolean b)",8,4,3,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testBooleanAssignmentTernary(int a, int b)",6,4,1,7,2
+"one.util.huntbugs.testdata.TestKnownComparison.testCompareToKnown(int a, int b)",5,4,1,7,2
+"one.util.huntbugs.flow.CFG.buildTryCatch(final BasicBlock curBlock, BasicBlock nextBlock, JumpContext jc, TryCatchBlock tryCatch)",13,4,10,6,4
+"one.util.huntbugs.filter.AnnotationFilters.forSuppressed(String suppressed)",8,4,11,6,1
+"one.util.huntbugs.flow.SourceAnnotator$Frame.Frame(FrameContext fc, Frame closure)",16,4,8,5,2
+"one.util.huntbugs.detect.UnnecessaryInstanceOf.report(MethodContext mc, TypeReference typeRef, Expression expr, Expression cond, EdgeType deadEdge, EType eType, String wType)",15,4,9,5,7
+"one.util.huntbugs.registry.DetectorRegistry.printTree(PrintStream out, List<String> result, String arrow)",14,4,15,5,3
+"one.util.huntbugs.flow.SourceAnnotator$Frame.deleteAllFields()",14,4,8,5,0
+"one.util.huntbugs.flow.SourceAnnotator$Frame.deleteFields()",12,4,8,5,0
+"one.util.huntbugs.flow.SourceAnnotator.children(Set<Expression> visited, Expression parent)",10,4,14,5,2
+"one.util.huntbugs.detect.FieldAccess.tweakForSerialization(FieldDefinition fd, TypeDefinition td)",9,4,4,5,2
+"one.util.huntbugs.detect.BadMethodCalls.visit(Expression node, NodeChain nc, MethodContext ctx, MethodDefinition curMethod)",7,4,7,5,4
+"one.util.huntbugs.detect.EqualsContract.isClassGetName(Expression expr)",7,4,6,5,1
+"one.util.huntbugs.detect.EqualsContract.getPriority(MethodDefinition md)",7,4,3,5,1
+"one.util.huntbugs.detect.FinalizerContract.visit(Node node, MethodContext mc, MethodDefinition md)",6,4,5,5,3
+"one.util.huntbugs.repo.Repository.createDetectorsRepo(Class<?> clazz, String pluginName, Set<Path> paths)",23,4,12,4,3
+"one.util.huntbugs.analysis.Context.analyzePackage(String name)",21,4,6,4,1
+"one.util.huntbugs.flow.ETypeAnnotator$ContextTypes.and(Variable var, EType value)",13,4,6,4,2
+"one.util.huntbugs.testdata.TestSameBranches.testSwitchFallthrough(int a)",12,4,4,4,1
+"one.util.huntbugs.detect.ExclusiveConditions.isNonEquality(Expression expr)",10,4,7,4,1
+"one.util.huntbugs.detect.RoughConstant$BadConstant.addApprox(BigDecimal roundFloor)",10,4,7,4,1
+"one.util.huntbugs.flow.ConstAnnotator$ContextValues.remove(Variable var)",9,4,3,4,1
+"one.util.huntbugs.flow.ETypeAnnotator$ContextTypes.remove(Variable var)",9,4,3,4,1
+"one.util.huntbugs.flow.NullAnnotator$ContextNulls.remove(Variable var)",9,4,3,4,1
+"one.util.huntbugs.flow.ConstAnnotator$ContextValues.equals(Object obj)",8,4,3,4,1
+"one.util.huntbugs.flow.ETypeAnnotator$ContextTypes.equals(Object obj)",8,4,3,4,1
+"one.util.huntbugs.flow.NullAnnotator$ContextNulls.equals(Object obj)",8,4,3,4,1
+"one.util.huntbugs.analysis.AnalysisOptions.set(String name, String valueString)",25,4,7,3,2
+"one.util.huntbugs.util.Nodes.ifBinaryWithConst(Expression expr, BiConsumer<Expression,Object> consumer)",14,4,10,3,2
+"one.util.huntbugs.testdata.TestConditionChain.testSameConditionsExcluding(int x)",13,4,4,3,1
+"one.util.huntbugs.testdata.TestConditionChain.testSameConditionsChainElse2(int x)",13,4,3,3,1
+"one.util.huntbugs.flow.etype.AndType.negate()",13,4,2,3,0
+"one.util.huntbugs.detect.BadMethodReferences.visit(Expression expr, MethodContext mc)",12,4,6,3,2
+"one.util.huntbugs.warning.Formatter.formatConstant(Object constant)",11,4,4,3,1
+"one.util.huntbugs.testdata.TestConditionChain.testSameConditionsChainElse1(int x)",11,4,2,3,1
+"one.util.huntbugs.output.Reports.matchScore(Warning w1, Warning w2)",10,4,22,3,2
+"one.util.huntbugs.util.Nodes.getMethodHandle(DynamicCallSite dcs)",10,4,9,3,1
+"one.util.huntbugs.registry.MethodContext.reportWarning(Warning warn)",10,4,8,3,1
+"one.util.huntbugs.detect.AppendObjectOutputStream.isBufferedStream(Expression expr)",9,4,7,3,1
+"one.util.huntbugs.util.Nodes.isThrow(Node node)",9,4,5,3,1
+"one.util.huntbugs.util.Nodes.find(Node node, Predicate<Node> predicate)",9,4,3,3,2
+"one.util.huntbugs.testdata.TestConditionChain.testCondition(int vc, short value)",9,4,2,3,2
+"one.util.huntbugs.testdata.TestConditionChain.testSameConditionsChain(int x)",9,4,1,3,1
+"one.util.huntbugs.flow.FrameContext.makeFieldsFrom(Frame frame)",8,4,4,3,1
+"one.util.huntbugs.registry.MethodContext.getParameterUsages(ParameterDefinition pd)",8,4,2,3,1
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadLocalStoreTernaryOk2(int b)",8,4,1,3,1
+"one.util.huntbugs.testdata.TestNullCheck.testDoubleExpressionNull(int... order)",7,4,1,3,1
+"one.util.huntbugs.detect.NumericComparison$LongRange.absInt()",6,4,1,3,0
+"one.util.huntbugs.registry.FieldContext.report(String warning, int priority, WarningAnnotation<?>... annotations)",16,4,14,2,3
+"one.util.huntbugs.flow.BackLinkAnnotator.fixTernary(Expression expr)",15,4,14,2,1
+"one.util.huntbugs.util.Types.getBaseTypes(TypeReference input)",13,4,4,2,1
+"one.util.huntbugs.detect.InfiniteLoop.visit(Node node, MethodContext mc)",11,4,4,2,2
+"one.util.huntbugs.flow.etype.OrType.negate()",11,4,3,2,0
+"one.util.huntbugs.registry.ClassData.registerAsserter(MemberReference mr)",10,4,3,2,1
+"one.util.huntbugs.util.Types.isImmutable(TypeReference type)",10,4,3,2,1
+"one.util.huntbugs.util.Xml.getChild(Element element, String tagName)",9,4,4,2,2
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testClassComparisonComplex(String a, Number b)",9,4,3,2,2
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testComplex(Object obj)",9,4,1,2,1
+"one.util.huntbugs.detect.NewGetClass.visit(Expression node, MethodContext ctx)",8,4,9,2,2
+"one.util.huntbugs.detect.UnreachableCatch.visit(Node node, MethodContext mc)",8,4,3,2,2
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testClassComparisonMixed(String a, Number b)",8,4,3,2,2
+"one.util.huntbugs.detect.SpinLoop.checkFieldRead(Expression expr, MethodContext mc)",7,4,7,2,2
+"one.util.huntbugs.spi.DataTests.test(String packageToAnalyze)",31,4,27,1,1
+"one.util.huntbugs.flow.Annotators.facts(Expression expr)",19,4,12,1,1
+"one.util.huntbugs.testdata.TestValuesFlow.testForSwitch(Map<Character,Integer> mod)",15,4,4,1,1
+"one.util.huntbugs.registry.ElementContext.resolveWarningType(String warning, int priority)",14,4,5,1,2
+"one.util.huntbugs.testdata.TestAverageComputation.bsearch(int[] a, int low, int high, int key)",14,4,0,1,4
+"one.util.huntbugs.testdata.TestAverageComputation.bsearch2(int[] a, int low, int high, int key)",14,4,0,1,4
+"one.util.huntbugs.testdata.TestAverageComputation.bsearchOk(int[] a, int low, int high, int key)",14,4,0,1,4
+"one.util.huntbugs.util.Exprs.isThis(Expression self)",12,4,8,1,1
+"one.util.huntbugs.util.Exprs.findExpression(Expression node, Predicate<Expression> predicate)",9,4,3,1,2
+"one.util.huntbugs.flow.Nullness.isNonNull()",9,4,2,1,0
+"one.util.huntbugs.flow.Nullness.state()",9,4,1,1,0
+"one.util.huntbugs.detect.JcipProblems.checkClass(TypeDefinition td)",8,4,5,1,1
+"one.util.huntbugs.warning.WarningAnnotation$MemberInfo.equals(Object obj)",8,4,5,1,1
+"one.util.huntbugs.warning.WarningAnnotation.equals(Object obj)",8,4,4,1,1
+"one.util.huntbugs.flow.Nullness.equals(Object obj)",8,4,3,1,1
+"one.util.huntbugs.flow.etype.SingleType.equals(Object obj)",8,4,3,1,1
+"one.util.huntbugs.warning.WarningAnnotation$Location.equals(Object obj)",8,4,2,1,1
+"one.util.huntbugs.db.Hierarchy.isOverridden(MethodDefinition md)",7,4,9,1,1
+"one.util.huntbugs.assertions.AssertionData.toString()",5,4,0,1,0
+"one.util.huntbugs.analysis.ErrorMessage.toString()",12,4,14,0,0
+"one.util.huntbugs.testdata.EqualsWrongField.equals(Object obj)",9,4,3,0,1
+"one.util.huntbugs.testdata.TestEqualsContract$SubClass.equals(Object obj)",9,4,3,0,1
+"one.util.huntbugs.testdata.TestEqualsContract$SubClass2.equals(Object obj)",9,4,3,0,1
+"one.util.huntbugs.testdata.EqualsObject.equals(Object obj)",9,4,2,0,1
+"one.util.huntbugs.testdata.EqualsObject2.equals(Object obj)",9,4,2,0,1
+"one.util.huntbugs.flow.EnumConstant.equals(Object obj)",8,4,4,0,1
+"one.util.huntbugs.flow.Exceptional.equals(Object obj)",8,4,3,0,1
+"one.util.huntbugs.testdata.EqualsFieldsOk.equals(Object obj)",8,4,3,0,1
+"one.util.huntbugs.testdata.EqualsList.equals(Object obj)",8,4,3,0,1
+"one.util.huntbugs.flow.etype.ComplexType.equals(Object obj)",7,4,3,0,1
+"one.util.huntbugs.testdata.TestKnownComparison.testAioobe(int[] x, int y)",15,3,1,7,2
+"one.util.huntbugs.testdata.TestKnownComparison.testCatch(String s)",13,3,4,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testFieldLoop()",12,3,3,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.TestKnownComparison()",10,3,3,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.testInLambda(int x)",10,3,2,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testSystemExit(int x)",9,3,3,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testInstanceFieldOk2(boolean b)",9,3,2,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testFieldDoWhile()",9,3,2,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.testIncInLoop()",9,3,2,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.testIncrement(boolean f)",9,3,1,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testIfConstCompare(int a)",8,3,2,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testInstanceFieldOk3(int x)",8,3,2,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testWhileExitCondition(int i)",8,3,2,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testArrayLength(boolean x)",8,3,1,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testIfConstStrings(String x)",7,3,3,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testSubFor(List<String> l2)",7,3,3,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testFor()",7,3,2,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.testAnd(int x)",7,3,1,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testAnd2(int x)",7,3,1,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testOr(int x)",7,3,1,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testBooleanAssignment(int a, int b)",6,3,1,7,2
+"one.util.huntbugs.testdata.TestKnownComparison.testBooleanAssignmentNot(int a, int b)",6,3,1,7,2
+"one.util.huntbugs.testdata.TestKnownComparison.testTernaryConstCompare(int a)",6,3,1,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testTernaryConstCompare2(int a)",6,3,1,7,1
+"one.util.huntbugs.flow.CFG.buildCondition(final BasicBlock curBlock, BasicBlock nextBlock, JumpContext jc, Condition condition)",16,3,16,6,4
+"one.util.huntbugs.flow.CFG.buildSingleLabel(BasicBlock entry, BasicBlock exit, Label label)",11,3,7,6,3
+"one.util.huntbugs.flow.CFG.updateState(GraphSearch<T> gs, BasicBlock bb, T newState)",10,3,3,6,3
+"one.util.huntbugs.flow.CFG.runDFA(Annotator<FACT> annotator, BiFunction<MethodDefinition,STATE,Dataflow<FACT,STATE>> dfFactory, int maxIter)",9,3,4,6,3
+"one.util.huntbugs.flow.CFG.computeForwardTill()",8,3,6,6,0
+"one.util.huntbugs.flow.CFG$DFARunner.transferConditional(Expression expr, STATE state)",8,3,5,6,2
+"one.util.huntbugs.db.FieldStats.linkUncontrolled(Object type, Object fieldName)",8,3,3,6,2
+"one.util.huntbugs.flow.CFG$LoopJumpContext.addContinue(BasicBlock block, Label label)",7,3,3,6,2
+"one.util.huntbugs.detect.NumericPromotion.isToFloatingPointConversion(Expression expr)",6,3,4,6,1
+"one.util.huntbugs.db.FieldStats$SimpleStack.registerJump(Instruction instr)",4,3,4,6,1
+"one.util.huntbugs.flow.CFG$DFARunner.getBlockDescription(BasicBlock bb)",3,3,2,6,1
+"one.util.huntbugs.db.FieldStats$SimpleStack.poll()",3,3,1,6,0
+"one.util.huntbugs.registry.DetectorRegistry.addDetector(Class<?> clazz)",15,3,11,5,1
+"one.util.huntbugs.registry.DetectorRegistry$DetectorVisitor.visitClass(String className)",14,3,8,5,1
+"one.util.huntbugs.util.NodeChain.isSynchronized()",11,3,3,5,0
+"one.util.huntbugs.util.NodeChain.getLambdaMethod()",9,3,4,5,0
+"one.util.huntbugs.util.NodeChain.isInLoop()",8,3,2,5,0
+"one.util.huntbugs.detect.EqualsContract.getPriority(TypeDefinition td)",7,3,2,5,1
+"one.util.huntbugs.detect.RedundantStreamCalls.isStreamFilter(MethodReference mr)",6,3,13,5,1
+"one.util.huntbugs.detect.SameBranches.visitExpr(Expression expr, MethodContext mc)",6,3,10,5,2
+"one.util.huntbugs.detect.FieldAccess.getWriteAnnotations(FieldRecord fieldRecord)",6,3,1,5,1
+"one.util.huntbugs.repo.Repository.createSelfRepository()",22,3,10,4,0
+"one.util.huntbugs.testdata.TestSameBranches.testSwitchDefault(int a)",13,3,3,4,1
+"one.util.huntbugs.flow.ETypeAnnotator$ETypeDataflow.transferExceptionalState(ContextTypes src, Expression expr)",11,3,9,4,2
+"one.util.huntbugs.flow.ETypeAnnotator$ETypeDataflow.transferState(ContextTypes src, Expression expr)",11,3,9,4,2
+"one.util.huntbugs.detect.UncalledPrivateMethod.link(MethodReference from, MethodReference to)",11,3,4,4,2
+"one.util.huntbugs.registry.Detector.bindDatabases(int count, TypeDefinition td, MethodHandle mh)",10,3,6,4,3
+"one.util.huntbugs.flow.NullAnnotator$ContextNulls.add(Variable var, Nullness value)",10,3,4,4,2
+"one.util.huntbugs.detect.UnnecessaryBoxing.isBoxing(Expression expr)",9,3,7,4,1
+"one.util.huntbugs.flow.ConstAnnotator$ContextValues.add(Variable var, Object value)",9,3,4,4,2
+"one.util.huntbugs.ant.HuntBugsTask.addListener(Context ctx)",9,3,4,4,1
+"one.util.huntbugs.analysis.Context.Context(Repository repository, AnalysisOptions options)",9,3,3,4,2
+"one.util.huntbugs.flow.NullAnnotator$ContextNulls.get(Map<Variable,Nullness> map, Variable v)",9,3,2,4,2
+"one.util.huntbugs.flow.NullAnnotator$ContextNulls.transfer(Expression expr)",8,3,7,4,1
+"one.util.huntbugs.detect.RandomUsage.isRandomInit(Expression expr)",8,3,5,4,1
+"one.util.huntbugs.detect.ArrayRangeCheck.checkNegative(MethodContext mc, Expression expr, Object idxObj)",8,3,4,4,3
+"one.util.huntbugs.detect.ExclusiveConditions.isEquality(Expression expr)",7,3,4,4,1
+"one.util.huntbugs.detect.StringIndex.checkRange(Expression expr, int maxValue, int val, MethodContext mc)",6,3,5,4,4
+"one.util.huntbugs.analysis.Context.fireEvent(String stepName, String className, int step, int total)",6,3,1,4,4
+"one.util.huntbugs.detect.StringIndex.visit(Expression node, MethodContext ctx)",5,3,4,4,2
+"one.util.huntbugs.flow.ConstAnnotator$ContextValues.resolve(Expression expr)",4,3,2,4,1
+"one.util.huntbugs.flow.ETypeAnnotator$ContextTypes.resolve(Expression expr)",4,3,2,4,1
+"one.util.huntbugs.flow.NullAnnotator$ContextNulls.resolve(Expression expr)",4,3,2,4,1
+"one.util.huntbugs.output.Reports.write(Path xmlTarget, Path htmlTarget, HuntBugsResult result)",25,3,5,3,3
+"one.util.huntbugs.testdata.TestNullCheck.testFileOpen(File f1, File f2, File f3)",25,3,2,3,3
+"one.util.huntbugs.testdata.TestNullCheck.addItem(Map<Integer,List<String>> map, int from, int to, List<String> values)",18,3,5,3,4
+"one.util.huntbugs.maven.plugin.HuntBugsMojo.execute()",16,3,5,3,0
+"one.util.huntbugs.testdata.TestDeadLocalStore.execute(Runnable r)",15,3,5,3,1
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadLocalStoreCatch3(String i)",15,3,2,3,1
+"one.util.huntbugs.registry.ClassContext.visitClass()",14,3,9,3,0
+"one.util.huntbugs.flow.PurityAnnotator.annotatePurity(Expression expr, FrameContext fc)",13,3,7,3,2
+"one.util.huntbugs.registry.MethodContext.visitNode(Node node)",12,3,7,3,1
+"one.util.huntbugs.registry.MethodContext.visitMethod()",12,3,6,3,0
+"one.util.huntbugs.analysis.AnalysisOptions.report(PrintStream out)",11,3,9,3,1
+"one.util.huntbugs.testdata.TestNullCheck.testOk(String s, boolean b)",10,3,4,3,2
+"one.util.huntbugs.maven.plugin.HuntBugsMojo.addAnalysisProgressListener(Context ctx)",9,3,5,3,1
+"one.util.huntbugs.registry.ClassContext.getTypeSpecificAnnotations()",9,3,5,3,0
+"one.util.huntbugs.db.MethodStats.visitMethod(MethodData mdata, MethodDefinition md)",9,3,4,3,2
+"one.util.huntbugs.testdata.TestNullCheck.testLoop(List<String> list)",9,3,3,3,1
+"one.util.huntbugs.testdata.TestConditionChain.testSameConditionsElse(int x)",9,3,2,3,1
+"one.util.huntbugs.testdata.TestNullCheck.testNullDerefPossible(boolean b)",9,3,2,3,1
+"one.util.huntbugs.testdata.TestNullCheck.testRedundantNull(String s)",9,3,2,3,1
+"one.util.huntbugs.testdata.TestNullCheck.testRedundantDoubleCheck(String s)",9,3,1,3,1
+"one.util.huntbugs.util.Nodes.getLambdaMethod(Lambda l)",8,3,5,3,1
+"one.util.huntbugs.testdata.TestNullCheck.testNull(String s)",8,3,2,3,1
+"one.util.huntbugs.testdata.TestNullCheck.testRedundantNullWhile(X x)",8,3,1,3,1
+"one.util.huntbugs.util.Nodes.getConstant(Node node)",7,3,3,3,1
+"one.util.huntbugs.testdata.TestConditionChain.testExcludingConditions(float x)",7,3,2,3,1
+"one.util.huntbugs.testdata.TestNullCheck.testTernaryNull(X x)",7,3,2,3,1
+"one.util.huntbugs.db.MethodStats$MethodData.addSubMethod(MethodData md)",7,3,1,3,1
+"one.util.huntbugs.registry.MethodData.createConverter(MethodDefinition md)",7,3,1,3,1
+"one.util.huntbugs.testdata.TestConditionChain.testSameConditions(int x)",7,3,1,3,1
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadLocalStoreTernaryOk(int b)",7,3,1,3,1
+"one.util.huntbugs.flow.etype.AndType.of(Set<SingleType> types)",6,3,4,3,1
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadLocalStoreLabel(boolean x, String a)",6,3,3,3,2
+"one.util.huntbugs.util.Equi.equiTypes(TypeReference left, TypeReference right)",6,3,3,3,2
+"one.util.huntbugs.registry.MethodData.getConverter()",6,3,2,3,0
+"one.util.huntbugs.testdata.TestDeadLocalStore.testAndChain(int x)",6,3,1,3,1
+"one.util.huntbugs.util.Nodes.isPure(Node node)",6,3,1,3,1
+"one.util.huntbugs.util.Nodes.isNullCheck(Node node)",5,3,7,3,1
+"one.util.huntbugs.detect.SyncGetClass.isStaticFieldAccess(Node n, TypeDefinition td)",5,3,5,3,2
+"one.util.huntbugs.assertions.MemberAsserter.forMember(MemberAsserter parent, MemberReference md)",5,3,2,3,2
+"one.util.huntbugs.detect.NumericComparison$LongRange.union(LongRange other)",4,3,2,3,1
+"one.util.huntbugs.input.XmlReportReader.loadWarning(Element e, Context ctx)",18,3,13,2,2
+"one.util.huntbugs.testdata.TestBadMath.testRemSwitchOk(int x)",16,3,2,2,1
+"one.util.huntbugs.testdata.TestBadMath.testRemSwitch(int x)",15,3,2,2,1
+"one.util.huntbugs.testdata.TestBadMath.testRemSwitchInside(int x)",15,3,2,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testTwoOptions(Object obj)",12,3,3,2,1
+"one.util.huntbugs.testdata.TestDubiousCatch.catchCME(List<String> list)",12,3,1,2,1
+"one.util.huntbugs.flow.BackLinkAnnotator.doLink(Expression target, Expression source)",11,3,6,2,2
+"one.util.huntbugs.testdata.TestNumericComparison.countMembers(int[] bits)",11,3,0,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testTypeMerging(Object obj, String type)",10,3,4,2,2
+"one.util.huntbugs.testdata.TestDubiousCatch.catchCMEVoid(List<String> list)",10,3,2,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testInferredDeadCode(int x)",10,3,2,2,1
+"one.util.huntbugs.util.Types.lookupJdkType(String internalName)",10,3,2,2,1
+"one.util.huntbugs.testdata.TestBadMath.testRemDoWhile()",10,3,1,2,0
+"one.util.huntbugs.testdata.TestBadMath.testRemDoWhileOk()",10,3,1,2,0
+"one.util.huntbugs.detect.Naming.visitField(FieldDefinition fd, FieldContext fc)",9,3,10,2,2
+"one.util.huntbugs.util.Types.getExpressionType(Expression expr)",9,3,7,2,1
+"one.util.huntbugs.flow.BackLinkAnnotator.annotateBackLinks(Expression expr)",9,3,5,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf$MyList.hasString()",9,3,3,2,0
+"one.util.huntbugs.testdata.TestBadMath.testRemLoop()",9,3,1,2,0
+"one.util.huntbugs.testdata.TestBadMath.testRemLoopOk()",9,3,1,2,0
+"one.util.huntbugs.flow.Annotator.forExpressions(Node node, Consumer<Expression> cons)",8,3,3,2,2
+"one.util.huntbugs.testdata.TestInfiniteRecursion.printRecursively(List<?> list)",8,3,2,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testChar(char c)",8,3,2,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testIsInstance(Object obj)",8,3,2,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testIntPhi(boolean b)",8,3,1,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testBooleanInstanceOf(Object obj)",8,3,1,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testInferred(int x)",8,3,1,2,1
+"one.util.huntbugs.flow.ValuesFlow.allMatch(Expression src, Predicate<Expression> pred)",7,3,14,2,2
+"one.util.huntbugs.flow.ValuesFlow.anyMatch(Expression src, Predicate<Expression> pred)",7,3,14,2,2
+"one.util.huntbugs.detect.CompareContract.visit(Expression expr, MethodContext mc)",7,3,6,2,2
+"one.util.huntbugs.flow.ClassFields.isSideEffectFree(MethodReference mr, boolean exact)",7,3,3,2,2
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testGetClass2(Object obj)",7,3,3,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testRemPhi(List<String> list, boolean b)",7,3,2,2,2
+"one.util.huntbugs.registry.DatabaseRegistry.visitType(TypeDefinition td)",7,3,2,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testGetClass(Object obj)",7,3,2,2,1
+"one.util.huntbugs.util.Types.getSourceFile(TypeDefinition type)",7,3,2,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testBitOpPhi(int input, boolean b)",7,3,1,2,2
+"one.util.huntbugs.testdata.TestNumericComparison.testBitOpPhi2(int input, boolean b)",7,3,1,2,2
+"one.util.huntbugs.testdata.TestNumericComparison.testBitOpPhiOk(int input, boolean b)",7,3,1,2,2
+"one.util.huntbugs.testdata.TestNumericComparison.testBitOpPhiOk2(int input, boolean b)",7,3,1,2,2
+"one.util.huntbugs.testdata.TestBadMath.testInCompatibleOrObscure(int x)",7,3,1,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testConditional(Object obj)",7,3,1,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testConditionalImpossible(Object obj)",7,3,1,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testPrimArray(Object data)",7,3,0,2,1
+"one.util.huntbugs.flow.BackLinkAnnotator.link(Expression target, Expression source)",6,3,6,2,2
+"one.util.huntbugs.detect.ExposeRepresentation.getParameter(Expression value)",6,3,5,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testInt(boolean b)",6,3,1,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testIntAlways(boolean b)",6,3,1,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testShrOk(int input)",6,3,1,2,1
+"one.util.huntbugs.testdata.TestBadMath.testCompatibleAnd(int x)",5,3,1,2,1
+"one.util.huntbugs.testdata.TestBadMath.testCompatibleOr(int x)",5,3,1,2,1
+"one.util.huntbugs.testdata.TestBadMath.testIncompatibleAnd(int x)",5,3,1,2,1
+"one.util.huntbugs.testdata.TestBadMath.testIncompatibleAnd2(int x)",5,3,1,2,1
+"one.util.huntbugs.testdata.TestBadMath.testIncompatibleOr(int x)",5,3,1,2,1
+"one.util.huntbugs.testdata.TestBadMath.testIncompatibleOr2(int x)",5,3,1,2,1
+"one.util.huntbugs.detect.ExceptionalExpression.visit(Expression expr, NodeChain nc, MethodContext mc)",11,3,7,1,3
+"one.util.huntbugs.testdata.TestStringConcatInLoop.testStringConcatInLoopNested2(String[] data)",10,3,1,1,1
+"one.util.huntbugs.testdata.TestCovariantArrays.testTernaryPhi()",9,3,2,1,0
+"one.util.huntbugs.util.Maps.compactify(Map<K,V> map)",8,3,9,1,1
+"one.util.huntbugs.util.Exprs.isAssertionStatusCheck(Expression expr)",8,3,7,1,1
+"one.util.huntbugs.testdata.TestWrongMapIterator.testTwice(Map<String,String> m1, Map<String,String> m2)",8,3,5,1,2
+"one.util.huntbugs.warning.WarningAnnotation$MemberInfo.toString()",8,3,5,1,0
+"one.util.huntbugs.flow.Annotators.replace(Expression expr, int i, Object oldData, Object data)",8,3,3,1,4
+"one.util.huntbugs.testdata.TestInfiniteLoop.testLoopInvariant(int x)",8,3,2,1,1
+"one.util.huntbugs.testdata.TestSameIfChain.testField(int x)",8,3,2,1,1
+"one.util.huntbugs.testdata.TestSameIfChain.testSimple(int x)",8,3,2,1,1
+"one.util.huntbugs.testdata.TestSameIfChain.testOk(int x)",8,3,1,1,1
+"one.util.huntbugs.testdata.TestStringConcatInLoop.testStringConcatInLoopNested(String[] data)",8,3,0,1,1
+"one.util.huntbugs.warning.WarningAnnotation$MemberInfo.getReturnType()",7,3,6,1,0
+"one.util.huntbugs.testdata.TestExclusiveConditions.testBoxing(Integer x)",7,3,1,1,1
+"one.util.huntbugs.testdata.TestStringConcatInLoop.testStringConcatInLoopIf(String[] data)",7,3,1,1,1
+"one.util.huntbugs.warning.Warning.getAnnotation(Role<T> role)",6,3,5,1,1
+"one.util.huntbugs.db.Hierarchy.link(TypeHierarchy th, TypeReference superType)",6,3,4,1,2
+"one.util.huntbugs.warning.Warning.getAnnotation(String name)",6,3,3,1,1
+"one.util.huntbugs.testdata.TestNonShortCircuit.testMethod(Integer a, Integer b)",6,3,1,1,2
+"one.util.huntbugs.testdata.TestNonShortCircuit.testInstanceOf(Object s)",6,3,1,1,1
+"one.util.huntbugs.testdata.TestNonShortCircuit.testNull(String s)",6,3,1,1,1
+"one.util.huntbugs.testdata.TestNonShortCircuit.testNullOr(String s)",6,3,1,1,1
+"one.util.huntbugs.testdata.TestNonShortCircuit.testInstanceOf(Object s, boolean b)",6,3,0,1,2
+"one.util.huntbugs.testdata.TestNonShortCircuit.testOrBoxing(Integer a, Integer b)",6,3,0,1,2
+"one.util.huntbugs.testdata.TestExclusiveConditions.testStrings(String str)",5,3,3,1,1
+"one.util.huntbugs.testdata.TestExclusiveConditions.testEnum(TimeUnit tu)",5,3,2,1,1
+"one.util.huntbugs.testdata.TestExclusiveConditions.testDiff(int x, int y)",5,3,1,1,2
+"one.util.huntbugs.testdata.TestExclusiveConditions.testOr(int x)",5,3,1,1,1
+"one.util.huntbugs.testdata.TestExclusiveConditions.testSimple(int x)",5,3,1,1,1
+"one.util.huntbugs.testdata.TestNonShortCircuit.testAnd(int a, int b)",5,3,0,1,2
+"one.util.huntbugs.testdata.TestNonShortCircuit.testOr(int a, int b)",5,3,0,1,2
+"one.util.huntbugs.testdata.TestNonShortCircuit.testOrBoxing2(Integer a, Integer b)",5,3,0,1,2
+"one.util.huntbugs.warning.Warning.saturateScore(int score)",2,3,0,1,1
+"one.util.huntbugs.warning.Role.equals(Object obj)",8,3,2,0,1
+"one.util.huntbugs.testdata.TestFloatComparison.testDouble3(double a)",6,3,2,0,1
+"one.util.huntbugs.testdata.TestFloatComparison.testDoublePhi(boolean b, double a)",6,3,1,0,2
+"one.util.huntbugs.testdata.TestExposeRepresentation.setField(int[] f)",6,3,1,0,1
+"one.util.huntbugs.testdata.TestFloatComparison.testDoubleTernary(boolean b, double a)",5,3,1,0,2
+"one.util.huntbugs.warning.Role$OperationRole.create(Expression expr)",4,3,7,0,1
+"one.util.huntbugs.flow.TrueFalse.TrueFalse(STATE trueState, STATE falseState, boolean invert)",3,3,0,0,3
+"one.util.huntbugs.util.Methods.findSuperMethods(MethodReference mr)",8,2,4,8,1
+"one.util.huntbugs.util.Methods.findSuperMethod(MethodReference mr)",6,2,4,8,1
+"one.util.huntbugs.testdata.TestKnownComparison.testNestedFinally()",17,2,5,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.testFinally()",16,2,4,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.catchInfiniteLoop(int[] arr, int offset)",12,2,2,7,2
+"one.util.huntbugs.testdata.TestKnownComparison.testInLambdaFP(int x)",9,2,2,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testInc()",8,2,1,7,0
+"one.util.huntbugs.testdata.TestKnownComparison$ArrayTest.ArrayTest(boolean b)",8,2,0,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testBooleanStringCompare()",7,2,3,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.testIntegerStringCompare()",7,2,3,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.testBooleanBoxingCompare()",7,2,2,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.testFinalFieldReturn()",7,2,2,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.testInstanceFieldOk()",7,2,2,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.testSideEffectFree()",7,2,2,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.testStaticFieldOk()",7,2,2,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.test()",7,2,1,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.testCompoundStore()",7,2,1,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.testFinalFieldOutside()",6,2,2,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.TestKnownComparison(boolean b)",6,2,1,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testInstanceField()",6,2,1,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.testStaticField()",6,2,1,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.testBooleanFlag()",5,2,1,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.testFinalField()",5,2,1,7,0
+"one.util.huntbugs.testdata.TestKnownComparison$ArrayTest.testArrayLength()",4,2,1,7,0
+"one.util.huntbugs.testdata.TestKnownComparison$TestFieldAssignment.test()",4,2,1,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.testTernary()",4,2,0,7,0
+"one.util.huntbugs.flow.CFG.CFG(MethodDefinition md, BasicBlock closure, Block methodBody)",18,2,12,6,3
+"one.util.huntbugs.flow.CFG.buildFinally(final BasicBlock curBlock, BasicBlock nextBlock, JumpContext jc, TryCatchBlock tryCatch)",10,2,9,6,4
+"one.util.huntbugs.flow.CFG$DFARunner.toString()",9,2,7,6,0
+"one.util.huntbugs.flow.CFG$LabelJumpContext.addJump(BasicBlock block, Label label)",7,2,4,6,2
+"one.util.huntbugs.flow.CFG$LabelJumpContext.addBreak(BasicBlock block, Label label)",7,2,2,6,2
+"one.util.huntbugs.flow.CFG$LoopJumpContext.addBreak(BasicBlock block, Label label)",7,2,2,6,2
+"one.util.huntbugs.flow.CFG$SwitchJumpContext.addBreak(BasicBlock block, Label label)",7,2,2,6,2
+"one.util.huntbugs.flow.CFG.clearChanged()",7,2,0,6,0
+"one.util.huntbugs.flow.CFG.initialize()",7,2,0,6,0
+"one.util.huntbugs.flow.CFG.toString()",6,2,4,6,0
+"one.util.huntbugs.flow.CFG$OuterJumpContext.addBreak(BasicBlock block, Label label)",6,2,1,6,2
+"one.util.huntbugs.detect.BadMath.isByte(Expression expr)",5,2,6,6,1
+"one.util.huntbugs.flow.CFG$BasicBlock.targets()",5,2,4,6,0
+"one.util.huntbugs.db.FieldStats$SimpleStack.preprocess(Instruction instr)",5,2,3,6,1
+"one.util.huntbugs.flow.CFG.copyBlocks(int copyStart, int copyEnd)",5,2,1,6,2
+"one.util.huntbugs.db.FieldStats$TypeFieldStats.getFlags(String name)",5,2,1,6,1
+"one.util.huntbugs.flow.CFG$CatchJumpContext.CatchJumpContext(JumpContext parent, BasicBlock nextBlock, List<CatchBlock> catchBlocks)",4,2,6,6,3
+"one.util.huntbugs.flow.CFG$CatchJumpContext.types(CatchBlock cb)",4,2,5,6,1
+"one.util.huntbugs.flow.CFG.isReachable(Expression expr)",4,2,2,6,1
+"one.util.huntbugs.flow.CFG.renumBlocks()",4,2,2,6,0
+"one.util.huntbugs.flow.CFG$FinallyJumpContext.replacePass(BasicBlock block)",4,2,1,6,1
+"one.util.huntbugs.flow.CFG$BasicBlock.setExpression(Expression expr)",4,2,0,6,1
+"one.util.huntbugs.flow.CFG$BasicBlock.setId(int id)",4,2,0,6,1
+"one.util.huntbugs.detect.Internationalization.add(String className, String methodName, String badSignature, String goodSignature)",3,2,30,6,4
+"one.util.huntbugs.db.FieldStats.getFlags(FieldReference fr)",3,2,4,6,1
+"one.util.huntbugs.db.FieldStats$TypeFieldStats.linkUncontrolled(String fieldName)",3,2,1,6,1
+"one.util.huntbugs.db.FieldStats$SimpleStack.push(Object cst)",2,2,1,6,1
+"one.util.huntbugs.flow.CFG$BasicBlock.falseOrPass()",2,2,0,6,0
+"one.util.huntbugs.flow.CFG$BasicBlock.trueOrPass()",2,2,0,6,0
+"one.util.huntbugs.registry.DetectorRegistry.reportTitles(PrintStream out)",14,2,16,5,1
+"one.util.huntbugs.registry.DetectorRegistry.init()",14,2,8,5,0
+"one.util.huntbugs.detect.EqualsContract.isSelfCheck(Expression expr)",12,2,9,5,1
+"one.util.huntbugs.registry.DetectorRegistry.reportDatabases(PrintStream out)",11,2,13,5,1
+"one.util.huntbugs.registry.DetectorRegistry.createDetector(Class<?> clazz, Map<String,WarningType> wts)",11,2,11,5,2
+"one.util.huntbugs.util.NodeChain.getRoot()",9,2,3,5,0
+"one.util.huntbugs.flow.SourceAnnotator.build(ClassFields cf, CFG cfg)",8,2,4,5,2
+"one.util.huntbugs.flow.SourceAnnotator$Frame.replace(Variable var, Expression replacement)",8,2,2,5,2
+"one.util.huntbugs.detect.SameBranches.nonFallThrough(List<Node> body)",6,2,7,5,1
+"one.util.huntbugs.detect.EqualsContract.isGetClass(Expression expr)",6,2,3,5,1
+"one.util.huntbugs.detect.BadMethodCalls.isTimeMeasure(Node node)",5,2,6,5,1
+"one.util.huntbugs.detect.EqualsContract.isParameter(Expression expr)",5,2,4,5,1
+"one.util.huntbugs.flow.SourceAnnotator$Frame.get(Variable var)",5,2,3,5,1
+"one.util.huntbugs.registry.DetectorRegistry.getDefinitions(Class<?> clazz)",5,2,3,5,1
+"one.util.huntbugs.registry.DetectorRegistry.populateDatabases(TypeDefinition type)",5,2,3,5,1
+"one.util.huntbugs.util.NodeChain.toString()",5,2,1,5,0
+"one.util.huntbugs.flow.SourceAnnotator.getSource(Expression input)",3,2,1,5,1
+"one.util.huntbugs.warning.Messages.load()",15,2,7,4,0
+"one.util.huntbugs.flow.ConstAnnotator.getValue(Expression input)",15,2,1,4,1
+"one.util.huntbugs.detect.RoughConstant$BadConstant.BadConstant(double base, double factor, String replacement, int basePriority)",13,2,13,4,4
+"one.util.huntbugs.HuntBugs.glob(String mask)",13,2,13,4,1
+"null",11,2,4,4,3
+"one.util.huntbugs.analysis.Context.analyzeClass(MetadataSystem ms, String name)",11,2,4,4,2
+"one.util.huntbugs.detect.CloneContract.beforeClass(TypeDefinition td)",8,2,6,4,1
+"one.util.huntbugs.testdata.TestSameBranches.testSameLambdaCapture(int a, int b)",7,2,8,4,2
+"one.util.huntbugs.testdata.TestSameBranches.testSameDiffLambda(int a, int b)",7,2,6,4,2
+"one.util.huntbugs.analysis.Context.lookUp(MetadataSystem ms, String className)",7,2,3,4,2
+"one.util.huntbugs.testdata.TestSameBranches.testDiff(int a)",7,2,2,4,1
+"one.util.huntbugs.testdata.TestSameBranches.testSame(int a)",7,2,2,4,1
+"one.util.huntbugs.detect.UncalledPrivateMethod.remove(MemberInfo mi)",6,2,5,4,1
+"one.util.huntbugs.HuntBugs.createTypeLoader(Path path)",6,2,3,4,1
+"one.util.huntbugs.HuntBugs.createRepository(Path path)",6,2,2,4,1
+"one.util.huntbugs.registry.Detector.runBody(MethodHandle mh, Object det, Node n, NodeChain nc, MethodContext mc, MethodDefinition md, TypeDefinition td)",6,2,1,4,7
+"one.util.huntbugs.registry.Detector.runExpression(MethodHandle mh, Object det, Node n, NodeChain nc, MethodContext mc, MethodDefinition md, TypeDefinition td)",6,2,1,4,7
+"one.util.huntbugs.warning.Messages.getMessagesForType(String warningType)",6,2,1,4,1
+"one.util.huntbugs.analysis.Context.getMessages()",6,2,1,4,0
+"one.util.huntbugs.flow.ETypeAnnotator$ETypeDataflow.resolve(ContextTypes ctx, Expression expr)",5,2,6,4,2
+"one.util.huntbugs.flow.ETypeAnnotator$ContextTypes.transfer(Expression expr)",5,2,6,4,1
+"one.util.huntbugs.analysis.Context.addWarning(Warning warning)",5,2,4,4,1
+"one.util.huntbugs.registry.Detector.getDatabase(Class<T> clazz, TypeReference tr)",5,2,3,4,2
+"one.util.huntbugs.detect.RoughConstant$BadConstant.exact(Number candidate)",5,2,2,4,1
+"one.util.huntbugs.flow.NullAnnotator$NullDataflow.mergeFacts(Nullness f1, Nullness f2)",5,2,1,4,2
+"one.util.huntbugs.ant.HuntBugsTask.setAuxClassPath(Path auxClassPath)",4,2,2,4,1
+"one.util.huntbugs.ant.HuntBugsTask.setClassPath(Path classPath)",4,2,2,4,1
+"one.util.huntbugs.registry.Detector.adapt(MethodHandle mh)",4,2,1,4,1
+"one.util.huntbugs.detect.RandomUsage.getReplacement(String type)",3,2,2,4,1
+"one.util.huntbugs.flow.ConstAnnotator$ContextValues.transfer(Expression expr)",3,2,2,4,1
+"one.util.huntbugs.flow.ConstAnnotator.getType(Expression expr)",3,2,2,4,1
+"one.util.huntbugs.flow.ConstAnnotator.build(CFG cfg)",3,2,1,4,1
+"one.util.huntbugs.flow.ETypeAnnotator.build(CFG cfg)",3,2,1,4,1
+"one.util.huntbugs.flow.ETypeAnnotator.resolve(Expression expr)",3,2,1,4,1
+"one.util.huntbugs.flow.NullAnnotator.build(CFG cfg)",3,2,1,4,1
+"one.util.huntbugs.flow.NullAnnotator.resolve(Expression expr)",3,2,1,4,1
+"one.util.huntbugs.flow.ConstAnnotator$ContextValues.toString()",3,2,1,4,0
+"one.util.huntbugs.flow.ETypeAnnotator$ContextTypes.toString()",3,2,1,4,0
+"one.util.huntbugs.flow.NullAnnotator$ContextNulls.toString()",3,2,1,4,0
+"one.util.huntbugs.testdata.TestSameBranches.testSame(int a, int[] b)",3,2,0,4,2
+"one.util.huntbugs.warning.Messages$Message.getLongDescription()",2,2,1,4,0
+"one.util.huntbugs.output.Reports.merge(Collection<HuntBugsResult> results)",27,2,3,3,1
+"one.util.huntbugs.output.Reports.makeDom(HuntBugsResult ctx)",20,2,26,3,1
+"one.util.huntbugs.testdata.TestDeadLocalStore.testUnusedLocalVariableClassInStreamMap()",11,2,7,3,0
+"one.util.huntbugs.testdata.TestNullCheck.testNullExceptional(String s)",11,2,3,3,1
+"one.util.huntbugs.registry.MethodContext.visitAfterMethod()",9,2,4,3,0
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadLocalStoreInit(boolean x)",9,2,1,3,1
+"one.util.huntbugs.util.ExpressionFormatter.formatBinary(StringBuilder sb, Expression expr, String op, int precedence, int outerPrecedence)",8,2,16,3,5
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadLocalStoreLambda2(boolean b)",8,2,5,3,1
+"one.util.huntbugs.registry.ClassContext.visitAfterClass()",8,2,4,3,0
+"one.util.huntbugs.testdata.TestNullCheck.testNullThrow(String s)",7,2,3,3,1
+"one.util.huntbugs.testdata.TestNullCheck.testRedundantDeref(String str)",7,2,3,3,1
+"one.util.huntbugs.testdata.TestNullCheck.testWithBooleanFlag(String s)",7,2,3,3,1
+"one.util.huntbugs.testdata.TestNullCheck.testRedundantDoubleCheckCall(String s)",7,2,2,3,1
+"one.util.huntbugs.testdata.TestNullCheck.testNullDeref()",7,2,2,3,0
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadLocalStore(int i)",7,2,1,3,1
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadLocalStore2(int i)",7,2,1,3,1
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadLocalStoreSame(int i)",7,2,1,3,1
+"one.util.huntbugs.testdata.TestSelfAssignment.testIncrement(int[] data)",7,2,1,3,1
+"one.util.huntbugs.testdata.TestSelfAssignment.testIncrementStatic(int[] data)",7,2,1,3,1
+"one.util.huntbugs.testdata.TestNullCheck.testRedundant()",7,2,1,3,0
+"one.util.huntbugs.detect.StringConcatInLoop.isStringBuilderToString(Expression expr)",6,2,9,3,1
+"one.util.huntbugs.detect.StringConcatInLoop.isStringValueOf(Expression expr)",6,2,9,3,1
+"one.util.huntbugs.util.Nodes.isToFloatingPointConversion(Node node)",6,2,4,3,1
+"one.util.huntbugs.testdata.TestNullCheck.testErrorCall(String s)",6,2,3,3,1
+"one.util.huntbugs.warning.Formatter.formatTypeInfo(TypeInfo ti, String format)",6,2,2,3,2
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadLocalStoreConstStr(int i)",6,2,2,3,1
+"one.util.huntbugs.testdata.TestNullCheck.testRedundantEqualsNull()",6,2,2,3,0
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadLocalStoreConst(int i)",6,2,1,3,1
+"one.util.huntbugs.testdata.TestDeadLocalStore.testThrow(String i)",6,2,1,3,1
+"one.util.huntbugs.util.Nodes.isInvoke(Node node)",6,2,1,3,1
+"one.util.huntbugs.util.Nodes.isSynchorizedBlock(Node node)",6,2,1,3,1
+"one.util.huntbugs.testdata.TestNullCheck.testRedundantNotNull()",6,2,1,3,0
+"one.util.huntbugs.util.ExpressionFormatter.formatUnary(StringBuilder sb, Expression expr, String prefix, String postfix, int precedence, int outerPrecedence)",5,2,12,3,6
+"one.util.huntbugs.util.Nodes.getChild(Node node, int i)",5,2,5,3,2
+"one.util.huntbugs.registry.MethodContext$WarningInfo.build()",5,2,5,3,0
+"one.util.huntbugs.warning.Formatter.formatString(String value, String format)",5,2,2,3,2
+"one.util.huntbugs.assertions.MemberAsserter.forMember(MemberReference md)",5,2,2,3,1
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadLocalBranch(int x)",5,2,2,3,1
+"one.util.huntbugs.registry.MethodData.getMethodSpecificAnnotations()",5,2,2,3,0
+"one.util.huntbugs.assertions.MemberAsserter.MemberAsserter(MemberAsserter parent, List<AssertionData> data)",5,2,0,3,2
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadParameterStore(int i)",5,2,0,3,1
+"one.util.huntbugs.util.Equi$EquiContext.addAndCheck()",5,2,0,3,0
+"one.util.huntbugs.flow.FrameContext.makeUpdatedNode(Expression src)",4,2,3,3,1
+"one.util.huntbugs.testdata.TestDeadLocalStore.convert(String s)",4,2,2,3,1
+"one.util.huntbugs.registry.MethodContext.finalizeMethod()",4,2,2,3,0
+"one.util.huntbugs.registry.MethodContext.findDeadCode(Expression expr, EdgeType edgeType)",4,2,1,3,2
+"one.util.huntbugs.detect.NumericComparison$LongRange.isFalseEmpty(LongRange realRange)",4,2,1,3,1
+"one.util.huntbugs.detect.NumericComparison$LongRange.isTrueEmpty(LongRange realRange)",4,2,1,3,1
+"one.util.huntbugs.util.Nodes.facts(Node node)",4,2,1,3,1
+"one.util.huntbugs.registry.MethodData.getLineNumber(int offset)",3,2,2,3,1
+"one.util.huntbugs.testdata.TestNullCheck.safeTrim(String s)",3,2,1,3,1
+"one.util.huntbugs.flow.PurityAnnotator.merge(Purity other)",2,2,2,3,1
+"one.util.huntbugs.flow.etype.EType.unknownToNull()",2,2,0,3,0
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testCCE(Object obj)",12,2,2,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.checkWithCatch(String s)",11,2,2,2,1
+"one.util.huntbugs.testdata.TestIgnoredException.test3()",10,2,1,2,0
+"one.util.huntbugs.registry.FieldContext.visitField()",9,2,4,2,0
+"one.util.huntbugs.registry.DatabaseRegistry.getDatabaseInfo(Class<T> clazz)",9,2,3,2,1
+"one.util.huntbugs.util.Xml.getIntAttribute(Element element, String attribute, int defaultValue)",9,2,2,2,3
+"one.util.huntbugs.util.Types.isMutable(TypeReference type)",8,2,3,2,1
+"one.util.huntbugs.testdata.TestWaitContract.doWhile()",8,2,1,2,0
+"one.util.huntbugs.testdata.TestWaitContract.whileDo()",8,2,1,2,0
+"one.util.huntbugs.input.XmlReportReader.loadWarnings(Document dom, Context ctx)",7,2,12,2,2
+"one.util.huntbugs.input.XmlReportReader.loadErrors(Document dom)",7,2,10,2,1
+"one.util.huntbugs.testdata.TestInfiniteRecursion$InfiniteLoop.doNotReport2(Object a, Object b)",7,2,1,2,2
+"one.util.huntbugs.testdata.TestWaitContract.noLoop()",7,2,1,2,0
+"one.util.huntbugs.testdata.TestBadMath.testRem(int x)",7,2,0,2,1
+"one.util.huntbugs.registry.ClassData.finish(Context ctx)",6,2,8,2,1
+"one.util.huntbugs.testdata.TestInfiniteRecursion$InfiniteLoop.doNotReport3(Object a, Object b)",6,2,2,2,2
+"one.util.huntbugs.testdata.TestNumericComparison.testByte(Byte b)",6,2,2,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testRem(List<String> list)",6,2,2,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testClassComparisonSimple(String s)",6,2,2,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testRetValue1()",6,2,2,2,0
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testRetValue2()",6,2,2,2,0
+"one.util.huntbugs.testdata.TestNumericComparison.testBitOp(int input)",6,2,1,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testBitOpOk(int input)",6,2,1,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testBitOpSelf(int input)",6,2,1,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testCharOk(char c)",6,2,1,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testRem(int input)",6,2,1,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testShr(int input)",6,2,1,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testUShr(int input)",6,2,1,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testUShrOk(int input)",6,2,1,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testArray(String[] data)",6,2,1,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testArrayOk(String[] data)",6,2,1,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testInterfaceFinal(StringBuilder sb)",6,2,1,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testInterfaceNonFinal(ArrayList<String> al)",6,2,1,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testInterfaceNonFinal2(Comparable<?> cmp)",6,2,1,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testSimple()",6,2,1,2,0
+"one.util.huntbugs.testdata.TestBadMath.testRemOk(int x)",6,2,0,2,1
+"one.util.huntbugs.util.Types.samePackage(String internalName1, String internalName2)",5,2,4,2,2
+"one.util.huntbugs.testdata.TestInfiniteRecursion$InfiniteLoop.doNotReport(Object a, Object b)",5,2,2,2,2
+"one.util.huntbugs.testdata.TestInfiniteRecursion$InfiniteLoop.report2(Object a, Object b)",5,2,2,2,2
+"one.util.huntbugs.testdata.TestNumericComparison.checkRandom(Random r)",5,2,2,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testListLength(ArrayList<String> list)",5,2,2,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testRem2Ok(List<String> list)",5,2,2,2,1
+"one.util.huntbugs.testdata.TestInfiniteRecursion.has()",5,2,2,2,0
+"one.util.huntbugs.testdata.TestInfiniteRecursion.testSimpleCheck(int x, long y, double z, boolean b)",5,2,1,2,4
+"one.util.huntbugs.testdata.TestInfiniteRecursion.testSimpleCheck(int x)",5,2,1,2,1
+"one.util.huntbugs.testdata.TestInfiniteRecursion.testSimpleModOk(int x)",5,2,1,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testArrayLength(int[] array)",5,2,1,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testByte(byte b)",5,2,1,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testInt(int c)",5,2,1,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testRem2(int input)",5,2,1,2,1
+"one.util.huntbugs.testdata.TestNumericComparison.testShort(short s)",5,2,1,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testField()",5,2,1,2,0
+"one.util.huntbugs.testdata.TestInfiniteRecursion.TestInfiniteRecursion(int x, int y)",5,2,0,2,2
+"one.util.huntbugs.testdata.TestBadMath.setFlags(int x)",5,2,0,2,1
+"one.util.huntbugs.testdata.TestBadMath.setFlags2(int x)",5,2,0,2,1
+"one.util.huntbugs.util.Xml.getAttribute(Element element, String attribute)",4,2,2,2,2
+"one.util.huntbugs.flow.Annotator.get(Expression expr)",4,2,1,2,1
+"one.util.huntbugs.registry.ClassData.getAsserter(MemberInfo mi)",4,2,1,2,1
+"one.util.huntbugs.registry.ClassData.getAsserter(MemberReference mr)",4,2,1,2,1
+"one.util.huntbugs.registry.DatabaseRegistry$DatabaseInfo.getDatabase(TypeReference tr)",4,2,1,2,1
+"one.util.huntbugs.testdata.TestBadMath.testUselessAnd(long input)",4,2,0,2,1
+"one.util.huntbugs.detect.WrongMapIterator.getCalledMethod(Expression expr)",3,2,3,2,1
+"one.util.huntbugs.flow.ValuesFlow.reduceType(Expression input)",3,2,3,2,1
+"one.util.huntbugs.util.Xml.getText(Element element, String tagName)",3,2,2,2,2
+"one.util.huntbugs.flow.BackLinkAnnotator.findUsages(Expression input)",3,2,2,2,1
+"one.util.huntbugs.flow.ValuesFlow.getSource(Expression input)",3,2,1,2,1
+"one.util.huntbugs.repo.DirRepository.visit(String rootPackage, RepositoryVisitor visitor)",40,2,3,1,2
+"one.util.huntbugs.assertions.AssertionData.AssertionData(boolean hasWarning, String type, int minScore, int maxScore)",12,2,3,1,4
+"one.util.huntbugs.testdata.TestArrayRangeCheck.getValueLocal(boolean flag)",11,2,0,1,1
+"one.util.huntbugs.testdata.TestInvalidMinMax.checkWithVars(int rawInput)",10,2,3,1,1
+"one.util.huntbugs.testdata.TestStaticFieldFromInstanceMethod.log(String message)",10,2,3,1,1
+"one.util.huntbugs.testdata.TestWrongMapIterator.test3(Map<String,String> m)",9,2,6,1,1
+"one.util.huntbugs.testdata.TestStringConcatInLoop.testStringConcatOk(String[] data)",9,2,2,1,1
+"one.util.huntbugs.testdata.TestWrongMapIterator.test4(Map<String,String> m)",8,2,7,1,1
+"one.util.huntbugs.testdata.TestWrongMapIterator$DebugHashMap.dump()",8,2,7,1,0
+"one.util.huntbugs.testdata.TestWrongMapIterator.testField()",8,2,7,1,0
+"one.util.huntbugs.testdata.TestWrongMapIterator.testWrongMap()",8,2,7,1,0
+"one.util.huntbugs.testdata.TestWrongMapIterator.test2(int a, int b, int c, int d, Map<String,String> m)",8,2,6,1,5
+"one.util.huntbugs.testdata.TestWrongMapIterator.test(Map<String,String> m)",8,2,6,1,1
+"one.util.huntbugs.testdata.TestWrongMapIterator.testNoLoop(Map<String,String> m)",8,2,6,1,1
+"one.util.huntbugs.testdata.TestWrongMapIterator.testValues(Map<String,String> m)",8,2,6,1,1
+"one.util.huntbugs.testdata.TestWrongMapIterator.testIteratorLoadBug(Map<String,String> m1, List<String> list)",8,2,3,1,2
+"one.util.huntbugs.testdata.TestAtomicConcurrent.testAtomic2(String str)",8,2,3,1,1
+"one.util.huntbugs.testdata.TestFinalizer$NoSuperCall.finalize()",8,2,3,1,0
+"one.util.huntbugs.warning.Warning.Warning(WarningType type, int priority, List<WarningAnnotation<?>> annotations, WarningStatus status)",8,2,1,1,4
+"one.util.huntbugs.testdata.TestInfiniteLoop.dump(TestInfiniteLoop obj)",8,2,1,1,1
+"one.util.huntbugs.db.Hierarchy.visitType(TypeDefinition td)",7,2,6,1,1
+"one.util.huntbugs.testdata.TestRedundantStreamCalls.testStreamFindOk(Set<Integer> x)",7,2,5,1,1
+"one.util.huntbugs.testdata.TestWrongMapIterator.testRegisterReuseBug(Map<String,String> m)",7,2,4,1,1
+"one.util.huntbugs.flow.Annotators.put(Expression expr, int i, Object data)",7,2,3,1,3
+"one.util.huntbugs.testdata.TestAbandonedStream.testIfOk(List<String> list, boolean b)",7,2,3,1,2
+"one.util.huntbugs.testdata.TestAtomicConcurrent.testAtomic(String str)",7,2,3,1,1
+"one.util.huntbugs.testdata.TestAtomicConcurrent.testAtomicArray(String str)",7,2,3,1,1
+"one.util.huntbugs.testdata.TestInvalidMinMax.getScore(int totalCount, int failCount, double scaleFactor)",7,2,2,1,3
+"one.util.huntbugs.testdata.TestArrayRangeCheck.testArrayBoolean(boolean b)",7,2,2,1,1
+"one.util.huntbugs.util.Exprs.isAssertionMethod(Expression expr)",6,2,5,1,1
+"one.util.huntbugs.util.Exprs.getChildNoSpecial(Expression node, int i)",6,2,4,1,2
+"one.util.huntbugs.testdata.TestWrongMapIterator.testStatic()",6,2,4,1,0
+"one.util.huntbugs.sample.detect.SampleCustomDetector.visit(MethodContext mc, MethodDefinition md, TypeDefinition td)",6,2,3,1,3
+"one.util.huntbugs.testdata.TestWrongMapIterator.testFor(Map<String,String> m)",6,2,3,1,1
+"one.util.huntbugs.testdata.TestWrongMapIterator.testForBoxing(Map<Integer,String> m)",6,2,3,1,1
+"one.util.huntbugs.warning.WarningAnnotation$TypeInfo.toString()",6,2,3,1,0
+"one.util.huntbugs.testdata.TestInfiniteLoop.testLoopPartOk(int x, int y, boolean b)",6,2,2,1,3
+"one.util.huntbugs.testdata.TestAbandonedStream.testIf(List<String> list, boolean b)",6,2,2,1,2
+"one.util.huntbugs.flow.Nullness.or(Nullness other)",6,2,2,1,1
+"one.util.huntbugs.testdata.TestFieldAccess.test()",6,2,2,1,0
+"one.util.huntbugs.testdata.TestFieldAccess.testOk()",6,2,2,1,0
+"one.util.huntbugs.testdata.TestInfiniteLoop.testLoopPart(int x, int z)",6,2,1,1,2
+"one.util.huntbugs.testdata.TestBadMethodCalls.instanceOfToArray(Object obj)",6,2,1,1,1
+"one.util.huntbugs.testdata.TestCheckReturnValue.skipTenOk(Reader r)",6,2,1,1,1
+"one.util.huntbugs.testdata.TestFieldAccess.testOk(TestFieldAccess tfa)",6,2,1,1,1
+"one.util.huntbugs.warning.rule.CompositeRule.adjust(WarningType wt)",6,2,1,1,1
+"one.util.huntbugs.testdata.TestInfiniteLoop.testFlag()",6,2,1,1,0
+"one.util.huntbugs.testdata.TestCovariantArrays.caaStore(boolean b)",6,2,0,1,1
+"one.util.huntbugs.testdata.TestStringConcatInLoop$ParseException.initialise(String[] tokens)",6,2,0,1,1
+"one.util.huntbugs.testdata.TestStringConcatInLoop.testStringConcatInLoopSimple(String[] data)",6,2,0,1,1
+"one.util.huntbugs.testdata.TestUselessVoidMethod.doNothing(int x)",6,2,0,1,1
+"one.util.huntbugs.testdata.TestUselessVoidMethod.uselessSwitch(int x)",6,2,0,1,1
+"one.util.huntbugs.util.Exprs.bothChildrenMatch(Expression e, Predicate<Expression> p1, Predicate<Expression> p2)",5,2,8,1,3
+"one.util.huntbugs.flow.Annotators.register(String name)",5,2,3,1,1
+"one.util.huntbugs.testdata.TestWrongMapIterator.testBoxing(Map<Integer,String> m)",5,2,3,1,1
+"one.util.huntbugs.testdata.TestWrongMapIterator.testEnumMap(EnumMap<TimeUnit,String> m)",5,2,3,1,1
+"one.util.huntbugs.testdata.TestWrongMapIterator.testEnumMapField()",5,2,3,1,0
+"one.util.huntbugs.testdata.TestRegexProblems.testBadRegex(String test)",5,2,2,1,1
+"one.util.huntbugs.testdata.TestRegexProblems.testDot(String test)",5,2,2,1,1
+"one.util.huntbugs.testdata.TestRegexProblems.testPipe(String test)",5,2,2,1,1
+"one.util.huntbugs.flow.Annotators.remove(Expression expr, int i)",5,2,1,1,2
+"one.util.huntbugs.testdata.TestCheckReturnValue.readOk(InputStream is, byte[] arr)",5,2,1,1,2
+"one.util.huntbugs.testdata.TestVolatileArray$AnotherClass.set(TestVolatileArray tva, long[] arr)",5,2,1,1,2
+"one.util.huntbugs.testdata.TestInfiniteLoop.dump(int[] data)",5,2,1,1,1
+"one.util.huntbugs.testdata.TestInfiniteLoop.testLoop(int x)",5,2,1,1,1
+"one.util.huntbugs.testdata.TestInfiniteLoop.testLoopOk(int x)",5,2,1,1,1
+"one.util.huntbugs.warning.Warning.withStatus(WarningStatus status)",5,2,0,1,1
+"one.util.huntbugs.warning.WarningAnnotation$Location.toString()",5,2,0,1,0
+"one.util.huntbugs.testdata.TestAbandonedStream.testTernaryOk(List<String> list, boolean b)",4,2,4,1,2
+"one.util.huntbugs.util.Exprs.isAssertionCondition(Expression expr)",4,2,4,1,1
+"one.util.huntbugs.flow.Nullness$NullGraphSearch.markStart(Expression expr, boolean isEntry)",4,2,2,1,2
+"one.util.huntbugs.testdata.TestMinValueHandling.falsePositive(Object key)",4,2,2,1,1
+"one.util.huntbugs.testdata.TestIteratorContract$Iterator2.next()",4,2,1,1,0
+"one.util.huntbugs.testdata.TestIteratorContract.next()",4,2,1,1,0
+"one.util.huntbugs.warning.Warning.getClassName()",3,2,2,1,0
+"one.util.huntbugs.warning.WarningAnnotation.hashCode()",3,2,2,1,0
+"one.util.huntbugs.flow.Annotators.get(Expression expr, int i)",3,2,1,1,2
+"one.util.huntbugs.testdata.TestUselessVoidMethod.uselessSpinLoop()",3,2,0,1,0
+"one.util.huntbugs.testdata.TestUselessVoidMethod.volatileSpinLoop()",3,2,0,1,0
+"one.util.huntbugs.testdata.TestFieldAccess.getValue()",2,2,2,1,0
+"one.util.huntbugs.testdata.TestFieldAccess.getS()",2,2,1,1,0
+"one.util.huntbugs.testdata.TestUnsupportedCall.TestUnsupportedCall()",2,2,1,1,0
+"one.util.huntbugs.assertions.AssertionData.finalStatus()",2,2,0,1,0
+"one.util.huntbugs.flow.Nullness.unknownToNull()",2,2,0,1,0
+"one.util.huntbugs.testdata.TestEqualsContract$ClassName.equals(Object obj)",7,2,3,0,1
+"one.util.huntbugs.testdata.TestCompareUsage.less(String s1, String s2)",7,2,2,0,2
+"one.util.huntbugs.testdata.TestReturnNull.testOptional(int a)",6,2,2,0,1
+"one.util.huntbugs.analysis.ErrorMessage.getError()",6,2,2,0,0
+"one.util.huntbugs.testdata.TestEqualsContract$SubClassNoFields2.equals(Object obj)",6,2,1,0,1
+"one.util.huntbugs.testdata.TestUnnecessaryBoxing.unboxBoxOk(Integer x)",6,2,1,0,1
+"one.util.huntbugs.testdata.TestUnnecessaryBoxing.unboxBoxTwice(Integer x)",6,2,1,0,1
+"one.util.huntbugs.testdata.TestAppendObjectOutputStream.createStreamConditional(boolean buffered)",6,2,0,0,1
+"one.util.huntbugs.warning.rule.RegexRule.adjust(WarningType wt)",5,2,6,0,1
+"one.util.huntbugs.warning.rule.CategoryRule.adjust(WarningType wt)",5,2,5,0,1
+"one.util.huntbugs.testdata.TestDroppedExceptionObject.test(String s)",5,2,2,0,1
+"one.util.huntbugs.testdata.TestDroppedExceptionObject.testOk(String s)",5,2,2,0,1
+"one.util.huntbugs.testdata.TestCompareUsage.ok(String s1, String s2)",5,2,1,0,2
+"one.util.huntbugs.testdata.TestStringUsage.testObjectToString(Object s)",5,2,1,0,1
+"one.util.huntbugs.testdata.TestReturnNull.testArray(int a)",5,2,0,0,1
+"one.util.huntbugs.testdata.TestReturnNull.testBoolean(int a)",5,2,0,0,1
+"one.util.huntbugs.repo.CompositeRepository.visit(String rootPackage, RepositoryVisitor visitor)",4,2,1,0,2
+"one.util.huntbugs.testdata.TestFloatComparison.testDouble(double a, double b)",4,2,1,0,2
+"one.util.huntbugs.testdata.TestFloatComparison.testFloat(float a, float b)",4,2,1,0,2
+"one.util.huntbugs.testdata.TestFloatComparison.testFloatInt(float a, int b)",4,2,1,0,2
+"one.util.huntbugs.testdata.TestSqlBadArgument.getConditional(ResultSet rs, boolean b)",4,2,1,0,2
+"one.util.huntbugs.testdata.TestFloatComparison.testDouble(double a)",4,2,1,0,1
+"one.util.huntbugs.testdata.TestFloatComparison.testDouble2(double a)",4,2,1,0,1
+"one.util.huntbugs.testdata.TestFloatComparison.testDouble4(double a)",4,2,1,0,1
+"one.util.huntbugs.testdata.TestFloatComparison.testFloat(float a)",4,2,1,0,1
+"one.util.huntbugs.testdata.TestFloatComparison.testRound(double a)",4,2,1,0,1
+"one.util.huntbugs.testdata.TestFloatNaN.testDouble(double a)",4,2,1,0,1
+"one.util.huntbugs.testdata.TestFloatNaN.testFloat(float a)",4,2,1,0,1
+"one.util.huntbugs.testdata.TestFloatNaN.testNotDouble(double a)",4,2,1,0,1
+"one.util.huntbugs.testdata.TestFloatNaN.testNotFloat(float a)",4,2,1,0,1
+"one.util.huntbugs.testdata.TestSpinLoop.waitForNonNullIndirect(int x, TestSpinLoop baz)",4,2,0,0,2
+"one.util.huntbugs.testdata.TestSpinLoop.waitForNonNullIndirect2(int x, TestSpinLoop baz)",4,2,0,0,2
+"one.util.huntbugs.testdata.TestCompareContract.compareTo(TestCompareContract o)",4,2,0,0,1
+"one.util.huntbugs.testdata.TestSpinLoop.waitForNonNull()",4,2,0,0,0
+"one.util.huntbugs.testdata.TestSpinLoop.waitForStatic()",4,2,0,0,0
+"one.util.huntbugs.testdata.TestSpinLoop.waitForTrue()",4,2,0,0,0
+"one.util.huntbugs.testdata.TestSpinLoop.waitForVolatileTrue()",4,2,0,0,0
+"one.util.huntbugs.flow.etype.ComplexType.toString(String delimiter)",3,2,7,0,1
+"one.util.huntbugs.analysis.ErrorMessage.ErrorMessage(Detector detector, MemberReference method, int line, String message)",3,2,5,0,4
+"one.util.huntbugs.analysis.ErrorMessage.ErrorMessage(Detector detector, MemberReference method, int line, Throwable error)",3,2,5,0,4
+"one.util.huntbugs.warning.Role$ExpressionRole.create(Expression expr)",3,2,4,0,1
+"one.util.huntbugs.analysis.ErrorMessage.ErrorMessage(Detector detector, TypeDefinition type, String message)",2,2,2,0,3
+"one.util.huntbugs.analysis.ErrorMessage.ErrorMessage(Detector detector, TypeDefinition type, Throwable error)",2,2,2,0,3
+"one.util.huntbugs.util.Methods.is(MethodReference mr, String internalTypeName, String methodName, String methodSig)",3,1,7,8,4
+"one.util.huntbugs.util.Methods.isMain(MethodDefinition md)",2,1,6,8,1
+"one.util.huntbugs.util.Methods.isEqualsMethod(MethodReference mr)",2,1,4,8,1
+"one.util.huntbugs.util.Methods.isGetClass(MethodReference mr)",2,1,4,8,1
+"one.util.huntbugs.util.Methods.isHashCodeMethod(MethodReference mr)",2,1,4,8,1
+"one.util.huntbugs.util.Methods.isSerializationMethod(MethodDefinition md)",2,1,2,8,1
+"one.util.huntbugs.testdata.TestKnownComparison$TestFieldAssignment.TestFieldAssignment(String s)",7,1,2,7,1
+"one.util.huntbugs.testdata.TestKnownComparison.testAssert(String type)",5,1,0,7,1
+"one.util.huntbugs.detect.UnsafeGetResource.checkMethod(MethodDefinition md, TypeDefinition td)",3,1,3,7,2
+"one.util.huntbugs.testdata.TestKnownComparison.doSomeProcessing()",3,1,0,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.getArray()",2,1,0,7,0
+"one.util.huntbugs.testdata.TestKnownComparison.getFinalField()",2,1,0,7,0
+"one.util.huntbugs.testdata.TestKnownComparison$TestFieldAssignment.TestFieldAssignment()",1,1,0,7,0
+"one.util.huntbugs.flow.CFG$FinallyJumpContext.addExceptional(BasicBlock block, TypeReference exception)",9,1,4,6,2
+"one.util.huntbugs.flow.CFG.findDuplicates(Block methodBody)",7,1,17,6,1
+"one.util.huntbugs.flow.CFG.build(MethodDefinition md, Block body)",6,1,0,6,2
+"one.util.huntbugs.flow.CFG$LoopJumpContext.LoopJumpContext(JumpContext parent, BasicBlock entry, BasicBlock exit, BasicBlock continueTarget)",5,1,0,6,4
+"one.util.huntbugs.flow.CFG.register(BasicBlock block)",4,1,3,6,1
+"one.util.huntbugs.flow.CFG$FinallyJumpContext.addBreak(BasicBlock block, Label label)",4,1,2,6,2
+"one.util.huntbugs.flow.CFG$FinallyJumpContext.addContinue(BasicBlock block, Label label)",4,1,2,6,2
+"one.util.huntbugs.flow.CFG$FinallyJumpContext.addJump(BasicBlock block, Label label)",4,1,2,6,2
+"one.util.huntbugs.flow.CFG$FinallyJumpContext.addReturn(BasicBlock block)",4,1,2,6,1
+"one.util.huntbugs.detect.UnusedParameter.checkClass(TypeDefinition td)",4,1,1,6,1
+"one.util.huntbugs.detect.NumericPromotion.isPowerOfTen(long divisorVal)",4,1,0,6,1
+"one.util.huntbugs.detect.IncorrectVarArg.highPriority(MethodReference mr)",3,1,10,6,1
+"one.util.huntbugs.flow.CFG.computeDupBlocks(Collection<Set<Expression>> dupExpr)",3,1,9,6,1
+"one.util.huntbugs.flow.CFG.isAlwaysReachable(Expression from, Expression to)",3,1,6,6,2
+"one.util.huntbugs.flow.CFG.forBodies(BiConsumer<MethodDefinition,Block> consumer)",3,1,4,6,1
+"one.util.huntbugs.detect.BadMath.isConst(Expression expr, long wantedValue)",3,1,3,6,2
+"one.util.huntbugs.flow.CFG$OuterJumpContext.addJump(BasicBlock block, Label label)",3,1,2,6,2
+"one.util.huntbugs.flow.CFG$DelegatingJumpContext.addBreak(BasicBlock block, Label label)",3,1,1,6,2
+"one.util.huntbugs.flow.CFG$DelegatingJumpContext.addContinue(BasicBlock block, Label label)",3,1,1,6,2
+"one.util.huntbugs.flow.CFG$DelegatingJumpContext.addExceptional(BasicBlock block, TypeReference exception)",3,1,1,6,2
+"one.util.huntbugs.flow.CFG$DelegatingJumpContext.addJump(BasicBlock block, Label label)",3,1,1,6,2
+"one.util.huntbugs.flow.CFG$OuterJumpContext.addExceptional(BasicBlock block, TypeReference exception)",3,1,1,6,2
+"one.util.huntbugs.db.FieldStats$SimpleStack.SimpleStack(int maxLocals)",3,1,1,6,1
+"one.util.huntbugs.flow.CFG$DelegatingJumpContext.addReturn(BasicBlock block)",3,1,1,6,1
+"one.util.huntbugs.flow.CFG$OuterJumpContext.addReturn(BasicBlock block)",3,1,1,6,1
+"one.util.huntbugs.flow.CFG$BasicBlock.BasicBlock(boolean synthetic, Expression expr)",3,1,0,6,2
+"one.util.huntbugs.flow.CFG$DFARunner.DFARunner(Annotator<FACT> annotator, Dataflow<FACT,STATE> df)",3,1,0,6,2
+"one.util.huntbugs.flow.CFG$LabelJumpContext.LabelJumpContext(JumpContext parent, Set<Label> labels)",3,1,0,6,2
+"one.util.huntbugs.flow.CFG$OuterJumpContext.addContinue(BasicBlock block, Label label)",3,1,0,6,2
+"one.util.huntbugs.flow.CFG$SwitchJumpContext.SwitchJumpContext(JumpContext parent, BasicBlock exit)",3,1,0,6,2
+"one.util.huntbugs.flow.CFG$SearchResult.atExpression(Expression expr)",2,1,5,6,1
+"one.util.huntbugs.filter.AnnotationFilters.forSuppressed(Set<String> suppressed)",2,1,4,6,1
+"one.util.huntbugs.flow.CFG.isInCFG(Expression expr)",2,1,3,6,1
+"one.util.huntbugs.flow.CFG.mayTerminateImplicitly(Expression expr)",2,1,3,6,1
+"one.util.huntbugs.flow.CFG.blocksBy(Expression expr)",2,1,2,6,1
+"one.util.huntbugs.flow.CFG$CatchJumpContext.getEntry(CatchBlock cb)",2,1,1,6,1
+"one.util.huntbugs.flow.CFG.getLambdaCFG(Lambda lambda)",2,1,1,6,1
+"one.util.huntbugs.flow.CFG.isExceptional(BasicBlock start)",2,1,1,6,1
+"one.util.huntbugs.db.FieldStats$SimpleStack.clear()",2,1,1,6,0
+"one.util.huntbugs.db.FieldStats$SimpleStack.pushUnknown()",2,1,1,6,0
+"one.util.huntbugs.db.FieldStats$SimpleStack.set(int slot, Object cst)",2,1,0,6,2
+"one.util.huntbugs.db.FieldStats$SimpleStack.get(int slot)",2,1,0,6,1
+"one.util.huntbugs.db.FieldStats$SimpleStack.setUnknown(int slot)",2,1,0,6,1
+"one.util.huntbugs.detect.BadMath.isIntegral(Object constant)",2,1,0,6,1
+"one.util.huntbugs.flow.CFG$BasicBlock.BasicBlock(Expression expr)",2,1,0,6,1
+"one.util.huntbugs.flow.CFG$BasicBlock.BasicBlock(int id)",2,1,0,6,1
+"one.util.huntbugs.flow.CFG$DelegatingJumpContext.DelegatingJumpContext(JumpContext parent)",2,1,0,6,1
+"one.util.huntbugs.flow.CFG$FinallyJumpContext.FinallyJumpContext(JumpContext parent)",2,1,0,6,1
+"one.util.huntbugs.flow.CFG$SearchResult.SearchResult(GraphSearch<T> gs)",2,1,0,6,1
+"one.util.huntbugs.db.DeclaredAnnotations$DeclaredAnnotation.getPolicy()",2,1,0,6,0
+"one.util.huntbugs.db.DeclaredAnnotations.DeclaredAnnotations()",2,1,0,6,0
+"one.util.huntbugs.db.FieldStats$TypeFieldStats.linkUncontrolled()",2,1,0,6,0
+"one.util.huntbugs.db.FieldStats.FieldStats()",2,1,0,6,0
+"one.util.huntbugs.flow.CFG$SearchResult.atExit()",2,1,0,6,0
+"one.util.huntbugs.flow.CFG$SearchResult.atFail()",2,1,0,6,0
+"one.util.huntbugs.flow.CFG$SearchResult.atImplicit()",2,1,0,6,0
+"one.util.huntbugs.flow.CFG$BasicBlock.BasicBlock()",1,1,0,6,0
+"one.util.huntbugs.flow.CFG$JumpContext.addBreak(BasicBlock block, Label label)",0,1,0,6,2
+"one.util.huntbugs.flow.CFG$JumpContext.addContinue(BasicBlock block, Label label)",0,1,0,6,2
+"one.util.huntbugs.flow.CFG$JumpContext.addExceptional(BasicBlock block, TypeReference exception)",0,1,0,6,2
+"one.util.huntbugs.flow.CFG$JumpContext.addJump(BasicBlock block, Label label)",0,1,0,6,2
+"one.util.huntbugs.flow.CFG$JumpContext.addReturn(BasicBlock block)",0,1,0,6,1
+"one.util.huntbugs.registry.DetectorRegistry.DetectorRegistry(Context ctx)",13,1,7,5,1
+"one.util.huntbugs.registry.DetectorRegistry.reportWarningTypes(PrintStream out)",9,1,7,5,1
+"one.util.huntbugs.flow.SourceAnnotator$Frame.putInitial(ParameterDefinition thisParam)",5,1,5,5,1
+"one.util.huntbugs.flow.SourceAnnotator$Frame.Frame(Frame parent, Map<Variable,Expression> sources, Map<MemberInfo,Expression> fields)",5,1,0,5,3
+"one.util.huntbugs.detect.RedundantStreamCalls.isStreamForEach(MethodReference mr)",4,1,8,5,1
+"one.util.huntbugs.detect.RedundantStreamCalls.isStreamFind(MethodReference mr)",3,1,8,5,1
+"one.util.huntbugs.detect.FieldAccess.isEmptyArray(Expression value)",3,1,6,5,1
+"one.util.huntbugs.detect.RedundantStreamCalls.isCollectionStream(MethodReference mr)",3,1,6,5,1
+"one.util.huntbugs.registry.DetectorRegistry.createWarningMap(Stream<WarningType> stream)",3,1,6,5,1
+"one.util.huntbugs.util.NodeChain.isOnlyChild(Node node)",3,1,6,5,1
+"one.util.huntbugs.detect.SameBranches.computePriority(Node block, int n)",3,1,3,5,2
+"one.util.huntbugs.detect.FinalizerContract.isSuperCall(Node child)",3,1,3,5,1
+"one.util.huntbugs.detect.FieldAccess$MethodLocation.getAnnotations()",3,1,2,5,0
+"one.util.huntbugs.flow.SourceAnnotator$SourceDataflow.mergeFacts(Expression f1, Expression f2)",3,1,1,5,2
+"one.util.huntbugs.flow.SourceAnnotator$SourceDataflow.mergeStates(Frame s1, Frame s2)",3,1,1,5,2
+"one.util.huntbugs.flow.SourceAnnotator$SourceDataflow.sameFact(Expression f1, Expression f2)",3,1,1,5,2
+"one.util.huntbugs.flow.SourceAnnotator$SourceDataflow.sameState(Frame s1, Frame s2)",3,1,1,5,2
+"one.util.huntbugs.flow.SourceAnnotator$SourceDataflow.transferConditionalState(Frame src, Expression expr)",3,1,1,5,2
+"one.util.huntbugs.flow.SourceAnnotator$SourceDataflow.transferExceptionalState(Frame src, Expression expr)",3,1,1,5,2
+"one.util.huntbugs.util.NodeChain.NodeChain(NodeChain parent, Node cur)",3,1,1,5,2
+"one.util.huntbugs.detect.FieldAccess.checkAnalyzed(MethodContext mc)",3,1,1,5,1
+"one.util.huntbugs.detect.IteratorContract.check(TypeDefinition td)",3,1,1,5,1
+"one.util.huntbugs.detect.WaitContract.checkMethod(MethodDefinition md)",3,1,1,5,1
+"one.util.huntbugs.flow.SourceAnnotator$SourceDataflow.onSuccess(Frame exitState)",3,1,1,5,1
+"one.util.huntbugs.registry.DetectorRegistry$DetectorVisitor.visitPackage(String packageName)",3,1,1,5,1
+"one.util.huntbugs.flow.SourceAnnotator$SourceDataflow.SourceDataflow(ClassFields cf, MethodDefinition md, Frame closure)",3,1,0,5,3
+"one.util.huntbugs.detect.FieldAccess$MethodLocation.MethodLocation(MethodDefinition md, Location loc)",3,1,0,5,2
+"one.util.huntbugs.registry.DetectorRegistry$DetectorVisitor.DetectorVisitor(String packageToVisit, boolean external)",3,1,0,5,2
+"one.util.huntbugs.flow.SourceAnnotator$SourceDataflow.makeEntryState()",3,1,0,5,0
+"one.util.huntbugs.flow.SourceAnnotator$SourceDataflow.makeUnknownFact()",3,1,0,5,0
+"one.util.huntbugs.registry.DetectorRegistry.getWarningType(String typeName)",2,1,7,5,1
+"one.util.huntbugs.detect.RedundantStreamCalls.isOptionalIsPresent(MethodReference mr)",2,1,5,5,1
+"one.util.huntbugs.detect.FinalizerContract.isFinalizer(MethodReference mr)",2,1,4,5,1
+"one.util.huntbugs.detect.RedundantStreamCalls.isStreamCount(MethodReference mr)",2,1,4,5,1
+"one.util.huntbugs.registry.DetectorRegistry.warningTypes()",2,1,2,5,0
+"one.util.huntbugs.registry.DetectorRegistry.hasDatabases()",2,1,1,5,0
+"one.util.huntbugs.flow.SourceAnnotator.SourceAnnotator()",2,1,0,5,0
+"one.util.huntbugs.util.NodeChain.getNode()",2,1,0,5,0
+"one.util.huntbugs.util.NodeChain.getParent()",2,1,0,5,0
+"one.util.huntbugs.analysis.Context.createMetadataSystem()",22,1,0,4,0
+"one.util.huntbugs.repo.Repository.createNullRepository()",12,1,0,4,0
+"one.util.huntbugs.warning.Messages.readMessages(URL messageUrl)",10,1,4,4,1
+"one.util.huntbugs.detect.UnnecessaryBoxing.getUsedLocations(Expression arg, MethodContext mc, List<Expression> list)",6,1,11,4,3
+"one.util.huntbugs.registry.Detector.newInstance()",6,1,1,4,0
+"one.util.huntbugs.analysis.Context.reportWarnings(PrintStream app)",5,1,11,4,1
+"one.util.huntbugs.detect.CloneContract.referencesClone(TypeDefinition td)",5,1,8,4,1
+"one.util.huntbugs.warning.Messages$Message.Message(String title, String description, String longDescription)",4,1,3,4,3
+"one.util.huntbugs.registry.Detector$VisitorInfo.bind(TypeDefinition td)",4,1,3,4,1
+"one.util.huntbugs.repo.Repository.createPluginRepository(HuntBugsPlugin huntBugsPlugin)",4,1,3,4,1
+"one.util.huntbugs.registry.Detector$VisitorInfo.VisitorInfo(AstVisitor anno, VisitorType type, MethodHandle mh)",4,1,0,4,3
+"one.util.huntbugs.detect.StartInConstructor.checkMethod(MethodDefinition md, TypeDefinition td)",3,1,4,4,2
+"one.util.huntbugs.analysis.Context.addError(ErrorMessage msg)",3,1,2,4,1
+"one.util.huntbugs.registry.Detector.toString()",3,1,2,4,0
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.mergeStates(ContextValues s1, ContextValues s2)",3,1,1,4,2
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.sameFact(Object f1, Object f2)",3,1,1,4,2
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.sameState(ContextValues s1, ContextValues s2)",3,1,1,4,2
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.transferExceptionalState(ContextValues src, Expression expr)",3,1,1,4,2
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.transferState(ContextValues src, Expression expr)",3,1,1,4,2
+"one.util.huntbugs.flow.ETypeAnnotator$ETypeDataflow.mergeFacts(EType f1, EType f2)",3,1,1,4,2
+"one.util.huntbugs.flow.ETypeAnnotator$ETypeDataflow.mergeStates(ContextTypes s1, ContextTypes s2)",3,1,1,4,2
+"one.util.huntbugs.flow.ETypeAnnotator$ETypeDataflow.sameFact(EType f1, EType f2)",3,1,1,4,2
+"one.util.huntbugs.flow.ETypeAnnotator$ETypeDataflow.sameState(ContextTypes s1, ContextTypes s2)",3,1,1,4,2
+"one.util.huntbugs.flow.NullAnnotator$NullDataflow.mergeStates(ContextNulls s1, ContextNulls s2)",3,1,1,4,2
+"one.util.huntbugs.flow.NullAnnotator$NullDataflow.sameFact(Nullness f1, Nullness f2)",3,1,1,4,2
+"one.util.huntbugs.flow.NullAnnotator$NullDataflow.sameState(ContextNulls s1, ContextNulls s2)",3,1,1,4,2
+"one.util.huntbugs.detect.UnsupportedCall.check(MethodDefinition md)",3,1,1,4,1
+"one.util.huntbugs.analysis.Context.errors()",3,1,1,4,0
+"one.util.huntbugs.analysis.Context.warnings()",3,1,1,4,0
+"one.util.huntbugs.flow.NullAnnotator$NullDataflow.NullDataflow(MethodDefinition md, ContextNulls initial)",3,1,0,4,2
+"one.util.huntbugs.flow.NullAnnotator$NullDataflow.transferExceptionalState(ContextNulls src, Expression expr)",3,1,0,4,2
+"one.util.huntbugs.detect.ExclusiveConditions.init()",3,1,0,4,0
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.makeEntryState()",3,1,0,4,0
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.makeUnknownFact()",3,1,0,4,0
+"one.util.huntbugs.flow.ETypeAnnotator$ETypeDataflow.makeEntryState()",3,1,0,4,0
+"one.util.huntbugs.flow.ETypeAnnotator$ETypeDataflow.makeUnknownFact()",3,1,0,4,0
+"one.util.huntbugs.flow.NullAnnotator$NullDataflow.makeEntryState()",3,1,0,4,0
+"one.util.huntbugs.flow.NullAnnotator$NullDataflow.makeUnknownFact()",3,1,0,4,0
+"one.util.huntbugs.analysis.Context.reportErrors(PrintStream app)",2,1,4,4,1
+"one.util.huntbugs.flow.ConstAnnotator.isConst(Expression input, Object constant)",2,1,2,4,2
+"one.util.huntbugs.HuntBugs.main(String[] args)",2,1,2,4,1
+"one.util.huntbugs.warning.Messages.getMessagesForType(WarningType warningType)",2,1,2,4,1
+"one.util.huntbugs.analysis.Context.addListener(AnalysisListener listener)",2,1,1,4,1
+"one.util.huntbugs.analysis.Context.getStat(String key)",2,1,1,4,1
+"one.util.huntbugs.analysis.Context.getWarningType(String typeName)",2,1,1,4,1
+"one.util.huntbugs.analysis.Context.incStat(String key)",2,1,1,4,1
+"one.util.huntbugs.analysis.Context.reportDatabases(PrintStream out)",2,1,1,4,1
+"one.util.huntbugs.analysis.Context.reportTitles(PrintStream out)",2,1,1,4,1
+"one.util.huntbugs.analysis.Context.reportWarningTypes(PrintStream out)",2,1,1,4,1
+"one.util.huntbugs.detect.RoughConstant$BadConstant.diff(double candidate)",2,1,1,4,1
+"one.util.huntbugs.detect.RoughConstant$BadConstant.equalPrefix(Number candidate)",2,1,1,4,1
+"one.util.huntbugs.detect.UncalledPrivateMethod$NestedAnonymousCalls.isCalled(MemberInfo mi)",2,1,1,4,1
+"one.util.huntbugs.registry.Detector.getWarningType(String typeName)",2,1,1,4,1
+"one.util.huntbugs.analysis.Context.getClassesCount()",2,1,1,4,0
+"one.util.huntbugs.analysis.Context.getErrorCount()",2,1,1,4,0
+"one.util.huntbugs.analysis.Context.warningTypes()",2,1,1,4,0
+"one.util.huntbugs.ant.HuntBugsTask.setDiff(File diff)",2,1,0,4,1
+"one.util.huntbugs.ant.HuntBugsTask.setHtml(File html)",2,1,0,4,1
+"one.util.huntbugs.ant.HuntBugsTask.setLog(LogLevel log)",2,1,0,4,1
+"one.util.huntbugs.ant.HuntBugsTask.setXml(File xml)",2,1,0,4,1
+"one.util.huntbugs.flow.ConstAnnotator$ConstDataflow.ConstDataflow(ContextValues initState)",2,1,0,4,1
+"one.util.huntbugs.flow.ConstAnnotator$ContextValues.ContextValues(Map<Variable,Object> values)",2,1,0,4,1
+"one.util.huntbugs.flow.ETypeAnnotator$ContextTypes.ContextTypes(Map<Variable,EType> values)",2,1,0,4,1
+"one.util.huntbugs.flow.ETypeAnnotator$ETypeDataflow.ETypeDataflow(ContextTypes initial)",2,1,0,4,1
+"one.util.huntbugs.flow.NullAnnotator$ContextNulls.ContextNulls(Map<Variable,Nullness> values)",2,1,0,4,1
+"one.util.huntbugs.warning.Messages.Messages(Map<String,Message> map)",2,1,0,4,1
+"one.util.huntbugs.analysis.Context.getOptions()",2,1,0,4,0
+"one.util.huntbugs.analysis.Context.getTotalClasses()",2,1,0,4,0
+"one.util.huntbugs.detect.UncalledPrivateMethod$NestedAnonymousCalls.NestedAnonymousCalls()",2,1,0,4,0
+"one.util.huntbugs.flow.ConstAnnotator.ConstAnnotator()",2,1,0,4,0
+"one.util.huntbugs.flow.ETypeAnnotator.ETypeAnnotator()",2,1,0,4,0
+"one.util.huntbugs.flow.NullAnnotator.NullAnnotator()",2,1,0,4,0
+"one.util.huntbugs.warning.Messages$Message.getDescription()",2,1,0,4,0
+"one.util.huntbugs.warning.Messages$Message.getTitle()",2,1,0,4,0
+"one.util.huntbugs.repo.Repository.visit(String rootPackage, RepositoryVisitor visitor)",0,1,0,4,2
+"one.util.huntbugs.repo.Repository.createTypeLoader()",0,1,0,4,0
+"one.util.huntbugs.output.Reports.diff(HuntBugsResult oldResult, HuntBugsResult newResult)",19,1,9,3,2
+"one.util.huntbugs.testdata.TestNullCheck.testAssert(int i)",12,1,0,3,1
+"one.util.huntbugs.testdata.TestDeadLocalStore.testSystemExit(String s)",11,1,4,3,1
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadLocalStoreCatch2(String i)",10,1,3,3,1
+"one.util.huntbugs.testdata.TestDeadLocalStore.testUnreachableCatch()",9,1,1,3,0
+"one.util.huntbugs.testdata.TestSelfAssignment.testWithCatch()",9,1,1,3,0
+"one.util.huntbugs.testdata.TestDeadLocalStore.testLocalClass()",9,1,0,3,0
+"one.util.huntbugs.testdata.TestDeadLocalStore.synchronizedTest()",8,1,2,3,0
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadLocalStoreCatch(String i)",7,1,3,3,1
+"one.util.huntbugs.registry.MethodContext.MethodContext(Context ctx, ClassContext �)",7,1,0,3,2
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadIncrementAssignment2(int i)",6,1,2,3,1
+"one.util.huntbugs.registry.MethodContext.getLocation(Node node)",6,1,1,3,1
+"one.util.huntbugs.registry.MethodContext.isReachable(Expression expr)",6,1,1,3,1
+"one.util.huntbugs.testdata.TestSelfAssignment.testSideEffect()",6,1,1,3,0
+"one.util.huntbugs.testdata.TestSelfAssignment.testSideEffectStatic()",6,1,1,3,0
+"one.util.huntbugs.registry.MethodContext$WarningInfo.WarningInfo(WarningType type, int priority, Location loc, List<WarningAnnotation<?>> annotations)",6,1,0,3,4
+"one.util.huntbugs.registry.MethodContext.forgetLastBug()",6,1,0,3,0
+"one.util.huntbugs.registry.ClassContext.ClassContext(Context ctx, ClassData cdata, Detector detector)",5,1,1,3,3
+"one.util.huntbugs.testdata.TestSelfAssignment.testArraySelfSideEffect(int[] a, int idx)",5,1,1,3,2
+"one.util.huntbugs.testdata.TestDeadLocalStore$Extension.testDeadLocalSimple(int x)",5,1,1,3,1
+"one.util.huntbugs.testdata.TestSelfAssignment.testArraySelfChanged(int[] a, int idx)",5,1,0,3,2
+"one.util.huntbugs.testdata.TestSelfAssignment.testLocal(Object f)",5,1,0,3,1
+"one.util.huntbugs.testdata.TestSelfAssignment.testLocal(int a)",5,1,0,3,1
+"one.util.huntbugs.maven.plugin.HuntBugsMojo.constructOptions()",5,1,0,3,0
+"one.util.huntbugs.registry.MethodContext.isAnnotated()",5,1,0,3,0
+"one.util.huntbugs.testdata.TestSelfAssignment.testArraySideEffect()",5,1,0,3,0
+"one.util.huntbugs.testdata.TestSelfAssignment.testNew()",5,1,0,3,0
+"one.util.huntbugs.testdata.TestSelfAssignment.testThis()",5,1,0,3,0
+"one.util.huntbugs.testdata.TestSelfAssignment.testTwoObjects()",5,1,0,3,0
+"one.util.huntbugs.detect.EasyMockProblems.check(TypeDefinition td)",4,1,6,3,1
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadLocalStoreLambda()",4,1,5,3,0
+"null.print(int x)",4,1,2,3,1
+"one.util.huntbugs.flow.FrameContext.constant(Object val)",4,1,1,3,1
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadIncrementAssignment(int i)",4,1,1,3,1
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadLocalSimple(int x)",4,1,1,3,1
+"one.util.huntbugs.testdata.TestSelfAssignment.testArraySelfCopyArray(int[] a, int[] b, int idx)",4,1,0,3,3
+"one.util.huntbugs.detect.NumericComparison$LongRange.LongRange(long min, long max)",4,1,0,3,2
+"one.util.huntbugs.testdata.TestSelfAssignment.testArraySelfVar(int[] a, int idx)",4,1,0,3,2
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadIncrementOk(int x)",4,1,0,3,1
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadStore(boolean b)",4,1,0,3,1
+"one.util.huntbugs.testdata.TestSelfAssignment.testArray(int a)",4,1,0,3,1
+"one.util.huntbugs.testdata.TestSelfAssignment.test()",4,1,0,3,0
+"one.util.huntbugs.testdata.TestSelfAssignment.testArray()",4,1,0,3,0
+"one.util.huntbugs.testdata.TestSelfAssignment.testArrayOk()",4,1,0,3,0
+"one.util.huntbugs.testdata.TestSelfAssignment.testStatic()",4,1,0,3,0
+"one.util.huntbugs.util.Equi.equiMethods(final MethodReference left, final MethodReference right)",3,1,6,3,2
+"one.util.huntbugs.detect.SqlBadArgument.firstParameterIsInt(MethodReference mr)",3,1,6,3,1
+"one.util.huntbugs.detect.SyncGetClass.checkMethod(MethodDefinition md, TypeDefinition td)",3,1,2,3,2
+"one.util.huntbugs.util.Nodes.isWriteTo(Node node, Set<Variable> vars)",3,1,2,3,2
+"one.util.huntbugs.detect.SwingProblems.check(MethodDefinition md)",3,1,1,3,1
+"one.util.huntbugs.flow.PurityAnnotator.get(Expression expr)",3,1,1,3,1
+"one.util.huntbugs.registry.ClassContext.error(String message)",3,1,1,3,1
+"one.util.huntbugs.registry.MethodContext.error(String message)",3,1,1,3,1
+"one.util.huntbugs.flow.etype.AndType.toString()",3,1,1,3,0
+"one.util.huntbugs.registry.MethodData.toString()",3,1,1,3,0
+"one.util.huntbugs.testdata.TestSelfAssignment.testArraySelfDiffArray(int[] a, int[] b, int idx)",3,1,0,3,3
+"one.util.huntbugs.flow.FrameContext.FrameContext(MethodDefinition md, ClassFields cf)",3,1,0,3,2
+"one.util.huntbugs.testdata.TestSelfAssignment.testArrayOk2(int i, int[] arr)",3,1,0,3,2
+"one.util.huntbugs.testdata.TestSelfAssignment.testArraySelf(int[] a, int idx)",3,1,0,3,2
+"one.util.huntbugs.testdata.TestSelfAssignment.testArraySelfDiffIndex(int[] a, int idx)",3,1,0,3,2
+"one.util.huntbugs.testdata.TestDeadLocalStore.testDeadIncrement(int x)",3,1,0,3,1
+"one.util.huntbugs.registry.MethodContext.toString()",3,1,0,3,0
+"one.util.huntbugs.repo.JarRepository.createTypeLoader()",3,1,0,3,0
+"one.util.huntbugs.testdata.TestDeadLocalStore.testFieldIncrement()",3,1,0,3,0
+"one.util.huntbugs.testdata.TestSelfAssignment.testOk()",3,1,0,3,0
+"one.util.huntbugs.warning.Formatter.getDescription(Warning warning)",2,1,4,3,1
+"one.util.huntbugs.warning.Formatter.getLongDescription(Warning warning)",2,1,4,3,1
+"one.util.huntbugs.util.Equi.equiFields(final FieldReference left, final FieldReference right)",2,1,3,3,2
+"one.util.huntbugs.warning.Formatter.getTitle(Warning warning)",2,1,3,3,1
+"one.util.huntbugs.registry.MethodContext.report(String warning, int priority, Node node, WarningAnnotation<?>... annotations)",2,1,2,3,4
+"one.util.huntbugs.flow.PurityAnnotator.annotate(Node node, FrameContext fc)",2,1,2,3,2
+"one.util.huntbugs.flow.FrameContext.isThis(Expression expr)",2,1,2,3,1
+"one.util.huntbugs.flow.PurityAnnotator.atLeast(Purity other)",2,1,2,3,1
+"one.util.huntbugs.flow.PurityAnnotator.isPure(Expression expr)",2,1,2,3,1
+"one.util.huntbugs.flow.PurityAnnotator.isSideEffectFree(Expression expr)",2,1,2,3,1
+"one.util.huntbugs.util.ExpressionFormatter.formatExpression(Expression expr)",2,1,2,3,1
+"one.util.huntbugs.util.Nodes.estimateCodeSize(Node node)",2,1,2,3,1
+"one.util.huntbugs.util.Nodes.isFieldRead(Node node)",2,1,2,3,1
+"one.util.huntbugs.registry.MethodContext.report(String warning, int priority, WarningAnnotation<?>... annotations)",2,1,1,3,3
+"one.util.huntbugs.detect.NumericComparison.getExpressionRange(JvmType type, Expression arg)",2,1,1,3,2
+"one.util.huntbugs.registry.MethodContext.isAlwaysReachable(Expression from, Expression to)",2,1,1,3,2
+"one.util.huntbugs.util.Equi.equiBlocks(Block left, Block right)",2,1,1,3,2
+"one.util.huntbugs.util.Equi.equiExpressions(Expression left, Expression right)",2,1,1,3,2
+"one.util.huntbugs.util.Nodes.isOp(Node node, AstCode op)",2,1,1,3,2
+"one.util.huntbugs.db.MethodStats.getStats(MemberInfo mi)",2,1,1,3,1
+"one.util.huntbugs.db.MethodStats.getStats(MethodReference mr)",2,1,1,3,1
+"one.util.huntbugs.flow.FrameContext.getCtorFields(MemberReference ctor)",2,1,1,3,1
+"one.util.huntbugs.flow.etype.EType.exact(TypeReference tr)",2,1,1,3,1
+"one.util.huntbugs.flow.etype.EType.subType(TypeReference tr)",2,1,1,3,1
+"one.util.huntbugs.registry.ClassContext.getMemberAsserter(MemberReference mr)",2,1,1,3,1
+"one.util.huntbugs.registry.MethodContext.mayTerminateImplicitly(Expression expr)",2,1,1,3,1
+"one.util.huntbugs.warning.Formatter.Formatter()",2,1,1,3,0
+"one.util.huntbugs.flow.etype.EType.shrinkConstraint(TypeReference tr, boolean exact)",2,1,0,3,2
+"one.util.huntbugs.analysis.AnalysisOptions.setRule(Rule rule)",2,1,0,3,1
+"one.util.huntbugs.flow.etype.AndType.AndType(Set<SingleType> types)",2,1,0,3,1
+"one.util.huntbugs.registry.ClassContext.forField(FieldData fd)",2,1,0,3,1
+"one.util.huntbugs.registry.ClassContext.forMethod(MethodData md)",2,1,0,3,1
+"one.util.huntbugs.registry.MethodData.MethodData(MethodDefinition md)",2,1,0,3,1
+"one.util.huntbugs.repo.JarRepository.JarRepository(JarFile file)",2,1,0,3,1
+"one.util.huntbugs.testdata.TestDeadLocalStore$TestClass.someCalculation(long i)",2,1,0,3,1
+"one.util.huntbugs.testdata.TestNullCheck.error(String s)",2,1,0,3,1
+"one.util.huntbugs.testdata.TestSelfAssignment.update(int[] arr)",2,1,0,3,1
+"one.util.huntbugs.warning.Formatter.Formatter(Messages msgs)",2,1,0,3,1
+"one.util.huntbugs.analysis.AnalysisOptions.getRule()",2,1,0,3,0
+"one.util.huntbugs.assertions.MemberAsserter.isEmpty()",2,1,0,3,0
+"one.util.huntbugs.db.MethodStats.MethodStats()",2,1,0,3,0
+"one.util.huntbugs.flow.PurityAnnotator.PurityAnnotator()",2,1,0,3,0
+"one.util.huntbugs.registry.MethodContext.getCFG()",2,1,0,3,0
+"one.util.huntbugs.registry.MethodContext.isFullyAnalyzed()",2,1,0,3,0
+"one.util.huntbugs.flow.etype.EType.is(TypeReference tr, boolean exact)",0,1,0,3,2
+"one.util.huntbugs.flow.etype.EType.isArray()",0,1,0,3,0
+"one.util.huntbugs.flow.etype.EType.negate()",0,1,0,3,0
+"one.util.huntbugs.input.XmlReportReader.read(Context ctx, Document dom)",19,1,2,2,2
+"one.util.huntbugs.output.HtmlReportWriter.write(Document dom)",16,1,7,2,1
+"one.util.huntbugs.testdata.TestIgnoredException.test4()",10,1,3,2,0
+"one.util.huntbugs.testdata.TestIgnoredException.test2()",9,1,2,2,0
+"one.util.huntbugs.testdata.TestIgnoredException.testOk()",9,1,1,2,0
+"one.util.huntbugs.input.XmlReportReader.loadError(Element e)",8,1,6,2,1
+"one.util.huntbugs.testdata.TestDubiousCatch.catchIllegalState()",8,1,1,2,0
+"one.util.huntbugs.testdata.TestIgnoredException.test1()",8,1,1,2,0
+"one.util.huntbugs.testdata.TestBadMath.testCompound()",8,1,0,2,0
+"one.util.huntbugs.util.Types.isSideEffectFreeType(TypeReference type)",7,1,4,2,1
+"one.util.huntbugs.testdata.TestSelfComputation.testLambdas(List<Integer> l1, List<Integer> l2)",7,1,3,2,2
+"one.util.huntbugs.util.Types.isRandomClass(TypeReference type)",6,1,6,2,1
+"one.util.huntbugs.detect.StaticFieldNonThreadSafe.isNotThreadSafe(TypeReference fieldType)",6,1,2,2,1
+"one.util.huntbugs.util.Variables.getMethodDefinition(VariableDefinition vd)",6,1,1,2,1
+"one.util.huntbugs.testdata.TestWaitContract.noLoopOrTest()",6,1,1,2,0
+"one.util.huntbugs.testdata.TestWaitContract.setCondition()",6,1,1,2,0
+"one.util.huntbugs.testdata.TestNumericComparison.testAssert(char c)",6,1,0,2,1
+"one.util.huntbugs.testdata.TestBadMath.testBoolean()",6,1,0,2,0
+"one.util.huntbugs.detect.Naming.badFieldName(FieldDefinition fd)",5,1,12,2,1
+"one.util.huntbugs.input.XmlReportReader.read(Context ctx, InputStream is)",5,1,4,2,2
+"one.util.huntbugs.testdata.TestBadMath.setNothingLocal()",5,1,1,2,0
+"one.util.huntbugs.testdata.TestWaitContract.nakedNotify()",5,1,1,2,0
+"one.util.huntbugs.registry.FieldContext.FieldContext(Context ctx, ClassContext cc, FieldData fdata)",5,1,0,2,3
+"one.util.huntbugs.detect.Naming.badMethodName(String mName)",4,1,10,2,1
+"one.util.huntbugs.util.Xml.elements(Element parent)",4,1,6,2,1
+"one.util.huntbugs.input.XmlReportReader.read(Context ctx, Path path)",4,1,2,2,2
+"one.util.huntbugs.registry.ClassData.ClassData(TypeDefinition td)",4,1,2,2,1
+"one.util.huntbugs.testdata.TestBadMath.testRemAbs(int x)",4,1,1,2,1
+"one.util.huntbugs.testdata.TestInfiniteRecursion.testSimpleMod(int x)",4,1,1,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.testCast()",4,1,1,2,0
+"one.util.huntbugs.testdata.TestBadMath.isBar(long flags)",4,1,0,2,1
+"one.util.huntbugs.testdata.TestBadMath.shiftLeft(int input)",4,1,0,2,1
+"one.util.huntbugs.testdata.TestBadMath.testAndFFFFConvert(long x)",4,1,0,2,1
+"one.util.huntbugs.testdata.TestBadMath.testOrZero(int x)",4,1,0,2,1
+"one.util.huntbugs.testdata.TestBadMath.testXorZero(int x)",4,1,0,2,1
+"one.util.huntbugs.testdata.TestBadMath.hashCode()",4,1,0,2,0
+"one.util.huntbugs.detect.MutableServletField.checkMethod(MethodDefinition md)",3,1,7,2,1
+"one.util.huntbugs.detect.CheckReturnValue.isInputStream(TypeReference type)",3,1,4,2,1
+"one.util.huntbugs.detect.ExposeRepresentation.checkMethod(MethodDefinition md)",3,1,4,2,1
+"one.util.huntbugs.flow.ClassFields.isKnownEffectivelyFinal(MemberInfo field)",3,1,3,2,1
+"one.util.huntbugs.detect.MutableServletField.checkClass(TypeDefinition td)",3,1,2,2,1
+"one.util.huntbugs.flow.BackLinkAnnotator.annotate(Node node)",3,1,2,2,1
+"one.util.huntbugs.flow.ClassFields.isKnownFinal(MemberInfo field)",3,1,2,2,1
+"one.util.huntbugs.flow.ValuesFlow.hasPhiSource(Expression input)",3,1,2,2,1
+"one.util.huntbugs.testdata.TestSelfComputation.testMyEquals(Object obj)",3,1,2,2,1
+"one.util.huntbugs.detect.MutableServletField$MethodLocation.getAnnotations()",3,1,2,2,0
+"one.util.huntbugs.flow.Annotator.Annotator(String name, T defValue)",3,1,1,2,2
+"one.util.huntbugs.detect.ExposeRepresentation.checkClass(TypeDefinition td)",3,1,1,2,1
+"one.util.huntbugs.detect.StaticFieldFromInstanceMethod.check(MethodDefinition md)",3,1,1,2,1
+"one.util.huntbugs.registry.FieldContext.error(String message)",3,1,1,2,1
+"one.util.huntbugs.testdata.TestInfiniteRecursion$Iface.test(int x)",3,1,1,2,1
+"one.util.huntbugs.testdata.TestInfiniteRecursion$InfiniteLoop.report3(InfiniteLoop obj)",3,1,1,2,1
+"one.util.huntbugs.testdata.TestInfiniteRecursion.TestInfiniteRecursion(int x)",3,1,1,2,1
+"one.util.huntbugs.testdata.TestInfiniteRecursion.testSimple(int x)",3,1,1,2,1
+"one.util.huntbugs.testdata.TestSelfComputation.testEquals(String s1)",3,1,1,2,1
+"one.util.huntbugs.flow.etype.OrType.toString()",3,1,1,2,0
+"one.util.huntbugs.testdata.TestInfiniteRecursion$InfiniteLoop.report()",3,1,1,2,0
+"one.util.huntbugs.testdata.TestInfiniteRecursion.test()",3,1,1,2,0
+"one.util.huntbugs.testdata.TestInfiniteRecursion.testSimple()",3,1,1,2,0
+"one.util.huntbugs.detect.MutableServletField$MethodLocation.MethodLocation(MethodDefinition md, Location loc)",3,1,0,2,2
+"one.util.huntbugs.registry.DatabaseRegistry$DatabaseInfo.DatabaseInfo(T db, AbstractTypeDatabase<T> parentDb)",3,1,0,2,2
+"one.util.huntbugs.testdata.TestBadMath.bitAdd(int src, byte add)",3,1,0,2,2
+"one.util.huntbugs.testdata.TestBadMath.bitAdd(long src, byte add)",3,1,0,2,2
+"one.util.huntbugs.testdata.TestBadMath.bitAdd2(int src, byte add)",3,1,0,2,2
+"one.util.huntbugs.testdata.TestBadMath.bitOr(int src, byte add)",3,1,0,2,2
+"one.util.huntbugs.testdata.TestSelfComputation.test(int a, int b)",3,1,0,2,2
+"one.util.huntbugs.testdata.TestSelfComputation.test(int[] x, int idx)",3,1,0,2,2
+"one.util.huntbugs.testdata.TestSelfComputation.testCmp(double[] x, double[] y)",3,1,0,2,2
+"one.util.huntbugs.output.HtmlReportWriter.HtmlReportWriter(Writer target)",3,1,0,2,1
+"one.util.huntbugs.registry.DatabaseRegistry.DatabaseRegistry(Context ctx)",3,1,0,2,1
+"one.util.huntbugs.testdata.TestBadMath.TestBadMath(int x)",3,1,0,2,1
+"one.util.huntbugs.testdata.TestBadMath.isFoo(long flags)",3,1,0,2,1
+"one.util.huntbugs.testdata.TestBadMath.isFooOk(long flags)",3,1,0,2,1
+"one.util.huntbugs.testdata.TestBadMath.isFooRev(long flags)",3,1,0,2,1
+"one.util.huntbugs.testdata.TestBadMath.isFooStrangeButOk(long flags)",3,1,0,2,1
+"one.util.huntbugs.testdata.TestBadMath.shift(int input)",3,1,0,2,1
+"one.util.huntbugs.testdata.TestBadMath.shift(long input)",3,1,0,2,1
+"one.util.huntbugs.testdata.TestBadMath.shiftOk(int input)",3,1,0,2,1
+"one.util.huntbugs.testdata.TestBadMath.shiftOk(long input)",3,1,0,2,1
+"one.util.huntbugs.testdata.TestBadMath.testAndFFFF(int x)",3,1,0,2,1
+"one.util.huntbugs.testdata.TestBadMath.testAndFFFF(long x)",3,1,0,2,1
+"one.util.huntbugs.testdata.TestBadMath.testAndFFFFIncorrect(long x)",3,1,0,2,1
+"one.util.huntbugs.testdata.TestSelfComputation.test(int[] x)",3,1,0,2,1
+"one.util.huntbugs.testdata.TestSelfComputation.testCmp(int[] x)",3,1,0,2,1
+"one.util.huntbugs.detect.InfiniteRecursion.init()",3,1,0,2,0
+"one.util.huntbugs.registry.FieldContext.toString()",3,1,0,2,0
+"one.util.huntbugs.testdata.TestBadMath.setNothingField()",3,1,0,2,0
+"one.util.huntbugs.testdata.TestBadMath.testShiftPriority()",3,1,0,2,0
+"one.util.huntbugs.testdata.TestBadMath.testShiftPriorityAnd()",3,1,0,2,0
+"one.util.huntbugs.util.Types.is(TypeReference type, Class<?> clazz)",2,1,3,2,2
+"one.util.huntbugs.util.Types.is(TypeReference type, String internalName)",2,1,2,2,2
+"one.util.huntbugs.util.Types.isInstance(TypeReference type, TypeReference wantedType)",2,1,2,2,2
+"one.util.huntbugs.db.Mutability.isKnownMutable(TypeReference tr)",2,1,2,2,1
+"one.util.huntbugs.flow.ValuesFlow.hasUpdatedSource(Expression e)",2,1,2,2,1
+"one.util.huntbugs.flow.ValuesFlow.isSpecial(Expression expr)",2,1,2,2,1
+"one.util.huntbugs.util.Types.isBoxed(TypeReference type)",2,1,2,2,1
+"one.util.huntbugs.util.Types.isObject(TypeReference type)",2,1,2,2,1
+"one.util.huntbugs.util.Types.isString(TypeReference type)",2,1,2,2,1
+"one.util.huntbugs.flow.Annotator.put(Expression expr, T data)",2,1,1,2,2
+"one.util.huntbugs.flow.Annotator.putIfAbsent(Expression expr, T data)",2,1,1,2,2
+"one.util.huntbugs.flow.Annotator.remove(Expression expr)",2,1,1,2,1
+"one.util.huntbugs.registry.DatabaseRegistry.queryDatabase(Class<T> clazz)",2,1,1,2,1
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.convert(String s)",2,1,1,2,1
+"one.util.huntbugs.util.Types.isBaseStream(TypeReference type)",2,1,1,2,1
+"one.util.huntbugs.util.Types.isCollection(TypeReference type)",2,1,1,2,1
+"one.util.huntbugs.util.Types.isStream(TypeReference type)",2,1,1,2,1
+"one.util.huntbugs.flow.BackLinkAnnotator.BackLinkAnnotator()",2,1,1,2,0
+"one.util.huntbugs.registry.ClassData.hasAsserters()",2,1,1,2,0
+"one.util.huntbugs.testdata.TestWaitContract$Holder$SubClass.check()",2,1,1,2,0
+"one.util.huntbugs.flow.etype.OrType.OrType(Set<SingleType> types)",2,1,0,2,1
+"one.util.huntbugs.db.Mutability.Mutability()",2,1,0,2,0
+"one.util.huntbugs.flow.ClassFields.clearCtorData()",2,1,0,2,0
+"one.util.huntbugs.testdata.TestInfiniteRecursion.updateF()",2,1,0,2,0
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.intArr()",2,1,0,2,0
+"one.util.huntbugs.testdata.TestUnnecessaryInstanceOf.stringArr()",2,1,0,2,0
+"one.util.huntbugs.testdata.TestInfiniteRecursion$InfiniteLoop.opaque()",0,1,0,2,0
+"one.util.huntbugs.output.XmlReportWriter.write(Document dom)",14,1,6,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls.collectGarbageInCatch()",14,1,4,1,0
+"one.util.huntbugs.testdata.TestArrayRangeCheck.testArrayCopyCatch()",12,1,4,1,0
+"one.util.huntbugs.testdata.TestExceptionalExpression.testNFE()",9,1,3,1,0
+"one.util.huntbugs.testdata.TestUnreachableCatch.testOk(Object x)",9,1,1,1,1
+"one.util.huntbugs.testdata.TestUnreachableCatch.testUnreachable(Object x)",9,1,1,1,1
+"one.util.huntbugs.testdata.TestUnreachableCatch.testUnreachableMulti(Object x)",9,1,1,1,1
+"one.util.huntbugs.testdata.TestIteratorContract.hasNext()",9,1,1,1,0
+"one.util.huntbugs.asserter.TestAsserter.testLocalClass()",9,1,0,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls.collectGarbageInGeneralCatch()",8,1,2,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls.collectGarbageTimeMeasure()",7,1,5,1,0
+"one.util.huntbugs.testdata.TestEmptySync.nonEmptySync()",7,1,3,1,0
+"one.util.huntbugs.testdata.TestSyncGetClass.update(Object obj, int x)",7,1,2,1,2
+"one.util.huntbugs.testdata.TestEmptySync.emptySync()",7,1,2,1,0
+"one.util.huntbugs.testdata.TestMinValueHandling.testRandomLong()",7,1,2,1,0
+"one.util.huntbugs.testdata.TestSyncOnUpdatedField.testOtherSyncOk2(TestSyncOnUpdatedField tsouf)",7,1,1,1,1
+"one.util.huntbugs.testdata.TestUnsupportedCall.testCatch()",7,1,1,1,0
+"one.util.huntbugs.testdata.TestAbandonedStream.testClose(List<String> list)",6,1,3,1,1
+"one.util.huntbugs.testdata.TestArrayRangeCheck.testArrayClone(boolean b)",6,1,3,1,1
+"one.util.huntbugs.testdata.TestArrayRangeCheck.testArrayCopy()",6,1,3,1,0
+"one.util.huntbugs.testdata.TestArrayRangeCheck.testArrayCopyIdx()",6,1,3,1,0
+"one.util.huntbugs.testdata.TestArrayRangeCheck.testArrayCopyLength()",6,1,3,1,0
+"one.util.huntbugs.testdata.TestArrayRangeCheck.testArrayCopyNegative()",6,1,3,1,0
+"one.util.huntbugs.testdata.TestArrayRangeCheck.testArrayCopyOk()",6,1,3,1,0
+"one.util.huntbugs.testdata.TestSyncGetClass.updateStatic(TestSyncGetClass obj, int x)",6,1,2,1,2
+"one.util.huntbugs.testdata.TestSyncGetClass.update(int x)",6,1,2,1,1
+"one.util.huntbugs.testdata.TestFinalizer$Useful.finalize()",6,1,2,1,0
+"one.util.huntbugs.testdata.TestSyncOnUpdatedField.testOtherSync(TestSyncOnUpdatedField tsouf)",6,1,1,1,1
+"one.util.huntbugs.testdata.TestSyncOnUpdatedField.testOtherSyncOk(TestSyncOnUpdatedField tsouf)",6,1,1,1,1
+"one.util.huntbugs.testdata.TestBadMonitorObject.syncNumber()",6,1,1,1,0
+"one.util.huntbugs.testdata.TestSyncOnUpdatedField.testSimpleStatic()",6,1,1,1,0
+"one.util.huntbugs.testdata.TestSyncOnUpdatedField.testSimpleSync()",6,1,1,1,0
+"one.util.huntbugs.testdata.TestVolatileIncrement.testNonVolatile()",6,1,0,1,0
+"one.util.huntbugs.testdata.TestWrongMapIterator.testSingleElement(Map<String,String> m)",5,1,5,1,1
+"one.util.huntbugs.testdata.TestFieldAccess.updateReflected()",5,1,4,1,0
+"one.util.huntbugs.testdata.TestAbandonedStream.testVarOk(List<String> list)",5,1,3,1,1
+"one.util.huntbugs.testdata.TestMinValueHandling.testRandom()",5,1,3,1,0
+"one.util.huntbugs.testdata.TestInvalidMinMax.checkBounds6(int rawInput)",5,1,2,1,1
+"one.util.huntbugs.testdata.TestInvalidMinMax.checkBoundsCorrect3(int rawInput)",5,1,2,1,1
+"one.util.huntbugs.testdata.TestMinValueHandling.testHashCode(Object obj)",5,1,2,1,1
+"one.util.huntbugs.testdata.TestMinValueHandling.testHashCodeRem(Object obj)",5,1,2,1,1
+"one.util.huntbugs.testdata.TestMinValueHandling.testPowerOf2Rem(Object obj)",5,1,2,1,1
+"one.util.huntbugs.testdata.TestSyncGetClass.print(int x)",5,1,2,1,1
+"one.util.huntbugs.testdata.TestArrayRangeCheck.test()",5,1,2,1,0
+"one.util.huntbugs.testdata.TestArrayRangeCheck.testOk()",5,1,2,1,0
+"one.util.huntbugs.testdata.TestCovariantArrays.test2d()",5,1,2,1,0
+"one.util.huntbugs.testdata.TestFinalizer$Useful2.finalize()",5,1,2,1,0
+"one.util.huntbugs.testdata.TestBadMonitorObject.syncBoolean()",5,1,1,1,0
+"one.util.huntbugs.testdata.TestBadMonitorObject.syncUnsharedBoolean()",5,1,1,1,0
+"one.util.huntbugs.testdata.TestBadMonitorObject.syncUnsharedNumber()",5,1,1,1,0
+"one.util.huntbugs.testdata.TestExceptionalExpression.testDivisionByZero()",5,1,1,1,0
+"one.util.huntbugs.testdata.TestFieldAccess.getExpose()",5,1,1,1,0
+"one.util.huntbugs.testdata.TestFieldAccess.getExposeOk()",5,1,1,1,0
+"one.util.huntbugs.testdata.TestFinalizer$NullFields.finalize()",5,1,1,1,0
+"one.util.huntbugs.asserter.TestAsserter.testSuppress(int x)",5,1,0,1,1
+"one.util.huntbugs.registry.ElementContext.error(String message)",5,1,0,1,1
+"one.util.huntbugs.testdata.TestFieldAccess.getExpose2()",5,1,0,1,0
+"one.util.huntbugs.testdata.TestFinalizer$NullFieldsOnly.finalize()",5,1,0,1,0
+"one.util.huntbugs.testdata.TestStaticFieldFromInstanceMethod.cleanUpSynchronized()",5,1,0,1,0
+"one.util.huntbugs.testdata.TestVolatileIncrement.testPostSynchronizedBlock()",5,1,0,1,0
+"one.util.huntbugs.warning.Warning.toString()",4,1,7,1,0
+"one.util.huntbugs.testdata.TestFieldAccess.updateMH()",4,1,6,1,0
+"one.util.huntbugs.testdata.TestRedundantStreamCalls.testStreamFind(Set<Integer> x)",4,1,4,1,1
+"one.util.huntbugs.testdata.TestRedundantStreamCalls.testStreamFindVar(Set<Integer> x)",4,1,4,1,1
+"one.util.huntbugs.warning.WarningAnnotation$MemberInfo.MemberInfo(MemberReference mr)",4,1,4,1,1
+"one.util.huntbugs.warning.WarningAnnotation$MemberInfo.MemberInfo(String typeName, String name, String signature)",4,1,3,1,3
+"one.util.huntbugs.warning.WarningAnnotation$TypeInfo.equals(Object obj)",4,1,3,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls.urlEquals2(URL url, File file)",4,1,2,1,2
+"one.util.huntbugs.warning.WarningAnnotation.WarningAnnotation(Role<T> role, T value)",4,1,2,1,2
+"one.util.huntbugs.testdata.TestAbandonedStream.testVar(List<String> list)",4,1,2,1,1
+"one.util.huntbugs.testdata.TestAtomicConcurrent.testAtomicUpdate2(String str)",4,1,2,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls.main(String[] args)",4,1,2,1,1
+"one.util.huntbugs.testdata.TestMinValueHandling.unaryMinus(Object key)",4,1,2,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls.threadStop()",4,1,2,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls.threadStopThrowable()",4,1,2,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls.testBadMonth(Date date)",4,1,1,1,1
+"one.util.huntbugs.testdata.TestStaticFieldFromInstanceMethod.testWrite(int x)",4,1,1,1,1
+"one.util.huntbugs.testdata.TestStaticFieldFromInstanceMethod.testWritePrivate(int x)",4,1,1,1,1
+"one.util.huntbugs.testdata.TestStaticFieldFromInstanceMethod.testWriteProtected(int x)",4,1,1,1,1
+"one.util.huntbugs.testdata.TestAtomicConcurrent.TestAtomicConcurrent()",4,1,1,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls.hashCode()",4,1,1,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls.runFinalizers()",4,1,1,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls.testNullCheckAssert2()",4,1,1,1,0
+"one.util.huntbugs.testdata.TestFinalizer$Useless.finalize()",4,1,1,1,0
+"one.util.huntbugs.flow.etype.SingleType.SingleType(TypeReference tr, What what, boolean complete)",4,1,0,1,3
+"one.util.huntbugs.asserter.TestAsserter.testSuppressParam(int x)",4,1,0,1,1
+"one.util.huntbugs.testdata.TestArrayRangeCheck.get(int[] arr)",4,1,0,1,1
+"one.util.huntbugs.testdata.TestCovariantArrays.caaStoreNoReport(Parent p)",4,1,0,1,1
+"one.util.huntbugs.testdata.TestCovariantArrays.genericStore(T val)",4,1,0,1,1
+"one.util.huntbugs.asserter.TestAsserter.test()",4,1,0,1,0
+"one.util.huntbugs.testdata.TestCovariantArrays.testNull()",4,1,0,1,0
+"one.util.huntbugs.testdata.TestFinalizer.finalize()",4,1,0,1,0
+"one.util.huntbugs.testdata.TestVolatileIncrement.testMulDouble()",4,1,0,1,0
+"one.util.huntbugs.detect.SelfComputation.sameArgs(Expression expr)",3,1,7,1,1
+"one.util.huntbugs.util.Exprs.isAssertion(Expression expr)",3,1,7,1,1
+"one.util.huntbugs.testdata.TestRedundantStreamCalls.testArrayListFind(ArrayList<String> x)",3,1,5,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls.urlEquals(URL url, File file)",3,1,3,1,2
+"one.util.huntbugs.testdata.TestAbandonedStream.testSimpleOk(List<String> list)",3,1,3,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls.process(List<String> vals)",3,1,3,1,1
+"one.util.huntbugs.testdata.TestRedundantStreamCalls.testIntStreamFind(IntStream is)",3,1,3,1,1
+"one.util.huntbugs.testdata.TestRedundantStreamCalls.testIntermediate(ArrayList<String> x)",3,1,3,1,1
+"one.util.huntbugs.testdata.TestRegexProblems.testFileSeparator2(String test)",3,1,3,1,1
+"one.util.huntbugs.flow.etype.SingleType.hashCode()",3,1,3,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls.hash(String str, int[] arr)",3,1,2,1,2
+"one.util.huntbugs.testdata.TestBadMethodCalls.hash2(String str, int[] arr)",3,1,2,1,2
+"one.util.huntbugs.testdata.TestAbandonedStream.testPrimitive(int[] data)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestAbandonedStream.testSimple(List<String> list)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestAbandonedStream.testSimpleReturn(List<String> list)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestAbandonedStream.testToPrimitive(List<String> list)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestAtomicConcurrent.testAtomicUpdate(String str)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls$MyThread.MyThread(int x)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestInvalidMinMax.checkBounds(double rawInput)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestInvalidMinMax.checkBounds(float rawInput)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestInvalidMinMax.checkBounds(int rawInput)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestInvalidMinMax.checkBounds(long rawInput)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestInvalidMinMax.checkBounds2(int rawInput)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestInvalidMinMax.checkBounds3(int rawInput)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestInvalidMinMax.checkBounds4(int rawInput)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestInvalidMinMax.checkBounds5(int rawInput)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestInvalidMinMax.checkBoundsCorrect(double rawInput)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestInvalidMinMax.checkBoundsCorrect(float rawInput)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestInvalidMinMax.checkBoundsCorrect(int rawInput)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestInvalidMinMax.checkBoundsCorrect(long rawInput)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestInvalidMinMax.checkBoundsCorrect2(int rawInput)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestRedundantStreamCalls.testArrayList(ArrayList<String> x)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestRedundantStreamCalls.testParallel(ArrayList<String> x)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestRedundantStreamCalls.testSet(Set<String> x)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestRedundantStreamCalls.testStreamCount(List<Integer> collection)",3,1,2,1,1
+"one.util.huntbugs.testdata.TestRedundantStreamCalls.testRedundantArray()",3,1,2,1,0
+"one.util.huntbugs.testdata.TestRedundantStreamCalls.testRedundantEmpty()",3,1,2,1,0
+"one.util.huntbugs.testdata.TestRedundantStreamCalls.testRedundantSingleton()",3,1,2,1,0
+"one.util.huntbugs.warning.WarningAnnotation.toString()",3,1,2,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls.hash3(String str, int[] arr)",3,1,1,1,2
+"one.util.huntbugs.testdata.TestBadMethodCalls.urlEquals(URL url1, URL url2)",3,1,1,1,2
+"one.util.huntbugs.testdata.TestCheckReturnValue.read(InputStream is, byte[] arr)",3,1,1,1,2
+"one.util.huntbugs.testdata.TestUnsupportedCall.addAll(Set<String> a, Set<String> b)",3,1,1,1,2
+"one.util.huntbugs.testdata.TestArrayRangeCheck$SubArrayCheck.SubArrayCheck(String s)",3,1,1,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls.format3(int[] arr)",3,1,1,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls.formatChar(char[] arr)",3,1,1,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls.testAddArrayList(ArrayList<Object> c)",3,1,1,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls.testAddCollection(Collection<Object> c)",3,1,1,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls.testBigDecimalRound(double x)",3,1,1,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls.testCorrectAssert(String str)",3,1,1,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls.testCorrectPrecondition(String str)",3,1,1,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls.testDouble(int x)",3,1,1,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls.testThreadPoolExecutor(int poolSize)",3,1,1,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls.testWrongAssert(String str)",3,1,1,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls.testWrongPrecondition(String str)",3,1,1,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls.urlHashCode(URL url)",3,1,1,1,1
+"one.util.huntbugs.testdata.TestCheckReturnValue.skipTen(Reader r)",3,1,1,1,1
+"one.util.huntbugs.testdata.TestRegexProblems.testDotReplace(String test)",3,1,1,1,1
+"one.util.huntbugs.testdata.TestRegexProblems.testDotReplaceFirst(String test)",3,1,1,1,1
+"one.util.huntbugs.testdata.TestRegexProblems.testFileSeparator(String test)",3,1,1,1,1
+"one.util.huntbugs.testdata.TestUnsupportedCall.hello(int x)",3,1,1,1,1
+"one.util.huntbugs.asserter.TestAsserter.uncalled()",3,1,1,1,0
+"one.util.huntbugs.flow.Nullness.hashCode()",3,1,1,1,0
+"one.util.huntbugs.flow.Nullness.toString()",3,1,1,1,0
+"one.util.huntbugs.repo.DirRepository.createTypeLoader()",3,1,1,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls$MyThread.run()",3,1,1,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls.collectSomeGarbage()",3,1,1,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls.doSomething()",3,1,1,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls.fieldArray()",3,1,1,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls.size()",3,1,1,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls.systemExit()",3,1,1,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls.testCreateThread()",3,1,1,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls.testNullCheckAssert()",3,1,1,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls.testNullCheckAssertOk()",3,1,1,1,0
+"one.util.huntbugs.testdata.TestFieldAccess.getUnwrittenTransient()",3,1,1,1,0
+"one.util.huntbugs.testdata.TestFinalizer$SuperClass.finalize()",3,1,1,1,0
+"one.util.huntbugs.testdata.TestFinalizer.test()",3,1,1,1,0
+"one.util.huntbugs.warning.WarningAnnotation$MemberInfo.hashCode()",3,1,1,1,0
+"one.util.huntbugs.warning.WarningAnnotation$TypeInfo.hashCode()",3,1,1,1,0
+"one.util.huntbugs.registry.ElementContext.ElementContext(Context ctx, Detector detector)",3,1,0,1,2
+"one.util.huntbugs.testdata.TestBadMethodCalls.format(String prefix, int[] arr)",3,1,0,1,2
+"one.util.huntbugs.testdata.TestBadMethodCalls.format2(String suffix, int[] arr)",3,1,0,1,2
+"one.util.huntbugs.warning.WarningAnnotation$Location.Location(int offset, int sourceLine)",3,1,0,1,2
+"one.util.huntbugs.testdata.TestArrayRangeCheck$SubArrayCheck.set(String a)",3,1,0,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls.format4(String arr)",3,1,0,1,1
+"one.util.huntbugs.testdata.TestFieldAccess.setF(int f)",3,1,0,1,1
+"one.util.huntbugs.testdata.TestStaticFieldFromInstanceMethod.setDebugLevel(int level)",3,1,0,1,1
+"one.util.huntbugs.testdata.TestStaticFieldFromInstanceMethod.setVerbose(boolean v)",3,1,0,1,1
+"one.util.huntbugs.testdata.TestStaticFieldFromInstanceMethod.testWriteFromStatic(int x)",3,1,0,1,1
+"one.util.huntbugs.testdata.TestUnsupportedCall.doHello(int i)",3,1,0,1,1
+"one.util.huntbugs.warning.rule.CompositeRule.CompositeRule(List<Rule> rules)",3,1,0,1,1
+"one.util.huntbugs.db.Hierarchy$TypeHierarchy.toString()",3,1,0,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls.testBigDecimal()",3,1,0,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls.testBigDecimalInf()",3,1,0,1,0
+"one.util.huntbugs.testdata.TestCovariantArrays.test()",3,1,0,1,0
+"one.util.huntbugs.testdata.TestFieldAccess.getUnwritten()",3,1,0,1,0
+"one.util.huntbugs.testdata.TestFinalizer$FinalFinalizer.finalize()",3,1,0,1,0
+"one.util.huntbugs.testdata.TestFinalizer$Nullify.finalize()",3,1,0,1,0
+"one.util.huntbugs.testdata.TestIteratorContract$Iterator2.hasNext()",3,1,0,1,0
+"one.util.huntbugs.testdata.TestStaticFieldFromInstanceMethod.cleanUp()",3,1,0,1,0
+"one.util.huntbugs.testdata.TestStaticFieldFromInstanceMethod.cleanUpSynchronizedMethod()",3,1,0,1,0
+"one.util.huntbugs.testdata.TestUnsupportedCall.test()",3,1,0,1,0
+"one.util.huntbugs.testdata.TestVolatileIncrement.testMul()",3,1,0,1,0
+"one.util.huntbugs.testdata.TestVolatileIncrement.testPost()",3,1,0,1,0
+"one.util.huntbugs.testdata.TestVolatileIncrement.testPostLong()",3,1,0,1,0
+"one.util.huntbugs.testdata.TestVolatileIncrement.testPostSynchronized()",3,1,0,1,0
+"one.util.huntbugs.testdata.TestVolatileIncrement.testPre()",3,1,0,1,0
+"one.util.huntbugs.testdata.TestVolatileIncrement.testPreLong()",3,1,0,1,0
+"one.util.huntbugs.warning.WarningAnnotation$Location.hashCode()",3,1,0,1,0
+"one.util.huntbugs.util.Exprs.stream(Expression expr)",2,1,5,1,1
+"one.util.huntbugs.util.Exprs.bothMatch(Expression e1, Expression e2, Predicate<Expression> p1, Predicate<Expression> p2)",2,1,4,1,4
+"one.util.huntbugs.db.Hierarchy$TypeHierarchy.hasSubClassesOutOfPackage()",2,1,4,1,0
+"one.util.huntbugs.util.Exprs.getChild(Expression node, int i)",2,1,3,1,2
+"one.util.huntbugs.testdata.TestFieldAccess$Reflected.set(String name)",2,1,2,1,1
+"one.util.huntbugs.testdata.TestFieldAccess.getArrayElement(int x)",2,1,2,1,1
+"one.util.huntbugs.warning.WarningAnnotation.forVariable(Variable var)",2,1,2,1,1
+"one.util.huntbugs.testdata.TestFieldAccess.inc()",2,1,2,1,0
+"one.util.huntbugs.warning.Warning.getScore()",2,1,2,1,0
+"one.util.huntbugs.flow.Nullness.createAt(Expression expr, NullState state)",2,1,1,1,2
+"one.util.huntbugs.testdata.TestFieldAccess.cas(Object expected, Object updated)",2,1,1,1,2
+"one.util.huntbugs.util.Exprs.findExpressionWithSources(Expression node, Predicate<Expression> predicate)",2,1,1,1,2
+"one.util.huntbugs.db.Hierarchy$TypeHierarchy.hasFlag(long flag)",2,1,1,1,1
+"one.util.huntbugs.flow.Nullness.nullAt(Expression expr)",2,1,1,1,1
+"one.util.huntbugs.testdata.TestBadMethodCalls.TestBadMethodCalls(int x)",2,1,1,1,1
+"one.util.huntbugs.testdata.TestFieldAccess$TestGeneric.setData(T[] data)",2,1,1,1,1
+"one.util.huntbugs.testdata.TestFieldAccess.get(int i)",2,1,1,1,1
+"one.util.huntbugs.testdata.TestUnsupportedCall.TestUnsupportedCall(int x)",2,1,1,1,1
+"one.util.huntbugs.warning.WarningAnnotation$TypeInfo.TypeInfo(String typeName)",2,1,1,1,1
+"one.util.huntbugs.warning.WarningAnnotation$TypeInfo.TypeInfo(TypeReference ref)",2,1,1,1,1
+"one.util.huntbugs.db.Hierarchy$TypeHierarchy.getSubClasses()",2,1,1,1,0
+"one.util.huntbugs.db.Hierarchy$TypeHierarchy.getSuperClasses()",2,1,1,1,0
+"one.util.huntbugs.db.Hierarchy$TypeHierarchy.hasSubClasses()",2,1,1,1,0
+"one.util.huntbugs.db.Hierarchy$TypeHierarchy.isResolved()",2,1,1,1,0
+"one.util.huntbugs.testdata.TestFieldAccess.getS2()",2,1,1,1,0
+"one.util.huntbugs.testdata.TestFieldAccess.getValueComplex()",2,1,1,1,0
+"one.util.huntbugs.testdata.TestFieldAccess.recreateValueNonFinal()",2,1,1,1,0
+"one.util.huntbugs.testdata.TestIteratorContract$NonIterator.hasNext()",2,1,1,1,0
+"one.util.huntbugs.warning.Warning.annotations()",2,1,1,1,0
+"one.util.huntbugs.warning.WarningAnnotation$MemberInfo.getTypeName()",2,1,1,1,0
+"one.util.huntbugs.warning.WarningAnnotation$MemberInfo.isMethod()",2,1,1,1,0
+"one.util.huntbugs.warning.WarningAnnotation$TypeInfo.getJavaName()",2,1,1,1,0
+"one.util.huntbugs.warning.Warning.Warning(WarningType type, int priority, List<WarningAnnotation<?>> annotations)",2,1,0,1,3
+"one.util.huntbugs.db.Hierarchy$TypeHierarchy.TypeHierarchy(String name)",2,1,0,1,1
+"one.util.huntbugs.flow.Nullness$NullGraphSearch.NullGraphSearch(Expression target)",2,1,0,1,1
+"one.util.huntbugs.flow.Nullness.Nullness(Map<Expression,NullState> expressions)",2,1,0,1,1
+"one.util.huntbugs.output.XmlReportWriter.XmlReportWriter(Writer target)",2,1,0,1,1
+"one.util.huntbugs.repo.DirRepository.DirRepository(Path root)",2,1,0,1,1
+"one.util.huntbugs.testdata.TestFieldAccess$SubClass.setE(int e)",2,1,0,1,1
+"one.util.huntbugs.testdata.TestFieldAccess.agg(String s)",2,1,0,1,1
+"one.util.huntbugs.testdata.TestFieldAccess.setExpose(int[] expose)",2,1,0,1,1
+"one.util.huntbugs.testdata.TestFieldAccess.setRef(Object val)",2,1,0,1,1
+"one.util.huntbugs.db.Hierarchy$TypeHierarchy.getInternalName()",2,1,0,1,0
+"one.util.huntbugs.db.Hierarchy.Hierarchy()",2,1,0,1,0
+"one.util.huntbugs.flow.Nullness.isNull()",2,1,0,1,0
+"one.util.huntbugs.flow.etype.SingleType.isNegative()",2,1,0,1,0
+"one.util.huntbugs.testdata.TestArrayRangeCheck$SubArrayCheck.SubArrayCheck()",2,1,0,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls$MyThread.MyThread()",2,1,0,1,0
+"one.util.huntbugs.testdata.TestFieldAccess$SubClass.getE()",2,1,0,1,0
+"one.util.huntbugs.testdata.TestFieldAccess$TestGeneric.getData()",2,1,0,1,0
+"one.util.huntbugs.testdata.TestFieldAccess.getValueNonFinal()",2,1,0,1,0
+"one.util.huntbugs.testdata.TestFieldAccess.recreate()",2,1,0,1,0
+"one.util.huntbugs.testdata.TestFieldAccess.reset()",2,1,0,1,0
+"one.util.huntbugs.testdata.TestFieldAccess.reset2()",2,1,0,1,0
+"one.util.huntbugs.testdata.TestFieldAccess.updateExpose2()",2,1,0,1,0
+"one.util.huntbugs.testdata.TestIteratorContract$NonIterator.next()",2,1,0,1,0
+"one.util.huntbugs.warning.Warning.getStatus()",2,1,0,1,0
+"one.util.huntbugs.warning.Warning.getType()",2,1,0,1,0
+"one.util.huntbugs.warning.WarningAnnotation$Location.getOffset()",2,1,0,1,0
+"one.util.huntbugs.warning.WarningAnnotation$Location.getSourceLine()",2,1,0,1,0
+"one.util.huntbugs.warning.WarningAnnotation$MemberInfo.getName()",2,1,0,1,0
+"one.util.huntbugs.warning.WarningAnnotation$MemberInfo.getSignature()",2,1,0,1,0
+"one.util.huntbugs.warning.WarningAnnotation$MemberInfo.getType()",2,1,0,1,0
+"one.util.huntbugs.warning.WarningAnnotation$TypeInfo.getTypeName()",2,1,0,1,0
+"one.util.huntbugs.warning.WarningAnnotation.getRole()",2,1,0,1,0
+"one.util.huntbugs.warning.WarningAnnotation.getValue()",2,1,0,1,0
+"one.util.huntbugs.flow.Annotators.Annotators()",1,1,1,1,0
+"one.util.huntbugs.testdata.TestBadMethodCalls.TestBadMethodCalls()",1,1,0,1,0
+"one.util.huntbugs.ReportsTest.testDiff()",44,1,108,0,0
+"one.util.huntbugs.util.Iterables.concat(Iterable<? extends T> it1, Iterable<? extends T> it2)",26,1,0,0,2
+"one.util.huntbugs.ReportsTest.testMerge()",20,1,33,0,0
+"one.util.huntbugs.testdata.TestRoughConstants.testNoWarning()",20,1,8,0,0
+"one.util.huntbugs.AsserterTest.test()",16,1,59,0,0
+"one.util.huntbugs.testdata.TestRoughConstants.testNan()",16,1,6,0,0
+"one.util.huntbugs.repo.FilteredRepository.visit(String rootPackage, RepositoryVisitor visitor)",15,1,1,0,2
+"one.util.huntbugs.RuleTest.testRules()",11,1,16,0,0
+"one.util.huntbugs.util.TestIterables.testConcat()",9,1,24,0,0
+"one.util.huntbugs.FilteredRepositoryTest.filteredRepoTest()",9,1,16,0,0
+"one.util.huntbugs.testdata.TestStartInConstructor.TestStartInConstructor(String s, int x)",9,1,2,0,2
+"one.util.huntbugs.MessagesTest.testFormatter()",8,1,7,0,0
+"one.util.huntbugs.OptionsTest.testAnalysisOptions()",8,1,5,0,0
+"one.util.huntbugs.analysis.ErrorMessage.ErrorMessage(String detector, String className, String elementName, String descriptor, int line, String message)",8,1,0,0,6
+"one.util.huntbugs.analysis.ErrorMessage.ErrorMessage(String detector, String className, String elementName, String descriptor, int line, Throwable error)",8,1,0,0,6
+"one.util.huntbugs.analysis.AnalysisListener.eventOccurred(String stepName, String className, int count, int total)",7,1,0,0,4
+"one.util.huntbugs.repo.FilteredRepository.FilteredRepository(Repository repository, Predicate<String> classFilter)",7,1,0,0,2
+"one.util.huntbugs.testdata.EqualsWrongField.hashCode()",7,1,0,0,0
+"one.util.huntbugs.testdata.TestStringIndex.substringCorrect()",6,1,7,0,0
+"one.util.huntbugs.MessagesTest.testMessages()",6,1,6,0,0
+"one.util.huntbugs.testdata.TestUncalledPrivateMethod.selfLambda()",6,1,3,0,0
+"one.util.huntbugs.registry.DetectorRegistryTest.addDetector()",5,1,5,0,0
+"one.util.huntbugs.registry.DetectorRegistryTest.addFakeDetector()",5,1,5,0,0
+"one.util.huntbugs.testdata.TestDuplicateAssignment.doubleDiffFieldSameField(int val)",5,1,3,0,1
+"one.util.huntbugs.testdata.TestNewGetClass.testOk()",5,1,3,0,0
+"one.util.huntbugs.testdata.TestNumericPromotion.divideWithNeg(int x)",5,1,2,0,1
+"one.util.huntbugs.testdata.TestNumericPromotion.divideWithNegOk(int x)",5,1,2,0,1
+"one.util.huntbugs.testdata.TestNumericPromotion.check(int val)",5,1,1,0,1
+"one.util.huntbugs.testdata.TestToArrayDowncast.toArrayGeneric(Collection<String> l)",5,1,1,0,1
+"one.util.huntbugs.testdata.TestEqualsContract$Final.equals(Object obj)",5,1,0,0,1
+"one.util.huntbugs.testdata.TestAppendObjectOutputStream.createStreamComplex()",5,1,0,0,0
+"one.util.huntbugs.warning.Role.getCount()",5,1,0,0,0
+"one.util.huntbugs.testdata.TestUncalledPrivateMethod.caller()",4,1,6,0,0
+"one.util.huntbugs.warning.Role.Role(String name, Class<T> type, Count count)",4,1,3,0,3
+"one.util.huntbugs.testdata.TestStartInConstructor.TestStartInConstructor()",4,1,3,0,0
+"one.util.huntbugs.flow.EnumConstant.EnumConstant(String typeName, String name)",4,1,2,0,2
+"one.util.huntbugs.testdata.TestDuplicateAssignment.doubleDiffObject(TestDuplicateAssignment tda, int val)",4,1,2,0,2
+"one.util.huntbugs.testdata.TestDuplicateAssignment.doubleDiffField(int val)",4,1,2,0,1
+"one.util.huntbugs.testdata.TestDuplicateAssignment.doubleField(int val)",4,1,2,0,1
+"one.util.huntbugs.testdata.TestReturnNull.testInLambda(String x)",4,1,2,0,1
+"one.util.huntbugs.testdata.HashCodeList.hashCode()",4,1,2,0,0
+"one.util.huntbugs.testdata.TestUnsafeGetResource.getURL()",4,1,2,0,0
+"one.util.huntbugs.testdata.TestCompareUsage.greater2(String s1, String s2)",4,1,1,0,2
+"one.util.huntbugs.testdata.TestNegativeRemainder.getHashBucket2(Object a[], Object x)",4,1,1,0,2
+"one.util.huntbugs.testdata.TestNegativeRemainder.setHashBucket(Object a[], Object x)",4,1,1,0,2
+"one.util.huntbugs.testdata.TestNegativeRemainder.setHashBucketOk(Object a[], Object x)",4,1,1,0,2
+"one.util.huntbugs.testdata.TestSwingProblems.main(String[] args, boolean x)",4,1,1,0,2
+"one.util.huntbugs.testdata.TestUnnecessaryBoxing.getString(int a, int b)",4,1,1,0,2
+"one.util.huntbugs.testdata.TestUnnecessaryBoxing.getStringNoToString(int a, int b)",4,1,1,0,2
+"one.util.huntbugs.testdata.TestDuplicateAssignment.doubleFieldChain(int val)",4,1,1,0,1
+"one.util.huntbugs.testdata.TestDuplicateAssignment.doubleFieldReuse(int val)",4,1,1,0,1
+"one.util.huntbugs.testdata.TestEqualsContract$SubClassNoFields.equals(Object obj)",4,1,1,0,1
+"one.util.huntbugs.testdata.TestEqualsContract$SubClassNoFields1.equals(Object obj)",4,1,1,0,1
+"one.util.huntbugs.testdata.TestEqualsContract$SubClassNoFields1a.equals(Object obj)",4,1,1,0,1
+"one.util.huntbugs.testdata.TestExposeRepresentation.setFieldClone(int[] f)",4,1,1,0,1
+"one.util.huntbugs.testdata.TestExposeRepresentation.setHashTable(Hashtable<String,Integer> ht)",4,1,1,0,1
+"one.util.huntbugs.testdata.TestSwingProblems.main(String[] args)",4,1,1,0,1
+"one.util.huntbugs.testdata.TestUnusedParameter$SubClass.foo(String param)",4,1,1,0,1
+"one.util.huntbugs.testdata.TestUnusedParameter$Xyz.test(int x)",4,1,1,0,1
+"one.util.huntbugs.testdata.TestUnusedParameter.print(double x)",4,1,1,0,1
+"one.util.huntbugs.testdata.TestUnusedParameter.printStatic(double x)",4,1,1,0,1
+"one.util.huntbugs.testdata.TestUnusedParameter.printStatic(int x)",4,1,1,0,1
+"one.util.huntbugs.util.Iterables.toList(Iterable<T> iterable)",4,1,1,0,1
+"one.util.huntbugs.registry.DetectorRegistryTest.setUp()",4,1,1,0,0
+"one.util.huntbugs.testdata.TestEasyMockProblems.testEasyMock2()",4,1,1,0,0
+"one.util.huntbugs.testdata.TestEasyMockProblems.testEasyMockOk()",4,1,1,0,0
+"one.util.huntbugs.testdata.TestFloatNaN.testLambda()",4,1,1,0,0
+"one.util.huntbugs.testdata.TestRoughConstants.testDoubleArray()",4,1,1,0,0
+"one.util.huntbugs.testdata.TestRoughConstants.testDoubleArray2()",4,1,1,0,0
+"one.util.huntbugs.testdata.TestRoughConstants.testDoubleArrayHighPrecision()",4,1,1,0,0
+"one.util.huntbugs.testdata.TestRoughConstants.testE2Digits()",4,1,1,0,0
+"one.util.huntbugs.testdata.TestRoughConstants.testPi2Digits()",4,1,1,0,0
+"one.util.huntbugs.testdata.TestSwingProblems.run()",4,1,1,0,0
+"one.util.huntbugs.testdata.TestUncalledPrivateMethod.annotated()",4,1,1,0,0
+"one.util.huntbugs.testdata.TestUncalledPrivateMethod.callA()",4,1,1,0,0
+"one.util.huntbugs.testdata.TestUncalledPrivateMethod.deprecated()",4,1,1,0,0
+"one.util.huntbugs.flow.CodeBlock.CodeBlock(Expression startExpr, int length, boolean isExceptional)",4,1,0,0,3
+"one.util.huntbugs.warning.WarningType.WarningType(String category, String name, int maxScore)",4,1,0,0,3
+"one.util.huntbugs.testdata.TestDuplicateAssignment.array(TestDuplicateAssignment[] arr, int val)",4,1,0,0,2
+"one.util.huntbugs.testdata.TestDuplicateAssignment.arrayOk(TestDuplicateAssignment[] arr, int val)",4,1,0,0,2
+"one.util.huntbugs.testdata.TestDuplicateAssignment.trickyReceiver(TestDuplicateAssignment tda, int val)",4,1,0,0,2
+"one.util.huntbugs.testdata.TestNumericPromotion.divideByTwo(double x, double y)",4,1,0,0,2
+"one.util.huntbugs.testdata.TestUnnecessaryBoxing.boxUnbox(int a, int b)",4,1,0,0,2
+"one.util.huntbugs.repo.RepositoryVisitor.visitPackage(String packageName)",4,1,0,0,1
+"one.util.huntbugs.testdata.TestEqualsContract$NonPublic.equals(Object obj)",4,1,0,0,1
+"one.util.huntbugs.testdata.TestEqualsContract.equals(Object obj)",4,1,0,0,1
+"one.util.huntbugs.testdata.TestUnnecessaryBoxing.unboxBox(Boolean x)",4,1,0,0,1
+"one.util.huntbugs.testdata.TestUnnecessaryBoxing.unboxBox(Character x)",4,1,0,0,1
+"one.util.huntbugs.testdata.TestUnnecessaryBoxing.unboxBox(Integer x)",4,1,0,0,1
+"one.util.huntbugs.testdata.HashCodeObject.hashCode()",4,1,0,0,0
+"one.util.huntbugs.testdata.TestCloneContract$Clone1.clone()",4,1,0,0,0
+"one.util.huntbugs.testdata.TestCloneContract$Clone2.clone()",4,1,0,0,0
+"one.util.huntbugs.testdata.TestCloneContract$NotCloneable.clone()",4,1,0,0,0
+"one.util.huntbugs.testdata.TestCloneContract.clone()",4,1,0,0,0
+"one.util.huntbugs.detect.AverageComputation.isDiv2(Expression idx)",3,1,12,0,1
+"one.util.huntbugs.testdata.TestBadMethodReferences.test()",3,1,4,0,0
+"one.util.huntbugs.testdata.TestNegativeRemainder.getHashBucketList(List<String> a, Object x)",3,1,3,0,2
+"one.util.huntbugs.testdata.TestNegativeRemainder.setHashBucketList(List<Integer> a, Object x)",3,1,3,0,2
+"one.util.huntbugs.testdata.TestNegativeRemainder.setHashBucketListOk(List<Integer> a, Object x)",3,1,3,0,2
+"one.util.huntbugs.testdata.TestSerializationIdiom$MyComparator.compare(String o1, String o2)",3,1,3,0,2
+"one.util.huntbugs.testdata.TestNegativeRemainder.setRandomElement(List<Integer> a)",3,1,3,0,1
+"one.util.huntbugs.testdata.TestNegativeRemainder.setRandomElementOk(List<Integer> a)",3,1,3,0,1
+"one.util.huntbugs.registry.FieldData.toString()",3,1,3,0,0
+"one.util.huntbugs.repo.CompositeRepository.createTypeLoader()",3,1,3,0,0
+"one.util.huntbugs.sample.MyProductionCodeTest.bugsAlive()",3,1,3,0,0
+"one.util.huntbugs.testdata.TestStringIndex.trimSubstring()",3,1,3,0,0
+"one.util.huntbugs.testdata.TestCompareUsage.lessCmp(String s1, String s2)",3,1,2,0,2
+"one.util.huntbugs.testdata.TestCompareUsage.lessCmpOk(String s1, String s2)",3,1,2,0,2
+"one.util.huntbugs.output.CombinedReportWriter.write(Document dom)",3,1,2,0,1
+"one.util.huntbugs.testdata.TestIncorrectVarArg.testAsList(int[] data)",3,1,2,0,1
+"one.util.huntbugs.testdata.TestIncorrectVarArg.testIntStream(int[] data)",3,1,2,0,1
+"one.util.huntbugs.testdata.TestNoRuntimeRetention.testNoRuntimeRetention(Object obj)",3,1,2,0,1
+"one.util.huntbugs.testdata.TestStartInConstructor$SubClass.SubClass(int x)",3,1,2,0,1
+"one.util.huntbugs.testdata.TestStartInConstructor.TestStartInConstructor(String s)",3,1,2,0,1
+"one.util.huntbugs.testdata.TestStartInConstructor.TestStartInConstructor(int x)",3,1,2,0,1
+"one.util.huntbugs.ReportsTest.testMergeZero()",3,1,2,0,0
+"one.util.huntbugs.flow.EnumConstant.hashCode()",3,1,2,0,0
+"one.util.huntbugs.registry.AbstractTypeDatabase.toString()",3,1,2,0,0
+"one.util.huntbugs.testdata.TestNewGetClass.test()",3,1,2,0,0
+"one.util.huntbugs.testdata.TestRandomUsage.testRnd()",3,1,2,0,0
+"one.util.huntbugs.testdata.TestRandomUsage.testRndArr()",3,1,2,0,0
+"one.util.huntbugs.testdata.TestRandomUsage.testRndOk()",3,1,2,0,0
+"one.util.huntbugs.testdata.TestStringIndex.charAtCorrect()",3,1,2,0,0
+"one.util.huntbugs.testdata.TestStringIndex.charAtIncorrect()",3,1,2,0,0
+"one.util.huntbugs.testdata.TestStringIndex.substringIncorrect()",3,1,2,0,0
+"one.util.huntbugs.testdata.TestStringIndex.substringIncorrect2()",3,1,2,0,0
+"one.util.huntbugs.testdata.TestStringIndex.uselessSubstring()",3,1,2,0,0
+"one.util.huntbugs.testdata.TestUnsafeGetResource$NoSubClasses.getURL()",3,1,2,0,0
+"one.util.huntbugs.testdata.TestUnsafeGetResource$SubClass.getURL2()",3,1,2,0,0
+"one.util.huntbugs.testdata.TestUnsafeGetResource.openResource()",3,1,2,0,0
+"one.util.huntbugs.testdata.TestUnsafeGetResource.openResourceFromRoot()",3,1,2,0,0
+"one.util.huntbugs.warning.Role.hashCode()",3,1,2,0,0
+"one.util.huntbugs.testdata.TestUnusedParameter.TestUnusedParameter(int x, int y, String z)",3,1,1,0,3
+"one.util.huntbugs.testdata.TestCompareUsage.eq(String s1, String s2)",3,1,1,0,2
+"one.util.huntbugs.testdata.TestCompareUsage.greater(String s1, String s2)",3,1,1,0,2
+"one.util.huntbugs.testdata.TestCompareUsage.lessOk(String s1, String s2)",3,1,1,0,2
+"one.util.huntbugs.testdata.TestMutableServletField$TestServlet.service(ServletRequest arg0, ServletResponse arg1)",3,1,1,0,2
+"one.util.huntbugs.testdata.TestNegativeRemainder.getHashBucket(Object a[], Object x)",3,1,1,0,2
+"one.util.huntbugs.testdata.TestNumericPromotion.divideAndCeil(long x, long y)",3,1,1,0,2
+"one.util.huntbugs.testdata.TestNumericPromotion.divideAndRound(int x, int y)",3,1,1,0,2
+"one.util.huntbugs.testdata.TestNumericPromotion.pow(double x, int val)",3,1,1,0,2
+"one.util.huntbugs.testdata.TestUnnecessaryBoxing.getString(double a, double b)",3,1,1,0,2
+"one.util.huntbugs.testdata.TestUnusedParameter.print(String info, int x)",3,1,1,0,2
+"one.util.huntbugs.warning.rule.RegexRule.RegexRule(String regex, int adjustment)",3,1,1,0,2
+"one.util.huntbugs.testdata.TestIncorrectVarArg.testCustom(int[] data)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestIncorrectVarArg.testOk(int[] data)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestInternationalization.toBytes(String s)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestInternationalization.toBytesOk(String s)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestInternationalization.toLowerCase(String s)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestInternationalization.toLowerCaseOk(String s)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestInternationalization.toUpperCase(String s)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestInternationalization.toUpperCaseOk(String s)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestLockProblems.notifyCondition(Condition cond)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestLockProblems.notifyCountDown(CountDownLatch latch)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestLockProblems.waitForCondition(Condition cond)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestLockProblems.waitForConditionOk(Condition cond)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestLockProblems.waitForObject(Object cond)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestNegativeRemainder.setElementToRandom(int[] a)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestNegativeRemainder.setSplittableRandomElement(int[] a)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestNoRuntimeRetention.testNoRuntimeRetention(Method m)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestNoRuntimeRetention.testRuntimeRetention(Method m)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestNumericPromotion.format(int length)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestRandomUsage.testRnd(Random r)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestRandomUsage.testRndMult(Random r)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestSerializationIdiom$ReadObjectSynchronized.readObject(ObjectInputStream ois)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestSerializationIdiom$WriteObjectSynchronized.writeObject(ObjectOutputStream oos)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestSerializationIdiom.readObject(ObjectInputStream ois)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestSerializationIdiom.writeObject(ObjectOutputStream oos)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestSqlBadArgument.get(ResultSet rs)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestSqlBadArgument.set(PreparedStatement ps)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestSqlBadArgument.setOk(PreparedStatement ps)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestStaticFieldNonThreadSafe.format(Date date)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestStringUsage.testStringToString(String s)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestToArrayDowncast.toArray(ArrayList<String> l)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestToArrayDowncast.toArray(Collection<String> l)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestToArrayDowncast.toArrayOk(Collection<String> l)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestUncalledPrivateMethod.lambda(String s)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestUncalledPrivateMethod.methodRef(String s)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestUnusedParameter$Generic.foo(T param)",3,1,1,0,1
+"one.util.huntbugs.testdata.TestUnusedParameter.print(int x)",3,1,1,0,1
+"one.util.huntbugs.DataTest.test()",3,1,1,0,0
+"one.util.huntbugs.flow.EnumConstant.toString()",3,1,1,0,0
+"one.util.huntbugs.flow.Exceptional.hashCode()",3,1,1,0,0
+"one.util.huntbugs.flow.etype.ComplexType.hashCode()",3,1,1,0,0
+"one.util.huntbugs.repo.FilteredRepository.createTypeLoader()",3,1,1,0,0
+"one.util.huntbugs.sample.DataTest.test()",3,1,1,0,0
+"one.util.huntbugs.testdata.EqualsFieldsOk.hashCode()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestEasyMockProblems.testEasyMock()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestNaming$Class1.Test4()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestNaming$Class2.Test5()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestNaming.AB()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestNaming.Test()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestNaming.Test2()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestNaming.Test3()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestNaming.TestNaming()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestRandomUsage.test()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestRandomUsage.testMul()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestRandomUsage.testRndOnce()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestRandomUsage.testRndOnceSecure()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestRoughConstants.test2Pi1()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestRoughConstants.test2Pi2()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestRoughConstants.test2Pi3()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestRoughConstants.test2Pi4()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestRoughConstants.testE1()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestRoughConstants.testE2()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestRoughConstants.testPi1()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestRoughConstants.testPi2()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestRoughConstants.testPi3()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestRoughConstants.testPi4()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestRoughConstants.testPi5()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestRoughConstants.testPi6()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestStringIndex.lessThanZero()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestStringIndex.lessThanZero2()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestStringIndex.substringIncorrect3()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestUncalledPrivateMethod.callB()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestUncalledPrivateMethod.called()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestUncalledPrivateMethod.packagePrivate()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestUncalledPrivateMethod.simple()",3,1,1,0,0
+"one.util.huntbugs.testdata.TestUnsafeGetResource.getURLOk()",3,1,1,0,0
+"one.util.huntbugs.testdata.EqualsFieldsOk.EqualsFieldsOk(int x, int y)",3,1,0,0,2
+"one.util.huntbugs.testdata.TestExposeRepresentation.setField(TestExposeRepresentation obj, int[] f)",3,1,0,0,2
+"one.util.huntbugs.testdata.TestNumericPromotion.divide(int x, int y)",3,1,0,0,2
+"one.util.huntbugs.testdata.TestNumericPromotion.divideFloat(int x, long y)",3,1,0,0,2
+"one.util.huntbugs.testdata.TestNumericPromotion.divideFloatOk(int x, int y)",3,1,0,0,2
+"one.util.huntbugs.testdata.TestNumericPromotion.percent(int val, int total)",3,1,0,0,2
+"one.util.huntbugs.testdata.TestNumericPromotion.testMultiplicationTwoNum(int num, int num2)",3,1,0,0,2
+"one.util.huntbugs.testdata.TestUnusedParameter.TestUnusedParameter(int x, String z)",3,1,0,0,2
+"one.util.huntbugs.testdata.TestUnusedParameter.TestUnusedParameter(int x, int y)",3,1,0,0,2
+"one.util.huntbugs.testdata.TestUnusedParameter.test(int x, int y)",3,1,0,0,2
+"one.util.huntbugs.testdata.TestUnusedParameter.test2(int x, int y)",3,1,0,0,2
+"one.util.huntbugs.testdata.TestUnusedParameter.test3(int x, int y)",3,1,0,0,2
+"one.util.huntbugs.warning.rule.CategoryRule.CategoryRule(String category, int adjustment)",3,1,0,0,2
+"one.util.huntbugs.testdata.TestDuplicateAssignment.TestDuplicateAssignment(int a)",3,1,0,0,1
+"one.util.huntbugs.testdata.TestExposeRepresentation$InternalClass.setField(int[] f)",3,1,0,0,1
+"one.util.huntbugs.testdata.TestExposeRepresentation.setFieldVarArgs(int... f)",3,1,0,0,1
+"one.util.huntbugs.testdata.TestExposeRepresentation.setPoint(Point p)",3,1,0,0,1
+"one.util.huntbugs.testdata.TestInternationalization.printWriter(OutputStream os)",3,1,0,0,1
+"one.util.huntbugs.testdata.TestNaming.TestNaming(String s)",3,1,0,0,1
+"one.util.huntbugs.testdata.TestNaming.equal(Object obj)",3,1,0,0,1
+"one.util.huntbugs.testdata.TestNaming.hashcode(int x)",3,1,0,0,1
+"one.util.huntbugs.testdata.TestNumberConstructor.testBoolean(boolean x)",3,1,0,0,1
+"one.util.huntbugs.testdata.TestNumberConstructor.testChar(char x)",3,1,0,0,1
+"one.util.huntbugs.testdata.TestNumberConstructor.testFloat(float x)",3,1,0,0,1
+"one.util.huntbugs.testdata.TestNumberConstructor.testInteger3(int x)",3,1,0,0,1
+"one.util.huntbugs.testdata.TestNumericPromotion.byTen(int val)",3,1,0,0,1
+"one.util.huntbugs.testdata.TestNumericPromotion.testMultiplication(int num)",3,1,0,0,1
+"one.util.huntbugs.testdata.TestNumericPromotion.testMultiplication2(int num)",3,1,0,0,1
+"one.util.huntbugs.testdata.TestNumericPromotion.testMultiplication3(int num)",3,1,0,0,1
+"one.util.huntbugs.testdata.TestNumericPromotion.testMultiplication4(int num)",3,1,0,0,1
+"one.util.huntbugs.testdata.TestNumericPromotion.testMultiplication5(int num)",3,1,0,0,1
+"one.util.huntbugs.testdata.TestNumericPromotion.testMultiplication6(int num)",3,1,0,0,1
+"one.util.huntbugs.analysis.HuntBugsResult.errors()",3,1,0,0,0
+"one.util.huntbugs.analysis.HuntBugsResult.getMessages()",3,1,0,0,0
+"one.util.huntbugs.analysis.HuntBugsResult.warnings()",3,1,0,0,0
+"one.util.huntbugs.flow.Exceptional.toString()",3,1,0,0,0
+"one.util.huntbugs.flow.TrueFalse.toString()",3,1,0,0,0
+"one.util.huntbugs.repo.AuxRepository.createTypeLoader()",3,1,0,0,0
+"one.util.huntbugs.sample.MyProductionCodeTest.setUp()",3,1,0,0,0
+"one.util.huntbugs.sample.SampleHuntBugsPlugin.detectorPackage()",3,1,0,0,0
+"one.util.huntbugs.sample.SampleHuntBugsPlugin.name()",3,1,0,0,0
+"one.util.huntbugs.sample.testdata.TestSampleCustomDetector.getCollection()",3,1,0,0,0
+"one.util.huntbugs.sample.testdata.TestSampleCustomDetector.getMap()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestAppendObjectOutputStream.createStream()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestAppendObjectOutputStream.createStreamNoAppend()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestEqualsContract$NonPublic.hashCode()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestEqualsContract$SelfEquals.hashCode()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestInternationalization.printWriter()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestNaming$Class1.hashcode()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestNaming$Class2.hashcode()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestNaming$Closeable.close()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestNaming._()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestNaming.hashcode()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestNaming.tostring()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestNumberConstructor.testInteger()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestNumberConstructor.testInteger2()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestNumberConstructor.testLong()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestReturnNull.testArrayNull()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestSerializationIdiom$ReadResolveNonObject.readResolve()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestSerializationIdiom$ReadResolveStatic.readResolve()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestStringUsage.testStringCtor()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestStringUsage.testStringCtor2()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestStringUsage.testStringCtor3()",3,1,0,0,0
+"one.util.huntbugs.testdata.TestUnusedParameter.TestUnusedParameter()",3,1,0,0,0
+"one.util.huntbugs.warning.Role.toString()",3,1,0,0,0
+"one.util.huntbugs.warning.WarningType.toString()",3,1,0,0,0
+"one.util.huntbugs.flow.Exceptional.Exceptional(Throwable t)",2,1,3,0,1
+"one.util.huntbugs.warning.WarningType.WarningType(WarningDefinition def)",2,1,3,0,1
+"one.util.huntbugs.warning.Role$LocationRole.create(MethodContext mc, Node node)",2,1,2,0,2
+"one.util.huntbugs.registry.AbstractTypeDatabase.get(TypeReference ref)",2,1,2,0,1
+"one.util.huntbugs.registry.AbstractTypeDatabase.getOrCreate(TypeReference ref)",2,1,2,0,1
+"one.util.huntbugs.warning.Role$OperationRole.create(AstCode code)",2,1,2,0,1
+"one.util.huntbugs.warning.Role$StringRole.createFromConst(Object constant)",2,1,2,0,1
+"one.util.huntbugs.warning.Role$MemberRole.create(String internalTypeName, String name, String signature)",2,1,1,0,3
+"one.util.huntbugs.testdata.TestUnusedParameter.printStatic(String info, int x)",2,1,1,0,2
+"one.util.huntbugs.registry.AbstractTypeDatabase.AbstractTypeDatabase(Function<String,E> elementSupplier)",2,1,1,0,1
+"one.util.huntbugs.registry.AbstractTypeDatabase.get(String internalName)",2,1,1,0,1
+"one.util.huntbugs.registry.AbstractTypeDatabase.getOrCreate(String internalName)",2,1,1,0,1
+"one.util.huntbugs.repo.CompositeRepository.CompositeRepository(List<Repository> repos)",2,1,1,0,1
+"one.util.huntbugs.testdata.TestIncorrectVarArg.custom(Object... data)",2,1,1,0,1
+"one.util.huntbugs.testdata.TestIncorrectVarArg.noVarArg(Object[] data)",2,1,1,0,1
+"one.util.huntbugs.warning.Role$MemberRole.create(MemberReference mr)",2,1,1,0,1
+"one.util.huntbugs.warning.Role$TypeRole.create(String internalTypeName)",2,1,1,0,1
+"one.util.huntbugs.warning.Role$TypeRole.create(TypeReference tr)",2,1,1,0,1
+"one.util.huntbugs.registry.DetectorRegistryTest.getWarnings()",2,1,1,0,0
+"one.util.huntbugs.testdata.TestMutableServletField$TestServletOk.TestServletOk()",2,1,1,0,0
+"one.util.huntbugs.flow.TrueFalse.TrueFalse(STATE trueState, STATE falseState)",2,1,0,0,2
+"one.util.huntbugs.repo.AuxRepository.visit(String rootPackage, RepositoryVisitor visitor)",2,1,0,0,2
+"one.util.huntbugs.testdata.EqualsOk.equals(EqualsOk other, int check)",2,1,0,0,2
+"one.util.huntbugs.testdata.TestMutableServletField$TestServletOk.service(ServletRequest arg0, ServletResponse arg1)",2,1,0,0,2
+"one.util.huntbugs.testdata.TestUnusedParameter.test4(int x, int y)",2,1,0,0,2
+"one.util.huntbugs.warning.Role$ExpressionRole.ExpressionRole(String name, Count count)",2,1,0,0,2
+"one.util.huntbugs.warning.Role$LocationRole.LocationRole(String name, Count count)",2,1,0,0,2
+"one.util.huntbugs.warning.Role$MemberRole.MemberRole(String name, Count count)",2,1,0,0,2
+"one.util.huntbugs.warning.Role$NumberRole.NumberRole(String name, Count count)",2,1,0,0,2
+"one.util.huntbugs.warning.Role$OperationRole.OperationRole(String name, Count count)",2,1,0,0,2
+"one.util.huntbugs.warning.Role$StringRole.StringRole(String name, Count count)",2,1,0,0,2
+"one.util.huntbugs.warning.Role$TypeRole.TypeRole(String name, Count count)",2,1,0,0,2
+"one.util.huntbugs.warning.Role.Role(String name, Class<T> type)",2,1,0,0,2
+"one.util.huntbugs.flow.TrueFalse.TrueFalse(STATE sameState)",2,1,0,0,1
+"one.util.huntbugs.flow.etype.ComplexType.ComplexType(Set<SingleType> types)",2,1,0,0,1
+"one.util.huntbugs.output.CombinedReportWriter.CombinedReportWriter(List<ReportWriter> writers)",2,1,0,0,1
+"one.util.huntbugs.registry.AbstractTypeDatabase.visitType(TypeDefinition td)",2,1,0,0,1
+"one.util.huntbugs.registry.FieldData.FieldData(FieldDefinition fd)",2,1,0,0,1
+"one.util.huntbugs.repo.AuxRepository.AuxRepository(ITypeLoader loader)",2,1,0,0,1
+"one.util.huntbugs.testdata.HashCodeList.HashCodeList(String myField)",2,1,0,0,1
+"one.util.huntbugs.testdata.TestEqualsContract$OtherEquals.equals(TestEqualsContract other)",2,1,0,0,1
+"one.util.huntbugs.testdata.TestEqualsContract$SelfEquals.equals(SelfEquals other)",2,1,0,0,1
+"one.util.huntbugs.testdata.TestEqualsContract.equals(EnumEquals other)",2,1,0,0,1
+"one.util.huntbugs.testdata.TestExposeRepresentation$Point.setX(int x)",2,1,0,0,1
+"one.util.huntbugs.testdata.TestExposeRepresentation$Point.setY(int y)",2,1,0,0,1
+"one.util.huntbugs.testdata.TestNaming$File.File(String pathname)",2,1,0,0,1
+"one.util.huntbugs.warning.Role$ExpressionRole.ExpressionRole(String name)",2,1,0,0,1
+"one.util.huntbugs.warning.Role$ExpressionRole.forName(String name)",2,1,0,0,1
+"one.util.huntbugs.warning.Role$LocationRole.LocationRole(String name)",2,1,0,0,1
+"one.util.huntbugs.warning.Role$LocationRole.forName(String name)",2,1,0,0,1
+"one.util.huntbugs.warning.Role$MemberRole.MemberRole(String name)",2,1,0,0,1
+"one.util.huntbugs.warning.Role$MemberRole.forName(String name)",2,1,0,0,1
+"one.util.huntbugs.warning.Role$NumberRole.NumberRole(String name)",2,1,0,0,1
+"one.util.huntbugs.warning.Role$NumberRole.forName(String name)",2,1,0,0,1
+"one.util.huntbugs.warning.Role$OperationRole.OperationRole(String name)",2,1,0,0,1
+"one.util.huntbugs.warning.Role$StringRole.StringRole(String name)",2,1,0,0,1
+"one.util.huntbugs.warning.Role$StringRole.forName(String name)",2,1,0,0,1
+"one.util.huntbugs.warning.Role$TypeRole.TypeRole(String name)",2,1,0,0,1
+"one.util.huntbugs.warning.Role$TypeRole.forName(String name)",2,1,0,0,1
+"one.util.huntbugs.warning.Role.create(T value)",2,1,0,0,1
+"one.util.huntbugs.analysis.ErrorMessage.getClassName()",2,1,0,0,0
+"one.util.huntbugs.analysis.ErrorMessage.getDescriptor()",2,1,0,0,0
+"one.util.huntbugs.analysis.ErrorMessage.getDetector()",2,1,0,0,0
+"one.util.huntbugs.analysis.ErrorMessage.getElementName()",2,1,0,0,0
+"one.util.huntbugs.analysis.ErrorMessage.getLine()",2,1,0,0,0
+"one.util.huntbugs.flow.EnumConstant.getName()",2,1,0,0,0
+"one.util.huntbugs.flow.EnumConstant.getTypeName()",2,1,0,0,0
+"one.util.huntbugs.flow.Exceptional.getType()",2,1,0,0,0
+"one.util.huntbugs.flow.TrueFalse.invert()",2,1,0,0,0
+"one.util.huntbugs.sample.MyProductionCode.bugsAlive()",2,1,0,0,0
+"one.util.huntbugs.testdata.EqualsFieldsOk.getPoint()",2,1,0,0,0
+"one.util.huntbugs.testdata.TestExposeRepresentation$Point.getX()",2,1,0,0,0
+"one.util.huntbugs.testdata.TestExposeRepresentation$Point.getY()",2,1,0,0,0
+"one.util.huntbugs.testdata.TestMutableServletField$TestServlet.getData()",2,1,0,0,0
+"one.util.huntbugs.testdata.TestMutableServletField$TestServletOk.getData()",2,1,0,0,0
+"one.util.huntbugs.testdata.TestSerializationIdiom$MyComparator.readObjectNoData()",2,1,0,0,0
+"one.util.huntbugs.testdata.TestSerializationIdiom.readObjectNoData()",2,1,0,0,0
+"one.util.huntbugs.warning.Role.getType()",2,1,0,0,0
+"one.util.huntbugs.warning.Roles.Roles()",2,1,0,0,0
+"one.util.huntbugs.warning.WarningType.getCategory()",2,1,0,0,0
+"one.util.huntbugs.warning.WarningType.getMaxScore()",2,1,0,0,0
+"one.util.huntbugs.warning.WarningType.getName()",2,1,0,0,0
+"one.util.huntbugs.testdata.TestUnusedParameter.test(int x)",1,1,0,0,1
+"one.util.huntbugs.flow.GraphSearch.transfer(T orig, Expression from, EdgeType edge, Expression to)",0,1,0,0,4
+"one.util.huntbugs.flow.Dataflow.makeFact(STATE state, Expression expr)",0,1,0,0,2
+"one.util.huntbugs.flow.Dataflow.mergeFacts(FACT f1, FACT f2)",0,1,0,0,2
+"one.util.huntbugs.flow.Dataflow.mergeStates(STATE s1, STATE s2)",0,1,0,0,2
+"one.util.huntbugs.flow.Dataflow.sameFact(FACT f1, FACT f2)",0,1,0,0,2
+"one.util.huntbugs.flow.Dataflow.sameState(STATE s1, STATE s2)",0,1,0,0,2
+"one.util.huntbugs.flow.Dataflow.transferConditionalState(STATE src, Expression expr)",0,1,0,0,2
+"one.util.huntbugs.flow.Dataflow.transferExceptionalState(STATE src, Expression expr)",0,1,0,0,2
+"one.util.huntbugs.flow.Dataflow.transferState(STATE src, Expression expr)",0,1,0,0,2
+"one.util.huntbugs.flow.GraphSearch.markStart(Expression expr, boolean isEntry)",0,1,0,0,2
+"one.util.huntbugs.flow.GraphSearch.merge(T f1, T f2)",0,1,0,0,2
+"one.util.huntbugs.flow.Dataflow.onFail(STATE exitState)",0,1,0,0,1
+"one.util.huntbugs.flow.Dataflow.onSuccess(STATE exitState)",0,1,0,0,1
+"one.util.huntbugs.flow.etype.ComplexType.append(SingleType st)",0,1,0,0,1
+"one.util.huntbugs.flow.etype.ComplexType.appendAny(EType type)",0,1,0,0,1
+"one.util.huntbugs.output.ReportWriter.write(Document dom)",0,1,0,0,1
+"one.util.huntbugs.repo.RepositoryVisitor.visitClass(String className)",0,1,0,0,1
+"one.util.huntbugs.warning.rule.Rule.adjust(WarningType wt)",0,1,0,0,1
+"one.util.huntbugs.flow.Dataflow.makeEntryState()",0,1,0,0,0
+"one.util.huntbugs.flow.Dataflow.makeUnknownFact()",0,1,0,0,0
+"one.util.huntbugs.flow.etype.ComplexType.reduce()",0,1,0,0,0
+"one.util.huntbugs.spi.HuntBugsPlugin.detectorPackage()",0,1,0,0,0
+"one.util.huntbugs.spi.HuntBugsPlugin.name()",0,1,0,0,0

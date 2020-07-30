@@ -1,0 +1,101 @@
+"method","loc","cyclo","calls","nbd","param"
+"org.hibernate.cfg.AnnotationBinder.processElementAnnotations(PropertyHolder propertyHolder, Nullability nullability, PropertyData inferredData, HashMap<String,IdentifierGeneratorDefinition> classGenerators, EntityBinder entityBinder, boolean isIdentifierMapper, boolean isComponentEmbedded, boolean inSecondPass, MetadataBuildingContext context, Map<XClass,InheritanceState> inheritanceStatePerClass)",762,99,362,8,10
+"org.hibernate.hql.internal.ast.SqlASTFactory.getASTNodeType(int tokenType)",122,66,0,2,1
+"org.hibernate.cfg.annotations.SimpleValueBinder.setType(XProperty property, XClass returnedClass, String declaringClassName, ConverterDescriptor attributeConverterDescriptor)",175,55,95,4,4
+"org.hibernate.cfg.annotations.CollectionBinder.bindManyToManySecondPass(Collection collValue, Map persistentClasses, Ejb3JoinColumn[] joinColumns, Ejb3JoinColumn[] inverseJoinColumns, Ejb3Column[] elementColumns, boolean isEmbedded, XClass collType, boolean ignoreNotFound, boolean unique, boolean cascadeDeleteEnabled, TableBinder associationTableBinder, XProperty property, PropertyHolder parentPropertyHolder, MetadataBuildingContext buildingContext)",372,53,185,7,14
+"org.hibernate.hql.internal.classic.FromParser.token(String token, QueryTranslatorImpl q)",244,52,44,4,2
+"org.hibernate.sql.Template.renderWhereStringTemplate(String sqlWhereString, String placeholder, Dialect dialect, SQLFunctionRegistry functionRegistry)",209,47,93,5,4
+"org.hibernate.cfg.AnnotationBinder.bindClass(XClass clazzToProcess, Map<XClass,InheritanceState> inheritanceStatePerClass, MetadataBuildingContext context)",320,44,151,8,3
+"org.hibernate.tuple.entity.EntityMetamodel.EntityMetamodel(PersistentClass persistentClass, EntityPersister persister, final PersisterCreationContext creationContext)",312,42,132,5,3
+"org.hibernate.hql.internal.classic.SelectParser.token(String token, QueryTranslatorImpl q)",152,40,67,4,2
+"org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(Metadata metadata, ExecutionOptions options, Dialect dialect, Formatter formatter, GenerationTarget... targets)",203,37,81,4,5
+"org.hibernate.persister.entity.JoinedSubclassEntityPersister.JoinedSubclassEntityPersister(final PersistentClass persistentClass, final EntityDataAccess cacheAccessStrategy, final NaturalIdDataAccess naturalIdRegionAccessStrategy, final PersisterCreationContext creationContext)",450,36,253,6,4
+"org.hibernate.engine.query.spi.ParameterParser.parse(String sqlString, Recognizer recognizer)",143,36,43,5,2
+"org.hibernate.persister.collection.AbstractCollectionPersister.AbstractCollectionPersister(Collection collectionBinding, CollectionDataAccess cacheAccessStrategy, PersisterCreationContext creationContext)",378,35,176,6,3
+"org.hibernate.cfg.annotations.EntityBinder.bindEntity()",186,31,140,4,0
+"org.hibernate.dialect.TeradataDialect.getSelectClauseNullString(int sqlType)",44,31,0,0,1
+"org.hibernate.cfg.annotations.CollectionBinder.bind()",167,30,106,7,0
+"org.hibernate.test.legacy.FooBarTest.testQuery()",441,30,522,2,0
+"org.hibernate.spatial.dialect.hana.HANASpatialDialect.supports(SpatialFunction function)",61,29,0,1,1
+"org.hibernate.query.procedure.internal.ProcedureParameterImpl.prepare(CallableStatement statement, int startIndex)",130,28,56,5,2
+"org.hibernate.persister.entity.SingleTableEntityPersister.SingleTableEntityPersister(final PersistentClass persistentClass, final EntityDataAccess cacheAccessStrategy, final NaturalIdDataAccess naturalIdRegionAccessStrategy, final PersisterCreationContext creationContext)",318,28,182,4,4
+"org.hibernate.persister.entity.AbstractEntityPersister.AbstractEntityPersister(final PersistentClass persistentClass, final EntityDataAccess cacheAccessStrategy, final NaturalIdDataAccess naturalIdRegionAccessStrategy, final PersisterCreationContext creationContext)",371,27,209,8,4
+"org.hibernate.cfg.annotations.MapBinder.bindKeyFromAssociationTable(XClass collType, Map persistentClasses, String mapKeyPropertyName, XProperty property, boolean isEmbedded, MetadataBuildingContext buildingContext, Ejb3Column[] mapKeyColumns, Ejb3JoinColumn[] mapKeyManyToManyColumns, String targetPropertyName)",215,27,85,4,9
+"org.hibernate.cfg.annotations.EntityBinder.applyCaching(XClass clazzToProcess, SharedCacheMode sharedCacheMode, MetadataBuildingContext context)",124,27,30,4,3
+"org.hibernate.tool.hbm2ddl.SchemaExport$CommandLineArgs.parseCommandLineArgs(String[] args)",96,27,37,3,1
+"org.hibernate.engine.internal.StatefulPersistenceContext.deserialize(ObjectInputStream ois, SessionImplementor session)",124,26,60,5,2
+"org.hibernate.engine.internal.TwoPhaseLoad.doInitializeEntity(final Object entity, final EntityEntry entityEntry, final boolean readOnly, final SharedSessionContractImplementor session, final PreLoadEvent preLoadEvent, final Iterable<PreLoadEventListener> preLoadEventListeners)",188,26,82,4,6
+"org.hibernate.engine.internal.JoinSequence.toJoinFragment(Map enabledFilters, boolean includeAllSubclassJoins, boolean renderSubclassJoins, String withClauseFragment)",173,26,71,4,4
+"org.hibernate.boot.model.source.internal.hbm.ModelBinder.bindCollectionMetadata(MappingDocument mappingDocument, PluralAttributeSource source, Collection binding)",150,26,118,4,3
+"org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(Metadata metadata, ExecutionOptions options, Dialect dialect, Formatter formatter, GenerationTarget... targets)",123,26,51,4,5
+"org.hibernate.cfg.annotations.TableBinder.bindFk(PersistentClass referencedEntity, PersistentClass destinationEntity, Ejb3JoinColumn[] columns, SimpleValue value, boolean unique, MetadataBuildingContext buildingContext)",174,25,74,7,6
+"org.hibernate.hql.internal.ast.tree.SelectClause.initializeExplicitSelectClause(FromClause fromClause)",148,25,59,6,1
+"org.hibernate.engine.jdbc.connections.internal.ConnectionProviderInitiator.initiateService(Map configurationValues, ServiceRegistryImplementor registry)",132,25,33,4,2
+"org.hibernate.context.internal.ThreadLocalSessionContext$TransactionProtectionWrapper.invoke(Object proxy, Method method, Object[] args)",70,25,41,4,3
+"org.hibernate.engine.jdbc.internal.BasicFormatterImpl$FormatProcess.perform()",97,25,45,3,0
+"org.hibernate.engine.jdbc.ClobProxy.invoke(Object proxy, Method method, Object[] args)",72,25,25,3,3
+"org.hibernate.cfg.annotations.CollectionBinder.buildCollectionKey(Collection collValue, Ejb3JoinColumn[] joinColumns, boolean cascadeDeleteEnabled, XProperty property, PropertyHolder propertyHolder, MetadataBuildingContext buildingContext)",116,24,103,7,6
+"org.hibernate.query.internal.AbstractProducedQuery.setHint(String hintName, Object value)",96,24,63,4,2
+"org.hibernate.cfg.AnnotationBinder.bindDefaults(MetadataBuildingContext context)",106,23,33,8,1
+"org.hibernate.jpa.event.internal.CallbackBuilderLegacyImpl.resolveEntityCallbacks(XClass beanClass, CallbackType callbackType, ReflectionManager reflectionManager)",128,23,57,7,3
+"org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(Metadata metadata, DatabaseInformation existingDatabase, ExecutionOptions options, Dialect dialect, GenerationTarget... targets)",114,23,42,6,5
+"org.hibernate.event.internal.DefaultRefreshEventListener.onRefresh(RefreshEvent event, Map refreshedAlready)",182,23,83,3,2
+"org.hibernate.persister.entity.AbstractEntityPersister.generateUpdateString(final boolean[] includeProperty, final int j, final Object[] oldFields, final boolean useRowId)",95,22,40,8,4
+"org.hibernate.boot.model.source.internal.hbm.ResultSetMappingBinder.extractPropertyResults(String alias, NativeQueryNonScalarRootReturn rtnSource, PersistentClass pc, HbmLocalMetadataBuildingContext context)",172,22,64,6,4
+"org.hibernate.hql.internal.classic.QueryTranslatorImpl.renderSQL()",115,22,63,6,0
+"org.hibernate.hql.internal.classic.QueryTranslatorImpl.renderScalarSelect()",93,22,40,6,0
+"org.hibernate.engine.internal.StatefulPersistenceContext.serialize(ObjectOutputStream oos)",111,22,84,5,1
+"org.hibernate.metamodel.internal.MetadataContext.wrapUp()",100,22,54,5,0
+"org.hibernate.testing.jdbc.JdbcMocks$DatabaseMetaDataHandler.invoke(Object proxy, Method method, Object[] args)",89,22,27,2,3
+"org.hibernate.test.cut.CompositeDateTime.equals(Object obj)",61,22,6,2,1
+"org.hibernate.cfg.AnnotationBinder.addProperty(PropertyContainer propertyContainer, XProperty property, List<PropertyData> inFlightPropertyDataList, MetadataBuildingContext context)",107,21,57,8,4
+"org.hibernate.persister.entity.AbstractEntityPersister.generateInsertString(boolean identityInsert, boolean[] includeProperty, int j)",90,21,37,8,3
+"org.hibernate.persister.collection.OneToManyPersister.doUpdateRows(Serializable id, PersistentCollection collection, SharedSessionContractImplementor session)",160,21,77,7,3
+"org.hibernate.loader.custom.sql.SQLQueryReturnProcessor.generateCustomReturns(boolean queryHadAliases)",169,21,75,5,1
+"org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.mergeSettings(PersistenceUnitDescriptor persistenceUnit, Map<?,?> integrationSettings, StandardServiceRegistryBuilder ssrBuilder)",111,21,59,5,3
+"org.hibernate.cfg.annotations.ResultsetMappingSecondPass.doSecondPass(Map persistentClasses)",142,21,82,4,1
+"org.hibernate.hql.internal.classic.WhereParser.token(String token, QueryTranslatorImpl q)",89,21,29,4,2
+"org.hibernate.persister.entity.AbstractEntityPersister.update(final Serializable id, final Object[] fields, int[] dirtyFields, final boolean hasDirtyCollection, final Object[] oldFields, final Object oldVersion, final Object object, final Object rowId, final SharedSessionContractImplementor session)",119,20,26,8,9
+"org.hibernate.cfg.AnnotationBinder.getCascadeStrategy(javax.persistence.CascadeType[] ejbCascades, Cascade hibernateCascadeAnnotation, boolean orphanRemoval, boolean forcePersist)",64,20,31,8,4
+"org.hibernate.jpa.boot.internal.PersistenceXmlParser.bindPersistenceUnit(ParsedPersistenceXmlDescriptor persistenceUnit, Element persistenceUnitElement)",70,20,59,6,2
+"org.hibernate.metamodel.internal.MetamodelImpl.initialize(MetadataImplementor mappingMetadata, JpaMetaModelPopulationSetting jpaMetaModelPopulationSetting)",137,20,83,5,2
+"org.hibernate.engine.internal.StatefulPersistenceContext.getOwnerId(String entityName, String propertyName, Object childEntity, Map mergeMap)",106,20,40,5,4
+"org.hibernate.loader.Loader.initializeEntitiesAndCollections(final List hydratedObjects, final Object resultSetId, final SharedSessionContractImplementor session, final boolean readOnly, List<AfterLoadAction> afterLoadActions)",105,20,28,5,5
+"org.hibernate.query.internal.QueryParameterBindingsImpl.expandListValuedParameters(String queryString, SharedSessionContractImplementor session)",152,20,62,4,2
+"org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(final LoadEvent event, final EntityPersister persister, final EntityKey keyToLoad, final LoadEventListener.LoadType options)",109,20,42,4,4
+"org.hibernate.hql.internal.ast.tree.IdentNode.resolve(boolean generateJoin, boolean implicitJoin, String classAlias, AST parent, AST parentPredicate)",77,20,52,4,5
+"org.hibernate.hql.internal.ast.tree.BinaryArithmeticOperatorNode.resolveDataType()",53,20,7,4,0
+"org.hibernate.hql.internal.ast.tree.InLogicOperatorNode.mutateRowValueConstructorSyntaxInInListSyntax(int lhsColumnSpan, int rhsColumnSpan)",93,20,37,3,2
+"org.hibernate.cfg.Configuration.buildSessionFactory(ServiceRegistry serviceRegistry)",69,20,32,2,1
+"org.hibernate.cfg.AnnotationBinder.fillComponent(PropertyHolder propertyHolder, PropertyData inferredData, PropertyData baseInferredData, AccessType propertyAccessor, boolean isNullable, EntityBinder entityBinder, boolean isComponentEmbedded, boolean isIdentifierMapper, boolean inSecondPass, MetadataBuildingContext buildingContext, Map<XClass,InheritanceState> inheritanceStatePerClass)",154,19,61,8,11
+"org.hibernate.cfg.AnnotationBinder.bindManyToOne(String cascadeStrategy, Ejb3JoinColumn[] columns, boolean optional, boolean ignoreNotFound, boolean cascadeOnDelete, XClass targetEntity, PropertyHolder propertyHolder, PropertyData inferredData, boolean unique, boolean isIdentifierMapper, boolean inSecondPass, PropertyBinder propertyBinder, MetadataBuildingContext context)",115,19,66,8,13
+"org.hibernate.cfg.annotations.CollectionBinder.bindFilters(boolean hasAssociationTable)",129,19,78,7,1
+"org.hibernate.envers.configuration.internal.RevisionInfoConfiguration.configure(MetadataImplementor metadata, ReflectionManager reflectionManager)",142,19,50,4,2
+"org.hibernate.cfg.annotations.SimpleValueBinder.fillSimpleValue()",106,19,51,4,0
+"org.hibernate.envers.configuration.internal.RevisionInfoConfiguration.searchForRevisionInfoCfgInProperties(XClass clazz, ReflectionManager reflectionManager, MutableBoolean revisionNumberFound, MutableBoolean revisionTimestampFound, MutableBoolean modifiedEntityNamesFound, String accessType)",95,19,35,4,6
+"org.hibernate.mapping.Table.sqlCreateString(Dialect dialect, Mapping p, String defaultCatalog, String defaultSchema)",93,19,76,4,4
+"org.hibernate.tuple.entity.PojoEntityTuplizer.buildProxyFactory(PersistentClass persistentClass, Getter idGetter, Setter idSetter)",88,19,48,3,3
+"org.hibernate.boot.model.source.internal.hbm.AttributesHelper.processAttribute(MappingDocument mappingDocument, Callback callback, Object attributeJaxbMapping, String logicalTableName, NaturalIdMutability naturalIdMutability)",160,19,42,2,5
+"org.hibernate.test.criteria.StudentAddress.equals(Object obj)",34,19,7,1,1
+"org.hibernate.persister.entity.AbstractEntityPersister.delete(final Serializable id, final Object version, final int j, final Object object, final String sql, final SharedSessionContractImplementor session, final Object[] loadedState)",124,18,56,8,7
+"org.hibernate.cfg.annotations.CollectionBinder.applySortingAndOrdering(Collection collection)",77,18,21,7,1
+"org.hibernate.metamodel.internal.AttributeFactory.determineAttributeMetadata(AttributeContext<X> attributeContext, MemberResolver memberResolver)",145,18,39,5,2
+"org.hibernate.engine.spi.ActionQueue$InsertActionSorter.sort(List<AbstractEntityInsertAction> insertions)",110,18,37,5,1
+"org.hibernate.persister.entity.AbstractPropertyMapping.addPropertyPath(String path, Type type, String[] columns, String[] columnReaders, String[] columnReaderTemplates, String[] formulaTemplates, Mapping factory)",80,18,29,5,7
+"org.hibernate.boot.model.source.internal.hbm.ModelBinder$AbstractPluralAttributeSecondPass.bindCollectionElement()",251,18,175,4,0
+"org.hibernate.boot.model.source.internal.hbm.ModelBinder.bindAllEntityAttributes(MappingDocument mappingDocument, EntitySource entitySource, PersistentClass entityDescriptor)",207,18,75,4,3
+"org.hibernate.loader.custom.sql.SQLQueryParser.substituteBrackets(String sqlQuery)",103,18,54,4,1
+"org.hibernate.test.hql.ASTParserLoadingTest.testStr()",46,18,48,4,0
+"org.hibernate.hql.internal.ast.HqlParser.negateNode(AST x)",127,18,67,3,1
+"org.hibernate.test.legacy.FooBarTest.testCollectionsInSelect()",165,18,164,2,0
+"org.hibernate.sql.Update.toStatementString()",60,18,50,2,0
+"org.hibernate.test.hql.HQLTest.testExpressionWithParamInFunction()",31,18,24,2,0
+"org.hibernate.persister.entity.AbstractEntityPersister.update(final Serializable id, final Object[] fields, final Object[] oldFields, final Object rowId, final boolean[] includeProperty, final int j, final Object oldVersion, final Object object, final String sql, final SharedSessionContractImplementor session)",130,17,55,8,10
+"org.hibernate.cfg.AnnotationBinder.hasAnnotationsOnIdClass(XClass idClass)",25,17,16,8,1
+"org.hibernate.engine.internal.Cascade.cascadeLogicalOneToOneOrphanRemoval(final CascadingAction action, final EventSource eventSource, final int componentPathStackDepth, final Object parent, final Object child, final Type type, final CascadeStyle style, final String propertyName, final boolean isCascadeDeleteEnabled)",90,17,22,6,9
+"org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.buildBootstrapServiceRegistry(Map integrationSettings, ClassLoader providedClassLoader, ClassLoaderService providedClassLoaderService)",82,17,27,5,3
+"org.hibernate.hql.internal.ast.tree.FromElementType.toColumns(String tableAlias, String path, boolean inSelect, boolean forceAlias)",76,17,31,5,4
+"org.hibernate.cache.internal.CollectionCacheInvalidator.evictCache(Object entity, EntityPersister persister, EventSource session, Object[] oldState)",60,17,27,5,4
+"org.hibernate.engine.internal.StatefulPersistenceContext.getIndexInOwner(String entity, String property, Object childEntity, Map mergeMap)",60,17,24,5,4
+"org.hibernate.engine.spi.ActionQueue$InsertActionSorter.addParentChildEntityNameByPropertyAndValue(AbstractEntityInsertAction action, BatchIdentifier batchIdentifier, Type type, Object value)",54,17,53,5,4
+"org.hibernate.persister.entity.UnionSubclassEntityPersister.UnionSubclassEntityPersister(final PersistentClass persistentClass, final EntityDataAccess cacheAccessStrategy, final NaturalIdDataAccess naturalIdRegionAccessStrategy, final PersisterCreationContext creationContext)",144,17,77,4,4

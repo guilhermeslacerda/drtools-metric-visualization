@@ -1,5 +1,6 @@
 "description",value,percent
+"total_namespaces",57,100
 "total_types",1161,20
 "total_sloc",130364,112
 "total_methods",10753,9
-"total_cyclo",28447,24
+"total_cyclo",28446,24
