@@ -26,7 +26,7 @@
     //"datasetTypes" : "./datasets/Pathfinder/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/Pathfinder/drtools-metric-methodsTop30.csv",
     //"datasetMethods" : "./datasets/Pathfinder/drtools-metric-methods.csv",
-    "datasetInternalTypeDependencies" : "./datasets/JDepend/drtools-metric-internal-dependencies.json", 
+    "datasetInternalTypeDependencies" : "./datasets/Pathfinder/drtools-metric-internal-dependencies.json", 
     "datasetInternalDependencies" : "./datasets/Pathfinder/drtools-metric-internal-dependencies.json",
 };*/
 
