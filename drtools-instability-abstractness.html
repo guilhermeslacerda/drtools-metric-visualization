@@ -40,7 +40,17 @@
     </div>
     <div class="text">
         <strong class="text-error"><div id="errorMessage"></div></strong>
-    </div>			                
+    </div>
+    <div class="text">
+      <table>
+        <tr>
+          <td><div class="mr-sm-2" id="filterAbstractness" style="padding-left: 150px"></div></td>
+          <td><div class="mr-sm-2" id="filterInstability"></div></td>
+        </tr>
+      </table>
+          <div id="chart_div"></div>
+          <div id="dashboard_div"></div>
+      </div>      
   </section>
 
 <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -60,42 +70,79 @@
 if (!optionsProject.datasetNamespaceCoupling || 0 === optionsProject.datasetNamespaceCoupling.length === '') {
   $("#errorMessage").text(errorMessage.msgInstability)
 }
-else {
-    google.charts.load('current', {'packages':['corechart']});
+else { 
+
+    google.charts.load('current', {'packages':['corechart', 'controls']});
     google.charts.setOnLoadCallback(drawSeriesChart);
 
   function drawSeriesChart() {
+    var dashboard = new google.visualization.Dashboard(
+        document.getElementById('dashboard_div'));
 
     $.get(optionsProject.datasetNamespaceCoupling, function(csvString) {
         var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
         var data = new google.visualization.arrayToDataTable(arrayData);
 
         var dataView = new google.visualization.DataView(data);
-        dataView.setColumns([0, 3, 4]);
-
-        var options = {
-        width: 1300,
-        height: 600,
-
-        hAxis: {title: 'Instability', maxValue: 1.0, minValue: 0.0, viewWindowMode: 'pretty'},
-        vAxis: {title: 'Abstractness', maxValue: 1.0, minValue: 0.0, viewWindowMode: 'pretty'},
         
-        chartArea:{width:'80%',height:'90%'},
+        var sliderAbstractness = new google.visualization.ControlWrapper({
+            'controlType': 'NumberRangeFilter',
+            'containerId': 'filterAbstractness',
+            'options': {
+              'filterColumnIndex': 4,
+              'minValue': 0,
+              'maxValue': 1,
+              
+              'ui': {
+                'labelStacking': 'horizontal',
+                'step': 0.1,
+                'format': {'fractionDigits': 1},
+                'label': 'Abstractness'
+              }
+            }
+          });
 
-        bubble: {
-            textStyle: { 
-                fontName: 'Poppins',
-                fontSize: 11
-            }}
-        };
-        
-        var chart = new google.visualization.BubbleChart(document.getElementById('chart_div'));
-        chart.draw(dataView, options);
+        var sliderInstability = new google.visualization.ControlWrapper({
+            'controlType': 'NumberRangeFilter',
+            'containerId': 'filterInstability',
+            'options': {
+              'filterColumnIndex': 3,
+              'minValue': 0,
+              'maxValue': 1,
+              
+              'ui': {
+                'labelStacking': 'horizontal',
+                'step': 0.1,
+                'format': {'fractionDigits': 1},
+                'label': 'Instability'
+              }
+            }
+          });
+
+          var bubbleChart = new google.visualization.ChartWrapper({
+            'chartType': 'BubbleChart',
+            'containerId': 'chart_div',
+            'options': {
+              'width': 1300,
+              'height': 500,
+              'hAxis': {'title': 'Instability', 'maxValue': 1.0,'minValue': 0.0, 'viewWindowMode': 'pretty'},
+              'vAxis': {'title': 'Abstractness', 'maxValue': 1.0, 'minValue': 0.0, 'viewWindowMode': 'pretty'},
+              
+              'chartArea':{'width':'80%','height':'90%'},
+              'bubble': {
+                  'textStyle': { 
+                      'fontName': 'Poppins',
+                      'fontSize': 11
+                  }}
+            },           
+            'view': {'columns': [0, 3, 4]}
+          });
+
+        dashboard.bind([sliderAbstractness, sliderInstability], [bubbleChart]);
+        dashboard.draw(data);
     });
   }
 }
 </script>
-
-<div id="chart_div" style="width: 1400px; height: 700px"></div>
 </body>
 </html>

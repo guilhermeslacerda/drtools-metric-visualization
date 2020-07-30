@@ -88,6 +88,8 @@ else {
       var arrayAllData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
       var arrayData = arrayAllData;
       var data = new google.visualization.arrayToDataTable(arrayData);
+     // dataView.setColumns([0, 1, 2, 4, 5]);
+
       var options = {
           hAxis: {
             title: 'loc'
@@ -115,6 +117,7 @@ else {
                 
                 data = new google.visualization.arrayToDataTable(arrayData);
                 dataView = new google.visualization.DataView(data);
+               // dataView.setColumns([0, 1, 2, 4, 5]);
                 chart.draw(dataView, options);
           });
         });
@@ -124,7 +127,7 @@ else {
   google.setOnLoadCallback(drawVisualization);
 }
 </script>
-<div id="series_chart_div" style="width: 1500px; height: 800px;"></div>
+<div id="series_chart_div" style="width: 1500px; height: 600px;"></div>
 
 </body>
 </html>

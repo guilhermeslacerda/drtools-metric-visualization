@@ -51,13 +51,13 @@
         <strong class="text-error"><div id="errorMessage"></div></strong>
     </div>
     <div class="text">
-      <label class="mr-sm-2" for="limitRegisters">Namespaces</label>
-      <select class="form-select" id="limitRegisters">
-        <option value="0" selected>All Namespaces</option>
-        <option value="11">Top 10</option>
-        <option value="31">Top 30</option>
-        <option value="61">Top 60</option>
-      </select>
+      <table>
+        <tr>
+          <td><div class="mr-sm-2" id="numNamespaces" style="padding-left: 200px"></div></td>
+        </tr>
+      </table>
+          <div id="chart_div"></div>
+          <div id="dashboard_div"></div>
     </div>      
   </section>
 
@@ -79,41 +79,51 @@ if (!optionsProject.datasetNamespaces || 0 === optionsProject.datasetNamespaces.
   $("#errorMessage").text(errorMessage.msgNamespaces)
 }
 else {
-  google.charts.load('current', {packages: ['corechart', 'bar']});
+  google.charts.load('current', {'packages':['corechart', 'controls']});
+  google.charts.setOnLoadCallback(drawBar);
 
   function drawBar() {
-  $.get(optionsProject.datasetNamespaces, function(csvString) {
-        var arrayAllData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
-        var arrayData = arrayAllData;
+    var dashboard = new google.visualization.Dashboard(
+        document.getElementById('dashboard_div'));
+
+    $.get(optionsProject.datasetNamespaces, function(csvString) {
+        var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
         var data = new google.visualization.arrayToDataTable(arrayData);
 
-        var options = {
-          legend: { position: 'top', maxLines: 3 },
-          bar: { groupWidth: '75%' },
-          fontName: 'Poppins',
-          isStacked: true
-        };
-
-        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
-
-        chart.draw(data, options);
-        $(function(){
-          $("#limitRegisters").change(function(){
-              var status = this.value;
-              if (status > 0 && arrayAllData.length >= status)
-                arrayData = arrayAllData.slice(0, status);
-              else arrayData = arrayAllData;
-                
-                data = new google.visualization.arrayToDataTable(arrayData);
-                dataView = new google.visualization.DataView(data);
-                chart.draw(dataView, options);
+        var numNamespaces = new google.visualization.ControlWrapper({
+            'controlType': 'NumberRangeFilter',
+            'containerId': 'numNamespaces',
+            'options': {
+              'filterColumnIndex': 1,              
+              'ui': {
+                'labelStacking': 'horizontal',
+                'label': 'Number of Namespaces (NOC)'
+              }
+            }
           });
-      });
+
+        var barChart = new google.visualization.ChartWrapper({
+          'chartType': 'BarChart',
+          'containerId': 'chart_div',
+          'options': {
+            'width': 1300,
+            'height': 600,
+            'chartArea':{'width':'80%','height':'90%'},
+            'legend': { 'position': 'top', 'maxLines': 3 },
+            'bar': { 'groupWidth': '75%' },
+            'fontName': 'Poppins',
+            'bars': 'horizontal' 
+          },          
+          'view': {'columns': [0, 1, 2]}
+        });
+
+        dashboard.bind([numNamespaces], [barChart]);
+        dashboard.draw(data);
     }); 
   }   
   google.charts.setOnLoadCallback(drawBar);
 }
 </script>
-<div id="chart_div" style="width: 1500px; height: 700px; font-family: 'Poppins', sans-serif"></div>
+<div id="chart_div" style="width: 1300px; height: 600px; font-family: 'Poppins', sans-serif"></div>
 </body>
 </html>

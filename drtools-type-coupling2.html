@@ -93,7 +93,6 @@ else {
       var dataView = new google.visualization.DataView(data);
       dataView.setColumns([0, 5, 6, 7, 8]);
 
-
       var options = {
           hAxis: {
             title: 'dep'
@@ -122,6 +121,7 @@ else {
                 
                 data = new google.visualization.arrayToDataTable(arrayData);
                 dataView = new google.visualization.DataView(data);
+                dataView.setColumns([0, 5, 6, 7, 8]);
                 chart.draw(dataView, options);
           });
         });

@@ -42,13 +42,14 @@
         <strong class="text-error"><div id="errorMessage"></div></strong>
     </div>
     <div class="text">
-      <label class="mr-sm-2" for="limitRegisters">Namespaces</label>
-      <select class="form-select" id="limitRegisters">
-        <option value="0" selected>All Namespaces</option>
-        <option value="11">Top 10</option>
-        <option value="31">Top 30</option>
-        <option value="61">Top 60</option>
-      </select>
+      <table>
+        <tr>
+          <td><div class="mr-sm-2" id="filterCA" style="padding-left: 100px"></div></td>
+          <td><div class="mr-sm-2" id="filterCE"></div></td>
+        </tr>
+      </table>
+          <div id="chart_div"></div>
+          <div id="dashboard_div"></div>
     </div>      
   </section>
 
@@ -70,47 +71,65 @@ if (!optionsProject.datasetNamespaceCoupling || 0 === optionsProject.datasetName
   $("#errorMessage").text(errorMessage.msgNamespaceCoupling)
 }
 else {
-    google.charts.load('current', {'packages':['bar']});
+  google.charts.load('current', {'packages':['corechart', 'controls']});
+  google.charts.setOnLoadCallback(drawBar);
 
     function drawBar() {
+      var dashboard = new google.visualization.Dashboard(
+        document.getElementById('dashboard_div'));
 
       $.get(optionsProject.datasetNamespaceCoupling, function(csvString) {
-        var arrayAllData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
-        var arrayData = arrayAllData;
+        var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
         var data = new google.visualization.arrayToDataTable(arrayData);
 
         var dataView = new google.visualization.DataView(data);
         dataView.setColumns([0, 1, 2]);
 
-        var options = {
-            width: 1300,
-            height: 600,
-            legend: { position: 'top', maxLines: 3 },
-            bar: { groupWidth: '75%' },
-            fontName: 'Poppins',
-            bars: 'horizontal' 
-        };
-        var chart = new google.charts.Bar(document.getElementById('chart_div'));
-        chart.draw(dataView, options);
-
-        $(function(){
-          $("#limitRegisters").change(function(){
-              var status = this.value;
-              if (status > 0 && arrayAllData.length >= status)
-                arrayData = arrayAllData.slice(0, status);
-              else arrayData = arrayAllData;
-                
-                data = new google.visualization.arrayToDataTable(arrayData);
-                dataView = new google.visualization.DataView(data);
-                dataView.setColumns([0, 1, 2]);
-                chart.draw(dataView, options);
+        var sliderCA = new google.visualization.ControlWrapper({
+            'controlType': 'NumberRangeFilter',
+            'containerId': 'filterCA',
+            'options': {
+              'filterColumnIndex': 1,              
+              'ui': {
+                'labelStacking': 'horizontal',
+                'label': 'Afferent Coupling (CA)'
+              }
+            }
           });
+
+        var sliderCE = new google.visualization.ControlWrapper({
+            'controlType': 'NumberRangeFilter',
+            'containerId': 'filterCE',
+            'options': {
+              'filterColumnIndex': 2,
+              'ui': {
+                'labelStacking': 'horizontal',
+                'label': 'Efferent Coupling (CE)'
+              }
+            }
+          });
+
+          var barChart = new google.visualization.ChartWrapper({
+          'chartType': 'BarChart',
+          'containerId': 'chart_div',
+          'options': {
+            'width': 1300,
+            'height': 600,
+            'chartArea':{'width':'80%','height':'90%'},
+            'legend': { 'position': 'top', 'maxLines': 2 },
+            'bar': { 'groupWidth': '75%' },
+            'fontName': 'Poppins',
+            'bars': 'horizontal' 
+          },          
+          'view': {'columns': [0, 1, 2]}
+        });
+
+        dashboard.bind([sliderCA, sliderCE], [barChart]);
+        dashboard.draw(data);
       });
-    });
   };
-  google.charts.setOnLoadCallback(drawBar);
 }
 </script>
-<div id="chart_div" style="width: 1500px; height: 700px; font-family: 'Poppins', sans-serif"></div>
+<div id="chart_div" style="width: 1300px; height: 600px; font-family: 'Poppins', sans-serif"></div>
 </body>
 </html>
