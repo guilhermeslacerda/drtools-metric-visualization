@@ -181,6 +181,7 @@ else {
 
 		var methods = listSummary[3][1];
 		var methodsPerTypes = listSummary[3][2];
+		var slocsPerMethods = slocs / methods;
 
 		var cyclos = listSummary[4][1];
 		var cyclosPerTypes = listSummary[4][2];
@@ -202,22 +203,23 @@ else {
 			.style("font-family", "'Poppins', sans-serif")
 			.style("font-size", "14px")
 			.style("color", "#207dff")
-			.html("Total of Namespaces: " + namespaces + "<br/>Total of Types: " + types + "<br/>Types/namespaces: " 
-					+ typesPerNamespaces + "<br/>"
-					+ "Total of SLOC: " + slocs );
+			.html("Total of SLOC: " + slocs + "<br/>Total of Namespaces: " 
+					+ namespaces + "<br/>Total of Types: " + types + "<br/>Types/namespaces (average): " 
+					+ typesPerNamespaces + "<br/>");
 		
 		var infoMethod = d3.select("#infoMethod")
 			.style("font-family", "'Poppins', sans-serif")
 			.style("font-size", "14px")
 			.style("color", "#207dff")
-			.html("Total of Methods: " + methods + "<br/>Methods/Types: " + methodsPerTypes);	
+			.html("Total of Methods: " + methods + "<br/>Methods/Types (average): " + methodsPerTypes
+							+ "<br/>SLOC/Methods (average): " + Math.round(slocsPerMethods));	
 
 		var infoCyclo = d3.select("#infoCyclo")
 			.style("font-family", "'Poppins', sans-serif")
 			.style("font-size", "14px")
 			.style("color", "#207dff")
-			.html("Total of Complexity: " + cyclos + "<br/>Complexity/Types: " + cyclosPerTypes +
-						"<br/>Complexity/Methods: " + Math.round(cyclosPerMethods));	
+			.html("Total of Complexity: " + cyclos + "<br/>Complexity/Types (average): " + cyclosPerTypes +
+						"<br/>Complexity/Methods (average): " + Math.round(cyclosPerMethods));	
 
 		var config = {
 			radius: 4,
