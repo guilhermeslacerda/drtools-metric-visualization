@@ -184,6 +184,7 @@ else {
 
 		var cyclos = listSummary[4][1];
 		var cyclosPerTypes = listSummary[4][2];
+		var cyclosPerMethods = cyclos / methods;
 
 		var temperatureTypes = typesPerNamespaces > 35 ? 35 : typesPerNamespaces; 
 		var temperatureMethods = methodsPerTypes > 20 ? 20: methodsPerTypes; 
@@ -215,7 +216,8 @@ else {
 			.style("font-family", "'Poppins', sans-serif")
 			.style("font-size", "14px")
 			.style("color", "#207dff")
-			.html("Total of Complexity: " + cyclos + "<br/>Complexity/Types: " + cyclosPerTypes);	
+			.html("Total of Complexity: " + cyclos + "<br/>Complexity/Types: " + cyclosPerTypes +
+						"<br/>Complexity/Methods: " + Math.round(cyclosPerMethods));	
 
 		var config = {
 			radius: 4,
