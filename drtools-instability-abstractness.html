@@ -65,9 +65,11 @@
 <script src="js/jquery.animateNumber.min.js"></script>
 <script src="js/scrollax.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/drtools/drtools-utils.js"></script>
 
 <script type="text/javascript">
-if (!optionsProject.datasetNamespaceCoupling || 0 === optionsProject.datasetNamespaceCoupling.length === '') {
+if (!optionsProject.datasetNamespaceCoupling || 0 === optionsProject.datasetNamespaceCoupling.length === ''
+        || !doesFileExist(optionsProject.datasetNamespaceCoupling)) {
   $("#errorMessage").text(errorMessage.msgInstability)
 }
 else { 
@@ -124,7 +126,7 @@ else {
             'containerId': 'chart_div',
             'options': {
               'width': 1100,
-              'height': 600,
+              'height': 800,
               'hAxis': {'title': 'Instability', 'maxValue': 1.0,'minValue': 0.0, 'viewWindowMode': 'pretty'},
               'vAxis': {'title': 'Abstractness', 'maxValue': 1.0, 'minValue': 0.0, 'viewWindowMode': 'pretty'},
               'bubble': {

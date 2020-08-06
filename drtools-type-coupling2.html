@@ -79,9 +79,11 @@
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/drtools/drtools-utils.js"></script>
       
 <script>
-if (!optionsProject.datasetTypes || 0 === optionsProject.datasetTypes.length === '') {
+if (!optionsProject.datasetTypes || 0 === optionsProject.datasetTypes.length === ''
+        || !doesFileExist(optionsProject.datasetTypes)) {
   $("#errorMessage").text(errorMessage.msgTypeCoupling2)
 }
 else {

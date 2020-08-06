@@ -25,3 +25,23 @@ function returnFactorUsed(value) {
 
     return factor;
 }
+
+function getFullUrl(file) {
+    pathArray = window.location.pathname.split( '/' );
+    indexOfSegment = pathArray.indexOf(file);
+    baseUrl = window.location.origin + pathArray.slice(0,indexOfSegment).join('/') + '/';
+    var baseFile = file.slice(1, file.length); 
+    var fullUrl = baseUrl + baseFile; 
+    return fullUrl;
+}
+
+function doesFileExist(file) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('HEAD', getFullUrl(file), false);
+    xhr.send();
+     
+    if (xhr.status == "404") 
+        return false;
+    return true;
+}
+

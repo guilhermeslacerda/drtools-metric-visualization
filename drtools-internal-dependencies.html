@@ -61,12 +61,14 @@
 <script src="js/jquery.animateNumber.min.js"></script>
 <script src="js/scrollax.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/drtools/drtools-utils.js"></script>
 
 <section class="ftco-section">
     <div class="container font_chord">
 
 <script type="text/javascript">
-if (!optionsProject.datasetInternalDependencies || 0 === optionsProject.datasetInternalDependencies.length === '') {
+if (!optionsProject.datasetInternalDependencies || 0 === optionsProject.datasetInternalDependencies.length === ''
+        || !doesFileExist(optionsProject.datasetInternalDependencies)) {
   $("#errorMessage").text(errorMessage.msgInternalDependencies)
 }
 else {

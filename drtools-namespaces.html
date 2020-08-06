@@ -75,9 +75,11 @@
 <script src="js/jquery.animateNumber.min.js"></script>
 <script src="js/scrollax.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/drtools/drtools-utils.js"></script>
 
 <script>
-if (!optionsProject.datasetNamespaces || 0 === optionsProject.datasetNamespaces.length === '') {
+if (!optionsProject.datasetNamespaces || 0 === optionsProject.datasetNamespaces.length === ''
+        || !doesFileExist(optionsProject.datasetNamespaces)) {
   $("#errorMessage").text(errorMessage.msgNamespaces)
 }
 else {

@@ -158,7 +158,8 @@
 	</div>
 </div>
 <script>
-if (!optionsProject.datasetSummary || 0 === optionsProject.datasetSummary.length === '') {
+if (!optionsProject.datasetSummary || 0 === optionsProject.datasetSummary.length === ''
+			|| !doesFileExist(optionsProject.datasetSummary)) {
 	$("#errorMessage").text(errorMessage.msgSummary)
 }
 else {

@@ -65,9 +65,11 @@
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/drtools/drtools-utils.js"></script>
       
 <script>
-if (!optionsProject.datasetCyclicDependencies || 0 === optionsProject.datasetCyclicDependencies.length === '') {
+if (!optionsProject.datasetCyclicDependencies || 0 === optionsProject.datasetCyclicDependencies.length === ''
+        || !doesFileExist(optionsProject.datasetCyclicDependencies)) {
   $("#errorMessage").text(errorMessage.msgCyclicDependencies)
 }
 else {

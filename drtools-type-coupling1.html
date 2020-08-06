@@ -101,10 +101,11 @@
     <script src="js/jquery.animateNumber.min.js"></script>
     <script src="js/scrollax.min.js"></script>
     <script src="js/main.js"></script>
-    
+    <script src="js/drtools/drtools-utils.js"></script>
 
 <script>
-if (!optionsProject.datasetInternalTypeDependencies || 0 === optionsProject.datasetInternalTypeDependencies.length === '') {
+if (!optionsProject.datasetInternalTypeDependencies || 0 === optionsProject.datasetInternalTypeDependencies.length === ''
+                || !doesFileExist(optionsProject.datasetInternalTypeDependencies)) {
   $("#errorMessage").text(errorMessage.msgTypeCoupling1)
 }
 else {

@@ -78,9 +78,11 @@
 <script src="js/jquery.animateNumber.min.js"></script>
 <script src="js/scrollax.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/drtools/drtools-utils.js"></script>
 
 <script>
-if (!optionsProject.datasetMethods || 0 === optionsProject.datasetMethods.length === '') {
+if (!optionsProject.datasetMethods || 0 === optionsProject.datasetMethods.length === ''
+          || !doesFileExist(optionsProject.datasetMethods)) {
   $("#errorMessage").text(errorMessage.msgMethods)
 }
 else {
@@ -170,7 +172,7 @@ else {
   }
 }
 </script>
-<div id="series_chart_div" style="width: 1300px; height: 500px;"></div>
+<div id="series_chart_div" style="width: 1300px; height: 600px;"></div>
 
 </body>
 </html>

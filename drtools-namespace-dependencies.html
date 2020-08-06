@@ -95,11 +95,13 @@
 	<script src="js/aos.js"></script>
 	<script src="js/jquery.animateNumber.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
-	<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/drtools/drtools-utils.js"></script>
+    
     <svg width="1300" height="800"></svg>
-
     <script>
-    if (!optionsProject.datasetNamespaceDependency || 0 === optionsProject.datasetNamespaceDependency.length === '') {
+    if (!optionsProject.datasetNamespaceDependency || 0 === optionsProject.datasetNamespaceDependency.length === ''
+                || !doesFileExist(optionsProject.datasetNamespaceDependency)) {
         $("#errorMessage").text(errorMessage.msgNamespaceDependency)
     }
     else {

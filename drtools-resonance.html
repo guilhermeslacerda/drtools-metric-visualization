@@ -91,11 +91,13 @@
 	<script src="js/aos.js"></script>
 	<script src="js/jquery.animateNumber.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
-	<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/drtools/drtools-utils.js"></script>
     <svg width="1100" height="1100"></svg>
 
     <script>
-    if (!optionsProject.datasetResonance || 0 === optionsProject.datasetResonance.length === '') {
+    if (!optionsProject.datasetResonance || 0 === optionsProject.datasetResonance.length === ''
+                || !doesFileExist(optionsProject.datasetResonance)) {
         $("#errorMessage").text(errorMessage.msgResonance)
     }
     else {
