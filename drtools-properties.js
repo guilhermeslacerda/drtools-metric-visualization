@@ -1,17 +1,18 @@
 // Project: DR Tools Metric
-/*var optionsProject = {
+var optionsProject = {
     "projectName" : "DR Tools Metric",
     "datasetDir": "./datasets/DrToolsMetric/",
     "datasetSummary" : "./datasets/DrToolsMetric/drtools-metric-summary.csv",
     "datasetResonance" : "./datasets/DrToolsMetric/drtools-metric-resonance.json",
     "datasetNamespaceCoupling" : "./datasets/DrToolsMetric/drtools-metric-coupling.csv",
     "datasetNamespaces" : "./datasets/DrToolsMetric/drtools-metric-namespaces.csv",
-    "datasetNamespaceDependency" : "./datasets/DrToolsMetric/drtools-metric-namespaces-dependencies.json",
+    "datasetNamespaceDependencyI" : "./datasets/DrToolsMetric/drtools-metric-architectural-dependencies.dot",
+    "datasetNamespaceDependencyII" : "./datasets/DrToolsMetric/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/DrToolsMetric/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/DrToolsMetric/drtools-metric-methods-top60.csv",
     "datasetInternalTypeDependencies" : "./datasets/DrToolsMetric/drtools-metric-internal-dependencies.json",
     "datasetInternalDependencies" : "./datasets/DrToolsMetric/drtools-metric-internal-dependencies.json"
-};*/
+};
 
 // Project: Software Pathfinder
 /*var optionsProject = {
@@ -21,7 +22,8 @@
     "datasetResonance" : "./datasets/Pathfinder/drtools-metric-resonance.json",
     "datasetNamespaceCoupling" : "./datasets/Pathfinder/drtools-metric-coupling.csv",
     "datasetNamespaces" : "./datasets/Pathfinder/drtools-metric-namespaces.csv",
-    "datasetNamespaceDependency" : "./datasets/Pathfinder/drtools-metric-namespaces-dependencies.json",
+    "datasetNamespaceDependencyI" : "./datasets/Pathfinder/drtools-metric-architectural-dependencies.dot",
+    "datasetNamespaceDependencyII" : "./datasets/Pathfinder/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/Pathfinder/drtools-metric-typesTop30.csv",
     //"datasetTypes" : "./datasets/Pathfinder/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/Pathfinder/drtools-metric-methodsTop30.csv",
@@ -31,20 +33,21 @@
 };*/
 
 // Project: Findbugs
-var optionsProject = {
+/*var optionsProject = {
     "projectName" : "Findbugs 3.0.1",
     "datasetDir": "./datasets/FindBugs/",
     "datasetSummary" : "./datasets/FindBugs/drtools-metric-summary.csv",
     "datasetResonance" : "./datasets/FindBugs/drtools-metric-resonance.json",
     "datasetNamespaceCoupling" : "./datasets/FindBugs/drtools-metric-coupling.csv",
     "datasetNamespaces" : "./datasets/FindBugs/drtools-metric-namespaces.csv",
-    "datasetNamespaceDependency" : "./datasets/FindBugs/drtools-metric-namespaces-dependencies.json",
+    "datasetNamespaceDependencyI" : "./datasets/FindBugs/drtools-metric-architectural-dependencies.dot",
+    "datasetNamespaceDependencyII" : "./datasets/FindBugs/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/FindBugs/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/FindBugs/drtools-metric-methods.csv",
     "datasetInternalTypeDependencies" : "", 
     "datasetInternalDependencies" : "./datasets/FindBugs/drtools-metric-internal-dependenciesTop40.json",
     "datasetCyclicDependencies" : "./datasets/FindBugs/drtools-metric-cyclic-dependencies.csv"
-};
+};*/
 
 // Project: JDepend
 /*var optionsProject = {
@@ -54,7 +57,8 @@ var optionsProject = {
     "datasetResonance" : "./datasets/JDepend/drtools-metric-resonance.json",
     "datasetNamespaceCoupling" : "./datasets/JDepend/drtools-metric-namespace-coupling.csv",
     "datasetNamespaces" : "./datasets/JDepend/drtools-metric-namespaces.csv",
-    "datasetNamespaceDependency" : "./datasets/JDepend/drtools-metric-namespaces-dependencies.json",
+    "datasetNamespaceDependencyI" : "./datasets/JDepend/drtools-metric-architectural-dependencies.dot",
+    "datasetNamespaceDependencyII" : "./datasets/JDepend/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/JDepend/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/JDepend/drtools-metric-methods.csv",
     "datasetInternalTypeDependencies" : "./datasets/JDepend/drtools-metric-internal-dependencies.json", 
@@ -69,7 +73,8 @@ var optionsProject = {
     "datasetResonance" : "./datasets/Hibernate/drtools-metric-resonance.json",
     "datasetNamespaceCoupling" : "./datasets/Hibernate/drtools-metric-namespace-coupling.csv",
     "datasetNamespaces" : "./datasets/Hibernate/drtools-metric-namespaces.csv",
-    "datasetNamespaceDependency" : "./datasets/Hibernate/drtools-metric-namespaces-dependencies.json",
+    "datasetNamespaceDependencyI" : "./datasets/Hibernate/drtools-metric-architectural-dependencies.dot",
+    "datasetNamespaceDependencyII" : "./datasets/Hibernate/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/Hibernate/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/Hibernate/drtools-metric-methodsTop100.csv",
     "datasetInternalTypeDependencies" : "", 
@@ -84,7 +89,8 @@ var optionsProject = {
     "datasetResonance" : "./datasets/Sneer/drtools-metric-resonance.json",
     "datasetNamespaceCoupling" : "./datasets/Sneer/drtools-metric-namespace-coupling.csv",
     "datasetNamespaces" : "./datasets/Sneer/drtools-metric-namespaces.csv",
-    "datasetNamespaceDependency" : "./datasets/Sneer/drtools-metric-namespaces-dependencies.json",
+    "datasetNamespaceDependencyI" : "./datasets/Sneer/drtools-metric-architectural-dependencies.dot",
+    "datasetNamespaceDependencyII" : "./datasets/Sneer/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/Sneer/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/Sneer/drtools-metric-methods.csv",
     "datasetInternalTypeDependencies" : "", 
@@ -99,7 +105,8 @@ var optionsProject = {
     "datasetResonance" : "./datasets/HuntBugs/drtools-metric-resonance.json",
     "datasetNamespaceCoupling" : "./datasets/HuntBugs/drtools-metric-namespace-coupling.csv",
     "datasetNamespaces" : "./datasets/HuntBugs/drtools-metric-namespaces.csv",
-    "datasetNamespaceDependency" : "./datasets/HuntBugs/drtools-metric-namespaces-dependencies.json",
+    "datasetNamespaceDependencyI" : "./datasets/HuntBugs/drtools-metric-architectural-dependencies.dot",
+    "datasetNamespaceDependencyII" : "./datasets/HuntBugs/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/HuntBugs/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/HuntBugs/drtools-metric-methods.csv",
     "datasetInternalTypeDependencies" : "", 
@@ -114,7 +121,8 @@ var optionsProject = {
     "datasetResonance" : "./datasets/Checkstyle/drtools-metric-resonance.json",
     "datasetNamespaceCoupling" : "./datasets/Checkstyle/drtools-metric-namespace-coupling.csv",
     "datasetNamespaces" : "./datasets/Checkstyle/drtools-metric-namespaces.csv",
-    "datasetNamespaceDependency" : "./datasets/Checkstyle/drtools-metric-namespaces-dependencies.json",
+    "datasetNamespaceDependencyI" : "./datasets/Checkstyle/drtools-metric-architectural-dependencies.dot",
+    "datasetNamespaceDependencyII" : "./datasets/Checkstyle/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/Checkstyle/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/Checkstyle/drtools-metric-methods.csv",
     "datasetInternalTypeDependencies" : "", 
@@ -129,7 +137,8 @@ var optionsProject = {
     "datasetResonance" : "./datasets/Sonarqube/drtools-metric-resonance.json",
     "datasetNamespaceCoupling" : "./datasets/Sonarqube/drtools-metric-namespace-coupling.csv",
     "datasetNamespaces" : "./datasets/Sonarqube/drtools-metric-namespaces.csv",
-    "datasetNamespaceDependency" : "./datasets/Sonarqube/drtools-metric-namespaces-dependencies.json",
+    "datasetNamespaceDependencyI" : "./datasets/Sonarqube/drtools-metric-architectural-dependencies.dot",
+    "datasetNamespaceDependencyII" : "./datasets/Sonarqube/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/Sonarqube/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/Sonarqube/drtools-metric-methods.csv",
     "datasetInternalTypeDependencies" : "", 
@@ -144,7 +153,8 @@ var optionsProject = {
     "datasetResonance" : "./datasets/PMD/drtools-metric-resonance.json",
     "datasetNamespaceCoupling" : "./datasets/PMD/drtools-metric-namespace-coupling.csv",
     "datasetNamespaces" : "./datasets/PMD/drtools-metric-namespaces.csv",
-    "datasetNamespaceDependency" : "./datasets/PMD/drtools-metric-namespaces-dependencies.json",
+    "datasetNamespaceDependencyI" : "./datasets/PMD/drtools-metric-architectural-dependencies.dot",
+    "datasetNamespaceDependencyII" : "./datasets/PMD/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/PMD/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/PMD/drtools-metric-methods.csv",
     "datasetInternalTypeDependencies" : "", 
@@ -159,12 +169,109 @@ var optionsProject = {
     "datasetResonance" : "./datasets/JFreechart/drtools-metric-resonance.json",
     "datasetNamespaceCoupling" : "./datasets/JFreechart/drtools-metric-namespace-coupling.csv",
     "datasetNamespaces" : "./datasets/JFreechart/drtools-metric-namespaces.csv",
-    "datasetNamespaceDependency" : "./datasets/JFreechart/drtools-metric-namespaces-dependencies.json",
+    "datasetNamespaceDependencyI" : "./datasets/JFreechart/drtools-metric-architectural-dependencies.dot",
+    "datasetNamespaceDependencyII" : "./datasets/JFreechart/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/JFreechart/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/JFreechart/drtools-metric-methods.csv",
     "datasetInternalTypeDependencies" : "", 
     "datasetInternalDependencies" : "./datasets/JFreechart/drtools-metric-internal-dependencies.json",
     "datasetCyclicDependencies" : "./datasets/JFreechart/drtools-metric-cyclic-dependencies.csv"
+};*/
+
+// monolith
+/*var optionsProject = {
+    "projectName" : "Umov.me - Center v1.5",
+    "datasetDir": "./datasets/Umovme/center/v1.5/",
+    "datasetSummary" : "./datasets/Umovme/center/v1.5/drtools-metric-summary.csv",
+    "datasetResonance" : "./datasets/Umovme/center/v1.5/drtools-metric-resonance.json",
+    "datasetNamespaceCoupling" : "./datasets/Umovme/center/v1.5/drtools-metric-namespace-coupling.csv",
+    "datasetNamespaces" : "./datasets/Umovme/center/v1.5/drtools-metric-namespaces.csv",
+    "datasetNamespaceDependencyI" : "./datasets/Umovme/center/v1.5/drtools-metric-architectural-dependencies.dot",
+    "datasetNamespaceDependencyII" : "./datasets/Umovme/center/v1.5/drtools-metric-namespaces-dependencies.json",
+    "datasetTypes" : "./datasets/Umovme/center/v1.5/drtools-metric-types.csv",
+    "datasetMethods" : "./datasets/Umovme/center/v1.5/drtools-metric-methods.csv",
+    "datasetInternalTypeDependencies" : "", 
+    "datasetInternalDependencies" : "./datasets/Umovme/center/v1.5/drtools-metric-internal-dependencies.json",
+    "datasetCyclicDependencies" : "./datasets/Umovme/center/v1.5/drtools-metric-cyclic-dependencies.csv"
+};*/
+
+// monolith
+/*var optionsProject = {
+    "projectName" : "Umov.me - Android v1.5",
+    "datasetDir": "./datasets/Umovme/android/v1.5/",
+    "datasetSummary" : "./datasets/Umovme/android/v1.5/drtools-metric-summary.csv",
+    "datasetResonance" : "./datasets/Umovme/android/v1.5/drtools-metric-resonance.json",
+    "datasetNamespaceCoupling" : "./datasets/Umovme/android/v1.5/drtools-metric-namespace-coupling.csv",
+    "datasetNamespaces" : "./datasets/Umovme/android/v1.5/drtools-metric-namespaces.csv",
+    "datasetNamespaceDependencyI" : "./datasets/Umovme/drtools-metric-architectural-dependencies.dot",
+    "datasetNamespaceDependencyII" : "./datasets/Umovme/android/v1.5/drtools-metric-namespaces-dependencies.json",
+    "datasetTypes" : "./datasets/Umovme/android/v1.5/drtools-metric-types.csv",
+    "datasetMethods" : "./datasets/Umovme/android/v1.5/drtools-metric-methods.csv",
+    "datasetInternalTypeDependencies" : "", 
+    "datasetInternalDependencies" : "./datasets/Umovme/android/v1.5/drtools-metric-internal-dependencies.json",
+    "datasetCyclicDependencies" : "./datasets/Umovme/android/v1.5/drtools-metric-cyclic-dependencies.csv"
+};*/
+
+// microservice project
+/*var optionsProject = {
+    "projectName" : "Umov.me - Scheduler v1.5",
+    "datasetDir": "./datasets/Umovme/scheduler/v1.5/",
+    "datasetSummary" : "./datasets/Umovme/scheduler/v1.5/drtools-metric-summary.csv",
+    "datasetResonance" : "./datasets/Umovme/scheduler/v1.5/drtools-metric-resonance.json",
+    "datasetNamespaceCoupling" : "./datasets/Umovme/scheduler/v1.5/drtools-metric-namespace-coupling.csv",
+    "datasetNamespaces" : "./datasets/Umovme/scheduler/v1.5/drtools-metric-namespaces.csv",
+    "datasetNamespaceDependencyI" : "./datasets/Umovme/scheduler/v1.5/drtools-metric-architectural-dependencies.dot",
+    "datasetNamespaceDependencyII" : "./datasets/Umovme/scheduler/v1.5/drtools-metric-namespaces-dependencies.json",
+    "datasetTypes" : "./datasets/Umovme/scheduler/v1.5/drtools-metric-types.csv",
+    "datasetMethods" : "./datasets/Umovme/scheduler/v1.5/drtools-metric-methods.csv",
+    "datasetInternalTypeDependencies" : "", 
+    "datasetInternalDependencies" : "./datasets/Umovme/scheduler/v1.5/drtools-metric-internal-dependencies.json",
+    "datasetCyclicDependencies" : "./datasets/Umovme/scheduler/v1.5/drtools-metric-cyclic-dependencies.csv"
+};*/
+
+/*var optionsProject = {
+    "projectName" : "Umov.me - Zeus v1.5",
+    "datasetDir": "./datasets/Umovme/zeus/v1.5/",
+    "datasetSummary" : "./datasets/Umovme/zeus/v1.5/drtools-metric-summary.csv",
+    "datasetResonance" : "./datasets/Umovme/zeus/v1.5/drtools-metric-resonance.json",
+    "datasetNamespaceCoupling" : "./datasets/Umovme/zeus/v1.5/drtools-metric-namespace-coupling.csv",
+    "datasetNamespaces" : "./datasets/Umovme/zeus/v1.5/drtools-metric-namespaces.csv",
+    "datasetNamespaceDependencyII" : "./datasets/Umovme/zeus/v1.5/drtools-metric-namespaces-dependencies.json",
+    "datasetTypes" : "./datasets/Umovme/zeus/v1.5/drtools-metric-types.csv",
+    "datasetMethods" : "./datasets/Umovme/zeus/v1.5/drtools-metric-methods.csv",
+    "datasetInternalTypeDependencies" : "", 
+    "datasetInternalDependencies" : "./datasets/Umovme/zeus/v1.5/drtools-metric-internal-dependencies.json",
+    "datasetCyclicDependencies" : "./datasets/Umovme/zeus/v1.5/drtools-metric-cyclic-dependencies.csv"
+};*/
+
+/*var optionsProject = {
+    "projectName" : "Umov.me - Ureport v1.5",
+    "datasetDir": "./datasets/Umovme/ureport/v1.5/",
+    "datasetSummary" : "./datasets/Umovme/ureport/v1.5/drtools-metric-summary.csv",
+    "datasetResonance" : "./datasets/Umovme/ureport/v1.5/drtools-metric-resonance.json",
+    "datasetNamespaceCouplingII" : "./datasets/Umovme/ureport/v1.5/drtools-metric-namespace-coupling.csv",
+    "datasetNamespaces" : "./datasets/Umovme/ureport/v1.5/drtools-metric-namespaces.csv",
+    "datasetNamespaceDependency" : "./datasets/Umovme/ureport/v1.5/drtools-metric-namespaces-dependencies.json",
+    "datasetTypes" : "./datasets/Umovme/ureport/v1.5/drtools-metric-types.csv",
+    "datasetMethods" : "./datasets/Umovme/ureport/v1.5/drtools-metric-methods.csv",
+    "datasetInternalTypeDependencies" : "", 
+    "datasetInternalDependencies" : "./datasets/Umovme/ureport/v1.5/drtools-metric-internal-dependencies.json",
+    "datasetCyclicDependencies" : "./datasets/Umovme/ureport/v1.5/drtools-metric-cyclic-dependencies.csv"
+};*/
+
+/*var optionsProject = {
+    "projectName" : "Umov.me - Synch-photo",
+    "datasetDir": "./datasets/Umovme/sync-photo/old/",
+    "datasetSummary" : "./datasets/Umovme/sync-photo/old/drtools-metric-summary.csv",
+    "datasetResonance" : "./datasets/Umovme/sync-photo/old/drtools-metric-resonance.json",
+    "datasetNamespaceCoupling" : "./datasets/Umovme/sync-photo/old/drtools-metric-namespace-coupling.csv",
+    "datasetNamespaces" : "./datasets/Umovme/sync-photo/old/drtools-metric-namespaces.csv",
+    "datasetNamespaceDependencyII" : "./datasets/Umovme/sync-photo/old/drtools-metric-namespaces-dependencies.json",
+    "datasetTypes" : "./datasets/Umovme/sync-photo/old/drtools-metric-types.csv",
+    "datasetMethods" : "./datasets/Umovme/sync-photo/old/drtools-metric-methods.csv",
+    "datasetInternalTypeDependencies" : "", 
+    "datasetInternalDependencies" : "./datasets/Umovme/sync-photo/old/drtools-metric-internal-dependencies.json",
+    "datasetCyclicDependencies" : "./datasets/Umovme/sync-photo/old/drtools-metric-cyclic-dependencies.csv"
 };*/
 
 // Titles
@@ -177,8 +284,11 @@ var graphTitles = {
     "titleResonance" : "Code Resonance",
     "titleResonanceExplanation" : "Bubble Size (SLOC - Lines of Code) and Bubble Color (The most complex classes are red bubbles, with high WMC)",
 
-    "titleNamespaceDependency" : "Namespace Dependencies",
-    "titleNamespaceDependencyExplanation" : "Bubble Size (NOC - Number of Classes/Types)",
+    "titleNamespaceDependencyI" : "Namespace Dependencies I",
+    "titleNamespaceDependencyExplanationI" : "Hierarchical dependencies between namespaces",
+
+    "titleNamespaceDependencyII" : "Namespace Dependencies II",
+    "titleNamespaceDependencyExplanationII" : "Bubble Size (NOC - Number of Classes/Types)",
 
     "titleIAD" : "Instability/Abstractness/Distance Visualization",
     "titleIADExplanation" : "I (Instability), A (Abstractness Degree), and D (Normalized Distance)",
@@ -213,7 +323,8 @@ var graphTitles = {
 // Titles
 var errorMessage = {
     "msgSummary" : "File not found... It is not possible to visualize data about summary",
-    "msgNamespaceDependency" : "File not found... It is not possible to visualize data about namespace dependencies",
+    "msgNamespaceDependencyI" : "File not found... It is not possible to visualize data about hierarchical namespace dependencies",
+    "msgNamespaceDependencyII" : "File not found... It is not possible to visualize data about namespace dependencies",
     "msgResonance" : "File not found... It is not possible to visualize data about code resonance",
     "msgNamespaces" : "File not found... It is not possible to visualize data about namespaces",
     "msgTypes" : "File not found... It is not possible to visualize data about types",
