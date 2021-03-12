@@ -63,8 +63,8 @@
 <body class="text-center">
 	<section class="ftco-section" id="headder-section">
 		<div class="col-md-12 text-center heading-section ftco-animate">
-            <h2 class="mb-4"><script>document.write(graphTitles.titleNamespaceDependency)</script></h2>
-            <script>document.write(graphTitles.titleNamespaceDependencyExplanation)</script>
+            <h2 class="mb-4"><script>document.write(graphTitles.titleNamespaceDependencyII)</script></h2>
+            <script>document.write(graphTitles.titleNamespaceDependencyExplanationII)</script>
 		</div>
 		<div class="col-md-12 text-center heading-section ftco-animate">
 			Project: <script>document.write(optionsProject.projectName)</script>
@@ -100,9 +100,9 @@
     
     <svg width="1300" height="800"></svg>
     <script>
-    if (!optionsProject.datasetNamespaceDependency || 0 === optionsProject.datasetNamespaceDependency.length === ''
-                || !doesFileExist(optionsProject.datasetNamespaceDependency)) {
-        $("#errorMessage").text(errorMessage.msgNamespaceDependency)
+    if (!optionsProject.datasetNamespaceDependencyII || 0 === optionsProject.datasetNamespaceDependencyII.length === ''
+                || !doesFileExist(optionsProject.datasetNamespaceDependencyII)) {
+        $("#errorMessage").text(errorMessage.msgNamespaceDependencyII)
     }
     else {
 
@@ -133,7 +133,7 @@
             .force("charge", d3.forceManyBody())
             .force("center", d3.forceCenter(width / 2, height / 2));
 
-        d3.json(optionsProject.datasetNamespaceDependency, function (error, graph) {
+        d3.json(optionsProject.datasetNamespaceDependencyII, function (error, graph) {
             if (error) throw error;
             update(graph.links, graph.nodes);
         })

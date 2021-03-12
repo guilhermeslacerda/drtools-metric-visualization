@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>:: drtools-metric-visualization ::</title>
+	<script type="text/javascript" src="./js/drtools/main.js" charset="UTF-8"></script>
+	<script src="./js/drtools/jquery.min.js"></script>
+ 	<script src="./js/drtools/d3.v4.js"></script>
+    <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script>
+    <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script> 
+    <script src="./drtools-properties.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+
+    .node {
+    cursor: pointer;
+    }
+
+    .node:hover {
+    stroke: #000;
+    stroke-width: 1.5px;
+    }
+
+    .node--leaf {
+    fill: white;
+    }
+
+    .label {
+    font: 10px "Poppins";
+    text-anchor: middle;
+    text-shadow: 0 1px 0 #000, 1px 0 0 #000, -1px 0 0 #fff, 0 -1px 0 #fff;
+    }
+
+    .label,
+    .node--root,
+    .node--leaf {
+    pointer-events: none;
+    }
+
+    .link { stroke: rgb(58, 57, 57); stroke-opacity: .6; stroke-width: 1px; }
+
+    svg {
+        border: 1px dashed #AAA;
+    }
+	</style>
+
+</head>
+<body class="text-center">
+	<section class="ftco-section" id="headder-section">
+		<div class="col-md-12 text-center heading-section ftco-animate">
+            <h2 class="mb-4"><script>document.write(graphTitles.titleNamespaceDependencyI)</script></h2>
+            <script>document.write(graphTitles.titleNamespaceDependencyExplanationI)</script>
+		</div>
+		<div class="col-md-12 text-center heading-section ftco-animate">
+			Project: <script>document.write(optionsProject.projectName)</script>
+		</div>
+		<div class="nav-item text-center cta mr-md-2">
+				<a href="index.html" class="nav-link"><span>Back</span></a>
+		</div>		
+		<div class="text">
+			<strong class="text-error"><div id="errorMessage"></div></strong>
+        </div>
+	</section>
+
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/drtools/drtools-utils.js"></script>
+    
+    <div id="graph" style="text-align: center;"></div>
+    <script>
+    if (!optionsProject.datasetNamespaceDependencyI || 0 === optionsProject.datasetNamespaceDependencyI.length === ''
+                || !doesFileExist(optionsProject.datasetNamespaceDependencyI)) {
+        $("#errorMessage").text(errorMessage.msgNamespaceDependencyI)
+    }
+    else {
+        $.get(optionsProject.datasetNamespaceDependencyI, function(data) {
+        
+            function attributer(datum, index, nodes) {
+                var selection = d3.select(this);
+                if (datum.tag == "svg") {
+                    var width = window.innerWidth;
+                    var height = window.innerHeight;
+                    var x = 200;
+                    var y = 10
+                    var scale = 0.75;
+                    selection
+                        .attr("width", width + "pt")
+                        .attr("height", height + "pt")
+                        .attr("viewBox", -x + " " + -y + " " + (width / scale) + " " + (height / scale));
+                    datum.attributes.width = width + "pt";
+                    datum.attributes.height = height + "pt";
+                    datum.attributes.viewBox = -x + " " + -y + " " + (width / scale) + " " + (height / scale);
+                }
+            }
+        
+            function transitionFactory() {
+                return d3.transition("main")
+                    .ease(d3.easeLinear)
+                    .delay(40)
+                    .duration(300 * dotIndex);
+            }
+        
+            var dotIndex = 0;
+            var graphviz = d3.select("#graph").graphviz()
+                .logEvents(true)
+                .transition(transitionFactory)
+                .tweenShapes(false)
+                .on("initEnd", render)
+                .attributer(attributer);
+        
+            function render() {
+                var dotLines = dots[dotIndex % dots.length];
+                var dot = dotLines.join('');
+                graphviz
+                    .renderDot(dot)
+                    .on("end", function () {
+                        dotIndex += 1;
+                        if (dotIndex != dots.length) {
+                            render();
+                        }
+                    });
+            }
+        
+        var colors = d3.schemeCategory20;   
+        var dots =   new Array(1).fill(data.split(','));
+        }, 'text');
+    }    
+    </script>
+</body>
+</html>
