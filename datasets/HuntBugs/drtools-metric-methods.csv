@@ -742,7 +742,6 @@
 "one.util.huntbugs.flow.ConstAnnotator.getValue(Expression input)",15,2,1,4,1
 "one.util.huntbugs.detect.RoughConstant$BadConstant.BadConstant(double base, double factor, String replacement, int basePriority)",13,2,13,4,4
 "one.util.huntbugs.HuntBugs.glob(String mask)",13,2,13,4,1
-"null",11,2,4,4,3
 "one.util.huntbugs.analysis.Context.analyzeClass(MetadataSystem ms, String name)",11,2,4,4,2
 "one.util.huntbugs.detect.CloneContract.beforeClass(TypeDefinition td)",8,2,6,4,1
 "one.util.huntbugs.testdata.TestSameBranches.testSameLambdaCapture(int a, int b)",7,2,8,4,2
@@ -1224,7 +1223,7 @@
 "one.util.huntbugs.testdata.TestDeadLocalStore.testLocalClass()",9,1,0,3,0
 "one.util.huntbugs.testdata.TestDeadLocalStore.synchronizedTest()",8,1,2,3,0
 "one.util.huntbugs.testdata.TestDeadLocalStore.testDeadLocalStoreCatch(String i)",7,1,3,3,1
-"one.util.huntbugs.registry.MethodContext.MethodContext(Context ctx, ClassContext ï¿½)",7,1,0,3,2
+"one.util.huntbugs.registry.MethodContext.MethodContext(Context ctx, ClassContext Ñ)",7,1,0,3,2
 "one.util.huntbugs.testdata.TestDeadLocalStore.testDeadIncrementAssignment2(int i)",6,1,2,3,1
 "one.util.huntbugs.registry.MethodContext.getLocation(Node node)",6,1,1,3,1
 "one.util.huntbugs.registry.MethodContext.isReachable(Expression expr)",6,1,1,3,1
@@ -1528,7 +1527,7 @@
 "one.util.huntbugs.testdata.TestBadMethodCalls.testNullCheckAssert2()",4,1,1,1,0
 "one.util.huntbugs.testdata.TestFinalizer$Useless.finalize()",4,1,1,1,0
 "one.util.huntbugs.flow.etype.SingleType.SingleType(TypeReference tr, What what, boolean complete)",4,1,0,1,3
-"one.util.huntbugs.asserter.TestAsserter.testSuppressParam(int x)",4,1,0,1,1
+"one.util.huntbugs.asserter.TestAsserter.testSuppressParam(@SuppressMyWarning('all') int x)",4,1,0,1,1
 "one.util.huntbugs.testdata.TestArrayRangeCheck.get(int[] arr)",4,1,0,1,1
 "one.util.huntbugs.testdata.TestCovariantArrays.caaStoreNoReport(Parent p)",4,1,0,1,1
 "one.util.huntbugs.testdata.TestCovariantArrays.genericStore(T val)",4,1,0,1,1

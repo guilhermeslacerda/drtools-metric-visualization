@@ -1495,8 +1495,8 @@
 "com.puppycrawl.tools.checkstyle.checks.descendanttoken.bad_test.foo()",6,3,0,0,0
 "com.puppycrawl.tools.checkstyle.checks.coding.avoidinlineconditionals.InputAvoidInlineConditionals.testQuestions()",5,3,0,0,0
 "com.puppycrawl.tools.checkstyle.checks.annotation.suppresswarnings.Cond.aCond2()",3,3,0,0,0
-"com.puppycrawl.tools.checkstyle.checks.annotation.suppresswarnings.Junk.doFoo(String s, String y)",2,3,0,0,2
-"com.puppycrawl.tools.checkstyle.checks.annotation.suppresswarnings.Junk.doFoo(String s, String y)",2,3,0,0,2
+"com.puppycrawl.tools.checkstyle.checks.annotation.suppresswarnings.Junk.doFoo(String s, @SuppressWarnings(value={'unchecked'}) String y)",2,3,0,0,2
+"com.puppycrawl.tools.checkstyle.checks.annotation.suppresswarnings.Junk.doFoo(String s, @SuppressWarnings({'unchecked'}) String y)",2,3,0,0,2
 "com.puppycrawl.tools.checkstyle.internal.XdocsPagesTest.validatePropertySectionPropertyEx(String fileName, String sectionName, Object instance, List<Node> columns, String propertyName)",33,2,26,7,5
 "com.puppycrawl.tools.checkstyle.internal.XdocsPagesTest.validatePropertySection(String fileName, String sectionName, Node subSection, Object instance)",27,2,16,7,4
 "com.puppycrawl.tools.checkstyle.internal.XdocsPagesTest.getField(Class<?> clss, String propertyName)",14,2,4,7,2
@@ -2346,7 +2346,7 @@
 "com.puppycrawl.tools.checkstyle.checks.coding.illegaltype.InputIllegalTypeArrays.getMatrix()",3,2,0,0,0
 "com.puppycrawl.tools.checkstyle.checks.coding.illegaltype.InputIllegalTypePlainAndArrays.getArray()",3,2,0,0,0
 "com.puppycrawl.tools.checkstyle.checks.coding.illegaltype.InputIllegalTypePlainAndArrays.getMatrix()",3,2,0,0,0
-"com.puppycrawl.tools.checkstyle.checks.annotation.suppresswarnings.Junk.doFoo(String s, String y)",2,2,0,0,2
+"com.puppycrawl.tools.checkstyle.checks.annotation.suppresswarnings.Junk.doFoo(String s, @SuppressWarnings('unchecked') String y)",2,2,0,0,2
 "com.puppycrawl.tools.checkstyle.checks.blocks.leftcurly.InputLeftCurlyIgnoreEnums.method1(int a)",2,2,0,0,1
 "com.puppycrawl.tools.checkstyle.checks.blocks.rightcurly.InputRightCurlyEmptyAbstractMethod.foo()",2,2,0,0,0
 "com.puppycrawl.tools.checkstyle.internal.XdocsPagesTest.validatePropertySectionPropertyJavadocTokens(String fileName, String sectionName, AbstractJavadocCheck check, List<Node> columns)",18,1,19,7,4
@@ -6193,7 +6193,7 @@
 "com.puppycrawl.tools.checkstyle.filters.SuppressionsLoader.loadSuppressions(InputSource source, String sourceName)",11,1,1,1,2
 "com.puppycrawl.tools.checkstyle.filters.SuppressionsLoader.loadXpathSuppressions(InputSource source, String sourceName)",11,1,1,1,2
 "com.google.checkstyle.test.chapter5naming.rule526parameternames.InputParameterNameSimplePub.toManyArgs(int $arg1, int ar$g2, int arg3$, int a_rg4, int _arg5, int arg6_, int aArg7, int aArg8, int aar_g)",11,1,0,1,9
-"com.puppycrawl.tools.checkstyle.filters.suppresswarningsfilter.InputSuppressWarningsFilter.needsLotsOfParameters(int a, int b, int c, int d, int e, int f, int g, int h)",11,1,0,1,8
+"com.puppycrawl.tools.checkstyle.filters.suppresswarningsfilter.InputSuppressWarningsFilter.needsLotsOfParameters(@SuppressWarnings('unused') int a, int b, int c, int d, int e, int f, int g, int h)",11,1,0,1,8
 "com.puppycrawl.tools.checkstyle.api.AbstractViolationReporter.log(int line, String key, Object... args)",11,1,0,1,3
 "com.puppycrawl.tools.checkstyle.api.AuditEvent.AuditEvent(Object src, String fileName, LocalizedMessage localizedMessage)",11,1,0,1,3
 "com.puppycrawl.tools.checkstyle.checks.indentation.ArrayInitHandler.ArrayInitHandler(IndentationCheck indentCheck, DetailAST ast, AbstractExpressionHandler parent)",11,1,0,1,3
@@ -6534,7 +6534,7 @@
 "com.puppycrawl.tools.checkstyle.gui.CodeSelectorPresentation.CodeSelectorPresentation(DetailNode node, List<Integer> lines2position)",9,1,0,1,2
 "com.puppycrawl.tools.checkstyle.checks.metrics.booleanexpressioncomplexity.InputBooleanExpressionComplexity.equals(Object object)",9,1,0,1,1
 "com.puppycrawl.tools.checkstyle.checks.modifier.interfacememberimpliedmodifier.InputInterfaceMemberImpliedModifierNestedOnInterface.methodWithLocalClass(String input)",9,1,0,1,1
-"com.puppycrawl.tools.checkstyle.checks.suppresswarningsholder.InputSuppressWarningsHolder5.foo1(Object str)",9,1,0,1,1
+"com.puppycrawl.tools.checkstyle.checks.suppresswarningsholder.InputSuppressWarningsHolder5.foo1(@SuppressWarnings('unused') Object str)",9,1,0,1,1
 "com.google.checkstyle.test.chapter4formatting.rule413emptyblocks.InputEmptyCatchBlockViolationsByComment.some()",9,1,0,1,0
 "com.google.checkstyle.test.chapter4formatting.rule413emptyblocks.InputEmptyCatchBlockViolationsByComment.some1()",9,1,0,1,0
 "com.google.checkstyle.test.chapter4formatting.rule462horizontalwhitespace.InputWhitespaceAroundBasic.method2()",9,1,0,1,0
@@ -8277,7 +8277,7 @@
 "com.puppycrawl.tools.checkstyle.checks.whitespace.whitespacearound.SpecialCasesInForLoop.foo(java.util.List<? extends String[]> bar, Comparable<? super Object[]> baz)",0,1,0,1,2
 "com.puppycrawl.tools.checkstyle.grammar.java8.InputLambda13$TestOfVoidLambdas.doSmth(String first, Integer second)",0,1,0,1,2
 "com.puppycrawl.tools.checkstyle.grammar.java8.InputLambda9$TestOfVoidLambdas.doSmth(String first, Integer second)",0,1,0,1,2
-"com.puppycrawl.tools.checkstyle.checks.annotation.annotationlocation.InputAnnotationLocationDeprecatedAndCustom$Test.foo5(int a)",0,1,0,1,1
+"com.puppycrawl.tools.checkstyle.checks.annotation.annotationlocation.InputAnnotationLocationDeprecatedAndCustom$Test.foo5(@SuppressWarnings('unchecked') int a)",0,1,0,1,1
 "com.puppycrawl.tools.checkstyle.checks.coding.hiddenfield.InputHiddenFieldBug1084512.methodA(String x)",0,1,0,1,1
 "com.puppycrawl.tools.checkstyle.checks.coding.hiddenfield.InputHiddenFieldLambdas$NestedInterface.print(String l)",0,1,0,1,1
 "com.puppycrawl.tools.checkstyle.checks.coding.hiddenfield.NestedEnum.method(int i)",0,1,0,1,1
@@ -9996,7 +9996,7 @@
 "com.puppycrawl.tools.checkstyle.checks.indentation.LineSet.isEmpty()",7,1,1,0,0
 "com.puppycrawl.tools.checkstyle.checks.indentation.LineSet.lastLine()",7,1,1,0,0
 "com.puppycrawl.tools.checkstyle.checks.naming.methodname.InputMethodNameExtra.createNameHistoryDetails(Object historyDetails, Object previousNameService, Object entityId, More.ViewChangeHistoryBaseAction.ChangeHistoryDisplayName changeHistoryDisplayName)",7,1,0,0,4
-"com.puppycrawl.tools.checkstyle.checks.annotation.annotationlocation.InputAnnotationLocationInterface.method(int param1, int param2, int param3)",7,1,0,0,3
+"com.puppycrawl.tools.checkstyle.checks.annotation.annotationlocation.InputAnnotationLocationInterface.method(int param1, @InterfaceAnnotation(value='foo') @InterfaceAnnotation @InterfaceAnnotation('bar') int param2, int param3)",7,1,0,0,3
 "com.puppycrawl.tools.checkstyle.api.AbstractCheck.beginTree(DetailAST rootAST)",7,1,0,0,1
 "com.puppycrawl.tools.checkstyle.api.AbstractCheck.finishTree(DetailAST rootAST)",7,1,0,0,1
 "com.puppycrawl.tools.checkstyle.api.CheckstyleException.CheckstyleException(String message)",7,1,0,0,1
@@ -10452,7 +10452,6 @@
 "com.puppycrawl.tools.checkstyle.checks.whitespace.separatorwrap.InputSeparatorWrapForTestMethodRef.badCase()",5,1,1,0,0
 "com.puppycrawl.tools.checkstyle.checks.whitespace.separatorwrap.InputSeparatorWrapForTestMethodRef.goodCase()",5,1,1,0,0
 "com.puppycrawl.tools.checkstyle.grammar.java8.InputLambda17.initPartialTraversalState()",5,1,1,0,0
-"com.puppycrawl.tools.checkstyle.checks.indentation.indentation.InputIndentationFromGuava.referenceValue(Segment<K,V> segment, ReferenceEntry<K,V> entry, V value, int weight)",5,1,0,0,4
 "com.google.checkstyle.test.chapter4formatting.rule488numericliterals.InputUpperEll$Inner.processUpperEll(String s, long l)",5,1,0,0,2
 "com.puppycrawl.tools.checkstyle.api.AuditListener.addException(AuditEvent event, Throwable throwable)",5,1,0,0,2
 "com.puppycrawl.tools.checkstyle.api.MessageDispatcher.fireErrors(String fileName, SortedSet<LocalizedMessage> errors)",5,1,0,0,2
@@ -10771,6 +10770,7 @@
 "com.puppycrawl.tools.checkstyle.internal.utils.CloseAndFlushTestByteArrayOutputStream.close()",4,1,1,0,0
 "com.puppycrawl.tools.checkstyle.internal.utils.CloseAndFlushTestByteArrayOutputStream.flush()",4,1,1,0,0
 "com.puppycrawl.tools.checkstyle.checks.indentation.indentation.InputIndentationFromGuava.referenceValue(Segment<K,V> s, ReferenceEntry<K,V> e, V value, int weight)",4,1,0,0,4
+"com.puppycrawl.tools.checkstyle.checks.indentation.indentation.InputIndentationFromGuava.referenceValue(Segment<K,V> segment, ReferenceEntry<K,V> entry, V value, int weight)",4,1,0,0,4
 "com.puppycrawl.tools.checkstyle.checks.naming.methodname.InputMethodNameExtra.createNameHistoryDetails(Object historyDetails, Object previousNameService, Object entityId, ChangeHistoryDisplayName changeHistoryDisplayName)",4,1,0,0,4
 "com.puppycrawl.tools.checkstyle.checks.regexp.NeverSuppress.shouldSuppress(int startLineNo, int startColNo, int endLineNo, int endColNo)",4,1,0,0,4
 "com.puppycrawl.tools.checkstyle.checks.indentation.indentation.InputIndentationFromGuava$SoftValueReference.SoftValueReference(Object valueReferenceQueue, int value, ReferenceEntry<Integer,Integer> entry)",4,1,0,0,3
@@ -12620,7 +12620,6 @@
 "com.puppycrawl.tools.checkstyle.grammar.InputRegressionJavaClass1.m59(final @Deprecated List l)",0,1,0,0,1
 "com.puppycrawl.tools.checkstyle.grammar.c5.c5(int a)",0,1,0,0,1
 "com.puppycrawl.tools.checkstyle.grammar.java8.InputLambda10$TestOfVoidLambdas.doSmth(String first)",0,1,0,0,1
-"null",0,1,0,0,0
 "InputFinalClassClassWithPrivateCtorWithNestedExtendingClassWithoutPackage$A.A()",0,1,0,0,0
 "InputFinalClassClassWithPrivateCtorWithNestedExtendingClassWithoutPackage$C.C()",0,1,0,0,0
 "com.google.checkstyle.test.chapter2filebasic.rule21filename.InputOuterTypeFilename2.nativeMethod()",0,1,0,0,0

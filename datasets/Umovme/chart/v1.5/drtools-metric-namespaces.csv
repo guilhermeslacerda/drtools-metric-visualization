@@ -1,0 +1,16 @@
+"namespace","noc","nac"
+"me.umov.chart.controller",17,2
+"me.umov.chart.model",12,1
+"me.umov.chart.dao",10,2
+"me.umov.chart.service",9,0
+"me.umov.chart.fixture",7,0
+"me.umov.chart.helper",7,0
+"me.umov.chart.interceptor",6,0
+"me.umov.chart.type",4,0
+"me.umov.chart.persistence",4,0
+"me.umov.chart.util",3,0
+"me.umov.chart.model.column",3,0
+"me.umov.chart.filter",2,0
+"me.umov.chart",1,0
+"me.umov.chart.ioc",1,0
+"me.umov.chart.annotation",1,0

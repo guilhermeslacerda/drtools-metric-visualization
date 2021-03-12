@@ -3269,7 +3269,6 @@
 "net.sourceforge.pmd.lang.java.symboltable.ClassScope.getClassDeclarations()",2,1,1,6,0
 "net.sourceforge.pmd.lang.java.symboltable.ClassScope.getMethodDeclarations()",2,1,1,6,0
 "net.sourceforge.pmd.lang.java.symboltable.ClassScope.getVariableDeclarations()",2,1,1,6,0
-"null",2,1,0,6,1
 "net.sourceforge.pmd.RuleSet$RuleSetBuilder.RuleSetBuilder(final long checksum)",2,1,0,6,1
 "net.sourceforge.pmd.RuleSetWriter.RuleSetWriter(OutputStream outputStream)",2,1,0,6,1
 "net.sourceforge.pmd.cpd.CsTokenizer.setIgnoreUsings(boolean ignoreUsings)",2,1,0,6,1
@@ -13448,7 +13447,7 @@
 "net.sourceforge.pmd.lang.java.rule.bestpractices.missingoverride.GenericInterfaceWithOverloads.visit(ASTCompilationUnit node, T data)",0,1,0,0,2
 "net.sourceforge.pmd.lang.java.rule.bestpractices.missingoverride.GenericInterfaceWithOverloads.visit(ASTPackageDeclaration node, T data)",0,1,0,0,2
 "Foo.Foo(Bar<A,B> t)",0,1,0,0,1
-"Foo.bar(int x)",0,1,0,0,1
+"Foo.bar(@SuppressWarnings('foo') int x)",0,1,0,0,1
 "Java9Identifier$Lambda.a(int _)",0,1,0,0,1
 "Test.bar(Object... args)",0,1,0,0,1
 "com.concurrent_ruby.ext.jsr166e.ConcurrentHashMap$Fun.apply(A a)",0,1,0,0,1

@@ -1,0 +1,4 @@
+"from","to","number"
+"br.com.trevisantecnologia.importer.Importer","br.com.trevisantecnologia.importer.core.SpringBootStarter",1
+"br.com.trevisantecnologia.importer.helper.PasswordHelper","br.com.trevisantecnologia.importer.service.PasswordHistoryService",1
+"br.com.trevisantecnologia.importer.service.ScheduleService","br.com.trevisantecnologia.importer.service.schedule.notification.ScheduleNotificationService",1

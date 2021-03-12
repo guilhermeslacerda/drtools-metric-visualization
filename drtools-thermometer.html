@@ -168,7 +168,9 @@ else {
 		listSummary = data.map(function(d) {
     	return[d["description"],
            +d["value"],
-           +d["percent"]]
+           +d["percent"],
+			+d["median"],
+			+d["std_dev"]]
   		});
 
 	  	var namespaces = listSummary[0][1];
@@ -176,13 +178,19 @@ else {
 
 	    var types = listSummary[1][1];
 		var typesPerNamespaces = listSummary[1][2];
+		var medianTypes = listSummary[1][3];
+		var stdDevTypes = listSummary[1][4].toFixed(2);
 		
 		var slocs = listSummary[2][1];
 		var slocsPerTypes = listSummary[2][2];
+		var medianSloc = listSummary[2][3];
+		var stdDevSloc = listSummary[2][4].toFixed(2);
 
 		var methods = listSummary[3][1];
 		var methodsPerTypes = listSummary[3][2];
 		var slocsPerMethods = slocs / methods;
+		var medianMethods = listSummary[3][3];
+		var stdDevMethods = listSummary[3][4].toFixed(2);
 
 		var cyclos = listSummary[4][1];
 		var cyclosPerTypes = listSummary[4][2];
@@ -204,16 +212,20 @@ else {
 			.style("font-family", "'Poppins', sans-serif")
 			.style("font-size", "14px")
 			.style("color", "#207dff")
-			.html("Total of SLOC: " + slocs + "<br/>Total of Namespaces: " 
-					+ namespaces + "<br/>Total of Types: " + types + "<br/>Types/namespaces (average): " 
-					+ typesPerNamespaces + "<br/>");
+			.html("Total of Namespaces: " + namespaces + "<br/>Total of Types: " + types 
+					+ "<br/>Types/namespaces (average): " + typesPerNamespaces 
+					+ "<br/>(Median: " + medianTypes + " / Standard deviation: " + stdDevTypes + ")<br/>"
+					+ "Total of SLOC: " + slocs 
+					+ "<br/>(Median: " + medianSloc + " / Standard deviation: " + stdDevSloc + ")<br/>");
 		
 		var infoMethod = d3.select("#infoMethod")
 			.style("font-family", "'Poppins', sans-serif")
 			.style("font-size", "14px")
 			.style("color", "#207dff")
 			.html("Total of Methods: " + methods + "<br/>Methods/Types (average): " + methodsPerTypes
-							+ "<br/>SLOC/Methods (average): " + Math.round(slocsPerMethods));	
+							+ "<br/>(Median: " + medianMethods + " / Standard deviation: " + stdDevMethods 
+							+ ")<br/>SLOC/Methods (average): " + Math.round(slocsPerMethods)
+							);
 
 		var infoCyclo = d3.select("#infoCyclo")
 			.style("font-family", "'Poppins', sans-serif")

@@ -1396,7 +1396,7 @@
 "sneer.bricks.expression.files.client.downloads.old.impl.FileDownloadOld.readyToFinish()",2,1,0,2,0
 "sneer.bricks.network.computers.udp.connections.impl.Guardian.isHandshakeComplete()",2,1,0,2,0
 "sneer.bricks.snapps.games.go.impl.logic.Intersection.isLiberty()",2,1,0,2,0
-"basis.testsupport.CleanTestBase.afterFailedtest(Method method, Throwable thrown)",1,1,0,2,2
+"basis.testsupport.CleanTestBase.afterFailedtest(@SuppressWarnings('unused') Method method, @SuppressWarnings('unused') Throwable thrown)",1,1,0,2,2
 "sneer.bricks.skin.windowboundssetter.impl.WindowBoundsSetterImpl.setBestBounds(Window window)",0,1,1,2,1
 "sneer.bricks.skin.main.translucentsupport.impl.TranslucentSupportImpl.translucencyClass()",0,1,1,2,0
 "sneer.bricks.skin.main.translucentsupport.impl.TranslucentSupportImpl.utilitiesClass()",0,1,1,2,0
@@ -1422,7 +1422,7 @@
 "sneer.bricks.skin.main.dashboard.impl.DashboardPanel$InstrumentPanelImpl$Toolbar.paintShadows(Graphics graph)",27,1,24,1,1
 "snype.whisper.audio.LoopbackDemo.LoopbackDemo()",27,1,8,1,0
 "sneer.bricks.snapps.chat.gui.panels.impl.MessagePainter.MessagePainter(DefaultStyledDocument styledDocument)",24,1,17,1,1
-"sneer.bricks.snapps.chat.gui.panels.impl.MessageListCellRenderer.createRootPanel(JComponent nick, JComponent time, JComponent message, boolean isSelected, final JList<? extends Message> list)",24,1,12,1,5
+"sneer.bricks.snapps.chat.gui.panels.impl.MessageListCellRenderer.createRootPanel(JComponent nick, JComponent time, JComponent message, @SuppressWarnings('unused') boolean isSelected, final JList<? extends Message> list)",24,1,12,1,5
 "sneer.bricks.snapps.games.sliceWars.impl.gui.GamePanel.GamePanel(final int numberOfPlayers, final int lines, final int columns, final int randomlyRemoveCellCount, final Random random)",24,1,4,1,5
 "sneer.bricks.softwaresharing.gui.impl.BricksGuiImpl.initListeners()",24,1,4,1,0
 "sneer.bricks.snapps.contacts.gui.info.impl.ContactInfoWindowImpl.initGui()",23,1,15,1,0
@@ -1642,7 +1642,7 @@
 "sneer.bricks.hardware.io.prevalence.nature.impl.PrevaylerHolder.createPrevaylerFactory(Object system, File prevalenceBase)",7,1,5,1,2
 "sneer.bricks.network.computers.http.server.impl.HttpServerImpl.start(int port, final HttpHandler httpHandler)",7,1,5,1,2
 "sneer.bricks.pulp.reactive.collections.impl.ListRegisterImpl.addAt(int index, VO element)",7,1,5,1,2
-"sneer.bricks.snapps.chat.gui.panels.impl.MessageListCellRenderer.createTime(Message message, boolean isSelected)",7,1,5,1,2
+"sneer.bricks.snapps.chat.gui.panels.impl.MessageListCellRenderer.createTime(Message message, @SuppressWarnings('unused') boolean isSelected)",7,1,5,1,2
 "sneer.bricks.hardware.io.prevalence.nature.impl.SerializerAdapter.readObject(InputStream stream)",7,1,5,1,1
 "sneer.bricks.snapps.chat.gui.panels.impl.MessageListCellRenderer.getNickAsText(Message message)",7,1,5,1,1
 "sneer.bricks.skin.main.dashboard.impl.DashboardPanel$InstrumentPanelImpl$Toolbar.configureToolbar()",7,1,5,1,0
@@ -3080,7 +3080,7 @@
 "snype.whisper.skin.audio.mic.tests.MicTest.soundExpectations()",7,1,0,0,0
 "sneer.bricks.expression.files.map.tests.FileMapTest.fileAndFolderWithSameHash()",6,1,12,0,0
 "dfcsantos.tracks.storage.rejected.tests.RejectedTracksKeeperTest.testTrackRejection()",6,1,11,0,0
-"sneer.bricks.network.computers.tcp.connections.impl.OutgoingHandShaker.greet(ByteArraySocket socket, Contact contact)",6,1,10,0,2
+"sneer.bricks.network.computers.tcp.connections.impl.OutgoingHandShaker.greet(ByteArraySocket socket, @SuppressWarnings('unused') Contact contact)",6,1,10,0,2
 "dfcsantos.music.ui.presenter.impl.MusicPresenterImpl.changeToPeersModeAndPlayTracks()",6,1,10,0,0
 "sneer.bricks.network.computers.udp.connections.tests.UdpConnectionManagerTest.onFirstPacket_ShouldConnect()",6,1,10,0,0
 "sneer.bricks.expression.files.map.tests.FileMapTest.twoPathsWithSameHash()",6,1,9,0,0
@@ -4308,7 +4308,7 @@
 "basis.brickness.impl.BrickLoadingException.BrickLoadingException(String message)",2,1,0,0,1
 "basis.brickness.impl.BrickLoadingException.BrickLoadingException(Throwable cause)",2,1,0,0,1
 "basis.brickness.testsupport.BrickTestWithMockRunner.BrickTestWithMockRunner(Class<?> testClass)",2,1,0,0,1
-"basis.lang.arrays.ImmutableByteArray2D.get(int index)",2,1,0,0,1
+"basis.lang.arrays.ImmutableByteArray2D.get(@SuppressWarnings('unused') int index)",2,1,0,0,1
 "basis.lang.exceptions.NotImplementedYet.NotImplementedYet(String message)",2,1,0,0,1
 "basis.lang.exceptions.NotImplementedYet.NotImplementedYet(Throwable unhandledThrowable)",2,1,0,0,1
 "basis.lang.exceptions.Refusal.Refusal(String veryHelpfulMessage)",2,1,0,0,1
@@ -4476,7 +4476,6 @@
 "sneer.bricks.pulp.distribution.filtering.TupleFilterManager.setCensor(Class<T> tupleType, Predicate<? super T> censor)",1,1,0,0,2
 "sneer.bricks.snapps.contacts.gui.comparator.ContactComparator.compare(Contact contact1, Contact contact2)",1,1,0,0,2
 "sneer.bricks.software.bricks.statestore.tests.BrickStateStoreMock.writeObjectFor(Class<?> brickIgnored, Object objectIgnored)",1,1,0,0,2
-"null",1,1,0,0,1
 "basis.environments.NonBlockingEnvironment.provideWithoutBlocking(Class<T> need)",1,1,0,0,1
 "basis.lang.Consumer.consume(T value)",1,1,0,0,1
 "basis.lang.Functor.evaluate(A value)",1,1,0,0,1

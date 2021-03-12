@@ -1,185 +1,178 @@
 "method","loc","cyclo","calls","nbd","param"
-"com.softwarepathfinder.visualization.prefuse.AggregateLayout.run(double frac)",54,14,20,5,1
-"com.softwarepathfinder.parsing.java.InvocationVisitor.visit(MethodInvocation node)",60,13,33,7,1
-"com.softwarepathfinder.model.Project.getTypeByName(Type typeParent, String typeName)",52,12,25,6,2
-"com.softwarepathfinder.visualization.prefuse.PathMethodLayout.run(double frac)",67,12,21,4,1
-"com.softwarepathfinder.visualization.prefuse.NamespaceGraph.main(String[] argv)",130,11,69,6,1
-"com.softwarepathfinder.visualization.prefuse.NamespaceGraphByPath.main(String[] argv)",125,10,66,6,1
-"com.softwarepathfinder.visualization.prefuse.MethodGraph.main(String[] argv)",122,10,61,5,1
-"com.softwarepathfinder.visualization.prefuse.AggregateDemo.initDataGroups()",67,10,40,5,0
+"com.softwarepathfinder.parsing.java.InvocationVisitor.visit(MethodInvocation node)",55,13,32,6,1
+"com.softwarepathfinder.service.TypeService.getTypeByNameAndParent(Project project, Type parent, String typeName)",48,12,24,6,3
 "com.softwarepathfinder.visualization.yEd.TypeGraphML.build()",69,10,28,2,0
-"com.softwarepathfinder.visualization.prefuse.TypeGraph.main(String[] argv)",151,8,76,5,1
-"com.softwarepathfinder.parsing.java.TypeVisitor.visit(MethodDeclaration node)",42,8,31,3,1
-"com.softwarepathfinder.parsing.php.InvocationVisitor.identifyFunctionInvocation(Method method)",20,7,10,3,1
-"com.softwarepathfinder.parsing.PathMaker.calcPath(Type type, Path path, int level, HashMap<String,Locus> pathLoci, EntityManager em)",26,6,19,4,5
-"com.softwarepathfinder.visualization.prefuse.PathMethodsGraph.main(String[] argv)",164,6,99,3,1
+"com.softwarepathfinder.service.MethodService.isVisible(Method method, Type type)",20,10,22,1,2
+"com.softwarepathfinder.parsing.java.TypeVisitor.defineVisibility(FieldDeclaration node)",13,9,4,3,1
+"com.softwarepathfinder.parsing.java.TypeVisitor.visit(MethodDeclaration node)",44,8,33,3,1
+"com.softwarepathfinder.metrics.service.TypeMetricsService.isVisible(Field field, Type type)",18,8,18,1,2
+"com.softwarepathfinder.parsing.php.InvocationVisitor.identifyFunctionInvocation(Method invoked)",17,7,10,3,1
+"com.softwarepathfinder.parsing.PathMaker.calcPath(Type type, Path path, int level, HashMap<String,Locus> pathLoci)",25,6,19,4,4
 "com.softwarepathfinder.parsing.php.InvocationVisitor.identifyClassInstanceCreation(Identifier newCall)",14,6,7,3,1
-"com.softwarepathfinder.parsing.java.InvocationVisitor.visit(ArrayInitializer node)",16,5,18,7,1
+"com.softwarepathfinder.service.TypeService.findConcretChildrenForType(Type parent, List<Type> types)",17,5,9,6,2
+"com.softwarepathfinder.parsing.java.InvocationVisitor.visit(ArrayInitializer node)",16,5,18,6,1
+"com.softwarepathfinder.service.TypeService.findAncestorsForChildType(Type child, List<Type> types)",16,5,6,6,2
 "com.softwarepathfinder.parsing.php.InvocationVisitor.doCastNodesOf(Expression identifiedExpression)",32,5,6,3,1
 "com.softwarepathfinder.parsing.java.InheritanceVisitor.makeInterface(TypeDeclaration node)",15,5,8,3,1
-"com.softwarepathfinder.parsing.php.InvocationVisitor.identifyStaticMethodInvocation(Identifier parentReference, Identifier methodName)",13,5,9,3,2
 "com.softwarepathfinder.parsing.php.InvocationVisitor.identifyPolymorphicCall(String methodName, Type typeCaller)",12,5,4,3,2
+"com.softwarepathfinder.parsing.php.InvocationVisitor.identifyStaticMethodInvocation(Identifier parentReference, Identifier methodName)",11,5,9,3,2
 "com.softwarepathfinder.parsing.java.InheritanceVisitor.makeParent(TypeDeclaration node)",9,5,8,3,1
-"com.softwarepathfinder.model.Type.getConcretChildren(Type parent, List<Type> types)",16,5,10,2,2
-"com.softwarepathfinder.parsing.java.InvocationVisitor.visit(CastExpression node)",22,4,14,7,1
-"com.softwarepathfinder.parsing.java.InvocationVisitor.visit(Assignment node)",20,4,15,7,1
-"com.softwarepathfinder.parsing.java.InvocationVisitor.visit(SuperConstructorInvocation node)",15,4,5,7,1
-"com.softwarepathfinder.parsing.java.InvocationVisitor.visit(VariableDeclarationStatement node)",14,4,10,7,1
-"com.softwarepathfinder.parsing.java.InvocationVisitor.visit(SuperMethodInvocation node)",14,4,7,7,1
+"com.softwarepathfinder.metrics.service.InheritanceMetricsService.getNumberOfMethodOverridenByComparison(List<Method> inheritedMethods, List<Method> childMethods)",16,5,1,1,2
+"com.softwarepathfinder.metrics.service.InheritanceMetricsService.getNumberOfMethodsExtendedByComparison(List<Method> inheritedMethods, List<Method> childMethods)",16,5,1,1,2
+"com.softwarepathfinder.metrics.service.InheritanceMetricsService.getNumberOfMethodsNotOverriddenByComparison(List<Method> inheritedMethods, List<Method> childMethods)",16,5,1,1,2
+"com.softwarepathfinder.metrics.service.InheritanceMetricsService.getNumberOfChildMethodsAddedByComparison(List<Method> inheritedMethods, List<Method> childMethods)",15,5,1,1,2
+"com.softwarepathfinder.metrics.service.InheritanceMetricsService.deepenInheritanceLevel(List<Type> types)",12,5,3,1,1
+"com.softwarepathfinder.metrics.service.TypeMetricsService.getAllVisibilityForTypeAttributes(List<Field> typeAttributes, List<Type> allProjectTypes)",10,5,4,1,2
+"com.softwarepathfinder.metrics.service.TypeMetricsService.getAllVisibilityForTypeMethods(List<Method> typeMethods, List<Type> allProjectTypes)",10,5,4,1,2
+"com.softwarepathfinder.parsing.java.InvocationVisitor.visit(CastExpression node)",22,4,14,6,1
+"com.softwarepathfinder.parsing.java.InvocationVisitor.visit(Assignment node)",20,4,15,6,1
+"com.softwarepathfinder.parsing.java.InvocationVisitor.visit(SuperConstructorInvocation node)",15,4,5,6,1
+"com.softwarepathfinder.parsing.java.InvocationVisitor.visit(VariableDeclarationStatement node)",14,4,10,6,1
+"com.softwarepathfinder.parsing.java.InvocationVisitor.visit(SuperMethodInvocation node)",14,4,7,6,1
 "com.softwarepathfinder.parsing.php.InvocationVisitor.visit(FunctionInvocation node)",19,4,12,3,1
-"com.softwarepathfinder.visualization.jgraph.PathView.createEdges(Object pathNode, Path path)",13,4,13,3,2
 "com.softwarepathfinder.parsing.PolymorphismParser.run()",11,4,6,3,0
-"com.softwarepathfinder.visualization.yEd.GraphmlBuilder.main(String[] args)",55,4,40,2,1
-"com.softwarepathfinder.model.Type.hasMethod(String methodName)",11,4,12,2,1
-"com.softwarepathfinder.model.Locus.getTargets(Invocation invocation, Locus locus)",29,4,18,1,2
-"com.softwarepathfinder.parsing.java.InvocationVisitor.createConstructorInvocation(String constructorType)",10,3,6,7,1
-"com.softwarepathfinder.model.Project.getTypeByName(String typeName)",21,3,11,6,1
-"com.softwarepathfinder.visualization.prefuse.AggregateDragControl.move(VisualItem item, double dx, double dy)",13,3,12,5,3
-"com.softwarepathfinder.visualization.prefuse.AggregateDragControl.itemPressed(VisualItem item, MouseEvent e)",10,3,5,5,2
-"com.softwarepathfinder.visualization.prefuse.AggregateDragControl.itemReleased(VisualItem item, MouseEvent e)",10,3,2,5,2
-"com.softwarepathfinder.visualization.prefuse.AggregateDragControl.setFixed(VisualItem item, boolean fixed)",9,3,5,5,2
-"com.softwarepathfinder.parsing.java.TypeVisitor.visit(TypeDeclaration node)",14,3,12,3,1
-"com.softwarepathfinder.visualization.jgraph.PathView.createTypes(Object pathNode, Path path)",13,3,15,3,2
+"com.softwarepathfinder.visualization.yEd.GraphmlBuilder.build()",55,4,44,2,0
+"com.softwarepathfinder.metrics.service.CouplingMetricsService.getAfferentCoupling(Namespace namespace)",12,4,6,2,1
+"com.softwarepathfinder.metrics.service.CouplingMetricsService.getEfferentCoupling(Namespace namespace)",12,4,6,2,1
+"com.softwarepathfinder.metrics.service.CouplingMetricsService.identifyInsideInvocationsByDifferentTypes(List<Invocation> invocations, List<Method> insideMethods, List<Type> invokingTypes)",4,4,5,2,3
+"com.softwarepathfinder.metrics.service.CouplingMetricsService.identifyOutsideInvocationsForDifferentTypes(List<Invocation> invocations, List<Method> outsideMethods, List<Type> invokedTypes)",4,4,5,2,3
+"com.softwarepathfinder.service.LocusService.findInvokingTargets(Invocation invocation, Locus locus)",26,4,17,1,2
+"com.softwarepathfinder.metrics.service.InheritanceMetricsService.isOverriddenMethod(Method inherited, Method child)",11,4,7,1,2
+"com.softwarepathfinder.metrics.service.InheritanceMetricsService.isTheMethodParametersEquals(Method inherited, Method child)",9,4,11,1,2
+"com.softwarepathfinder.metrics.service.CohesionMetricsService.hasIntersectionAttributesAccessedByMethods(Method firstMethod, Method secondMethod)",7,4,6,1,2
+"com.softwarepathfinder.service.TypeService.getTypeByName(Project project, String typeName)",17,3,10,6,2
+"com.softwarepathfinder.parsing.java.InvocationVisitor.createConstructorInvocation(String constructorType)",10,3,6,6,1
+"com.softwarepathfinder.parsing.java.TypeVisitor.visit(TypeDeclaration node)",15,3,12,3,1
 "com.softwarepathfinder.parsing.php.InvocationVisitor.returnTypeOfDependencyInjection(String methodName)",8,3,2,3,1
-"com.softwarepathfinder.parsing.php.InvocationVisitor.identifyDependencyInjection(Identifier identifierFI)",7,3,5,3,1
-"com.softwarepathfinder.model.Path.getNamespaces()",38,3,9,2,0
-"com.softwarepathfinder.visualization.yEd.TypeGraphML.addInvocation(StringBuilder invocationEdges, HashMap<String,String> colorInvocationMap, Method invoking)",21,3,15,2,3
-"com.softwarepathfinder.parsing.java.NamespaceParser.run()",18,3,12,2,0
-"com.softwarepathfinder.visualization.yEd.GraphmlBuilder.addNamespace(Path path, HashMap<Namespace,NamespaceGraphML> namespaceMap, Locus locus, TypeGraphML typeGraphML)",14,3,8,2,4
-"com.softwarepathfinder.model.Type.addAccess(String strField, Method method)",14,3,7,2,2
-"com.softwarepathfinder.model.Type.hasField(String name)",11,3,10,2,1
-"com.softwarepathfinder.visualization.yEd.TypeGraphML.buildInheritanceNodes(Type myType)",11,3,3,2,1
+"com.softwarepathfinder.parsing.java.TypeVisitor.isStatic(FieldDeclaration node)",4,3,1,3,1
+"com.softwarepathfinder.visualization.yEd.TypeGraphML.addInvocation(StringBuilder invocationEdges, HashMap<String,String> colorInvocationMap, Method invoking)",18,3,16,2,3
+"com.softwarepathfinder.parsing.java.NamespaceParser.run()",17,3,11,2,0
+"com.softwarepathfinder.visualization.yEd.GraphmlBuilder.addNamespace(Path path, HashMap<Namespace,NamespaceGraphML> namespaceMap, Locus locus, TypeGraphML typeGraphML)",13,3,9,2,4
+"com.softwarepathfinder.service.AccessService.addAccess(Type type, Method method, String fieldName)",13,3,7,2,3
+"com.softwarepathfinder.metrics.service.CouplingMetricsService.getMethodsOutsideExcludingTheSameNamespace(Namespace namespace)",11,3,7,2,1
+"com.softwarepathfinder.visualization.yEd.TypeGraphML.buildInheritanceNodes(Type myType)",11,3,5,2,1
+"com.softwarepathfinder.metrics.service.CouplingMetricsService.isAlreadyInvokedType(Invocation invocation, List<Type> invokedTypes)",6,3,4,2,2
+"com.softwarepathfinder.metrics.service.CouplingMetricsService.isAlreadyInvokingType(Invocation invocation, List<Type> invokingTypes)",6,3,4,2,2
+"com.softwarepathfinder.metrics.service.CouplingMetricsService.isInvokedMethodPresentOn(List<Method> methods, Invocation invocation)",6,3,3,2,2
 "com.softwarepathfinder.visualization.yEd.TypeGraphML.setXY(Locus locus)",3,3,6,2,1
-"com.softwarepathfinder.parsing.php.TypeVisitor.visit(MethodDeclaration node)",27,3,20,1,1
-"com.softwarepathfinder.parsing.php.GenerateAstPhp.printMethodsOf(Type type)",11,3,9,1,1
-"com.softwarepathfinder.model.Locus.getLocus(Path path, Type type)",10,3,14,1,2
+"com.softwarepathfinder.parsing.php.TypeVisitor.visit(MethodDeclaration node)",25,3,20,1,1
+"com.softwarepathfinder.parsing.java.JavaParseManager.printMethodsOf(Type type)",11,3,9,1,1
+"com.softwarepathfinder.parsing.php.PhpParseManager.printMethodsOf(Type type)",11,3,9,1,1
+"com.softwarepathfinder.service.MethodService.hasTypeMethod(Type type, String methodName)",10,3,10,1,2
 "com.softwarepathfinder.parsing.php.InheritanceVisitor.makeInterfaces(ClassDeclaration node)",10,3,6,1,1
 "com.softwarepathfinder.parsing.php.InheritanceVisitor.makeParent(ClassDeclaration node)",10,3,6,1,1
-"com.softwarepathfinder.parsing.php.GenerateAstPhp.printTypeDefinition(Type type)",9,3,12,1,1
-"com.softwarepathfinder.parsing.java.InvocationVisitor.visit(ArrayCreation node)",10,2,11,7,1
-"com.softwarepathfinder.parsing.java.InvocationVisitor.createInvocation(Method m)",7,2,3,7,1
-"com.softwarepathfinder.model.Project.getNamespaceByName(String namespace)",11,2,7,6,1
-"com.softwarepathfinder.visualization.prefuse.AggregateDragControl.itemDragged(VisualItem item, MouseEvent e)",14,2,10,5,2
-"com.softwarepathfinder.visualization.prefuse.AggregateDragControl.itemExited(VisualItem item, MouseEvent e)",10,2,4,5,2
-"com.softwarepathfinder.visualization.prefuse.AggregateDragControl.itemEntered(VisualItem item, MouseEvent e)",9,2,4,5,2
-"com.softwarepathfinder.parsing.java.TypeVisitor.visit(FieldDeclaration node)",15,2,13,3,1
-"com.softwarepathfinder.visualization.jgraph.PathView.createPaths(mxGraph graph, Object parent)",13,2,4,3,2
-"com.softwarepathfinder.parsing.php.InvocationVisitor.identifyInvokingOf(ASTNode node)",12,2,4,3,1
+"com.softwarepathfinder.metrics.service.CohesionMetricsService.getLackOfCohesionPerMethod(Method method, List<Method> otherMethods)",10,3,1,1,2
+"com.softwarepathfinder.parsing.java.JavaParseManager.printTypeDefinition(Type type)",9,3,12,1,1
+"com.softwarepathfinder.parsing.php.PhpParseManager.printTypeDefinition(Type type)",9,3,12,1,1
+"com.softwarepathfinder.metrics.service.InheritanceMetricsService.isExtendedByInvocation(Method inherited, Method child)",8,3,4,1,2
+"com.softwarepathfinder.metrics.service.TypeMetricsService.getPercentageCommentedMethods(Type type)",8,3,3,1,1
+"com.softwarepathfinder.metrics.service.InheritanceMetricsService.isOverriddenMethodByExtension(Method inherited, Method child)",8,3,2,1,2
+"com.softwarepathfinder.metrics.service.InheritanceMetricsService.isOverriddenNotExtendedMethod(Method inherited, Method child)",8,3,2,1,2
+"com.softwarepathfinder.service.FieldService.hasTypeField(Type type, String fieldName)",10,3,9,0,2
+"com.softwarepathfinder.parsing.java.InvocationVisitor.visit(ArrayCreation node)",10,2,11,6,1
+"com.softwarepathfinder.parsing.java.InvocationVisitor.createInvocation(Method invoked)",7,2,3,6,1
+"com.softwarepathfinder.service.TypeService.getParentForType(Type type)",6,2,5,6,1
+"com.softwarepathfinder.parsing.java.TypeVisitor.visit(FieldDeclaration node)",18,2,17,3,1
+"com.softwarepathfinder.parsing.php.InvocationVisitor.identifyInvokingOf(ASTNode node)",10,2,4,3,1
+"com.softwarepathfinder.parsing.php.InvocationVisitor.identifyDependencyInjection(Identifier identifierFI)",6,2,5,3,1
+"com.softwarepathfinder.parsing.java.TypeVisitor.identifyLinesOfComment(MethodDeclaration node)",6,2,3,3,1
 "com.softwarepathfinder.utils.LogFormatter.format(LogRecord record)",22,2,16,2,1
-"com.softwarepathfinder.visualization.yEd.TypeGraphML.getColorString(HashMap<String,String> colorInvocationMap, Type type, Method invoked)",18,2,18,2,3
+"com.softwarepathfinder.visualization.yEd.TypeGraphML.getColorString(HashMap<String,String> colorInvocationMap, Type type, Method invoked)",17,2,18,2,3
 "com.softwarepathfinder.parsing.java.InvocationParser.run()",13,2,8,2,0
 "com.softwarepathfinder.parsing.java.AccessParser.run()",13,2,6,2,0
-"com.softwarepathfinder.persistence.jpa.PersistenceManager.persist(Object entity)",12,2,9,2,1
 "com.softwarepathfinder.parsing.php.AccessParser.run()",11,2,4,2,0
-"com.softwarepathfinder.model.Type.hasAccess(Method method, Field field)",9,2,8,2,2
-"com.softwarepathfinder.model.Type.getParent()",7,2,6,2,0
-"com.softwarepathfinder.visualization.yEd.TypeGraphML.setName(Type type)",4,2,4,2,1
+"com.softwarepathfinder.persistence.jpa.PersistenceManager.persist(Object entity)",10,2,8,2,1
+"com.softwarepathfinder.service.AccessService.hasTypeAccess(Type type, Method method, Field field)",8,2,7,2,3
 "com.softwarepathfinder.persistence.jpa.PersistenceManager.beginTransaction()",4,2,4,2,0
-"com.softwarepathfinder.model.Type.getFullName()",3,2,5,2,0
 "com.softwarepathfinder.visualization.yEd.TypeGraphML.setBorder(Type myType)",3,2,3,2,1
-"com.softwarepathfinder.visualization.prefuse.PathGraph.main(String[] argv)",87,2,42,1,1
-"com.softwarepathfinder.visualization.blender.Blender.main(String[] args)",26,2,17,1,1
-"com.softwarepathfinder.parsing.java.GenerateJava2JPA.makePolymorphism(Project project)",18,2,13,1,1
-"com.softwarepathfinder.parsing.java.GenerateJava2JPA.makeNamespaces(Project project, List<File> javaFiles)",18,2,9,1,2
-"com.softwarepathfinder.parsing.java.GenerateJava2JPA.makeTypes(Project project, List<File> javaFiles)",15,2,9,1,2
-"com.softwarepathfinder.parsing.java.GenerateJava2JPA.makeAccesses(List<Type> types)",15,2,8,1,1
-"com.softwarepathfinder.parsing.php.GenerateAstPhp.makePolimorphism(Project project)",15,2,8,1,1
+"com.softwarepathfinder.visualization.yEd.TypeGraphML.setName(Type type)",2,2,4,2,1
+"com.softwarepathfinder.visualization.blender.Blender.buildView()",27,2,20,1,0
+"com.softwarepathfinder.parsing.java.JavaParseManager.makeNamespaces(Project project, List<File> javaFiles)",22,2,13,1,2
+"com.softwarepathfinder.parsing.java.JavaParseManager.makePolymorphism(Project project)",21,2,16,1,1
+"com.softwarepathfinder.parsing.java.JavaParseManager.makeTypes(Project project, List<File> javaFiles)",18,2,12,1,2
+"com.softwarepathfinder.parsing.php.PhpParseManager.makePolimorphism(Project project)",17,2,11,1,1
+"com.softwarepathfinder.parsing.java.JavaParseManager.makeInvocations(List<Type> types)",16,2,11,1,1
+"com.softwarepathfinder.parsing.java.JavaParseManager.makeAccesses(List<Type> types)",16,2,10,1,1
+"com.softwarepathfinder.parsing.java.JavaParseManager.makeInheritances(List<Type> types)",15,2,10,1,1
+"com.softwarepathfinder.parsing.java.JavaParseManager.makePaths(Project project)",15,2,9,1,1
 "com.softwarepathfinder.parsing.php.TypeVisitor.visit(FieldsDeclaration node)",15,2,6,1,1
-"com.softwarepathfinder.parsing.java.GenerateJava2JPA.makeInvocations(List<Type> types)",14,2,9,1,1
-"com.softwarepathfinder.parsing.java.GenerateJava2JPA.makeInheritances(List<Type> types)",13,2,8,1,1
-"com.softwarepathfinder.visualization.prefuse.InverseWheelZoomControl.mouseWheelMoved(MouseWheelEvent e)",13,2,7,1,1
-"com.softwarepathfinder.parsing.java.GenerateJava2JPA.makePaths(Project project)",12,2,7,1,1
-"com.softwarepathfinder.parsing.php.TypeVisitor.visit(ConstantDeclaration node)",12,2,5,1,1
+"com.softwarepathfinder.parsing.php.TypeVisitor.visit(ConstantDeclaration node)",13,2,5,1,1
 "com.softwarepathfinder.model.Method.isMain()",11,2,9,1,0
+"com.softwarepathfinder.parsing.php.PhpParseManager.makeAccesses(List<Type> types)",11,2,5,1,1
+"com.softwarepathfinder.parsing.php.PhpParseManager.makeInvocations(List<Type> types, Project project)",10,2,6,1,2
 "com.softwarepathfinder.parsing.php.TypeVisitor.visit(ClassDeclaration node)",10,2,6,1,1
+"com.softwarepathfinder.metrics.service.InheritanceMetricsService.getNumberOfMethodsExtended(Type type)",10,2,5,1,1
+"com.softwarepathfinder.metrics.service.InheritanceMetricsService.getNumberOfMethodsInherited(Type type)",10,2,5,1,1
+"com.softwarepathfinder.metrics.service.InheritanceMetricsService.getNumberOfMethodsOverridden(Type type)",10,2,5,1,1
 "com.softwarepathfinder.parsing.php.NamespaceParser.separateNamespaceFromPath(File file, String projectPath)",9,2,7,1,2
+"com.softwarepathfinder.metrics.service.InheritanceMetricsService.getNumberOfMethodsAdded(Type type)",9,2,5,1,1
+"com.softwarepathfinder.parsing.php.PhpParseManager.makeInheritances(List<Type> types)",9,2,5,1,1
 "com.softwarepathfinder.parsing.php.AccessVisitor.visit(FieldsDeclaration node)",9,2,4,1,1
 "com.softwarepathfinder.parsing.php.NamespaceParser.parsing()",8,2,7,1,0
+"com.softwarepathfinder.metrics.service.CohesionMetricsService.getLackOfCohesionInMethods(Type type)",8,2,4,1,1
+"com.softwarepathfinder.parsing.php.PhpParseManager.makePaths(Project project)",8,2,4,1,1
 "com.softwarepathfinder.parsing.php.TypeVisitor.visit(InterfaceDeclaration node)",8,2,4,1,1
-"com.softwarepathfinder.parsing.php.GenerateAstPhp.makeAccesses(List<Type> types)",8,2,3,1,1
-"com.softwarepathfinder.model.Method.getById(Long idMethod)",7,2,6,1,1
-"com.softwarepathfinder.parsing.php.GenerateAstPhp.parsingTypes(Project project)",7,2,4,1,1
-"com.softwarepathfinder.parsing.php.GenerateAstPhp.printFieldsOf(Type type)",7,2,4,1,1
-"com.softwarepathfinder.parsing.php.GenerateAstPhp.makeInvocations(List<Type> types, Project project)",7,2,3,1,2
+"com.softwarepathfinder.parsing.java.JavaParseManager.printFieldsOf(Type type)",7,2,4,1,1
+"com.softwarepathfinder.parsing.php.PhpParseManager.printFieldsOf(Type type)",7,2,4,1,1
+"com.softwarepathfinder.metrics.service.TypeMetricsService.getNumberOfParametersPerMethod(Type type)",7,2,3,1,1
 "com.softwarepathfinder.parsing.php.AccessVisitor.visit(ConstantDeclaration node)",7,2,3,1,1
-"com.softwarepathfinder.parsing.php.GenerateAstPhp.makeInheritances(List<Type> types)",7,2,3,1,1
-"com.softwarepathfinder.parsing.php.GenerateAstPhp.printParametersOf(Method method)",6,2,3,1,1
-"com.softwarepathfinder.parsing.php.GenerateAstPhp.printTypeInfo(List<Type> types)",6,2,3,1,1
-"com.softwarepathfinder.parsing.php.GenerateAstPhp.makePaths(Project project)",6,2,2,1,1
+"com.softwarepathfinder.parsing.php.PhpParseManager.parsingTypes(Project project, String projectPath, List<File> phpFiles)",6,2,3,1,3
+"com.softwarepathfinder.parsing.java.JavaParseManager.printParametersOf(Method method)",6,2,3,1,1
+"com.softwarepathfinder.parsing.java.JavaParseManager.printTypeInfo(List<Type> types)",6,2,3,1,1
+"com.softwarepathfinder.parsing.php.PhpParseManager.printParametersOf(Method method)",6,2,3,1,1
+"com.softwarepathfinder.parsing.php.PhpParseManager.printTypeInfo(List<Type> types)",6,2,3,1,1
 "com.softwarepathfinder.utils.Conf.loadFile()",6,2,1,1,0
 "com.softwarepathfinder.parsing.php.TypeVisitor.identifyMainCall(ASTNode node)",5,2,2,1,1
+"com.softwarepathfinder.service.MethodService.findMethodsByTypes(List<Type> types)",5,2,2,1,1
 "com.softwarepathfinder.utils.Conf.read(String property)",5,2,2,1,1
-"com.softwarepathfinder.parsing.php.GenerateAstPhp.parsingNamespaces(Project project, HashSet<String> namespaceSet)",5,2,1,1,2
+"com.softwarepathfinder.parsing.php.PhpParseManager.parsingNamespaces(Project project, String projectPath, HashSet<String> namespaceSet, List<File> phpFiles)",4,2,1,1,4
+"com.softwarepathfinder.service.NamespaceService.getNamespaceByName(Project project, String namespace)",7,2,6,0,2
+"com.softwarepathfinder.model.Type.getFullName()",3,2,5,0,0
 "com.softwarepathfinder.visualization.yEd.InvocationGraphML.setLineType(Method method)",3,2,2,0,1
 "com.softwarepathfinder.visualization.yEd.MethodGraphML.setBorder(Method method)",2,2,2,0,1
-"com.softwarepathfinder.parsing.java.InvocationVisitor.visit(VariableDeclarationFragment node)",7,1,7,7,1
-"com.softwarepathfinder.parsing.java.InvocationVisitor.visit(EnhancedForStatement node)",6,1,7,7,1
-"com.softwarepathfinder.parsing.java.InvocationVisitor.InvocationVisitor(Type type, Method method)",3,1,0,7,2
-"com.softwarepathfinder.model.Project.getTops()",18,1,9,6,0
-"com.softwarepathfinder.model.Project.getNamespaces()",10,1,4,6,0
-"com.softwarepathfinder.model.Project.getPathIDs(Project project)",8,1,4,6,1
-"com.softwarepathfinder.model.Project.getAbstractTypes()",8,1,4,6,0
-"com.softwarepathfinder.model.Project.getTypes()",8,1,4,6,0
-"com.softwarepathfinder.model.Project.getPaths()",7,1,4,6,0
-"com.softwarepathfinder.model.Project.getById(long projectId)",4,1,2,6,1
-"com.softwarepathfinder.model.Project.setId(long id)",2,1,0,6,1
-"com.softwarepathfinder.model.Project.setName(String name)",2,1,0,6,1
-"com.softwarepathfinder.model.Project.getId()",2,1,0,6,0
-"com.softwarepathfinder.model.Project.getName()",2,1,0,6,0
-"com.softwarepathfinder.visualization.prefuse.AggregateDemo.AggregateDemo()",81,1,49,5,0
-"com.softwarepathfinder.visualization.prefuse.AggregateLayout.addPoint(double[] pts, int idx, VisualItem item, int growth)",10,1,5,5,4
-"com.softwarepathfinder.visualization.prefuse.AggregateDemo.demo()",6,1,3,5,0
-"com.softwarepathfinder.visualization.prefuse.AggregateDragControl.AggregateDragControl()",5,1,0,5,0
-"com.softwarepathfinder.visualization.prefuse.AggregateDemo.main(String[] argv)",4,1,3,5,1
-"com.softwarepathfinder.visualization.prefuse.AggregateLayout.AggregateLayout(String aggrGroup)",2,1,0,5,1
-"com.softwarepathfinder.parsing.PathMaker.run()",17,1,16,4,0
-"com.softwarepathfinder.parsing.PathMaker.PathMaker(Type top)",2,1,0,4,1
-"com.softwarepathfinder.visualization.prefuse.PathMethodLayout.PathMethodLayout(Path path)",2,1,0,4,1
-"com.softwarepathfinder.visualization.jgraph.PathView.createView()",48,1,33,3,0
-"com.softwarepathfinder.visualization.jgraph.PathView.main(String[] args)",13,1,11,3,1
-"com.softwarepathfinder.parsing.php.InvocationVisitor.visit(StaticMethodInvocation node)",11,1,6,3,1
-"com.softwarepathfinder.parsing.php.InvocationVisitor.visit(ClassInstanceCreation node)",9,1,5,3,1
+"com.softwarepathfinder.service.TypeService.findTopsByProject(Project project)",15,1,8,6,1
+"com.softwarepathfinder.parsing.java.InvocationVisitor.visit(VariableDeclarationFragment node)",7,1,7,6,1
+"com.softwarepathfinder.parsing.java.InvocationVisitor.visit(EnhancedForStatement node)",6,1,7,6,1
+"com.softwarepathfinder.service.TypeService.findAbstractTypesByProject(Project project)",5,1,3,6,1
+"com.softwarepathfinder.service.TypeService.findChildrenForParentType(Type parent)",5,1,3,6,1
+"com.softwarepathfinder.service.TypeService.findInterfacesForType(Type type)",5,1,3,6,1
+"com.softwarepathfinder.service.TypeService.findParentsForType(Type type)",5,1,3,6,1
+"com.softwarepathfinder.service.TypeService.findTypesByNamespace(Namespace namespace)",5,1,3,6,1
+"com.softwarepathfinder.service.TypeService.findTypesByPath(Path path)",5,1,3,6,1
+"com.softwarepathfinder.service.TypeService.findTypesByProject(Project project)",5,1,3,6,1
+"com.softwarepathfinder.service.TypeService.getTypeById(long id)",2,1,1,6,1
+"com.softwarepathfinder.service.TypeService.save(Type type)",2,1,1,6,1
+"com.softwarepathfinder.parsing.java.InvocationVisitor.setMethod(Method method)",2,1,0,6,1
+"com.softwarepathfinder.parsing.java.InvocationVisitor.setType(Type type)",2,1,0,6,1
+"com.softwarepathfinder.parsing.PathMaker.run()",16,1,13,4,0
+"com.softwarepathfinder.parsing.PathMaker.getTop(Type top)",2,1,0,4,1
+"com.softwarepathfinder.parsing.PathMaker.setTop(Type top)",2,1,0,4,1
+"com.softwarepathfinder.parsing.php.InvocationVisitor.visit(StaticMethodInvocation node)",10,1,6,3,1
+"com.softwarepathfinder.parsing.php.InvocationVisitor.visit(ClassInstanceCreation node)",6,1,5,3,1
 "com.softwarepathfinder.parsing.java.TypeVisitor.visit(PackageDeclaration node)",5,1,5,3,1
 "com.softwarepathfinder.parsing.java.InheritanceVisitor.visit(TypeDeclaration node)",5,1,2,3,1
-"com.softwarepathfinder.parsing.php.InvocationVisitor.InvocationVisitor(Type type, Project project)",4,1,0,3,2
-"com.softwarepathfinder.visualization.jgraph.PathView.PathView()",4,1,0,3,0
 "com.softwarepathfinder.parsing.java.TypeVisitor.visit(ImportDeclaration node)",3,1,4,3,1
-"com.softwarepathfinder.parsing.PolymorphismParser.PolymorphismParser(Invocation invocation, List<Type> children)",3,1,0,3,2
-"com.softwarepathfinder.parsing.php.InvocationVisitor.isInvokingNotSame(Method method)",2,1,3,3,1
-"com.softwarepathfinder.parsing.php.InvocationVisitor.methodAndInvokingIsNotNull(Method method)",2,1,1,3,1
-"com.softwarepathfinder.parsing.java.InheritanceVisitor.InheritanceVisitor(Type t)",2,1,0,3,1
-"com.softwarepathfinder.parsing.java.TypeVisitor.TypeVisitor(Type type)",2,1,0,3,1
+"com.softwarepathfinder.parsing.php.InvocationVisitor.setType(Type type)",3,1,0,3,1
+"com.softwarepathfinder.parsing.php.InvocationVisitor.isInvokingNotSame(Method invoked)",2,1,3,3,1
+"com.softwarepathfinder.parsing.php.InvocationVisitor.methodAndInvokingIsNotNull(Method invoked)",2,1,1,3,1
+"com.softwarepathfinder.parsing.PolymorphismParser.setChildren(List<Type> children)",2,1,0,3,1
+"com.softwarepathfinder.parsing.PolymorphismParser.setInvocation(Invocation invocation)",2,1,0,3,1
+"com.softwarepathfinder.parsing.java.InheritanceVisitor.setType(Type type)",2,1,0,3,1
+"com.softwarepathfinder.parsing.java.TypeVisitor.setType(Type type)",2,1,0,3,1
 "com.softwarepathfinder.parsing.php.InvocationVisitor.methodIsNotNull(Method method)",2,1,0,3,1
-"com.softwarepathfinder.visualization.jgraph.PathView.getFrame()",2,1,0,3,0
-"com.softwarepathfinder.parsing.java.NamespaceParser.parsing(File javaFile, Project project)",13,1,8,2,2
-"com.softwarepathfinder.visualization.yEd.TypeGraphML.addMethod(long numberofColumns, double x, double y, StringBuilder nodes, Method method)",12,1,10,2,5
-"com.softwarepathfinder.visualization.yEd.TypeGraphML.TypeGraphML(Locus locus, Type type, StringBuilder invocationEdges, StringBuilder accessEdges, HashMap<String,String> colorInvocationMap, boolean isParent)",12,1,1,2,6
-"com.softwarepathfinder.model.Path.getInvocations()",11,1,4,2,0
-"com.softwarepathfinder.visualization.yEd.TypeGraphML.addField(double x, double y, StringBuilder nodes, Field field)",10,1,9,2,4
-"com.softwarepathfinder.parsing.java.AccessParser.parsing(Method method)",10,1,7,2,1
-"com.softwarepathfinder.model.Type.getInvocations()",10,1,4,2,0
-"com.softwarepathfinder.model.Path.getMethods()",9,1,4,2,0
-"com.softwarepathfinder.model.Path.getMaxNumberOfTypesInLevels()",9,1,3,2,0
-"com.softwarepathfinder.parsing.java.InvocationParser.parsing(Type type, Method method)",8,1,7,2,2
-"com.softwarepathfinder.model.Path.getMaxNumberOfMethodsInLevels()",8,1,5,2,0
-"com.softwarepathfinder.parsing.php.AccessParser.parsing(Method method)",7,1,6,2,1
-"com.softwarepathfinder.model.Path.hasType(Type type)",7,1,5,2,1
-"com.softwarepathfinder.model.Type.addInheritance(Type superType, boolean isImplements)",7,1,4,2,2
-"com.softwarepathfinder.model.Type.getInterfaces()",7,1,4,2,0
-"com.softwarepathfinder.model.Type.getMethods()",7,1,4,2,0
-"com.softwarepathfinder.model.Type.getParents()",7,1,4,2,0
-"com.softwarepathfinder.model.Path.getLoci()",6,1,4,2,0
-"com.softwarepathfinder.model.Path.getTypes()",6,1,4,2,0
-"com.softwarepathfinder.model.Type.getAccesses()",6,1,4,2,0
-"com.softwarepathfinder.model.Type.getFields()",6,1,4,2,0
-"com.softwarepathfinder.model.Type.getLoci()",6,1,4,2,0
-"com.softwarepathfinder.model.Path.getMaxLevel()",5,1,4,2,0
-"com.softwarepathfinder.model.Path.getById(long id)",4,1,2,2,1
-"com.softwarepathfinder.parsing.java.NamespaceParser.NamespaceParser(File file, Project project, HashSet<String> namespaceSet)",4,1,0,2,3
+"com.softwarepathfinder.parsing.php.InvocationVisitor.setProject(Project project)",2,1,0,3,1
+"com.softwarepathfinder.visualization.yEd.TypeGraphML.addMethod(long numberofColumns, double x, double y, StringBuilder nodes, Method method)",11,1,11,2,5
+"com.softwarepathfinder.parsing.java.NamespaceParser.parsing()",11,1,5,2,0
+"com.softwarepathfinder.parsing.php.AccessParser.parsing(Method method)",10,1,9,2,1
+"com.softwarepathfinder.visualization.yEd.TypeGraphML.addField(double x, double y, StringBuilder nodes, Field field)",9,1,10,2,4
+"com.softwarepathfinder.visualization.yEd.TypeGraphML.build(Locus locus, Type type, StringBuilder invocationEdges, StringBuilder accessEdges, HashMap<String,String> colorInvocationMap, boolean isParent)",9,1,1,2,6
+"com.softwarepathfinder.parsing.java.AccessParser.parsing(Method method)",8,1,6,2,1
+"com.softwarepathfinder.parsing.java.InvocationParser.parsing(Method method)",8,1,6,2,1
+"com.softwarepathfinder.service.AccessService.findAccessesByMethod(Method method)",5,1,3,2,1
+"com.softwarepathfinder.service.AccessService.findAccessesByType(Type type)",5,1,3,2,1
+"com.softwarepathfinder.visualization.yEd.GraphmlBuilder.main(String[] args)",4,1,3,2,1
+"com.softwarepathfinder.metrics.service.CouplingMetricsService.getMethodsInsideNamespace(Namespace namespace)",4,1,2,2,1
 "com.softwarepathfinder.visualization.yEd.TypeGraphML.setTag()",3,1,3,2,0
-"com.softwarepathfinder.model.Type.toString()",3,1,1,2,0
-"com.softwarepathfinder.persistence.jpa.PersistenceManager.createManager()",3,1,1,2,0
-"com.softwarepathfinder.model.Type.getProject()",3,1,0,2,0
 "com.softwarepathfinder.visualization.yEd.TypeGraphML.setLevel(Locus locus)",2,1,3,2,1
 "com.softwarepathfinder.visualization.yEd.TypeGraphML.addNodes(StringBuilder nodes)",2,1,2,2,1
 "com.softwarepathfinder.visualization.yEd.TypeGraphML.setHeight(Double typeHeight)",2,1,2,2,1
@@ -187,150 +180,163 @@
 "com.softwarepathfinder.visualization.yEd.TypeGraphML.setX(double x)",2,1,2,2,1
 "com.softwarepathfinder.visualization.yEd.TypeGraphML.setY(double y)",2,1,2,2,1
 "com.softwarepathfinder.persistence.jpa.PersistenceManager.commit()",2,1,2,2,0
+"com.softwarepathfinder.persistence.jpa.PersistenceManager.createQuery(String query, Class<T> clazz)",2,1,1,2,2
+"com.softwarepathfinder.persistence.jpa.PersistenceManager.find(Class<T> clazz, long entityId)",2,1,1,2,2
+"com.softwarepathfinder.persistence.jpa.PersistenceManager.createQuery(String query)",2,1,1,2,1
+"com.softwarepathfinder.service.AccessService.save(Access access)",2,1,1,2,1
 "com.softwarepathfinder.visualization.yEd.TypeGraphML.setColor(String color)",2,1,1,2,1
 "com.softwarepathfinder.visualization.yEd.TypeGraphML.setFontStyle(String style)",2,1,1,2,1
 "com.softwarepathfinder.visualization.yEd.TypeGraphML.setInheritance(String nodes)",2,1,1,2,1
-"com.softwarepathfinder.persistence.jpa.PersistenceManager.getQueryManager()",2,1,1,2,0
-"com.softwarepathfinder.model.Path.setId(long id)",2,1,0,2,1
-"com.softwarepathfinder.model.Path.setProject(Project project)",2,1,0,2,1
-"com.softwarepathfinder.model.Path.setTop(Type top)",2,1,0,2,1
-"com.softwarepathfinder.model.Type.setAbstract(boolean isAbstract)",2,1,0,2,1
-"com.softwarepathfinder.model.Type.setHasMain(boolean hasMain)",2,1,0,2,1
-"com.softwarepathfinder.model.Type.setId(long id)",2,1,0,2,1
-"com.softwarepathfinder.model.Type.setInterface(boolean isInterface)",2,1,0,2,1
-"com.softwarepathfinder.model.Type.setLOC(int loc)",2,1,0,2,1
-"com.softwarepathfinder.model.Type.setModifiers(String modifiers)",2,1,0,2,1
-"com.softwarepathfinder.model.Type.setName(String name)",2,1,0,2,1
-"com.softwarepathfinder.model.Type.setNamespace(Namespace namespace)",2,1,0,2,1
-"com.softwarepathfinder.model.Type.setProject(Project project)",2,1,0,2,1
-"com.softwarepathfinder.model.Type.setSource(String source)",2,1,0,2,1
-"com.softwarepathfinder.parsing.java.AccessParser.AccessParser(Type type)",2,1,0,2,1
-"com.softwarepathfinder.parsing.java.InvocationParser.InvocationParser(Type type)",2,1,0,2,1
-"com.softwarepathfinder.parsing.php.AccessParser.AccessParser(Type type)",2,1,0,2,1
-"com.softwarepathfinder.model.Path.getId()",2,1,0,2,0
-"com.softwarepathfinder.model.Path.getProject()",2,1,0,2,0
-"com.softwarepathfinder.model.Path.getTop()",2,1,0,2,0
-"com.softwarepathfinder.model.Type.getId()",2,1,0,2,0
-"com.softwarepathfinder.model.Type.getImports()",2,1,0,2,0
-"com.softwarepathfinder.model.Type.getLOC()",2,1,0,2,0
-"com.softwarepathfinder.model.Type.getModifiers()",2,1,0,2,0
-"com.softwarepathfinder.model.Type.getName()",2,1,0,2,0
-"com.softwarepathfinder.model.Type.getNamespace()",2,1,0,2,0
-"com.softwarepathfinder.model.Type.getSource()",2,1,0,2,0
-"com.softwarepathfinder.model.Type.hasMain()",2,1,0,2,0
-"com.softwarepathfinder.model.Type.isAbstract()",2,1,0,2,0
-"com.softwarepathfinder.model.Type.isInterface()",2,1,0,2,0
-"com.softwarepathfinder.persistence.jpa.PersistenceManager.getEntityManager()",2,1,0,2,0
-"com.softwarepathfinder.parsing.java.GenerateJava2JPA.main(String[] args)",35,1,23,1,1
-"com.softwarepathfinder.parsing.java.TypeParser.parsing()",19,1,12,1,0
-"com.softwarepathfinder.parsing.php.GenerateAstPhp.main(String[] args)",16,1,8,1,1
-"com.softwarepathfinder.parsing.php.GenerateAstPhp.makePhpParsing(Project project)",14,1,9,1,1
-"com.softwarepathfinder.parsing.java.InheritanceParser.run()",14,1,9,1,0
-"com.softwarepathfinder.model.Method.addInvocation(Method m, boolean isPolymorphic, boolean isSuper)",12,1,12,1,3
+"com.softwarepathfinder.parsing.java.AccessParser.setType(Type type)",2,1,0,2,1
+"com.softwarepathfinder.parsing.java.InvocationParser.setType(Type type)",2,1,0,2,1
+"com.softwarepathfinder.parsing.java.NamespaceParser.setFile(File file)",2,1,0,2,1
+"com.softwarepathfinder.parsing.java.NamespaceParser.setNamespaceSet(HashSet<String> namespaceSet)",2,1,0,2,1
+"com.softwarepathfinder.parsing.java.NamespaceParser.setProject(Project project)",2,1,0,2,1
+"com.softwarepathfinder.parsing.php.AccessParser.setType(Type type)",2,1,0,2,1
+"com.softwarepathfinder.visualization.yEd.TypeGraphML.TypeGraphML()",2,1,0,2,0
+"com.softwarepathfinder.parsing.java.JavaParseManager.makeJavaParsing(String projectName, String path)",25,1,17,1,2
+"com.softwarepathfinder.parsing.php.PhpParseManager.makePhpParsing(String projectPath)",17,1,11,1,1
+"com.softwarepathfinder.parsing.java.TypeParser.parsing()",16,1,9,1,0
+"com.softwarepathfinder.metrics.service.TypeMetricsService.getCommentedLinesPerMethod(Type type)",16,1,2,1,1
+"com.softwarepathfinder.utils.SystemUtils.getJavaFiles(String path)",13,1,4,1,1
+"com.softwarepathfinder.metrics.service.TypeMetricsService.getNumberOfClassMethods(Type type)",11,1,1,1,1
+"com.softwarepathfinder.metrics.service.TypeMetricsService.getNumberOfClassVariables(Type type)",11,1,1,1,1
+"com.softwarepathfinder.metrics.service.TypeMetricsService.getNumberOfInstanceMethods(Type type)",11,1,1,1,1
+"com.softwarepathfinder.metrics.service.TypeMetricsService.getNumberOfInstanceVariables(Type type)",11,1,1,1,1
+"com.softwarepathfinder.metrics.service.TypeMetricsService.getNumberOfPublicAttributes(Type type)",11,1,1,1,1
 "com.softwarepathfinder.utils.Conf.loadProperties()",10,1,3,1,0
-"com.softwarepathfinder.model.Method.getInvocations()",9,1,8,1,0
-"com.softwarepathfinder.parsing.php.GenerateAstPhp.makeType(Project project, File file)",9,1,6,1,2
-"com.softwarepathfinder.parsing.java.TypeParser.run()",9,1,4,1,0
-"com.softwarepathfinder.parsing.java.GenerateJava2JPA.makeProject()",8,1,4,1,0
-"com.softwarepathfinder.parsing.php.GenerateAstPhp.createProject()",5,1,3,1,0
+"com.softwarepathfinder.parsing.java.JavaParseManager.makeProject(String projectName)",9,1,4,1,1
+"com.softwarepathfinder.parsing.java.TypeParser.run()",9,1,3,1,0
+"com.softwarepathfinder.parsing.php.PhpParseManager.makeNamespace(Project project, String projectPath, HashSet<String> namespaceSet, File file)",8,1,6,1,4
+"com.softwarepathfinder.parsing.php.PhpParseManager.makeType(Project project, String projectPath, File file)",8,1,5,1,3
+"com.softwarepathfinder.parsing.java.InheritanceParser.run()",8,1,3,1,0
+"com.softwarepathfinder.utils.SystemUtils.getPhpFiles(String path)",7,1,4,1,1
+"com.softwarepathfinder.utils.SystemUtils.getFiles(String path, String platform)",7,1,2,1,2
+"com.softwarepathfinder.metrics.service.TypeMetricsService.getAttributeHidingFactor(Type type)",6,1,6,1,1
+"com.softwarepathfinder.metrics.service.TypeMetricsService.getMethodHidingFactor(Type type)",6,1,6,1,1
+"com.softwarepathfinder.service.MethodService.countTypeMethodsByModifier(String modifiers, Type type)",6,1,4,1,2
+"com.softwarepathfinder.service.MethodService.countTypeMethodsByModifierNotPresent(String modifiers, Type type)",6,1,4,1,2
+"com.softwarepathfinder.parsing.java.InheritanceParser.parsing()",6,1,4,1,0
+"com.softwarepathfinder.parsing.php.PhpParseManager.makeProject()",6,1,3,1,0
+"com.softwarepathfinder.utils.SystemUtils.getStringSourceCodeOf(File file)",6,1,2,1,1
+"com.softwarepathfinder.service.MethodService.countTypeMethods(Type type)",5,1,3,1,1
+"com.softwarepathfinder.service.MethodService.findMethodsByType(Type type)",5,1,3,1,1
+"com.softwarepathfinder.service.MethodService.sumCommentedLinesByTypeMethods(Type type)",5,1,3,1,1
 "com.softwarepathfinder.parsing.php.InheritanceVisitor.visit(ClassDeclaration node)",5,1,2,1,1
-"com.softwarepathfinder.parsing.php.GenerateAstPhp.makeNamespace(Project project, HashSet<String> namespaceSet, File file)",5,1,1,1,3
-"com.softwarepathfinder.parsing.php.NamespaceParser.NamespaceParser(String projectPath, File file, Project project, HashSet<String> namespaceSet)",5,1,0,1,4
-"com.softwarepathfinder.parsing.php.GenerateAstPhp.loadProjectInfo()",4,1,3,1,0
-"com.softwarepathfinder.parsing.php.NamespaceParser.createNamespace(String ns)",4,1,1,1,1
+"com.softwarepathfinder.metrics.service.TypeMetricsService.getWeightedClassSize(Type type)",4,1,4,1,1
+"com.softwarepathfinder.service.LocusService.findLociByPath(Path path)",4,1,3,1,1
+"com.softwarepathfinder.service.LocusService.findLociByType(Type type)",4,1,3,1,1
+"com.softwarepathfinder.visualization.blender.Blender.main(String[] args)",4,1,3,1,1
+"com.softwarepathfinder.parsing.php.NamespaceParser.createNamespace(String namespaceName)",4,1,1,1,1
+"com.softwarepathfinder.metrics.service.InheritanceMetricsService.getDepthInheritanceTree(Type type)",3,1,2,1,1
+"com.softwarepathfinder.metrics.service.TypeMetricsService.getWeightedMethodsPerClass(Type type)",3,1,2,1,1
 "com.softwarepathfinder.model.Method.toString()",3,1,2,1,0
-"com.softwarepathfinder.model.Method.addInvocation(Method m)",3,1,1,1,1
 "com.softwarepathfinder.parsing.php.TypeVisitor.visit(FunctionInvocation node)",3,1,1,1,1
 "com.softwarepathfinder.utils.Conf.setFile(String fileName)",3,1,1,1,1
-"com.softwarepathfinder.parsing.java.TypeParser.TypeParser(File file, Project project)",3,1,0,1,2
-"com.softwarepathfinder.parsing.php.AccessVisitor.AccessVisitor(Type type, Method method)",3,1,0,1,2
-"com.softwarepathfinder.model.Method.getType()",3,1,0,1,0
 "com.softwarepathfinder.utils.Log.debug(String message, int tabs)",2,1,2,1,2
 "com.softwarepathfinder.utils.Log.fine(String message, int tabs)",2,1,2,1,2
+"com.softwarepathfinder.metrics.service.InheritanceMetricsService.getNumberOfAncestors(Type type)",2,1,2,1,1
+"com.softwarepathfinder.metrics.service.InheritanceMetricsService.getNumberOfChildren(Type type)",2,1,2,1,1
 "com.softwarepathfinder.parsing.php.InheritanceVisitor.isNotNullAndNotSameTypeOf(Type superType)",2,1,2,1,1
 "com.softwarepathfinder.utils.Log.log(Level level, String message)",2,1,1,1,2
 "com.softwarepathfinder.model.Method.addParameter(String parameter)",2,1,1,1,1
 "com.softwarepathfinder.model.Method.addThrowsException(String throwsException)",2,1,1,1,1
+"com.softwarepathfinder.service.LocusService.save(Locus locus)",2,1,1,1,1
+"com.softwarepathfinder.service.MethodService.save(Method method)",2,1,1,1,1
 "com.softwarepathfinder.utils.Log.debug(String message)",2,1,1,1,1
 "com.softwarepathfinder.utils.Log.fine(String message)",2,1,1,1,1
 "com.softwarepathfinder.utils.Log.finest(String message)",2,1,1,1,1
 "com.softwarepathfinder.utils.Log.info(String message)",2,1,1,1,1
 "com.softwarepathfinder.utils.Log.warning(String message)",2,1,1,1,1
-"com.softwarepathfinder.visualization.prefuse.InverseWheelZoomControl.InverseWheelZoomControl()",2,1,1,1,0
-"com.softwarepathfinder.model.Locus.setId(long id)",2,1,0,1,1
-"com.softwarepathfinder.model.Locus.setLevel(int level)",2,1,0,1,1
-"com.softwarepathfinder.model.Locus.setPath(Path path)",2,1,0,1,1
-"com.softwarepathfinder.model.Locus.setType(Type type)",2,1,0,1,1
-"com.softwarepathfinder.model.Locus.setX(Double x)",2,1,0,1,1
-"com.softwarepathfinder.model.Locus.setY(Double y)",2,1,0,1,1
-"com.softwarepathfinder.model.Locus.setZ(Double z)",2,1,0,1,1
+"com.softwarepathfinder.model.Method.setCOM(long COM)",2,1,0,1,1
 "com.softwarepathfinder.model.Method.setId(long id)",2,1,0,1,1
 "com.softwarepathfinder.model.Method.setIsAbstract(boolean isAbstract)",2,1,0,1,1
 "com.softwarepathfinder.model.Method.setIsConstructor(boolean isConstructor)",2,1,0,1,1
+"com.softwarepathfinder.model.Method.setLOC(long LOC)",2,1,0,1,1
 "com.softwarepathfinder.model.Method.setModifiers(String modifiers)",2,1,0,1,1
+"com.softwarepathfinder.model.Method.setNOS(long NOS)",2,1,0,1,1
 "com.softwarepathfinder.model.Method.setName(String name)",2,1,0,1,1
+"com.softwarepathfinder.model.Method.setParameters(List<String> parameters)",2,1,0,1,1
 "com.softwarepathfinder.model.Method.setReturnType(String returnType)",2,1,0,1,1
 "com.softwarepathfinder.model.Method.setSource(String source)",2,1,0,1,1
 "com.softwarepathfinder.model.Method.setType(Type type)",2,1,0,1,1
-"com.softwarepathfinder.parsing.java.InheritanceParser.InheritanceParser(Type type)",2,1,0,1,1
-"com.softwarepathfinder.parsing.php.InheritanceVisitor.InheritanceVisitor(Type type)",2,1,0,1,1
-"com.softwarepathfinder.parsing.php.TypeVisitor.TypeVisitor(Type type)",2,1,0,1,1
-"com.softwarepathfinder.model.Locus.getId()",2,1,0,1,0
-"com.softwarepathfinder.model.Locus.getLevel()",2,1,0,1,0
-"com.softwarepathfinder.model.Locus.getPath()",2,1,0,1,0
-"com.softwarepathfinder.model.Locus.getType()",2,1,0,1,0
-"com.softwarepathfinder.model.Locus.getX()",2,1,0,1,0
-"com.softwarepathfinder.model.Locus.getY()",2,1,0,1,0
-"com.softwarepathfinder.model.Locus.getZ()",2,1,0,1,0
+"com.softwarepathfinder.parsing.java.InheritanceParser.setType(Type type)",2,1,0,1,1
+"com.softwarepathfinder.parsing.java.TypeParser.setFile(File file)",2,1,0,1,1
+"com.softwarepathfinder.parsing.java.TypeParser.setProject(Project project)",2,1,0,1,1
+"com.softwarepathfinder.parsing.php.AccessVisitor.setMethod(Method method)",2,1,0,1,1
+"com.softwarepathfinder.parsing.php.AccessVisitor.setType(Type type)",2,1,0,1,1
+"com.softwarepathfinder.parsing.php.InheritanceVisitor.setType(Type type)",2,1,0,1,1
+"com.softwarepathfinder.parsing.php.NamespaceParser.setFile(File file)",2,1,0,1,1
+"com.softwarepathfinder.parsing.php.NamespaceParser.setNamespaceSet(HashSet<String> namespaceSet)",2,1,0,1,1
+"com.softwarepathfinder.parsing.php.NamespaceParser.setProject(Project project)",2,1,0,1,1
+"com.softwarepathfinder.parsing.php.NamespaceParser.setProjectPath(String projectPath)",2,1,0,1,1
+"com.softwarepathfinder.parsing.php.TypeVisitor.setType(Type type)",2,1,0,1,1
+"com.softwarepathfinder.model.Method.getCOM()",2,1,0,1,0
 "com.softwarepathfinder.model.Method.getId()",2,1,0,1,0
+"com.softwarepathfinder.model.Method.getLOC()",2,1,0,1,0
 "com.softwarepathfinder.model.Method.getModifiers()",2,1,0,1,0
+"com.softwarepathfinder.model.Method.getNOS()",2,1,0,1,0
 "com.softwarepathfinder.model.Method.getName()",2,1,0,1,0
 "com.softwarepathfinder.model.Method.getParameters()",2,1,0,1,0
 "com.softwarepathfinder.model.Method.getReturnType()",2,1,0,1,0
 "com.softwarepathfinder.model.Method.getSource()",2,1,0,1,0
 "com.softwarepathfinder.model.Method.getThrowsException()",2,1,0,1,0
+"com.softwarepathfinder.model.Method.getType()",2,1,0,1,0
 "com.softwarepathfinder.model.Method.isAbstract()",2,1,0,1,0
 "com.softwarepathfinder.model.Method.isConstructor()",2,1,0,1,0
 "com.softwarepathfinder.utils.Conf.Conf()",0,1,0,1,0
-"com.softwarepathfinder.visualization.prefuse.Example.main(String[] argv)",116,1,29,0,1
-"com.softwarepathfinder.visualization.prefuse.SimpleGraph.SimpleGraph()",84,1,27,0,0
+"com.softwarepathfinder.parsing.java.GenerateJava2JPA.main(String[] args)",16,1,10,0,1
+"com.softwarepathfinder.parsing.php.GenerateAstPhp.main(String[] args)",16,1,9,0,1
 "com.softwarepathfinder.visualization.blender.Geometry.build(Type type)",14,1,5,0,1
-"com.softwarepathfinder.parsing.php.TypeParser.parsing(File phpFile, Project project)",11,1,11,0,2
-"com.softwarepathfinder.parsing.php.TypeParser.parseAndVisit(Type type, String source)",10,1,5,0,2
-"com.softwarepathfinder.model.Namespace.getTypes()",10,1,4,0,0
-"com.softwarepathfinder.utils.SystemUtils.getJavaFiles(String path)",9,1,3,0,1
-"com.softwarepathfinder.model.Invocation.getAbstractInvocations(Project project)",8,1,4,0,1
-"com.softwarepathfinder.model.Invocation.getInvocations(Method invoking)",8,1,4,0,1
-"com.softwarepathfinder.visualization.prefuse.SimpleGraph.main(String[] args)",7,1,5,0,1
-"com.softwarepathfinder.parsing.php.InheritanceParser.parsing()",6,1,6,0,0
-"com.softwarepathfinder.parsing.php.InvocationParser.parsing()",5,1,6,0,0
+"com.softwarepathfinder.parsing.php.TypeParser.parsing(File phpFile, Project project, Namespace namespace)",12,1,13,0,3
+"com.softwarepathfinder.service.InvocationService.addInvocation(Method invoking, Method invoked, boolean isPolymorphic, boolean isSuper)",11,1,12,0,4
+"com.softwarepathfinder.parsing.php.TypeParser.parseAndVisit(Type type, String source)",11,1,7,0,2
+"com.softwarepathfinder.parsing.php.InvocationParser.parsing()",10,1,9,0,0
+"com.softwarepathfinder.parsing.php.InheritanceParser.parsing()",9,1,8,0,0
+"com.softwarepathfinder.service.InvocationService.findByInvokingMethod(Method invoking)",8,1,7,0,1
+"com.softwarepathfinder.service.InheritanceService.addInheritance(Type type, Type superType, boolean isImplements)",6,1,4,0,3
+"com.softwarepathfinder.service.FieldService.countTypeFieldsByStatic(Boolean isStatic, Type type)",6,1,4,0,2
+"com.softwarepathfinder.service.FieldService.countTypeFieldsByVisibility(String visibility, Type type)",6,1,4,0,2
+"com.softwarepathfinder.service.PathService.hasTypeOnPath(Path path, Type type)",6,1,4,0,2
+"com.softwarepathfinder.parsing.java.JavaCompiler.compile(String source)",5,1,5,0,1
 "com.softwarepathfinder.parsing.java.NamespaceVisitor.visit(PackageDeclaration node)",5,1,4,0,1
+"com.softwarepathfinder.service.FieldService.findFieldsByType(Type type)",5,1,3,0,1
+"com.softwarepathfinder.service.InvocationService.findAbstractInvocationsByProject(Project project)",5,1,3,0,1
+"com.softwarepathfinder.service.NamespaceService.findNamespacesByProject(Project project)",5,1,3,0,1
+"com.softwarepathfinder.service.PathService.findPathIdsByProject(Project project)",5,1,3,0,1
+"com.softwarepathfinder.service.PathService.findPathsByProject(Project project)",5,1,3,0,1
 "com.softwarepathfinder.visualization.yEd.GraphML.GraphML(String graphfile)",4,1,3,0,1
 "com.softwarepathfinder.parsing.java.AccessVisitor.visit(SimpleName node)",4,1,2,0,1
-"com.softwarepathfinder.utils.SystemUtils.getPhpFiles(String path)",3,1,3,0,1
+"com.softwarepathfinder.injection.InjectionModule.configure(Binder binder)",3,1,2,0,1
+"com.softwarepathfinder.metrics.service.MethodMetricsService.getNumberOfAccessesOnAttributes(Method method)",3,1,2,0,1
+"com.softwarepathfinder.metrics.service.MethodMetricsService.getNumberOfInvocations(Method method)",3,1,2,0,1
 "com.softwarepathfinder.model.Field.toString()",3,1,2,0,0
-"com.softwarepathfinder.utils.SystemUtils.getFiles(String path, String platform)",3,1,1,0,2
+"com.softwarepathfinder.parsing.php.GenerateAstPhp.loadProjectInfo()",3,1,2,0,0
 "com.softwarepathfinder.visualization.yEd.GraphML.replace(String tag, String pattern)",3,1,1,0,2
-"com.softwarepathfinder.utils.SystemUtils.getStringSourceCodeOf(File file)",3,1,1,0,1
-"com.softwarepathfinder.visualization.jgraph.PathfinderLayout.PathfinderLayout(mxGraph graph)",3,1,1,0,1
-"com.softwarepathfinder.parsing.java.AccessVisitor.AccessVisitor(Type type, Method method)",3,1,0,0,2
-"com.softwarepathfinder.parsing.php.InvocationParser.InvocationParser(Type type, Project project)",3,1,0,0,2
-"com.softwarepathfinder.model.Inheritance.setImplements(boolean isImplements)",3,1,0,0,1
-"com.softwarepathfinder.model.Access.getType()",3,1,0,0,0
-"com.softwarepathfinder.model.Field.getType()",3,1,0,0,0
-"com.softwarepathfinder.model.Inheritance.isImplements()",3,1,0,0,0
+"com.softwarepathfinder.model.Type.toString()",3,1,1,0,0
+"com.softwarepathfinder.injection.EntityManagerProvider.get()",3,1,0,0,0
 "com.softwarepathfinder.model.Namespace.toString()",3,1,0,0,0
 "com.softwarepathfinder.visualization.yEd.AccessGraphML.setTypeField(Access access)",2,1,4,0,1
 "com.softwarepathfinder.visualization.yEd.AccessGraphML.setTypeMethod(Access access)",2,1,4,0,1
 "com.softwarepathfinder.visualization.yEd.AccessGraphML.setFieldTarget(Access access)",2,1,3,0,1
 "com.softwarepathfinder.visualization.yEd.AccessGraphML.setMethodSource(Access access)",2,1,3,0,1
 "com.softwarepathfinder.visualization.blender.Geometry.getOrigin()",2,1,3,0,0
+"com.softwarepathfinder.metrics.service.MethodMetricsService.getNumberOfParameters(Method method)",2,1,2,0,1
 "com.softwarepathfinder.visualization.yEd.FieldGraphML.setX(double x)",2,1,2,0,1
 "com.softwarepathfinder.visualization.yEd.FieldGraphML.setY(double y)",2,1,2,0,1
 "com.softwarepathfinder.visualization.yEd.MethodGraphML.setX(double x)",2,1,2,0,1
 "com.softwarepathfinder.visualization.yEd.MethodGraphML.setY(double y)",2,1,2,0,1
 "com.softwarepathfinder.visualization.yEd.NamespaceGraphML.setName(Namespace namespace)",2,1,2,0,1
 "com.softwarepathfinder.model.Access.toString()",2,1,2,0,0
+"com.softwarepathfinder.service.InvocationService.addInvocation(Method invoking, Method invoked)",2,1,1,0,2
+"com.softwarepathfinder.service.FieldService.save(Field field)",2,1,1,0,1
+"com.softwarepathfinder.service.InheritanceService.save(Inheritance inheritance)",2,1,1,0,1
+"com.softwarepathfinder.service.InvocationService.save(Invocation invocation)",2,1,1,0,1
+"com.softwarepathfinder.service.NamespaceService.save(Namespace namespace)",2,1,1,0,1
+"com.softwarepathfinder.service.PathService.getPathById(long id)",2,1,1,0,1
+"com.softwarepathfinder.service.PathService.save(Path path)",2,1,1,0,1
+"com.softwarepathfinder.service.ProjectService.getProjectById(long projectId)",2,1,1,0,1
+"com.softwarepathfinder.service.ProjectService.save(Project project)",2,1,1,0,1
 "com.softwarepathfinder.visualization.yEd.AccessGraphML.setTag(String tag)",2,1,1,0,1
 "com.softwarepathfinder.visualization.yEd.FieldGraphML.setName(String name)",2,1,1,0,1
 "com.softwarepathfinder.visualization.yEd.FieldGraphML.setTag(String tag)",2,1,1,0,1
@@ -347,17 +353,20 @@
 "com.softwarepathfinder.visualization.yEd.ModelGraphML.addGrounds(String grounds)",2,1,1,0,1
 "com.softwarepathfinder.visualization.yEd.ModelGraphML.addInvocations(String invocations)",2,1,1,0,1
 "com.softwarepathfinder.visualization.yEd.NamespaceGraphML.addTypes(String type)",2,1,1,0,1
+"com.softwarepathfinder.injection.InjectionManager.createInjector()",2,1,1,0,0
 "com.softwarepathfinder.model.Access.setField(Field field)",2,1,0,0,1
 "com.softwarepathfinder.model.Access.setId(long id)",2,1,0,0,1
 "com.softwarepathfinder.model.Access.setMethod(Method method)",2,1,0,0,1
 "com.softwarepathfinder.model.Access.setType(Type type)",2,1,0,0,1
 "com.softwarepathfinder.model.Field.setFieldType(String fieldType)",2,1,0,0,1
 "com.softwarepathfinder.model.Field.setId(long id)",2,1,0,0,1
+"com.softwarepathfinder.model.Field.setIsStatic(Boolean isStatic)",2,1,0,0,1
 "com.softwarepathfinder.model.Field.setName(String name)",2,1,0,0,1
 "com.softwarepathfinder.model.Field.setType(Type type)",2,1,0,0,1
 "com.softwarepathfinder.model.Field.setVisibility(String visibility)",2,1,0,0,1
 "com.softwarepathfinder.model.Inheritance.setChild(Type child)",2,1,0,0,1
 "com.softwarepathfinder.model.Inheritance.setId(long id)",2,1,0,0,1
+"com.softwarepathfinder.model.Inheritance.setImplements(boolean isImplements)",2,1,0,0,1
 "com.softwarepathfinder.model.Inheritance.setParent(Type parent)",2,1,0,0,1
 "com.softwarepathfinder.model.Invocation.setId(long id)",2,1,0,0,1
 "com.softwarepathfinder.model.Invocation.setInternal(boolean isInternal)",2,1,0,0,1
@@ -365,11 +374,37 @@
 "com.softwarepathfinder.model.Invocation.setInvoking(Method method)",2,1,0,0,1
 "com.softwarepathfinder.model.Invocation.setPolymorphic(boolean isPolymorphic)",2,1,0,0,1
 "com.softwarepathfinder.model.Invocation.setSuper(boolean isSuper)",2,1,0,0,1
+"com.softwarepathfinder.model.Locus.setId(long id)",2,1,0,0,1
+"com.softwarepathfinder.model.Locus.setLevel(int level)",2,1,0,0,1
+"com.softwarepathfinder.model.Locus.setPath(Path path)",2,1,0,0,1
+"com.softwarepathfinder.model.Locus.setType(Type type)",2,1,0,0,1
+"com.softwarepathfinder.model.Locus.setX(Double x)",2,1,0,0,1
+"com.softwarepathfinder.model.Locus.setY(Double y)",2,1,0,0,1
+"com.softwarepathfinder.model.Locus.setZ(Double z)",2,1,0,0,1
 "com.softwarepathfinder.model.Namespace.setId(long id)",2,1,0,0,1
 "com.softwarepathfinder.model.Namespace.setName(String name)",2,1,0,0,1
 "com.softwarepathfinder.model.Namespace.setProject(Project project)",2,1,0,0,1
-"com.softwarepathfinder.parsing.java.NamespaceVisitor.NamespaceVisitor(Namespace p)",2,1,0,0,1
-"com.softwarepathfinder.parsing.php.InheritanceParser.InheritanceParser(Type type)",2,1,0,0,1
+"com.softwarepathfinder.model.Path.setId(long id)",2,1,0,0,1
+"com.softwarepathfinder.model.Path.setProject(Project project)",2,1,0,0,1
+"com.softwarepathfinder.model.Path.setTop(Type top)",2,1,0,0,1
+"com.softwarepathfinder.model.Project.setId(long id)",2,1,0,0,1
+"com.softwarepathfinder.model.Project.setName(String name)",2,1,0,0,1
+"com.softwarepathfinder.model.Type.setAbstract(boolean isAbstract)",2,1,0,0,1
+"com.softwarepathfinder.model.Type.setHasMain(boolean hasMain)",2,1,0,0,1
+"com.softwarepathfinder.model.Type.setId(long id)",2,1,0,0,1
+"com.softwarepathfinder.model.Type.setInterface(boolean isInterface)",2,1,0,0,1
+"com.softwarepathfinder.model.Type.setLOC(int LOC)",2,1,0,0,1
+"com.softwarepathfinder.model.Type.setModifiers(String modifiers)",2,1,0,0,1
+"com.softwarepathfinder.model.Type.setName(String name)",2,1,0,0,1
+"com.softwarepathfinder.model.Type.setNamespace(Namespace namespace)",2,1,0,0,1
+"com.softwarepathfinder.model.Type.setProject(Project project)",2,1,0,0,1
+"com.softwarepathfinder.model.Type.setSource(String source)",2,1,0,0,1
+"com.softwarepathfinder.parsing.java.AccessVisitor.setMethod(Method method)",2,1,0,0,1
+"com.softwarepathfinder.parsing.java.AccessVisitor.setType(Type type)",2,1,0,0,1
+"com.softwarepathfinder.parsing.java.NamespaceVisitor.setNamespace(Namespace namespace)",2,1,0,0,1
+"com.softwarepathfinder.parsing.php.InheritanceParser.setType(Type type)",2,1,0,0,1
+"com.softwarepathfinder.parsing.php.InvocationParser.setProject(Project project)",2,1,0,0,1
+"com.softwarepathfinder.parsing.php.InvocationParser.setType(Type type)",2,1,0,0,1
 "com.softwarepathfinder.utils.exceptions.ConfException.ConfException(String message)",2,1,0,0,1
 "com.softwarepathfinder.visualization.blender.Geometry.setHeight(float height)",2,1,0,0,1
 "com.softwarepathfinder.visualization.blender.Geometry.setWidth(float width)",2,1,0,0,1
@@ -379,22 +414,49 @@
 "com.softwarepathfinder.model.Access.getField()",2,1,0,0,0
 "com.softwarepathfinder.model.Access.getId()",2,1,0,0,0
 "com.softwarepathfinder.model.Access.getMethod()",2,1,0,0,0
+"com.softwarepathfinder.model.Access.getType()",2,1,0,0,0
 "com.softwarepathfinder.model.Field.getFieldType()",2,1,0,0,0
 "com.softwarepathfinder.model.Field.getId()",2,1,0,0,0
+"com.softwarepathfinder.model.Field.getIsStatic()",2,1,0,0,0
 "com.softwarepathfinder.model.Field.getName()",2,1,0,0,0
+"com.softwarepathfinder.model.Field.getType()",2,1,0,0,0
 "com.softwarepathfinder.model.Field.getVisibility()",2,1,0,0,0
 "com.softwarepathfinder.model.Inheritance.getChild()",2,1,0,0,0
 "com.softwarepathfinder.model.Inheritance.getId()",2,1,0,0,0
 "com.softwarepathfinder.model.Inheritance.getParent()",2,1,0,0,0
+"com.softwarepathfinder.model.Inheritance.isImplements()",2,1,0,0,0
 "com.softwarepathfinder.model.Invocation.getId()",2,1,0,0,0
 "com.softwarepathfinder.model.Invocation.getInvoked()",2,1,0,0,0
 "com.softwarepathfinder.model.Invocation.getInvoking()",2,1,0,0,0
 "com.softwarepathfinder.model.Invocation.isInternal()",2,1,0,0,0
 "com.softwarepathfinder.model.Invocation.isPolymorphic()",2,1,0,0,0
 "com.softwarepathfinder.model.Invocation.isSuper()",2,1,0,0,0
+"com.softwarepathfinder.model.Locus.getId()",2,1,0,0,0
+"com.softwarepathfinder.model.Locus.getLevel()",2,1,0,0,0
+"com.softwarepathfinder.model.Locus.getPath()",2,1,0,0,0
+"com.softwarepathfinder.model.Locus.getType()",2,1,0,0,0
+"com.softwarepathfinder.model.Locus.getX()",2,1,0,0,0
+"com.softwarepathfinder.model.Locus.getY()",2,1,0,0,0
+"com.softwarepathfinder.model.Locus.getZ()",2,1,0,0,0
 "com.softwarepathfinder.model.Namespace.getId()",2,1,0,0,0
 "com.softwarepathfinder.model.Namespace.getName()",2,1,0,0,0
 "com.softwarepathfinder.model.Namespace.getProject()",2,1,0,0,0
+"com.softwarepathfinder.model.Path.getId()",2,1,0,0,0
+"com.softwarepathfinder.model.Path.getProject()",2,1,0,0,0
+"com.softwarepathfinder.model.Path.getTop()",2,1,0,0,0
+"com.softwarepathfinder.model.Project.getId()",2,1,0,0,0
+"com.softwarepathfinder.model.Project.getName()",2,1,0,0,0
+"com.softwarepathfinder.model.Type.getId()",2,1,0,0,0
+"com.softwarepathfinder.model.Type.getImports()",2,1,0,0,0
+"com.softwarepathfinder.model.Type.getLOC()",2,1,0,0,0
+"com.softwarepathfinder.model.Type.getModifiers()",2,1,0,0,0
+"com.softwarepathfinder.model.Type.getName()",2,1,0,0,0
+"com.softwarepathfinder.model.Type.getNamespace()",2,1,0,0,0
+"com.softwarepathfinder.model.Type.getProject()",2,1,0,0,0
+"com.softwarepathfinder.model.Type.getSource()",2,1,0,0,0
+"com.softwarepathfinder.model.Type.hasMain()",2,1,0,0,0
+"com.softwarepathfinder.model.Type.isAbstract()",2,1,0,0,0
+"com.softwarepathfinder.model.Type.isInterface()",2,1,0,0,0
 "com.softwarepathfinder.visualization.blender.Geometry.getHeight()",2,1,0,0,0
 "com.softwarepathfinder.visualization.blender.Geometry.getWidth()",2,1,0,0,0
 "com.softwarepathfinder.visualization.blender.Geometry.getX()",2,1,0,0,0

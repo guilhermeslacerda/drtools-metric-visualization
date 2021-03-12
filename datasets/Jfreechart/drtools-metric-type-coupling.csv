@@ -85,7 +85,7 @@
 "org.jfree.data.gantt.TaskSeriesCollection",11,6,23,14
 "org.jfree.chart.title.LegendGraphic",24,12,8,18
 "org.jfree.data.DefaultKeyedValuesTest",9,2,0,4
-"org.jfree.chart.JFreeChartTest",31,15,0,17
+"org.jfree.chart.JFreeChartTest",31,15,0,18
 "org.jfree.data.time.TimeSeriesCollectionTest",17,4,0,6
 "org.jfree.data.category.DefaultIntervalCategoryDatasetTest",8,3,0,3
 "org.jfree.chart.util.ShapeUtils",13,0,29,5

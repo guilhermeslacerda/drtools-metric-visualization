@@ -1,0 +1,318 @@
+"method","loc","cyclo","calls","nbd","param"
+"me.umov.zeus.domain.event.RegisterEvents.notify(T event)",8,5,4,2,1
+"me.umov.zeus.domain.event.RegisterEvents.verify(T event)",5,3,2,2,1
+"me.umov.zeus.domain.creation.model.User.setEmail(String email)",5,3,2,1,1
+"me.umov.zeus.domain.creation.model.User.setName(String name)",5,3,2,1,1
+"me.umov.zeus.domain.creation.model.User.setPassword(String password)",5,3,2,1,1
+"me.umov.zeus.domain.creation.model.User.setLogin(String login)",4,3,2,1,1
+"me.umov.zeus.application.reprocess.Reprocessor.verify(ClientRequest clientRequest)",3,3,1,1,1
+"me.umov.zeus.domain.creation.complementary.cloner.ChainResponsibilityFactory.getCloner(Mold mold)",8,3,4,0,1
+"me.umov.zeus.domain.creation.model.Identity.setDomain(String domain)",5,3,2,0,1
+"me.umov.zeus.domain.creation.model.Contract.setPlanType(String planType)",5,3,1,0,1
+"me.umov.zeus.domain.creation.model.MoldState.isContext(Context context)",5,3,1,0,1
+"me.umov.zeus.domain.creation.model.SourceData.setType(String type)",4,3,1,0,1
+"me.umov.zeus.domain.creation.complementary.Cloner.clone(Mold mold)",14,2,14,2,1
+"me.umov.zeus.domain.creation.complementary.Cloner.getMessage(Mold mold)",4,2,3,2,1
+"me.umov.zeus.domain.creation.rules.InitialCreationRules.satisfyDomain(Environment environment)",8,2,5,1,1
+"me.umov.zeus.application.observers.NotifyComplementaryData.process(EnvironmentCreationHeld event)",7,2,6,1,1
+"me.umov.zeus.application.observers.WelcomeNotifier.verify(JaiminhoResponse jaiminhoResponse, EnvironmentCreationHeld event)",6,2,8,1,2
+"me.umov.zeus.application.observers.WelcomeNotifier.process(EnvironmentCreationHeld event)",6,2,4,1,1
+"me.umov.zeus.application.reprocess.Reprocessor.getClient(ClientRequest clientRequest)",5,2,4,1,1
+"me.umov.zeus.infrastructure.services.FTP.verify(ResponseEntity<String> result)",5,2,4,1,1
+"me.umov.zeus.domain.creation.model.User.setEncriptPassword(Encryptor encryptor)",5,2,2,1,1
+"me.umov.zeus.domain.creation.rules.InitialCreationRules.satisfyEmail(Environment environment)",4,2,3,1,1
+"me.umov.zeus.domain.creation.complementary.cloner.ChainResponsibilityClone.generateClone(Mold mold)",5,2,4,0,1
+"me.umov.zeus.domain.creation.model.Mold.cloneSuccessfullyExecuted()",5,2,2,0,0
+"me.umov.zeus.domain.creation.model.Environment.setContract(Contract contract)",5,2,1,0,1
+"me.umov.zeus.domain.creation.model.Environment.setIdentity(Identity identity)",5,2,1,0,1
+"me.umov.zeus.domain.creation.model.Environment.setSourceData(SourceData sourceData)",5,2,1,0,1
+"me.umov.zeus.domain.creation.model.Environment.setUser(User user)",5,2,1,0,1
+"me.umov.zeus.domain.creation.model.Environment.copyItens()",5,2,1,0,0
+"me.umov.zeus.domain.creation.model.Environment.copyItineraries()",5,2,1,0,0
+"me.umov.zeus.domain.creation.model.Environment.copyLocals()",5,2,1,0,0
+"me.umov.zeus.domain.creation.model.Environment.getEmail()",5,2,1,0,0
+"me.umov.zeus.domain.creation.model.Environment.getEnvironmentOrigin()",5,2,1,0,0
+"me.umov.zeus.domain.creation.model.Environment.getLicense()",5,2,1,0,0
+"me.umov.zeus.domain.creation.model.Environment.getLogin()",5,2,1,0,0
+"me.umov.zeus.domain.creation.model.Environment.getPartner()",5,2,1,0,0
+"me.umov.zeus.domain.creation.model.Environment.getPassword()",5,2,1,0,0
+"me.umov.zeus.domain.creation.model.Environment.getPlanType()",5,2,1,0,0
+"me.umov.zeus.domain.creation.model.Environment.getType()",5,2,1,0,0
+"me.umov.zeus.domain.creation.model.Environment.getUserFirstName()",5,2,1,0,0
+"me.umov.zeus.application.startcreation.EnvironmentRequest.getCopyItens()",5,2,0,0,0
+"me.umov.zeus.application.startcreation.EnvironmentRequest.getCopyLocals()",5,2,0,0,0
+"me.umov.zeus.domain.creation.model.Contract.setPartner(Long partner)",4,2,1,0,1
+"me.umov.zeus.domain.creation.model.Mold.setId(Identity id)",4,2,1,0,1
+"me.umov.zeus.domain.creation.model.Mold.setSourceData(SourceData sourceData)",4,2,1,0,1
+"me.umov.zeus.domain.creation.model.Mold.setState(MoldState state)",4,2,1,0,1
+"me.umov.zeus.domain.creation.model.MoldState.changeContext(Context context)",4,2,1,0,1
+"me.umov.zeus.domain.creation.model.MoldState.changeStatus(MoldStatus status)",4,2,1,0,1
+"me.umov.zeus.domain.creation.model.Contract.setLicense(Long license)",4,2,0,0,1
+"me.umov.zeus.domain.creation.model.SourceData.setOrigin(Long origin)",4,2,0,0,1
+"me.umov.zeus.application.startcreation.EnvironmentRequest.getCopyItinerary()",4,2,0,0,0
+"me.umov.zeus.infrastructure.services.aws.MessageDTO.verify(Long id)",3,2,0,0,1
+"me.umov.zeus.infrastructure.configuration.RestConfiguration.getConnectTimeout()",2,2,0,0,0
+"me.umov.zeus.infrastructure.configuration.RestConfiguration.getReadTimeout()",2,2,0,0,0
+"me.umov.zeus.domain.event.RegisterEvents.setDomainListeners(List<Listener> domainListeners)",2,1,0,2,1
+"me.umov.zeus.application.startcreation.CreatorController.initialize(@RequestBody EnvironmentRequest workspaceRequest)",16,1,22,1,1
+"me.umov.zeus.infrastructure.database.dao.EnvironmentDAO.createEnvironment(Environment environment)",15,1,15,1,1
+"me.umov.zeus.domain.creation.initial.Start.initialize(Environment environment)",13,1,8,1,1
+"me.umov.zeus.application.complementary.Maker.build(MessageDTO message)",11,1,14,1,1
+"me.umov.zeus.application.reprocess.Reprocessor.reprocess(@RequestBody ClientRequest clientRequest)",11,1,14,1,1
+"me.umov.zeus.infrastructure.services.aws.ProducerQueueAWS.send(MessageDTO message)",10,1,5,1,1
+"me.umov.zeus.infrastructure.services.jaiminho.JaiminhoService.send(JaiminhoRequest messageJaiminho)",10,1,4,1,1
+"me.umov.zeus.domain.creation.model.User.toString()",9,1,15,1,0
+"me.umov.zeus.infrastructure.services.FTP.getURL(Environment environment)",7,1,7,1,1
+"me.umov.zeus.domain.creation.model.User.User(String login, String password, String name, String email, Encryptor encryptor)",7,1,5,1,5
+"me.umov.zeus.application.observers.WelcomeNotifier.buildBody(Partner partner, EnvironmentCreationHeld event)",6,1,7,1,2
+"me.umov.zeus.application.reprocess.Reprocessor.createMold(ClientRequest clientRequest, ScheduleCreationEnvironment scheduleCreationEnvironment)",6,1,7,1,2
+"me.umov.zeus.application.observers.NotifyComplementaryData.build(EnvironmentCreationHeld event)",6,1,6,1,1
+"me.umov.zeus.infrastructure.database.dao.EnvironmentDAO.create(Environment environment)",6,1,6,1,1
+"me.umov.zeus.infrastructure.services.jaiminho.JaiminhoService.buildContent(JaiminhoRequest message)",6,1,6,1,1
+"me.umov.zeus.infrastructure.database.dao.EnvironmentDAO.getNewClientId(String environmentId)",6,1,2,1,1
+"me.umov.zeus.infrastructure.database.dao.EnvironmentDAO.update(Mold mold)",5,1,12,1,1
+"me.umov.zeus.infrastructure.services.FTP.create(Environment environment)",5,1,3,1,1
+"me.umov.zeus.infrastructure.database.dao.EnvironmentDAO.createComplementary(Mold mold)",4,1,5,1,1
+"me.umov.zeus.application.observers.WelcomeNotifier.buildSubject(Partner partner, EnvironmentCreationHeld event)",4,1,3,1,2
+"me.umov.zeus.domain.creation.rules.InitialCreationRules.verify(Environment environment)",4,1,2,1,1
+"me.umov.zeus.application.observers.WelcomeNotifier.getMessage(EnvironmentCreationHeld event)",3,1,6,1,1
+"me.umov.zeus.application.observers.NotifyComplementaryData.buldMessage(EnvironmentCreationHeld event)",3,1,3,1,1
+"me.umov.zeus.infrastructure.database.dao.EnvironmentDAO.domainIsReserved(Environment environment)",3,1,2,1,1
+"me.umov.zeus.infrastructure.database.dao.EnvironmentDAO.exist(Environment environment)",3,1,2,1,1
+"me.umov.zeus.infrastructure.database.dao.EnvironmentDAO.mustRunAlbieri(Mold mold)",3,1,2,1,1
+"me.umov.zeus.application.observers.NotifyComplementaryData.shouldProcess(Class clazz)",3,1,1,1,1
+"me.umov.zeus.application.observers.WelcomeNotifier.shouldProcess(Class clazz)",3,1,1,1,1
+"me.umov.zeus.infrastructure.services.aws.ProducerQueueAWS.createSendMessageRequest()",2,1,1,1,0
+"me.umov.zeus.domain.creation.model.User.getEmail()",2,1,0,1,0
+"me.umov.zeus.domain.creation.model.User.getEncriptPassword()",2,1,0,1,0
+"me.umov.zeus.domain.creation.model.User.getLogin()",2,1,0,1,0
+"me.umov.zeus.domain.creation.model.User.getName()",2,1,0,1,0
+"me.umov.zeus.domain.creation.model.User.getPassword()",2,1,0,1,0
+"me.umov.zeus.infrastructure.database.dao.ClientDao.createEnvironment(String domain, String login, String firstName, Long clientIdOrigin, Long licenses, String password, String planType, Long partner, String email, Boolean copyItens, Boolean copyLocals, Boolean copyItinerary, String passwordEncripted)",13,1,0,0,13
+"me.umov.zeus.anticorruption.EnvironmentConverterImpl.convert(EnvironmentRequest workspaceRequest)",12,1,14,0,1
+"me.umov.zeus.domain.creation.model.Environment.toString()",10,1,22,0,0
+"me.umov.zeus.anticorruption.ComplementaryDataConverter.convert(MessageDTO message)",10,1,16,0,1
+"me.umov.zeus.infrastructure.database.dao.ClientDao.environmentUsesAlbieri(Long clientId)",8,1,0,0,1
+"me.umov.zeus.domain.creation.model.Contract.toString()",7,1,12,0,0
+"me.umov.zeus.domain.creation.model.Setting.toString()",7,1,9,0,0
+"me.umov.zeus.infrastructure.configuration.AmazonSQSConfiguration.createAmazonSQS()",7,1,5,0,0
+"me.umov.zeus.domain.creation.model.Environment.Environment(Identity identity, User user, Contract contract, SourceData sourceData, Setting setting)",7,1,4,0,5
+"me.umov.zeus.domain.creation.model.Mold.Mold(Identity id, SourceData sourceData, Long licensesQuantity, MoldState state)",7,1,4,0,4
+"me.umov.zeus.infrastructure.configuration.AmazonSQSConfiguration.jmsListenerContainerFactory()",7,1,3,0,0
+"me.umov.zeus.domain.creation.model.SourceData.toString()",6,1,7,0,0
+"me.umov.zeus.infrastructure.configuration.RestConfiguration.restTemplate()",6,1,7,0,0
+"me.umov.zeus.domain.creation.rules.DomainIsNotAlphanumeric.isSatisfiedBy(Environment candidate)",6,1,4,0,1
+"me.umov.zeus.domain.creation.rules.ValidEmailAddress.isSatisfiedBy(Environment candidate)",5,1,4,0,1
+"me.umov.zeus.domain.creation.model.Contract.Contract(Long partner, Long license, String planType)",5,1,3,0,3
+"me.umov.zeus.domain.creation.initial.Creator.initialize(Environment environment)",5,1,3,0,1
+"me.umov.zeus.domain.creation.model.Setting.Setting(boolean copyItinerary, boolean copyItem, boolean copyLocal)",5,1,0,0,3
+"me.umov.zeus.infrastructure.services.jaiminho.JaiminhoRequest.JaiminhoRequest(String to, String subject, String body)",5,1,0,0,3
+"me.umov.zeus.domain.creation.complementary.cloner.Albieri.execute(Mold mold)",4,1,3,0,1
+"me.umov.zeus.domain.creation.complementary.cloner.CreatorComplementary.execute(Mold mold)",4,1,3,0,1
+"me.umov.zeus.infrastructure.services.PasswordEncriptorService.encript(String password)",4,1,3,0,1
+"me.umov.zeus.domain.creation.model.SourceData.SourceData(Long origin, String type)",4,1,2,0,2
+"me.umov.zeus.application.complementary.ComplementaryConsumer.executeAnalyzeSMSService(@Payload Message<String> message)",4,1,2,0,1
+"me.umov.zeus.domain.creation.model.Identity.Identity(String domain, Long environmentId)",4,1,1,0,2
+"me.umov.zeus.infrastructure.services.aws.MessageDTO.MessageDTO(Long id)",4,1,1,0,1
+"me.umov.zeus.application.reprocess.ClientResponse.ClientResponse(String message, int statusCode)",4,1,0,0,2
+"me.umov.zeus.infrastructure.services.PasswordEncriptorService.PasswordEncriptorService(SystemParametersDAO systemParametersDAO, Long clientId)",4,1,0,0,2
+"me.umov.zeus.infrastructure.services.jaiminho.JaiminhoResponse.JaiminhoResponse(HttpStatus statusCode, String message)",4,1,0,0,2
+"me.umov.zeus.domain.creation.complementary.cloner.ChainResponsibilityClone.update(Mold mold)",3,1,3,0,1
+"me.umov.zeus.domain.creation.model.MoldState.MoldState(MoldStatus pedding, Context context)",3,1,2,0,2
+"me.umov.zeus.domain.creation.model.Mold.cloneExecutedWithError(String message)",3,1,2,0,1
+"me.umov.zeus.infrastructure.services.jaiminho.JaiminhoResponse.JaiminhoResponse(ResponseEntity<String> responseEntity)",3,1,2,0,1
+"me.umov.zeus.domain.creation.model.Identity.hasNoTestDamain()",3,1,2,0,0
+"me.umov.zeus.domain.creation.model.CreationResult.CreationResult(HttpStatus statusCode, String message)",3,1,1,0,2
+"me.umov.zeus.domain.creation.model.Environment.newEnvironment(Long environmentId)",3,1,1,0,1
+"me.umov.zeus.domain.creation.rules.DomainExist.isSatisfiedBy(Environment environment)",3,1,1,0,1
+"me.umov.zeus.domain.creation.rules.DomainReserved.isSatisfiedBy(Environment environment)",3,1,1,0,1
+"me.umov.zeus.application.version.VersionController.index()",3,1,1,0,0
+"me.umov.zeus.infrastructure.configuration.AmazonSQSConfiguration.createSQSConnectionFactory()",3,1,1,0,0
+"me.umov.zeus.infrastructure.configuration.AmazonSQSConfiguration.init()",3,1,1,0,0
+"me.umov.zeus.application.startcreation.EnvironmentResponse.EnvironmentResponse(int httpStatus, String message)",3,1,0,0,2
+"me.umov.zeus.domain.creation.initial.EnvironmentCreationHeld.EnvironmentCreationHeld(Environment environment, CreationResult creationResult)",3,1,0,0,2
+"me.umov.zeus.domain.specification.AndSpecification.AndSpecification(ISpecification<T> left, ISpecification<T> right)",3,1,0,0,2
+"me.umov.zeus.domain.specification.OrSpecification.OrSpecification(ISpecification<T> left, ISpecification<T> right)",3,1,0,0,2
+"me.umov.zeus.domain.creation.complementary.cloner.Albieri.getContext()",3,1,0,0,0
+"me.umov.zeus.domain.creation.complementary.cloner.CreatorComplementary.getContext()",3,1,0,0,0
+"me.umov.zeus.infrastructure.configuration.AmazonSQSConfiguration.defaultJmsTemplate()",3,1,0,0,0
+"me.umov.zeus.domain.creation.model.Environment.getUserFTP()",2,1,4,0,0
+"me.umov.zeus.application.startcreation.EnvironmentResponse.success(CreationResult initialize)",2,1,2,0,1
+"me.umov.zeus.domain.specification.AndSpecification.isSatisfiedBy(T candidate)",2,1,2,0,1
+"me.umov.zeus.domain.specification.OrSpecification.isSatisfiedBy(T candidate)",2,1,2,0,1
+"me.umov.zeus.application.startcreation.EnvironmentResponse.isSuccess()",2,1,2,0,0
+"me.umov.zeus.domain.creation.model.CreationResult.itIsSuccessful()",2,1,2,0,0
+"me.umov.zeus.domain.creation.model.Mold.errorOccurred()",2,1,2,0,0
+"me.umov.zeus.domain.creation.model.Mold.itIsSuccessful()",2,1,2,0,0
+"me.umov.zeus.infrastructure.database.entity.Client.successfullyProcessed()",2,1,2,0,0
+"me.umov.zeus.UmovmeZeusApplication.main(String[] args)",2,1,1,0,1
+"me.umov.zeus.application.complementary.ComplementaryConsumer.buildMessage(Message<String> message)",2,1,1,0,1
+"me.umov.zeus.application.complementary.MessageDTO.decode(String message)",2,1,1,0,1
+"me.umov.zeus.application.startcreation.EnvironmentResponse.error(String message)",2,1,1,0,1
+"me.umov.zeus.domain.creation.model.Mold.changeContext(Context context)",2,1,1,0,1
+"me.umov.zeus.domain.creation.model.Mold.isContext(Context context)",2,1,1,0,1
+"me.umov.zeus.application.complementary.MessageDTO.id()",2,1,1,0,0
+"me.umov.zeus.domain.creation.complementary.CloneAccomplished.itIsSuccessful()",2,1,1,0,0
+"me.umov.zeus.domain.creation.initial.EnvironmentCreationHeld.getDomain()",2,1,1,0,0
+"me.umov.zeus.domain.creation.initial.EnvironmentCreationHeld.getEmail()",2,1,1,0,0
+"me.umov.zeus.domain.creation.initial.EnvironmentCreationHeld.getFirstName()",2,1,1,0,0
+"me.umov.zeus.domain.creation.initial.EnvironmentCreationHeld.getId()",2,1,1,0,0
+"me.umov.zeus.domain.creation.initial.EnvironmentCreationHeld.getLogin()",2,1,1,0,0
+"me.umov.zeus.domain.creation.initial.EnvironmentCreationHeld.getMessage()",2,1,1,0,0
+"me.umov.zeus.domain.creation.initial.EnvironmentCreationHeld.getPartner()",2,1,1,0,0
+"me.umov.zeus.domain.creation.initial.EnvironmentCreationHeld.itIsSuccessful()",2,1,1,0,0
+"me.umov.zeus.domain.creation.model.Environment.getDomain()",2,1,1,0,0
+"me.umov.zeus.domain.creation.model.Environment.getId()",2,1,1,0,0
+"me.umov.zeus.domain.creation.model.Environment.getPasswordEmcripted()",2,1,1,0,0
+"me.umov.zeus.domain.creation.model.Mold.domain()",2,1,1,0,0
+"me.umov.zeus.domain.creation.model.Mold.getContext()",2,1,1,0,0
+"me.umov.zeus.domain.creation.model.Mold.getOrigin()",2,1,1,0,0
+"me.umov.zeus.domain.creation.model.Mold.getStatus()",2,1,1,0,0
+"me.umov.zeus.domain.creation.model.Mold.getStatusLog()",2,1,1,0,0
+"me.umov.zeus.domain.creation.model.Mold.id()",2,1,1,0,0
+"me.umov.zeus.domain.creation.model.Mold.setMustClone()",2,1,1,0,0
+"me.umov.zeus.domain.creation.model.Mold.startProcess()",2,1,1,0,0
+"me.umov.zeus.infrastructure.services.aws.MessageDTO.getMessageSqs()",2,1,1,0,0
+"me.umov.zeus.infrastructure.database.dao.ScheduleCreationEnvironmentDAO.updateStatusAndLog(Long id, Character key, String statusLog, String context)",2,1,0,0,4
+"me.umov.zeus.infrastructure.database.dao.ClientDao.updateStatusAndLog(Long id, Character key, String statusLog)",2,1,0,0,3
+"me.umov.zeus.infrastructure.database.dao.ClientDao.saveExtraData(String email, Long clientId)",2,1,0,0,2
+"me.umov.zeus.application.complementary.MessageDTO.MessageDTO(String payload)",2,1,0,0,1
+"me.umov.zeus.application.reprocess.ClientResponse.error(String message)",2,1,0,0,1
+"me.umov.zeus.application.reprocess.ClientResponse.success(String message)",2,1,0,0,1
+"me.umov.zeus.application.startcreation.EnvironmentRequest.setCopyItens(Boolean copyItens)",2,1,0,0,1
+"me.umov.zeus.application.startcreation.EnvironmentRequest.setCopyItinerary(Boolean copyItinerary)",2,1,0,0,1
+"me.umov.zeus.application.startcreation.EnvironmentRequest.setCopyLocals(Boolean copyLocals)",2,1,0,0,1
+"me.umov.zeus.application.startcreation.EnvironmentRequest.setDomain(String domain)",2,1,0,0,1
+"me.umov.zeus.application.startcreation.EnvironmentRequest.setEmail(String email)",2,1,0,0,1
+"me.umov.zeus.application.startcreation.EnvironmentRequest.setEnvironmentType(String environmentType)",2,1,0,0,1
+"me.umov.zeus.application.startcreation.EnvironmentRequest.setFirstUserName(String firstUserName)",2,1,0,0,1
+"me.umov.zeus.application.startcreation.EnvironmentRequest.setLicenseNumber(Long licenseNumber)",2,1,0,0,1
+"me.umov.zeus.application.startcreation.EnvironmentRequest.setPartner(Long partner)",2,1,0,0,1
+"me.umov.zeus.application.startcreation.EnvironmentRequest.setPassword(String password)",2,1,0,0,1
+"me.umov.zeus.application.startcreation.EnvironmentRequest.setPlanType(String planType)",2,1,0,0,1
+"me.umov.zeus.application.startcreation.EnvironmentRequest.setSourceEnvironment(Long sourceEnvironment)",2,1,0,0,1
+"me.umov.zeus.application.startcreation.EnvironmentRequest.setUserName(String userName)",2,1,0,0,1
+"me.umov.zeus.domain.creation.complementary.CloneAccomplished.CloneAccomplished(Mold clone)",2,1,0,0,1
+"me.umov.zeus.domain.creation.complementary.cloner.ChainResponsibilityClone.setNext(ChainResponsibilityClone next)",2,1,0,0,1
+"me.umov.zeus.domain.creation.model.Environment.errorCreating(String message)",2,1,0,0,1
+"me.umov.zeus.domain.creation.model.Mold.changeRunAlbieri(boolean runAlbieri)",2,1,0,0,1
+"me.umov.zeus.domain.creation.model.MoldState.addLog(String message)",2,1,0,0,1
+"me.umov.zeus.domain.specification.CompositeSpecification.and(ISpecification<T> other)",2,1,0,0,1
+"me.umov.zeus.domain.specification.CompositeSpecification.or(ISpecification<T> other)",2,1,0,0,1
+"me.umov.zeus.infrastructure.configuration.AmazonSQSConfiguration.setConnectionFactory(SQSConnectionFactory connectionFactory)",2,1,0,0,1
+"me.umov.zeus.infrastructure.configuration.AmazonSQSConfiguration.setRegionName(String region)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.Client.setDomain(String domain)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.Client.setId(Long id)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.Client.setLicensesQuantity(Long licensesQuantity)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.Client.setOrigin(Long origin)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.Partner.setBobyWelcomeEmail(String bobyWelcomeEmail)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.Partner.setCcWelcomeEmail(String ccWelcomeEmail)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.Partner.setFromWelcomeEmail(String fromWelcomeEmail)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.Partner.setId(Long id)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.Partner.setSubjectWelcomeEmail(String subjectWelcomeEmail)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.ReservedEnvironment.setDomain(String domain)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.ReservedEnvironment.setId(Long id)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.ScheduleCreationEnvironment.setClientId(Long clientId)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.ScheduleCreationEnvironment.setContext(String context)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.ScheduleCreationEnvironment.setDateEndTimeProcess(LocalDateTime dateEndTimeProcess)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.ScheduleCreationEnvironment.setDateTimeStartProcess(LocalDateTime dateTimeStartProcess)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.ScheduleCreationEnvironment.setId(Long id)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.ScheduleCreationEnvironment.setLog(String log)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.ScheduleCreationEnvironment.setStatus(String status)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.SystemParameter.setClientId(Long clientId)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.SystemParameter.setEncriptionSalt(String encriptionSalt)",2,1,0,0,1
+"me.umov.zeus.infrastructure.database.entity.SystemParameter.setId(Long id)",2,1,0,0,1
+"me.umov.zeus.infrastructure.services.jaiminho.JaiminhoRequest.setBody(String body)",2,1,0,0,1
+"me.umov.zeus.infrastructure.services.jaiminho.JaiminhoRequest.setSubject(String subject)",2,1,0,0,1
+"me.umov.zeus.infrastructure.services.jaiminho.JaiminhoRequest.setTo(String to)",2,1,0,0,1
+"me.umov.zeus.application.complementary.MessageDTO.payload()",2,1,0,0,0
+"me.umov.zeus.application.reprocess.ClientRequest.getClientId()",2,1,0,0,0
+"me.umov.zeus.application.reprocess.ClientResponse.getMessage()",2,1,0,0,0
+"me.umov.zeus.application.reprocess.ClientResponse.getStatusCode()",2,1,0,0,0
+"me.umov.zeus.application.startcreation.EnvironmentRequest.getDomain()",2,1,0,0,0
+"me.umov.zeus.application.startcreation.EnvironmentRequest.getEmail()",2,1,0,0,0
+"me.umov.zeus.application.startcreation.EnvironmentRequest.getEnvironmentType()",2,1,0,0,0
+"me.umov.zeus.application.startcreation.EnvironmentRequest.getFirstUserName()",2,1,0,0,0
+"me.umov.zeus.application.startcreation.EnvironmentRequest.getLicenseNumber()",2,1,0,0,0
+"me.umov.zeus.application.startcreation.EnvironmentRequest.getPartner()",2,1,0,0,0
+"me.umov.zeus.application.startcreation.EnvironmentRequest.getPassword()",2,1,0,0,0
+"me.umov.zeus.application.startcreation.EnvironmentRequest.getPlanType()",2,1,0,0,0
+"me.umov.zeus.application.startcreation.EnvironmentRequest.getSourceEnvironment()",2,1,0,0,0
+"me.umov.zeus.application.startcreation.EnvironmentRequest.getUserName()",2,1,0,0,0
+"me.umov.zeus.application.startcreation.EnvironmentResponse.getMessage()",2,1,0,0,0
+"me.umov.zeus.application.startcreation.EnvironmentResponse.getStatusCode()",2,1,0,0,0
+"me.umov.zeus.application.version.VersionController.getVersion()",2,1,0,0,0
+"me.umov.zeus.domain.creation.complementary.cloner.ChainResponsibilityClone.getCloneRepository()",2,1,0,0,0
+"me.umov.zeus.domain.creation.complementary.cloner.ChainResponsibilityClone.hasNext()",2,1,0,0,0
+"me.umov.zeus.domain.creation.initial.EnvironmentCreationHeld.getEnvironment()",2,1,0,0,0
+"me.umov.zeus.domain.creation.initial.EnvironmentCreationHeld.getPassword()",2,1,0,0,0
+"me.umov.zeus.domain.creation.model.Contract.getLicense()",2,1,0,0,0
+"me.umov.zeus.domain.creation.model.Contract.getPartner()",2,1,0,0,0
+"me.umov.zeus.domain.creation.model.Contract.getPlanType()",2,1,0,0,0
+"me.umov.zeus.domain.creation.model.CreationResult.getMessage()",2,1,0,0,0
+"me.umov.zeus.domain.creation.model.CreationResult.getStatusCode()",2,1,0,0,0
+"me.umov.zeus.domain.creation.model.Environment.itWasSuccessful()",2,1,0,0,0
+"me.umov.zeus.domain.creation.model.Identity.getDomain()",2,1,0,0,0
+"me.umov.zeus.domain.creation.model.Identity.getId()",2,1,0,0,0
+"me.umov.zeus.domain.creation.model.Mold.getLicenses()",2,1,0,0,0
+"me.umov.zeus.domain.creation.model.Mold.mustClone()",2,1,0,0,0
+"me.umov.zeus.domain.creation.model.MoldState.getContext()",2,1,0,0,0
+"me.umov.zeus.domain.creation.model.MoldState.getSatus()",2,1,0,0,0
+"me.umov.zeus.domain.creation.model.MoldState.getStatusLog()",2,1,0,0,0
+"me.umov.zeus.domain.creation.model.Setting.copyItens()",2,1,0,0,0
+"me.umov.zeus.domain.creation.model.Setting.copyItineraries()",2,1,0,0,0
+"me.umov.zeus.domain.creation.model.Setting.copyLocals()",2,1,0,0,0
+"me.umov.zeus.domain.creation.model.SourceData.getOrigin()",2,1,0,0,0
+"me.umov.zeus.domain.creation.model.SourceData.getType()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.Client.getDomain()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.Client.getId()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.Client.getLicensesQuantity()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.Client.getOrigin()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.Partner.getBobyWelcomeEmail()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.Partner.getCcWelcomeEmail()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.Partner.getFromWelcomeEmail()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.Partner.getId()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.Partner.getSubjectWelcomeEmail()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.ReservedEnvironment.getDomain()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.ReservedEnvironment.getId()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.ScheduleCreationEnvironment.getClientId()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.ScheduleCreationEnvironment.getContext()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.ScheduleCreationEnvironment.getDateEndTimeProcess()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.ScheduleCreationEnvironment.getDateTimeStartProcess()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.ScheduleCreationEnvironment.getId()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.ScheduleCreationEnvironment.getLog()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.ScheduleCreationEnvironment.getStatus()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.SystemParameter.getClientId()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.SystemParameter.getEncriptionSalt()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.entity.SystemParameter.getId()",2,1,0,0,0
+"me.umov.zeus.infrastructure.services.aws.MessageDTO.getId()",2,1,0,0,0
+"me.umov.zeus.infrastructure.services.jaiminho.JaiminhoRequest.getBody()",2,1,0,0,0
+"me.umov.zeus.infrastructure.services.jaiminho.JaiminhoRequest.getSubject()",2,1,0,0,0
+"me.umov.zeus.infrastructure.services.jaiminho.JaiminhoRequest.getTo()",2,1,0,0,0
+"me.umov.zeus.infrastructure.services.jaiminho.JaiminhoResponse.getMessage()",2,1,0,0,0
+"me.umov.zeus.infrastructure.services.jaiminho.JaiminhoResponse.getStatusCode()",2,1,0,0,0
+"me.umov.zeus.infrastructure.database.dao.ClientDao.createComplementary(Long clientId, Long originId, Long licenses, String domain)",1,1,0,0,4
+"me.umov.zeus.application.complementary.CloneConverter.convert(MessageDTO message)",0,1,0,0,1
+"me.umov.zeus.application.startcreation.EnvironmentConverter.convert(EnvironmentRequest workspaceRequest)",0,1,0,0,1
+"me.umov.zeus.domain.creation.complementary.CloneRepository.createComplementary(Mold mold)",0,1,0,0,1
+"me.umov.zeus.domain.creation.complementary.CloneRepository.mustRunAlbieri(Mold mold)",0,1,0,0,1
+"me.umov.zeus.domain.creation.complementary.CloneRepository.update(Mold mold)",0,1,0,0,1
+"me.umov.zeus.domain.creation.complementary.cloner.ChainResponsibilityClone.execute(Mold mold)",0,1,0,0,1
+"me.umov.zeus.domain.creation.initial.FTPService.create(Environment environment)",0,1,0,0,1
+"me.umov.zeus.domain.creation.initial.InitialRepository.create(Environment environment)",0,1,0,0,1
+"me.umov.zeus.domain.creation.initial.Rules.verify(Environment environment)",0,1,0,0,1
+"me.umov.zeus.domain.creation.model.Encryptor.encript(String textToEncrypt)",0,1,0,0,1
+"me.umov.zeus.domain.creation.rules.DomainRepository.domainIsReserved(Environment candidate)",0,1,0,0,1
+"me.umov.zeus.domain.creation.rules.DomainRepository.exist(Environment environment)",0,1,0,0,1
+"me.umov.zeus.domain.event.Listener.process(T event)",0,1,0,0,1
+"me.umov.zeus.domain.event.Listener.shouldProcess(Class clazz)",0,1,0,0,1
+"me.umov.zeus.domain.specification.CompositeSpecification.isSatisfiedBy(T candidate)",0,1,0,0,1
+"me.umov.zeus.domain.specification.ISpecification.and(ISpecification<T> other)",0,1,0,0,1
+"me.umov.zeus.domain.specification.ISpecification.isSatisfiedBy(T candidate)",0,1,0,0,1
+"me.umov.zeus.domain.specification.ISpecification.or(ISpecification<T> other)",0,1,0,0,1
+"me.umov.zeus.infrastructure.database.dao.ClientDao.existsClientByDomainIgnoreCase(String domain)",0,1,0,0,1
+"me.umov.zeus.infrastructure.database.dao.ReservedEnvironmentDao.existsReservedEnvironmentByDomainIgnoreCase(String domain)",0,1,0,0,1
+"me.umov.zeus.infrastructure.database.dao.ScheduleCreationEnvironmentDAO.findByClientId(Long clientId)",0,1,0,0,1
+"me.umov.zeus.infrastructure.database.dao.SystemParametersDAO.findByClientId(Long ClientId)",0,1,0,0,1
+"me.umov.zeus.infrastructure.services.aws.ProducerNotification.send(MessageDTO message)",0,1,0,0,1
+"me.umov.zeus.domain.creation.complementary.cloner.ChainResponsibilityClone.getContext()",0,1,0,0,0

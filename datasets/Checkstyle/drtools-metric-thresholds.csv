@@ -13,6 +13,7 @@
 "FAN-OUT","Number of other types referenced by a type","Bad: > 15",0.0,15.0
 "NPM","Number of Public Methods","Good: <= 10; Regular: between 11 and 40; Bad: > 40",10.0,40.0
 "NOA","Number of Attributes/Fields","Good: <= 3; Regular: between 3 and 8; Bad: > 8",3.0,8.0
+"LCOM3","Lack of Cohesion in Methods","Good: = 0; Regular: between 0 and 1; Bad: > 1",0.0,1.0
 "MLOC","Method Lines of Code","Good: <= 10; Regular: between 10 and 30; Bad: > 30",10.0,30.0
 "CYCLO","Cyclomatic Complexity","Good: <= 2; Regular: between 2 and 4; Bad: > 4",2.0,4.0
 "CALLS","Number of Invocations","Bad: > 5",0.0,5.0

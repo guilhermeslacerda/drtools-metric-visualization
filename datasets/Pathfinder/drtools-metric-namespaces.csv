@@ -1,12 +1,13 @@
 "namespace","noc","nac"
-"com.softwarepathfinder.visualization.prefuse",12,0
-"com.softwarepathfinder.parsing.java",11,0
+"com.softwarepathfinder.parsing.java",13,0
+"com.softwarepathfinder.parsing.php",11,0
 "com.softwarepathfinder.model",10,0
-"com.softwarepathfinder.parsing.php",10,0
+"com.softwarepathfinder.service",10,0
 "com.softwarepathfinder.visualization.yEd",10,1
+"com.softwarepathfinder.metrics.service",5,0
 "com.softwarepathfinder.utils",4,0
+"com.softwarepathfinder.injection",3,0
 "com.softwarepathfinder.parsing",2,0
 "com.softwarepathfinder.visualization.blender",2,0
-"com.softwarepathfinder.visualization.jgraph",2,0
 "com.softwarepathfinder.persistence.jpa",1,0
 "com.softwarepathfinder.utils.exceptions",1,0

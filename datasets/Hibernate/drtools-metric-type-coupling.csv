@@ -140,7 +140,7 @@
 "org.hibernate.collection.internal.PersistentList",14,6,5,12
 "org.hibernate.collection.internal.PersistentBag",16,6,3,16
 "org.hibernate.hql.internal.ast.QueryTranslatorImpl",53,36,8,44
-"org.hibernate.loader.custom.sql.SQLQueryReturnProcessor",43,35,3,44
+"org.hibernate.loader.custom.sql.SQLQueryReturnProcessor",43,35,3,43
 "org.hibernate.tool.schema.internal.SchemaDropperImpl",50,39,14,48
 "org.hibernate.cfg.annotations.SimpleValueBinder",50,29,7,33
 "org.hibernate.cfg.annotations.MapBinder",50,32,2,37
@@ -669,7 +669,7 @@
 "org.hibernate.cache.spi.QueryKeyTest",19,14,0,16
 "org.hibernate.cfg.AttributeConverterDefinition",15,6,14,14
 "org.hibernate.loader.plan.exec.internal.EntityLoadQueryDetails",26,22,4,27
-"org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader",5,0,3,9
+"org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader",5,0,3,8
 "org.hibernate.boot.registry.internal.BootstrapServiceRegistryImpl",20,17,4,23
 "org.hibernate.envers.test.integration.modifiedflags.HasChangedForDefaultNotUsing",13,5,0,6
 "org.hibernate.test.collection.dereferenced.UnversionedCascadeDereferencedCollectionTest",13,5,0,7

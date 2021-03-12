@@ -27,9 +27,9 @@
 "edu.umd.cs.findbugs.ba.AnalysisContext","edu.umd.cs.findbugs.classfile.analysis.ClassInfo",1
 "edu.umd.cs.findbugs.ba.AnalysisContext","edu.umd.cs.findbugs.classfile.analysis.MethodInfo",1
 "edu.umd.cs.findbugs.ba.AnalysisContext","edu.umd.cs.findbugs.detect.UnreadFields",1
+"edu.umd.cs.findbugs.ba.XClass","edu.umd.cs.findbugs.classfile.ClassDescriptor",1
 "edu.umd.cs.findbugs.ba.XFactory","edu.umd.cs.findbugs.classfile.analysis.FieldInfo",1
 "edu.umd.cs.findbugs.ba.XFactory","edu.umd.cs.findbugs.classfile.analysis.MethodInfo",1
-"edu.umd.cs.findbugs.classfile.ClassDescriptor","edu.umd.cs.findbugs.ba.XClass",1
 "edu.umd.cs.findbugs.classfile.DescriptorFactory","edu.umd.cs.findbugs.classfile.analysis.MethodInfo",1
 "edu.umd.cs.findbugs.classfile.DescriptorFactory","edu.umd.cs.findbugs.util.ClassName",1
 "edu.umd.cs.findbugs.cloud.CloudPlugin","edu.umd.cs.findbugs.cloud.username.NameLookup",1

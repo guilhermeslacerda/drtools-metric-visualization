@@ -1,0 +1,36 @@
+digraph {
+
+node [
+style="filled",
+ fontcolor = black,
+ color = white, fontname = Poppins];
+graph [rankdir=TB],
+
+"org.sonar.core.util" [shape="ellipse" label="org.sonar.core.util" fillcolor="lightgrey"],
+"org.sonar.core.platform" [shape="ellipse" label="org.sonar.core.platform" fillcolor="lightgrey"],
+"org.sonar.core.issue.tracking" [shape="ellipse" label="org.sonar.core.issue.tracking" fillcolor="lightgrey"],
+"org.sonar.core.extension" [shape="ellipse" label="org.sonar.core.extension" fillcolor="lightgrey"],
+"org.sonar.core.config" [shape="ellipse" label="org.sonar.core.config" fillcolor="lightgrey"],
+"org.sonar.core.i18n" [shape="ellipse" label="org.sonar.core.i18n" fillcolor="lightgrey"],
+"org.sonar.core.issue" [shape="ellipse" label="org.sonar.core.issue" fillcolor="lightgrey"],
+"org.sonar.core.hash" [shape="ellipse" label="org.sonar.core.hash" fillcolor="lightgrey"],
+"org.sonar.core.util.logs" [shape="ellipse" label="org.sonar.core.util.logs" fillcolor="lightgrey"],
+"org.sonar.core.component" [shape="ellipse" label="org.sonar.core.component" fillcolor="lightgrey"],
+"org.sonar.core.metric" [shape="ellipse" label="org.sonar.core.metric" fillcolor="lightgrey"],
+"org.sonar.core.util.stream" [shape="ellipse" label="org.sonar.core.util.stream" fillcolor="lightgrey"],
+"org.sonar.core.user" [shape="ellipse" label="org.sonar.core.user" fillcolor="lightgrey"],
+"com.sonarsource.plugins.license.api" [shape="ellipse" label="com.sonarsource.plugins.license.api" fillcolor="lightgrey"],
+"org.sonar.plugins.base.api" [shape="ellipse" label="org.sonar.plugins.base.api" fillcolor="lightgrey"],
+"org.sonar.plugins.base" [shape="ellipse" label="org.sonar.plugins.base" fillcolor="lightgrey"],
+"org.sonar.plugins.dependent" [shape="ellipse" label="org.sonar.plugins.dependent" fillcolor="lightgrey"],
+"org.sonar.core.platform" -> "com.sonarsource.plugins.license.api",
+"org.sonar.core.platform" -> "org.sonar.core.util",
+"org.sonar.core.issue.tracking" -> "org.sonar.core.hash",
+"org.sonar.core.issue.tracking" -> "org.sonar.core.issue",
+"org.sonar.core.extension" -> "org.sonar.core.platform",
+"org.sonar.core.extension" -> "org.sonar.core.util.stream",
+"org.sonar.core.i18n" -> "org.sonar.core.platform",
+"org.sonar.core.issue" -> "org.sonar.core.issue.tracking",
+"org.sonar.core.issue" -> "org.sonar.core.util",
+"org.sonar.plugins.dependent" -> "org.sonar.plugins.base.api",
+}

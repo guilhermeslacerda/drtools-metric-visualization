@@ -1,0 +1,1413 @@
+"method","loc","cyclo","calls","nbd","param"
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.MessageRequestConverter.unmarshal(HierarchicalStreamReader stream, UnmarshallingContext context)",41,9,32,2,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementEntity.replace(Object object, String root, String text)",25,8,13,6,3
+"me.umov.jaiminho.application.sqs.service.DataStreamService.checkForErrors(Notification notification, GroupResponse errors)",19,7,13,3,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.FactoryAttributeMapper.get(Attribute attribute, Rule rule)",16,6,10,2,2
+"me.umov.jaiminho.domain.model.Request.method()",20,6,5,1,0
+"me.umov.jaiminho.domain.model.ResponseNotification.builsState(Integer code)",12,6,0,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementEntity.getValue(Object objectValue)",8,5,5,6,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementCustomField.replace(UsesCustomField usesCustomField, String root, String value)",13,5,9,3,3
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementCustomField.setValue(String root, String value, String alternativeIdentifier, List<CustomFieldValue> customFieldValues)",11,5,8,3,4
+"me.umov.jaiminho.domain.model.Configuration.mustNotify(Attempts attempts)",8,5,5,2,1
+"me.umov.jaiminho.domain.event.DomainEventRegistry.publish(T event)",8,5,4,2,1
+"me.umov.jaiminho.application.event.ApplicationEventRegistry.publish(T event)",7,5,3,2,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Recipients.splitEmails(List<Attribute> to)",16,4,7,3,1
+"me.umov.jaiminho.infrastructure.dao.LogDao.generateDataStreamLog(NotificationSent event)",12,4,12,3,1
+"me.umov.jaiminho.infrastructure.dao.LogDao.generateRuleLog(Log event)",11,4,5,3,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Recipients.buildListMail(List<Attribute> mailList)",8,4,5,3,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.CallbackParameterConverter.unmarshal(HierarchicalStreamReader stream, UnmarshallingContext context)",18,4,12,2,2
+"me.umov.jaiminho.domain.model.Configuration.mustTryAgain(Attempts attempts)",7,4,3,2,1
+"me.umov.jaiminho.domain.Sender.verify(DomainEventRegistry eventRegistry, NotificationRepository notificationRepository, Deliverable command)",3,4,0,2,3
+"me.umov.jaiminho.domain.JaiminhoBuilder.get(Notification notification)",16,4,1,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.buildMailToJaiminho(List<Attribute> mailList)",8,4,5,1,1
+"me.umov.jaiminho.infrastructure.dao.document.Recipients.addTo(String url)",8,4,2,1,1
+"me.umov.jaiminho.infrastructure.producer.aws.ProducerAWSBuilder.get(SendMessage message)",12,4,10,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Agent.getPhoneToSMS()",12,4,6,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ServiceLocal.getPhoneToSMS()",12,4,6,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.HistoryMapper.verify(List<HistoryItem> historyItens, Attribute attirbute, Rule rule)",7,4,12,0,3
+"me.umov.jaiminho.anticorruption.aws.DataStreamToNotificationConverter.verifyIntegrity(PlataformEvent event)",4,4,3,0,1
+"me.umov.jaiminho.application.sqs.service.DataStreamService.processByEventId(EventMessage eventMessage)",23,3,20,3,1
+"me.umov.jaiminho.application.sqs.service.DataStreamService.process(EventMessage eventMessage, GroupResponse groupResponse, List<PlataformEvent> events)",12,3,7,3,3
+"me.umov.jaiminho.application.sqs.service.DataStreamService.getEventsByMessage(EventMessage eventMessage)",5,3,5,3,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Recipients.getFirstTo()",4,3,3,3,0
+"me.umov.jaiminho.domain.model.Notification.notPerformed()",9,3,3,2,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.SolveAttributeService.deletesNullValuedAttribute(List<Attribute> attributes)",8,3,3,2,1
+"me.umov.jaiminho.domain.model.Notification.delayTimeOutInMinute()",8,3,2,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.getTo()",7,3,2,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.getCC()",6,3,2,2,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.SolveAttributeService.solve(Attribute attribute, Rule rule)",5,3,3,2,2
+"me.umov.jaiminho.domain.event.DomainEventRegistry.verify(T event)",5,3,2,2,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.GeneralSettingsConverter.setGeneralSettings(HierarchicalStreamReader stream, UnmarshallingContext context, GeneralSettings generalSettings)",10,3,8,1,3
+"me.umov.jaiminho.application.observer.NotificationExecutedSQS.process(DataStreamWasProcessed event)",9,3,13,1,1
+"me.umov.jaiminho.domain.model.Attempts.equals(Object obj)",9,3,6,1,1
+"me.umov.jaiminho.domain.model.Request.setMediaType(Notification notification)",9,3,6,1,1
+"me.umov.jaiminho.infrastructure.http.HttpService.buildBody(IRequest request, HttpHeaders headers)",8,3,4,1,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.HttpCredentials.HttpCredentials(ICredentials credentials)",6,3,4,1,1
+"me.umov.jaiminho.domain.model.Attempts.hasAttempts()",6,3,1,1,0
+"me.umov.jaiminho.application.observer.CleanNotificationDocument.process(NotificationSent event)",5,3,5,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementTask.replaceEntity(Task task, Attribute attribute)",5,3,4,1,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.HttpCredentials.buildHash(ICredentials iCredentials)",5,3,3,1,1
+"me.umov.jaiminho.infrastructure.dao.document.Recipients.getCC()",5,3,2,1,0
+"me.umov.jaiminho.infrastructure.dao.document.Recipients.getTo()",5,3,2,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.isHtmlBody()",5,3,1,1,0
+"me.umov.jaiminho.infrastructure.email.MailAdapter.validateAfterBlacklist(String[] to)",4,3,2,1,1
+"me.umov.jaiminho.application.controller.ReprocessController.verifyEntityDTO(EntityDTO entityDTO)",4,3,1,1,1
+"me.umov.jaiminho.infrastructure.http.HttpService.addBasicAuthHeader(HttpHeaders headers, ICredentials credentials, IRequest request)",3,3,3,1,3
+"me.umov.jaiminho.infrastructure.http.HttpService.addMFAHeaders(HttpHeaders headers, ICredentials credentials)",3,3,3,1,2
+"me.umov.jaiminho.domain.validators.MessageRequestValidator.verify(String to, String message)",3,3,1,1,2
+"me.umov.jaiminho.anticorruption.aws.AWSFactory.get(EventMessage eventMessage)",9,3,4,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.EntityMapper.findTaskBy(Rule rule)",8,3,8,0,1
+"me.umov.jaiminho.anticorruption.aws.DataStreamToNotificationConverter.buildHash(PlataformEvent event)",8,3,6,0,1
+"me.umov.jaiminho.infrastructure.dao.document.Content.getTo()",8,3,4,0,0
+"me.umov.jaiminho.domain.model.Identity.equals(Object object)",6,3,7,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.EntityMapper.getCustomFieldValue(Attribute attribute, Task task)",6,3,4,0,2
+"me.umov.jaiminho.infrastructure.producer.aws.SendMessage.getDelayTimeout()",5,3,2,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.getDateFirstProcessed()",5,3,1,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.AttributeConverter.writeisInternalValue(HierarchicalStreamReader stream, Attribute entity)",4,3,3,0,2
+"me.umov.jaiminho.domain.validators.rules.SubjectRuleValidation.validate(Message messageRequest)",4,3,2,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementEntity.replaceCustomField(String text, Object objectValue, String entity)",4,2,1,6,3
+"me.umov.jaiminho.application.sqs.service.DataStreamService.getEvents(EventMessage eventMessage, List<String> notInEvents)",5,2,4,3,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Recipients.addCc(Attribute cc)",5,2,2,3,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Recipients.addTo(Attribute to)",5,2,2,3,1
+"me.umov.jaiminho.application.sqs.service.DataStreamService.verify(EventMessage eventMessage)",3,2,0,3,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Recipients.initCc()",3,2,0,3,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Recipients.initTo()",3,2,0,3,0
+"me.umov.jaiminho.domain.Sender.send(Notification notification)",14,2,8,2,1
+"me.umov.jaiminho.application.observer.UpdateHistory.process(SendExecuted event)",11,2,8,2,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.SolveAttributeService.solveCondition(MessageRequest reportRequest, Rule rule)",8,2,4,2,2
+"me.umov.jaiminho.domain.model.Notification.errorSending(String message)",8,2,4,2,1
+"me.umov.jaiminho.domain.model.Notification.setResponse(ResponseNotification responseNotification)",6,2,2,2,1
+"me.umov.jaiminho.domain.model.Notification.buildMessage()",5,2,11,2,0
+"me.umov.jaiminho.domain.model.Notification.appSource()",5,2,3,2,0
+"me.umov.jaiminho.domain.model.Notification.referenceId()",5,2,3,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.app()",5,2,3,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.credentialsHash()",5,2,3,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.getEventId()",5,2,3,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.getReferenceId()",5,2,3,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.getType()",5,2,3,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.hasActionType()",5,2,3,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.hasEventId()",5,2,3,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.isInternal()",5,2,3,2,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.SolveAttributeService.solveRecipients(List<Attribute> Attributes, Rule rule)",5,2,2,2,2
+"me.umov.jaiminho.domain.model.Configuration.is(OperationType action)",5,2,2,2,1
+"me.umov.jaiminho.domain.model.Notification.getIdentifierByLog()",5,2,1,2,0
+"me.umov.jaiminho.domain.model.Notification.id()",5,2,1,2,0
+"me.umov.jaiminho.domain.model.Notification.isDataStream()",5,2,1,2,0
+"me.umov.jaiminho.domain.model.Notification.isExportStatusFlagExported()",5,2,1,2,0
+"me.umov.jaiminho.domain.model.Notification.notificationType()",5,2,1,2,0
+"me.umov.jaiminho.domain.model.Configuration.waitTimePutQueue()",5,2,0,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.credentialsIsBasic()",4,2,3,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.getAuth()",4,2,3,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.getMediaType()",4,2,3,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.isHtml()",4,2,3,2,0
+"me.umov.jaiminho.domain.model.Notification.getStateMessage()",4,2,1,2,0
+"me.umov.jaiminho.domain.model.Notification.hasReprocess()",4,2,1,2,0
+"me.umov.jaiminho.domain.model.Notification.isError()",4,2,1,2,0
+"me.umov.jaiminho.domain.model.Notification.isFatalError()",4,2,1,2,0
+"me.umov.jaiminho.domain.model.Notification.isSuccess()",4,2,1,2,0
+"me.umov.jaiminho.domain.model.Notification.changeBody(String uriBlacklist)",3,2,3,2,1
+"me.umov.jaiminho.domain.model.Notification.verify(Object object)",3,2,0,2,1
+"me.umov.jaiminho.infrastructure.dao.NotificationDAO.update(Notification notification)",12,2,16,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.HistoryItemMapper.processFieldReference(Attribute attirbute, Rule rule)",11,2,4,1,2
+"me.umov.jaiminho.anticorruption.aws.SQSMessageToNotificationConverter.buildConfiguration(MessageRequest messageRequest, History history)",10,2,9,1,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementHistoryLink.replace(MessageRequest message, Rule rule)",8,2,11,1,2
+"me.umov.jaiminho.application.observer.ReprocessNotificationSQS.sendIfReprocess(NotificationWasPerformed event)",8,2,8,1,1
+"me.umov.jaiminho.anticorruption.aws.SQSMessageToNotificationConverter.verify(ActionRule actionRule)",8,2,7,1,1
+"me.umov.jaiminho.domain.model.Attempts.exceededReprocessingHoursLimit(int hours)",8,2,7,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.IgnoreTaskTypeConverter.buildList(HierarchicalStreamReader reader)",8,2,5,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.buildListMail(List<Attribute> to)",8,2,4,1,1
+"me.umov.jaiminho.application.sqs.service.Worker.createNotificationError(Exception e, Notification notification)",8,2,3,1,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementTask.replace(MessageRequest buildReportRequest, Rule rule)",7,2,8,1,2
+"me.umov.jaiminho.application.observer.LogGenerator.process(Log event)",7,2,3,1,1
+"me.umov.jaiminho.domain.model.Request.convertBodyToAppFormUrlencoded()",7,2,3,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementGroup.replace(MessageRequest buildReportRequest, Rule rule)",6,2,7,1,2
+"me.umov.jaiminho.application.controller.ReprocessController.getActionRule(EntityDTO entityDTO)",6,2,5,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.IgnoreTaskTypeConverter.unmarshal(HierarchicalStreamReader reader, UnmarshallingContext context)",6,2,3,1,2
+"me.umov.jaiminho.domain.validators.rules.EmailFormatRuleValidation.isValidEmailFormat(String email)",6,2,3,1,1
+"me.umov.jaiminho.domain.validators.rules.EmailFormatRuleValidation.validateCcEmails(Message messageRequest)",6,2,2,1,1
+"me.umov.jaiminho.application.sqs.service.DataStreamServiceTest.getLisPlataformEvent(int max)",6,2,1,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.useShortenerLink()",6,2,1,1,0
+"me.umov.jaiminho.infrastructure.configuration.mongo.MongoConfig.addCredential(MongoProperties mongoProperties, Builder builder)",5,2,7,1,2
+"me.umov.jaiminho.infrastructure.sms.SMSAdapter.genereteNextId(SMS sms)",5,2,6,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.isCondition()",5,2,4,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementMessage.replaceAll(Attribute attribute, String regex, String replacement)",5,2,3,1,3
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.AttributeMapper.solve(Attribute attribute, Rule rule)",5,2,3,1,2
+"me.umov.jaiminho.anticorruption.aws.SQSMessageToNotificationConverter.findById(ActionRule actionRule)",5,2,3,1,1
+"me.umov.jaiminho.domain.model.Request.setBodyToAppFormUrlencoded()",5,2,3,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.getFirstTo()",5,2,2,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.shouldSendMail()",5,2,2,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementMessage.replaceAll(String string, String regex, String replacement)",5,2,1,1,3
+"me.umov.jaiminho.domain.validators.MessageRequestValidator.verifyTo(String[] to)",5,2,1,1,1
+"me.umov.jaiminho.domain.validators.BusinessValidator.validate(T entity)",4,2,2,1,1
+"me.umov.jaiminho.domain.model.Request.setBodyToJson()",4,2,2,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.MailOrSMSTranslatorMessage.replace(MessageRequest buildReportRequest, Rule rule)",4,2,1,1,2
+"me.umov.jaiminho.domain.validators.MessageRequestValidator.attributesIsValid(String[] to, String message)",4,2,1,1,2
+"me.umov.jaiminho.domain.validators.rules.EmailFormatRuleValidation.validateEmails(String[] toEmails)",4,2,1,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.getValueBody()",4,2,1,1,0
+"me.umov.jaiminho.domain.model.Request.verify(Object object)",4,2,0,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.HttpCredentials.getHeaders()",4,2,0,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.getRecipients()",4,2,0,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.getSubject()",4,2,0,1,0
+"me.umov.jaiminho.application.sqs.service.Worker.log(Notification notification)",3,2,7,1,1
+"me.umov.jaiminho.infrastructure.producer.aws.ProducerService.setDelay(SendMessage message)",3,2,3,1,1
+"me.umov.jaiminho.domain.validators.MessageRequestValidator.verifyCc(String[] cc)",3,2,1,1,1
+"me.umov.jaiminho.infrastructure.http.HttpService.verify(String url)",3,2,1,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementHistoryLink.buildLink(MessageRequest buildReportRequest, String link)",2,2,2,1,2
+"me.umov.jaiminho.infrastructure.dao.PlataformEventDao.getEventById(String id, List<String> notInEvents)",10,2,8,0,2
+"me.umov.jaiminho.infrastructure.dao.SMSImplDao.findByClientId(Long ClientId)",8,2,2,0,1
+"me.umov.jaiminho.infrastructure.http.authentication.MFAFactory.create(MultipleFactorAuthentication factor)",8,2,1,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.AttributeConverter.unmarshal(HierarchicalStreamReader stream, UnmarshallingContext context)",7,2,5,0,2
+"me.umov.jaiminho.infrastructure.http.authentication.FactorAuthenticationService.resolve(Notification notification)",7,2,5,0,1
+"me.umov.jaiminho.application.event.WorkerExecutedWithError.notificationType()",7,2,2,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.AgentMapper.getValueBy(Task task, Attribute attribute)",6,2,3,0,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.ServiceLocalMapper.getValueBy(Task task, Attribute attribute)",6,2,3,0,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.facade.TranslatorFactory.get(Action action)",6,2,2,0,1
+"me.umov.jaiminho.domain.event.trigger.SendExecuted.isReprocess()",6,2,2,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.History.havePendingPhotos()",6,2,2,0,0
+"me.umov.jaiminho.application.dto.EventMessage.getActionType()",5,2,3,0,0
+"me.umov.jaiminho.application.dto.EventMessage.getEventId()",5,2,3,0,0
+"me.umov.jaiminho.application.dto.EventMessage.hasActionType()",5,2,3,0,0
+"me.umov.jaiminho.application.dto.EventMessage.hasEventId()",5,2,3,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecuted.shouldUpdateHistory()",5,2,3,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Content.credentialsHash()",5,2,3,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Content.credentialsIsBasic()",5,2,3,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Rule.getHistoryId()",5,2,3,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Task.getEmailServiceLocal()",5,2,3,0,0
+"me.umov.jaiminho.domain.model.Message.bodyType()",5,2,2,0,0
+"me.umov.jaiminho.domain.model.Message.firstTo()",5,2,2,0,0
+"me.umov.jaiminho.domain.model.Message.getBodyType()",5,2,2,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Task.getEmailAgent()",5,2,2,0,0
+"me.umov.jaiminho.infrastructure.dao.document.MessageLog.add(List<EventState> states)",5,2,1,0,1
+"me.umov.jaiminho.infrastructure.email.MailSenderFactory.build(Message mailRequest)",5,2,1,0,1
+"me.umov.jaiminho.domain.model.Body.getTypeKey()",5,2,1,0,0
+"me.umov.jaiminho.domain.model.Body.setType(BodyType type)",5,2,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.History.getTotalPhotos()",5,2,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.History.getTotalPhotosReceived()",5,2,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.EntityMapper.solveAttribute(Attribute attribute, Task task)",4,2,4,0,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.service.XStreamService.createXstream()",4,2,3,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Content.getAuth()",4,2,3,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Content.isInternal()",4,2,3,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Task.getAgentId()",4,2,3,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Task.getServiceLocalId()",4,2,3,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Task.getWorkspace()",4,2,3,0,0
+"me.umov.jaiminho.domain.model.Message.splitToList(String listByComma)",4,2,2,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Attribute.setEntity(String entity)",4,2,1,0,1
+"me.umov.jaiminho.domain.validators.rules.PhoneLengthRuleValidation.validate(Message messageRequest)",4,2,1,0,1
+"me.umov.jaiminho.domain.validators.rules.ShouldSendEmailValidation.validate(Message mail)",4,2,1,0,1
+"me.umov.jaiminho.domain.validators.rules.SmsTextLengthRuleValidation.validate(Message messageRequest)",4,2,1,0,1
+"me.umov.jaiminho.infrastructure.dao.document.Content.getMediaType()",4,2,1,0,0
+"me.umov.jaiminho.application.event.DataStreamWasProcessed.DataStreamWasProcessed(EventMessage eventMessage)",4,2,0,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.AttributeConverter.writeAddress(HierarchicalStreamReader stream, Attribute attribute)",3,2,4,0,2
+"me.umov.jaiminho.infrastructure.dao.dto.NotificationMessageDTO.setHistory(History history)",3,2,3,0,1
+"me.umov.jaiminho.domain.event.trigger.SendExecuted.setMessage(String message)",3,2,1,0,1
+"me.umov.jaiminho.domain.model.Body.setContent(String content)",3,2,1,0,1
+"me.umov.jaiminho.domain.model.Identity.setId(Long id)",3,2,1,0,1
+"me.umov.jaiminho.infrastructure.dao.LocalDateTimeAttributeConverter.convertToDatabaseColumn(LocalDateTime localDateTime)",3,2,1,0,1
+"me.umov.jaiminho.infrastructure.dao.LocalDateTimeAttributeConverter.convertToEntityAttribute(Timestamp timestamp)",3,2,1,0,1
+"me.umov.jaiminho.application.dto.EventMessage.EventMessage(String payload, ConverterType converterType)",3,2,0,0,2
+"me.umov.jaiminho.infrastructure.configuration.RestConfiguration.getConnectTimeout()",2,2,0,0,0
+"me.umov.jaiminho.infrastructure.configuration.RestConfiguration.getReadTimeout()",2,2,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementEntity.replaceValue(String root, String text, Field field, Object objectValue)",5,1,8,6,4
+"me.umov.jaiminho.infrastructure.dao.LogDao.createLog(Log event)",8,1,11,3,1
+"me.umov.jaiminho.infrastructure.dao.LogDao.buildMessageLog(Header header, List<EventState> states, Source source)",7,1,5,3,3
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Recipients.hasNoRecipients()",4,1,6,3,0
+"me.umov.jaiminho.application.sqs.service.DataStreamService.processById(EventMessage eventMessage)",4,1,3,3,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Recipients.single(String address)",4,1,2,3,1
+"me.umov.jaiminho.infrastructure.dao.LogDao.log(String log, Log event)",3,1,3,3,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Recipients.getCc()",3,1,2,3,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Recipients.getTo()",3,1,2,3,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Recipients.getCcMailList()",2,1,2,3,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Recipients.getToMailList()",2,1,2,3,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Recipients.isBlank(String value)",2,1,1,3,1
+"me.umov.jaiminho.application.sqs.service.DataStreamService.shouldProcess(List<PlataformEvent> events)",2,1,1,3,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementCustomField.has(UsesCustomField usesCustomField, String root, String value)",2,1,0,3,3
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Recipients.isEmpty(Object[] array)",2,1,0,3,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Recipients.setCc(List<Attribute> cc)",2,1,0,3,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Recipients.setTo(List<Attribute> to)",2,1,0,3,1
+"me.umov.jaiminho.domain.model.Notification.Notification(Identity id, Character state, String type, Attempts attempts, Message message, ICredentials credentials, Configuration configuration)",9,1,6,2,7
+"me.umov.jaiminho.domain.model.Notification.toString()",9,1,4,2,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.SolveAttributeService.solveReportRequest(MessageRequest reportRequest, Rule rule)",6,1,9,2,2
+"me.umov.jaiminho.domain.Sender.Sender(DomainEventRegistry eventRegistry, NotificationRepository notificationRepository, Deliverable command)",5,1,1,2,3
+"me.umov.jaiminho.domain.model.Configuration.Configuration(Integer waitTimePutQueue, boolean exportStatusFlagExported, PhotoStandbyType photoStandbyType, Boolean havePendingPhotos)",5,1,0,2,4
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.SolveAttributeService.solve(Recipients recipients, Rule rule)",4,1,6,2,2
+"me.umov.jaiminho.application.observer.UpdateHistory.shouldProcess(Class clazz)",4,1,1,2,1
+"me.umov.jaiminho.domain.model.Notification.setMessage(Message message)",4,1,1,2,1
+"me.umov.jaiminho.domain.model.Notification.Notification(Identity id, Attempts attemps, ResponseNotification responseNotification)",4,1,0,2,3
+"me.umov.jaiminho.domain.model.Configuration.Configuration(boolean dataStream, OperationType operation)",4,1,0,2,2
+"me.umov.jaiminho.domain.Sender.initLogger(Notification notification)",3,1,9,2,1
+"me.umov.jaiminho.application.observer.UpdateHistory.updateHistory(SendExecuted event)",3,1,6,2,1
+"me.umov.jaiminho.domain.model.Notification.sentWithSuccess()",3,1,2,2,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.CallbackParameterConverter.canConvert(Class type)",3,1,1,2,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.MessageRequestConverter.canConvert(Class type)",3,1,1,2,1
+"me.umov.jaiminho.domain.model.Notification.setAttempts(Attempts attempts)",3,1,1,2,1
+"me.umov.jaiminho.domain.model.Notification.setId(Identity id)",3,1,1,2,1
+"me.umov.jaiminho.domain.model.Notification.Notification(ResponseNotification responseNotification, Attempts attempts)",3,1,0,2,2
+"me.umov.jaiminho.domain.model.Configuration.shouldExpectPhotos()",2,1,2,2,0
+"me.umov.jaiminho.domain.model.Notification.body()",2,1,2,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.getActionType()",2,1,2,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.getClientId()",2,1,2,2,0
+"me.umov.jaiminho.domain.model.Notification.Notification(Message message)",2,1,1,2,1
+"me.umov.jaiminho.domain.model.Notification.setStateProcessing(Character state)",2,1,1,2,1
+"me.umov.jaiminho.domain.model.Notification.setType(String type)",2,1,1,2,1
+"me.umov.jaiminho.domain.model.Configuration.isRequired()",2,1,1,2,0
+"me.umov.jaiminho.domain.model.Configuration.isRequiredForWhile()",2,1,1,2,0
+"me.umov.jaiminho.domain.model.Notification.bodyType()",2,1,1,2,0
+"me.umov.jaiminho.domain.model.Notification.clientId()",2,1,1,2,0
+"me.umov.jaiminho.domain.model.Notification.dateTimeFirstTry()",2,1,1,2,0
+"me.umov.jaiminho.domain.model.Notification.firstTo()",2,1,1,2,0
+"me.umov.jaiminho.domain.model.Notification.groupId()",2,1,1,2,0
+"me.umov.jaiminho.domain.model.Notification.hasAction()",2,1,1,2,0
+"me.umov.jaiminho.domain.model.Notification.increasingFieldsOfAttempts()",2,1,1,2,0
+"me.umov.jaiminho.domain.model.Notification.incrementAttempts()",2,1,1,2,0
+"me.umov.jaiminho.domain.model.Notification.isDelete()",2,1,1,2,0
+"me.umov.jaiminho.domain.model.Notification.isHtml()",2,1,1,2,0
+"me.umov.jaiminho.domain.model.Notification.isPatch()",2,1,1,2,0
+"me.umov.jaiminho.domain.model.Notification.isPost()",2,1,1,2,0
+"me.umov.jaiminho.domain.model.Notification.isPut()",2,1,1,2,0
+"me.umov.jaiminho.domain.model.Notification.maxAttempts()",2,1,1,2,0
+"me.umov.jaiminho.domain.model.Notification.mustNotify()",2,1,1,2,0
+"me.umov.jaiminho.domain.model.Notification.state()",2,1,1,2,0
+"me.umov.jaiminho.domain.model.Notification.toUsedInLog()",2,1,1,2,0
+"me.umov.jaiminho.domain.model.Notification.totalAttempts()",2,1,1,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.getBody()",2,1,1,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.getId()",2,1,1,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.getOperation()",2,1,1,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.getSubject()",2,1,1,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.hasContent()",2,1,1,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.hasHeader()",2,1,1,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.hasSource()",2,1,1,2,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.CallbackParameterConverter.marshal(Object source, HierarchicalStreamWriter writer, MarshallingContext context)",2,1,0,2,3
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.MessageRequestConverter.marshal(Object source, HierarchicalStreamWriter writer, MarshallingContext context)",2,1,0,2,3
+"me.umov.jaiminho.application.event.ApplicationEventRegistry.setDomainListeners(List<ApplicationListener> domainListeners)",2,1,0,2,1
+"me.umov.jaiminho.domain.event.DomainEventRegistry.setDomainListeners(List<ApplicationListener> domainListeners)",2,1,0,2,1
+"me.umov.jaiminho.domain.model.Notification.addSource(Source source)",2,1,0,2,1
+"me.umov.jaiminho.domain.model.Notification.setCredentials(ICredentials credentials)",2,1,0,2,1
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.setContent(Content content)",2,1,0,2,1
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.setHeader(Header header)",2,1,0,2,1
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.setSource(Source source)",2,1,0,2,1
+"me.umov.jaiminho.domain.model.Configuration.Configuration()",2,1,0,2,0
+"me.umov.jaiminho.domain.model.Configuration.getOperation()",2,1,0,2,0
+"me.umov.jaiminho.domain.model.Configuration.hasOperation()",2,1,0,2,0
+"me.umov.jaiminho.domain.model.Configuration.havePendingPhotos()",2,1,0,2,0
+"me.umov.jaiminho.domain.model.Configuration.isDataStream()",2,1,0,2,0
+"me.umov.jaiminho.domain.model.Configuration.isExportStatusFlagExported()",2,1,0,2,0
+"me.umov.jaiminho.domain.model.Configuration.photoStandbyType()",2,1,0,2,0
+"me.umov.jaiminho.domain.model.Notification.credentials()",2,1,0,2,0
+"me.umov.jaiminho.domain.model.Notification.getSource()",2,1,0,2,0
+"me.umov.jaiminho.domain.model.Notification.message()",2,1,0,2,0
+"me.umov.jaiminho.domain.model.Notification.type()",2,1,0,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.getContent()",2,1,0,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.getHeader()",2,1,0,2,0
+"me.umov.jaiminho.infrastructure.dao.document.PlataformEvent.getSource()",2,1,0,2,0
+"me.umov.jaiminho.application.sqs.service.Worker.process(EventMessage eventMessage)",20,1,15,1,1
+"me.umov.jaiminho.anticorruption.aws.SQSMessageToNotificationConverterTest.shouldThrowIdempotencyExceptionWhenActionRuleHasAlreadySuccessfulyExecuted()",16,1,21,1,0
+"me.umov.jaiminho.infrastructure.email.AwsSesMailByHtmlAdapter.buildMimeMessage(Message mailRequest)",15,1,20,1,1
+"me.umov.jaiminho.infrastructure.http.HttpService.exchange(IRequest request)",15,1,14,1,1
+"me.umov.jaiminho.application.sqs.service.DataStreamServiceTest.shouldProcessInErrorWhenItExceedsTheNotificationLimiReprocess()",14,1,25,1,0
+"me.umov.jaiminho.application.sqs.service.DataStreamServiceTest.shouldNotProcessWhenThereIsNoMessage()",13,1,22,1,0
+"me.umov.jaiminho.application.sqs.service.DataStreamServiceTest.shouldProcessInErrorWhenItExceedsTheNotificationLimiFatalErrors()",13,1,20,1,0
+"me.umov.jaiminho.anticorruption.aws.SQSMessageToNotificationConverterTest.init()",12,1,37,1,0
+"me.umov.jaiminho.infrastructure.sms.SMSAdapter.buildParameters(Notification notification, SMS sms)",12,1,24,1,2
+"me.umov.jaiminho.application.sqs.service.DataStreamServiceTest.shouldSuccessfullyProcess()",12,1,17,1,0
+"me.umov.jaiminho.anticorruption.aws.SQSMessageToNotificationConverter.convertFrom(EventMessage messageAWS)",12,1,9,1,1
+"me.umov.jaiminho.application.controller.MailController.send(@RequestParam(required=false) String from, @RequestParam(required=false) String to, @RequestParam(required=false) String cc, @RequestParam(required=false) String bcc, @RequestParam(required=false) String subject, @RequestParam(required=false) String body, @RequestParam(required=false) boolean isHtmlBody)",12,1,4,1,7
+"me.umov.jaiminho.application.sqs.service.DataStreamServiceTest.shouldProcessInErrorWhenItExceedsTheNotificationLimiBusinessError()",11,1,14,1,0
+"me.umov.jaiminho.anticorruption.aws.SQSMessageToNotificationConverter.buildNotification(ActionRule actionRule)",11,1,10,1,1
+"me.umov.jaiminho.application.controller.ReprocessController.reprocessActionRule(@RequestBody EntityDTO entityDTO)",11,1,8,1,1
+"me.umov.jaiminho.application.controller.PlataformEventController.send(@RequestBody EventMessage eventMessage)",10,1,7,1,1
+"me.umov.jaiminho.application.controller.PlataformEventController.sendMessage(@RequestBody EventMessage eventMessage)",10,1,7,1,1
+"me.umov.jaiminho.infrastructure.http.HttpService.get(String url, HttpHeaders requestHeaders)",10,1,6,1,2
+"me.umov.jaiminho.infrastructure.http.HttpService.get(String url)",10,1,6,1,1
+"me.umov.jaiminho.infrastructure.email.MailAdapter.send()",9,1,7,1,0
+"me.umov.jaiminho.infrastructure.business.BusinessAdapter.post(HttpEntity<Long> request)",9,1,6,1,1
+"me.umov.jaiminho.infrastructure.email.MailService.send(Message mailRequest)",9,1,5,1,1
+"me.umov.jaiminho.anticorruption.aws.SQSMessageToNotificationConverterTest.shouldConvertFromMessageAWSToNotification()",9,1,5,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.service.UrlShortenerAdapter.shortenLink(String link)",9,1,4,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.MailOrSMSTranslatorMessage.transform(NotificationMessageDTO notificationMessage)",8,1,8,1,1
+"me.umov.jaiminho.infrastructure.configuration.mongo.MongoConfig.mongoClient(MongoProperties mongoProperties)",8,1,6,1,1
+"me.umov.jaiminho.application.observer.LogGenerator.shouldProcess(Class clazz)",8,1,5,1,1
+"me.umov.jaiminho.infrastructure.producer.aws.ProducerService.send()",8,1,5,1,0
+"me.umov.jaiminho.domain.model.Request.Request(Notification notification)",7,1,7,1,1
+"me.umov.jaiminho.infrastructure.http.HttpService.addHeaders(MediaType bodyType, ICredentials credentials, IRequest request)",7,1,5,1,3
+"me.umov.jaiminho.infrastructure.business.JwtService.genarateTokenJwt(Long clientId, String token)",7,1,4,1,2
+"me.umov.jaiminho.domain.validators.MessageRequestValidator.validate(Message entity)",6,1,7,1,1
+"me.umov.jaiminho.anticorruption.aws.SQSMessageToNotificationConverterTest.shouldThrowIllegalArgumentExceptionWhenParameterInvalid()",6,1,5,1,0
+"me.umov.jaiminho.infrastructure.sms.SMSAdapter.normalizeMessage(Notification notification)",6,1,4,1,1
+"me.umov.jaiminho.domain.model.ResponseNotification.ResponseNotification(Integer code, String body, MultiValueMap<String,String> headers)",6,1,2,1,3
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.AttributeMapper.getLongValueOf(String value)",6,1,1,1,1
+"me.umov.jaiminho.domain.model.ResponseNotification.getHeader(String headerKey)",6,1,1,1,1
+"me.umov.jaiminho.infrastructure.util.EncoderURLService.urlEncodeUTF8(String value)",6,1,1,1,1
+"me.umov.jaiminho.domain.model.Attempts.toString()",6,1,0,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.MessageRequest(CallbackParameters callbackParameters, String callbackBody)",5,1,8,1,2
+"me.umov.jaiminho.infrastructure.sms.SMSAdapter.send(Notification notification)",5,1,4,1,1
+"me.umov.jaiminho.infrastructure.business.BusinessAdapter.addJwtToken(Long clientId)",5,1,3,1,1
+"me.umov.jaiminho.domain.model.ResponseNotification.ResponseNotification(Integer code, String body)",5,1,2,1,2
+"me.umov.jaiminho.application.observer.ReprocessNotificationSQS.shouldProcess(Class clazz)",5,1,2,1,1
+"me.umov.jaiminho.infrastructure.configuration.mongo.MongoConfig.notificationMongoTemplate()",5,1,2,1,0
+"me.umov.jaiminho.domain.model.ResponseNotification.ResponseNotification(StateProcessingType stateType, String message)",5,1,1,1,2
+"me.umov.jaiminho.domain.model.Attempts.Attempts(Long max, Long total, LocalDateTime dateTimeFirstTry)",5,1,0,1,3
+"me.umov.jaiminho.infrastructure.email.MailAdapter.MailAdapter(JavaMailSender mailSender, SesBlacklistService sesBlacklistService, Message mailRequest)",5,1,0,1,3
+"me.umov.jaiminho.infrastructure.business.BusinessAdapter.buildUrlForUpdateExportStatus(HttpEntity<Long> request)",4,1,5,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.MessageRequest(String singleRecipient, String body, HttpCredentials credentials)",4,1,4,1,3
+"me.umov.jaiminho.application.controller.ReprocessController.incrementAndUpdateState(ActionRule actionRule)",4,1,4,1,1
+"me.umov.jaiminho.anticorruption.aws.SQSMessageToNotificationConverter.buildMessageRequest(ActionRule actionRule, History history)",4,1,3,1,2
+"me.umov.jaiminho.infrastructure.business.BusinessAdapter.markAsExported(Long clientId, Long historyId)",4,1,3,1,2
+"me.umov.jaiminho.infrastructure.email.AwsSesMailByHtmlAdapter.send(Message mailRequest)",4,1,3,1,1
+"me.umov.jaiminho.infrastructure.email.MailAdapter.checkBlacklist(String[] addresses)",4,1,3,1,1
+"me.umov.jaiminho.infrastructure.configuration.mongo.MongoConfig.sentinelMongoTemplate()",4,1,2,1,0
+"me.umov.jaiminho.application.observer.CleanNotificationDocument.shouldProcess(Class clazz)",4,1,1,1,1
+"me.umov.jaiminho.infrastructure.producer.aws.ProducerService.ProducerService(AmazonSQS amazonSQS, SendMessageRequest createSendMessageRequestSMSService, SendMessage message)",4,1,0,1,3
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.HttpCredentials.HttpCredentials(boolean basic, String hash)",4,1,0,1,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.MessageRequest(String singleRecipient, String body)",3,1,3,1,2
+"me.umov.jaiminho.application.controller.ReprocessController.addQueueSQS(ActionRule actionRule)",3,1,3,1,1
+"me.umov.jaiminho.infrastructure.business.JwtService.buildClaims(Long clientId, String token)",3,1,2,1,2
+"me.umov.jaiminho.application.observer.ReprocessNotificationSQS.reprecess(NotificationWasPerformed event)",3,1,2,1,1
+"me.umov.jaiminho.domain.validators.rules.EmailFormatRuleValidation.validate(Message messageRequest)",3,1,2,1,1
+"me.umov.jaiminho.infrastructure.configuration.mongo.MongoConfig.mongoClientFactory(MongoProperties mongoProperties)",3,1,2,1,1
+"me.umov.jaiminho.infrastructure.util.EncoderURLService.normalizeAccentString(String text)",3,1,2,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.AttributeMapper.error(String message)",3,1,1,1,1
+"me.umov.jaiminho.application.observer.NotificationExecutedSQS.shouldProcess(Class clazz)",3,1,1,1,1
+"me.umov.jaiminho.application.observer.ReprocessNotificationSQS.process(NotificationWasPerformed event)",3,1,1,1,1
+"me.umov.jaiminho.domain.model.Request.setUrl(String url)",3,1,1,1,1
+"me.umov.jaiminho.anticorruption.aws.SQSMessageToNotificationConverterTest.setUp()",3,1,1,1,0
+"me.umov.jaiminho.application.sqs.service.DataStreamServiceTest.setUp()",3,1,1,1,0
+"me.umov.jaiminho.domain.model.Request.getClientId()",3,1,1,1,0
+"me.umov.jaiminho.domain.model.Request.isApplicationFormUrlEncoded()",3,1,1,1,0
+"me.umov.jaiminho.domain.model.Request.isJson()",3,1,1,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.IgnoreTaskTypeConverter.marshal(Object list, HierarchicalStreamWriter writer, MarshallingContext context)",3,1,0,1,3
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.IgnoreTaskTypeConverter.canConvert(Class type)",3,1,0,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.HttpCredentials.setHeaders(MultiValueMap<String,String> headers)",3,1,0,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.HttpCredentials.authenticationFactor()",3,1,0,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.HttpCredentials.hasMFA()",3,1,0,1,0
+"me.umov.jaiminho.domain.model.Request.bodyToAppFormUrlencoded()",3,1,0,1,0
+"me.umov.jaiminho.domain.model.Request.credentials()",3,1,0,1,0
+"me.umov.jaiminho.domain.model.Request.mediaType()",3,1,0,1,0
+"me.umov.jaiminho.domain.model.Request.url()",3,1,0,1,0
+"me.umov.jaiminho.anticorruption.aws.SQSMessageToNotificationConverter.buildMessage(MessageRequest messageRequest)",2,1,6,1,1
+"me.umov.jaiminho.application.controller.ReprocessController.createReprocessExecuted(ActionRule actionRule)",2,1,4,1,1
+"me.umov.jaiminho.anticorruption.aws.SQSMessageToNotificationConverter.buildAttemps(ActionRule actionRule)",2,1,3,1,1
+"me.umov.jaiminho.application.observer.LogGenerator.isDataStream(Log event)",2,1,3,1,1
+"me.umov.jaiminho.domain.model.Attempts.Attempts(Attempts attempts)",2,1,3,1,1
+"me.umov.jaiminho.infrastructure.http.HttpService.build(ResponseEntity<String> response)",2,1,3,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.getToUsedInLog()",2,1,3,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.setBody(String value)",2,1,2,1,1
+"me.umov.jaiminho.domain.validators.rules.EmailFormatRuleValidation.validateToEmails(Message messageRequest)",2,1,2,1,1
+"me.umov.jaiminho.infrastructure.dao.NotificationDAO.convertToLong(Notification notification)",2,1,2,1,1
+"me.umov.jaiminho.infrastructure.http.HttpService.build(HttpStatusCodeException exception)",2,1,2,1,1
+"me.umov.jaiminho.infrastructure.util.EncoderURLService.urlEncode(String string)",2,1,2,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.getBodyValue()",2,1,2,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.getCc()",2,1,2,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.getCcValue()",2,1,2,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.getListCC()",2,1,2,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.getListTo()",2,1,2,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.getSubjectValue()",2,1,2,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.getTo()",2,1,2,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.getToValue()",2,1,2,1,0
+"me.umov.jaiminho.domain.model.ResponseNotification.hasReprocess()",2,1,2,1,0
+"me.umov.jaiminho.domain.model.ResponseNotification.isError()",2,1,2,1,0
+"me.umov.jaiminho.domain.model.ResponseNotification.isFatalError()",2,1,2,1,0
+"me.umov.jaiminho.domain.model.ResponseNotification.isSuccess()",2,1,2,1,0
+"me.umov.jaiminho.application.controller.MailController.buildResultMessage(HttpStatus status, String message)",2,1,1,1,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.AttributeMapper.isSolve(Attribute attirbute)",2,1,1,1,1
+"me.umov.jaiminho.infrastructure.business.JwtService.getToken(Long clientId)",2,1,1,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.hasCondition()",2,1,1,1,0
+"me.umov.jaiminho.infrastructure.dao.document.Recipients.hasCC()",2,1,1,1,0
+"me.umov.jaiminho.infrastructure.dao.document.Recipients.hasTo()",2,1,1,1,0
+"me.umov.jaiminho.infrastructure.email.AwsSesMailByHtmlAdapter.AwsSesMailByHtmlAdapter(JavaMailSender mailSender, SesBlacklistService sesBlacklistService, Message mailRequest)",2,1,0,1,3
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.HttpCredentials.HttpCredentials(boolean basic)",2,1,0,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.HttpCredentials.setBasic(boolean basic)",2,1,0,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.setActionType(NotificationType actionType)",2,1,0,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.setBody(Attribute body)",2,1,0,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.setCondition(Attribute condition)",2,1,0,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.setCredentials(HttpCredentials credentials)",2,1,0,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.setHtml(boolean html)",2,1,0,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.setIsHtmlBody(String isHtmlBody)",2,1,0,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.setRecipients(Recipients recipients)",2,1,0,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.setSubject(Attribute subject)",2,1,0,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementHistoryLink.setUrlReportSchedule(String urlReportSchedule)",2,1,0,1,1
+"me.umov.jaiminho.domain.model.Request.setCredentials(ICredentials credentials)",2,1,0,1,1
+"me.umov.jaiminho.infrastructure.business.BusinessAdapter.setUrlBusiness(String urlBusiness)",2,1,0,1,1
+"me.umov.jaiminho.infrastructure.business.JwtService.setJwtBuilder(Builder jwtBuilder)",2,1,0,1,1
+"me.umov.jaiminho.infrastructure.business.JwtService.setSecret(String secret)",2,1,0,1,1
+"me.umov.jaiminho.infrastructure.dao.document.Recipients.setCc(List<String> cc)",2,1,0,1,1
+"me.umov.jaiminho.infrastructure.dao.document.Recipients.setTo(List<String> to)",2,1,0,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.HttpCredentials.getHash()",2,1,0,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.HttpCredentials.hasAuth()",2,1,0,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.getActionType()",2,1,0,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.getBody()",2,1,0,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.getCondition()",2,1,0,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.getCredentials()",2,1,0,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.isHtml()",2,1,0,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.service.UrlShortenerAdapter.createUrlShortner()",2,1,0,1,0
+"me.umov.jaiminho.domain.model.Attempts.dateTimeFirstTry()",2,1,0,1,0
+"me.umov.jaiminho.domain.model.Attempts.increment()",2,1,0,1,0
+"me.umov.jaiminho.domain.model.Attempts.incrementAll()",2,1,0,1,0
+"me.umov.jaiminho.domain.model.Attempts.isValid()",2,1,0,1,0
+"me.umov.jaiminho.domain.model.Attempts.itFirstTry()",2,1,0,1,0
+"me.umov.jaiminho.domain.model.Attempts.itSecondTry()",2,1,0,1,0
+"me.umov.jaiminho.domain.model.Attempts.max()",2,1,0,1,0
+"me.umov.jaiminho.domain.model.Attempts.total()",2,1,0,1,0
+"me.umov.jaiminho.domain.model.Request.bodyToJson()",2,1,0,1,0
+"me.umov.jaiminho.domain.model.ResponseNotification.getMessage()",2,1,0,1,0
+"me.umov.jaiminho.domain.model.ResponseNotification.getState()",2,1,0,1,0
+"me.umov.jaiminho.domain.model.ResponseNotification.startCreateResponse()",2,1,0,1,0
+"me.umov.jaiminho.infrastructure.email.MailAdapter.getMailSender()",2,1,0,1,0
+"me.umov.jaiminho.infrastructure.email.MailAdapter.getSesBlacklistService()",2,1,0,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.MessageRequest.MessageRequest()",1,1,0,1,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementHistoryLink.buildLink(Task task, String reportURL, Rule rule)",0,1,0,1,3
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.AttributeMapper.processFieldReference(Attribute attribute, Rule rule)",0,1,0,1,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.HistoryItemMapper.findHistoryItem(Attribute attirbute, Rule rule)",0,1,0,1,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementMessage.replace(MessageRequest buildReportRequest, Rule rule)",0,1,0,1,2
+"me.umov.jaiminho.infrastructure.email.MailAdapter.send(Message mailRequest)",0,1,0,1,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementHistoryLink.getStringToReplace()",0,1,0,1,0
+"me.umov.jaiminho.domain.validators.BusinessValidator.getRules()",0,1,0,1,0
+"me.umov.jaiminho.infrastructure.email.MailService.MailService()",0,1,0,1,0
+"me.umov.jaiminho.anticorruption.aws.DataStreamToNotificationConverterTest.shouldConvertFromEventMessage()",39,1,64,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.SolveAttributeServiceTest.should()",30,1,76,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.SolveAttributeServiceTest.shouldSolveReportRequest()",26,1,61,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementEntityTest.shouldReplaceFieldWhenReplacementEntity()",26,1,17,0,0
+"me.umov.jaiminho.infrastructure.dao.LogDaoTest.shouldCreateAndSaveLogWhenGetMessageInFinishStep()",22,1,34,0,0
+"me.umov.jaiminho.infrastructure.configuration.MailSenderConfiguration.getJavaMailSender()",19,1,11,0,0
+"me.umov.jaiminho.infrastructure.business.BusinessAdapterTest.shouldDoRequestForUpdateHistoryExportStatusInBusiness()",18,1,18,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementCustomFieldTest.shouldReplacementCustomField()",18,1,11,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementEntityTest.shouldReplaceFieldDateAndHour()",18,1,10,0,0
+"me.umov.jaiminho.domain.SenderTest.shouldErrorSending()",16,1,23,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.MailOrSMSTranslatorMessageTest.shouldBuildReportRequestWithSuccess()",16,1,19,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.ServiceLocalMapperTest.shouldSolveHistoryItemWhenCustomField()",15,1,33,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.ServiceLocalMapperTest.shouldThrowRuntimeExceptionWhenCustomFieldInvalid()",15,1,33,0,0
+"me.umov.jaiminho.anticorruption.aws.DataStreamToNotificationConverter.convertFrom(EventMessage eventMessage)",15,1,19,0,1
+"me.umov.jaiminho.domain.model.NotificationTest.shouldSentWithSuccess()",15,1,17,0,0
+"me.umov.jaiminho.domain.model.NotificationTest.shouldSentWithSuccessWithMessageDataStreamWhenNotificationIsDataStream()",15,1,17,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.service.XStreamServiceTest.shouldConsumeCallbackParametersXMLAllFields()",15,1,14,0,0
+"me.umov.jaiminho.infrastructure.http.authentication.factor.XCSRFAuthenticationImpl.authenticate(Notification notification)",15,1,12,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementActivityLinkTest.shouldReplaceReportLinkActivity()",14,1,28,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementGroupTest.shouldReplacementGroup()",14,1,27,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementGroupTest.shouldReplacementGroupWhenValueIdNull()",14,1,27,0,0
+"me.umov.jaiminho.infrastructure.sms.SMSAdapterTest.shouldSendSms()",14,1,26,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementAgentLinkTest.shouldReplaceReportLinkAgent()",14,1,25,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementTaskTest.shouldReplacementEntity()",14,1,21,0,0
+"me.umov.jaiminho.domain.model.AttemptsTest.shouldHaveRetriesWhileLessThanMax()",14,1,10,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementEntityTest.shouldReplaceFieldWhenItHasFieldMarkupAndAttributeHasValue()",14,1,7,0,0
+"me.umov.jaiminho.domain.validators.rules.EmailFormatRuleValidationTest.shouldNotThrowJaiminhoBusinessExceptionWhenCCEmailIsValid()",14,1,7,0,0
+"me.umov.jaiminho.domain.validators.rules.EmailFormatRuleValidationTest.shouldNotThrowJaiminhoBusinessExceptionWhenTwoCCEmailIsValid()",14,1,7,0,0
+"me.umov.jaiminho.domain.validators.rules.EmailFormatRuleValidationTest.shouldThrowJaiminhoBusinessExceptionWhenCCEmailDoNotHaveAt()",14,1,7,0,0
+"me.umov.jaiminho.domain.validators.rules.EmailFormatRuleValidationTest.shouldThrowJaiminhoBusinessExceptionWhenCCEmailDoNotHaveStart()",14,1,7,0,0
+"me.umov.jaiminho.domain.validators.rules.EmailFormatRuleValidationTest.shouldThrowJaiminhoBusinessExceptionWhenCCEmailEndDoNotHaveDot()",14,1,7,0,0
+"me.umov.jaiminho.domain.validators.rules.EmailFormatRuleValidationTest.shouldThrowJaiminhoBusinessExceptionWhenCCEmailHaveInvalidCharacter()",14,1,7,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementCustomFieldTest.shouldNotReplacementCustomFieldWhenNoCustomFieldMarkup()",14,1,4,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementReportLinkTest.shouldReplaceReportLink()",13,1,25,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementAgentLinkTest.shouldNotReplaceReportLinkAgentWhenNotHasHistoryId()",13,1,24,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementReportLinkTest.shouldNotReplaceReportLinkWhenNotHasHistoryId()",13,1,24,0,0
+"me.umov.jaiminho.infrastructure.http.HttpServiceTest.shouldPostSucessfuly()",13,1,23,0,0
+"me.umov.jaiminho.infrastructure.http.HttpServiceTest.shouldRuntimeExceptionWhenHttpStatusIsNotOk()",13,1,23,0,0
+"me.umov.jaiminho.infrastructure.http.HttpServiceTest.shouldPostError()",13,1,22,0,0
+"me.umov.jaiminho.infrastructure.http.HttpServiceTest.shouldRuntimeExceptionWhenThrowNullPointerException()",13,1,19,0,0
+"me.umov.jaiminho.infrastructure.http.HttpServiceTest.shouldRuntimeExceptionWhenThrowRestClientException()",13,1,19,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.ProducerServiceTest.shouldSetTheDelayWhenTheMessageHasDelay()",13,1,19,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.service.XStreamServiceTest.shouldConvertSMS()",13,1,17,0,0
+"me.umov.jaiminho.infrastructure.dao.NotificationDAOTest.shouldUpdateAttemptsAndStatus()",13,1,15,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementEntityTest.shouldNotReplaceFieldWhenItHasFieldMarkupAndAttributeHasNoValue()",13,1,6,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementEntityTest.shouldNotReplaceFieldWhenItHasFieldMarkupAndAttributeHasValue()",13,1,6,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementCustomFieldTest.shouldNotReplacementCustomFieldWhenRootIsNull()",13,1,4,0,0
+"me.umov.jaiminho.application.sqs.AWSConsumerTest.buildMessage()",13,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.CallbackTranslatorMessageTest.shouldBuildCallbackMessage()",12,1,27,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.HistoryMapperTest.shouldValuIsNullWhenTooManyValue()",12,1,27,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.AgentMapperTest.shouldSolvePhoneToSMS()",12,1,23,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.ServiceLocalMapperTest.shouldSolvePhoneToSMS()",12,1,23,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.AgentMapperTest.shouldSolveHistoryItem()",12,1,22,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.ServiceLocalMapperTest.shouldSolveHistoryItem()",12,1,22,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementAgentLinkTest.shouldNotShortUrlWhenActionTypeIsEmail()",12,1,22,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementReportLinkTest.shouldNotShortUrlWhenActionTypeIsEmail()",12,1,22,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementGroupTest.shouldNotReplacementGroupWhenNotHasGroup()",12,1,19,0,0
+"me.umov.jaiminho.infrastructure.http.HttpServiceTest.shouldRuntimeExceptionWhenThrowHttpClientErrorException()",12,1,18,0,0
+"me.umov.jaiminho.domain.SenderTest.shouldSentWithSuccess()",12,1,16,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.service.XStreamService.buildMessageRequest(String xml)",12,1,12,0,1
+"me.umov.jaiminho.domain.model.NotificationTest.shouldProcessingStateEqualToReprocessWhenRetrying()",12,1,12,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.service.XStreamServiceTest.shouldConvertBody()",12,1,10,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.service.XStreamServiceTest.shouldConvertCondition()",12,1,10,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.service.XStreamServiceTest.shouldConvertRecipients()",12,1,9,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.service.XStreamServiceTest.shouldConvertSubject()",12,1,9,0,0
+"me.umov.jaiminho.application.dto.EventMessageTest.shouldChangeTheStatusOfTheMessageToErrorWhenItIsProcessedWithError()",12,1,6,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.HistoryMapperTest.shouldSolveHistoryItem()",11,1,24,0,0
+"me.umov.jaiminho.domain.CallbackTest.shouldSendNotification()",11,1,18,0,0
+"me.umov.jaiminho.infrastructure.email.AwsSesMailByHtmlAdapterTest.shouldSend()",11,1,18,0,0
+"me.umov.jaiminho.application.sqs.service.WorkerTest.shouldNotificationWithErrorWhenThrowIException()",11,1,17,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.ProducerServiceTest.shouldNotSetTheDelayWhenTheMessageHasNoDelay()",11,1,17,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.ProducerServiceTest.shouldThrowJmsAnalyzerExceptionWhenAnyExceptionThrow()",11,1,13,0,0
+"me.umov.jaiminho.application.observer.CleanNotificationDocumentTest.shouldDeletePlataformEventDocumentWhenIsDataStreamEventAndStateIsSuccess()",11,1,12,0,0
+"me.umov.jaiminho.application.sqs.AWSConsumerTest.shoudWorkerProcessWhenConsumerCallbackService()",11,1,9,0,0
+"me.umov.jaiminho.application.sqs.AWSConsumerTest.shoudWorkerProcessWhenConsumerMailService()",11,1,9,0,0
+"me.umov.jaiminho.application.sqs.AWSConsumerTest.shoudWorkerProcessWhenConsumerSMSService()",11,1,9,0,0
+"me.umov.jaiminho.application.dto.EventMessageTest.shouldChangeTheStatusOfTheMessageToSuccessWhenItIsSuccessfullyProcessed()",11,1,6,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementCustomFieldTest.shouldNotReplacementCustomFieldWhenValueIsNull()",11,1,4,0,0
+"me.umov.jaiminho.domain.validators.rules.SubjectRuleValidationTest.shouldNotThrowJaiminhoBusinessExceptionWhenSubjectValid()",11,1,4,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.HistoryMapperTest.shouldValueIsNullWhenHistoryItemIsEmpty()",10,1,19,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.HistoryMapperTest.shouldValueIsNullWhenHistoryItemIsNull()",10,1,18,0,0
+"me.umov.jaiminho.application.sqs.service.WorkerTest.shouldNotificationWithErrorWhenThrowIllegalArgumentException()",10,1,14,0,0
+"me.umov.jaiminho.domain.SMSTest.shouldSendSMSSuccessfuly()",10,1,13,0,0
+"me.umov.jaiminho.domain.SenderTest.shouldNotPerformedWhenNotNotify()",10,1,13,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.CallbackTranslatorMessageTest.foo()",10,1,11,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecutedTest.shouldNotUpdateHistoryWhenIsDataStream()",10,1,11,0,0
+"me.umov.jaiminho.infrastructure.dao.LogDaoTest.shouldCreateLogDataStreamAndSave()",10,1,11,0,0
+"me.umov.jaiminho.domain.validators.rules.EmailFormatRuleValidationTest.shouldNotThrowJaiminhoBusinessExceptionWhenToEmailIsValid()",10,1,7,0,0
+"me.umov.jaiminho.domain.validators.rules.EmailFormatRuleValidationTest.shouldNotThrowJaiminhoBusinessExceptionWhenTwoToEmailIsValid()",10,1,7,0,0
+"me.umov.jaiminho.domain.validators.rules.EmailFormatRuleValidationTest.shouldThrowJaiminhoBusinessExceptionWhenToEmailDoNotHaveAt()",10,1,7,0,0
+"me.umov.jaiminho.domain.model.AttemptsTest.shouldBeEqualWhenTotalAndMaxEqual()",10,1,6,0,0
+"me.umov.jaiminho.domain.validators.rules.EmailFormatRuleValidationTest.shouldThrowJaiminhoBusinessExceptionWhenToEmailHaveInvalidCharacter()",10,1,4,0,0
+"me.umov.jaiminho.domain.validators.rules.SubjectRuleValidationTest.shouldThrowJaiminhoBusinessExceptionWhenSubjectInvalid()",10,1,4,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementEntityTest.shouldNotReplaceFieldWhenTextIsNull()",10,1,3,0,0
+"me.umov.jaiminho.infrastructure.email.AwsSesMailAdapter.buildSimpleMailMessage(Message mail)",9,1,17,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.TaskMapperTest.shouldSolveHistoryItem()",9,1,16,0,0
+"me.umov.jaiminho.application.observer.ReprocessNotificationSQSTest.shouldProcessEventWhenIsReprocessWithSucessfuly()",9,1,16,0,0
+"me.umov.jaiminho.application.observer.UpdateHistoryTest.shouldProcessWhenUpdateHistoryTrue()",9,1,14,0,0
+"me.umov.jaiminho.application.sqs.service.WorkerTest.shouldProcessMessageAWS()",9,1,12,0,0
+"me.umov.jaiminho.domain.model.NotificationTest.shouldNotReprocessAndReturnMessageWhenNotificationNotPerformedAndShouldExpectPhotosAndShouldNotProcess()",9,1,12,0,0
+"me.umov.jaiminho.domain.model.NotificationTest.shouldReprocessAndReturnMessageWhenNotificationNotPerformedAndShouldExpectPhotosAndShouldProcess()",9,1,12,0,0
+"me.umov.jaiminho.application.sqs.service.WorkerTest.shouldThrowIdempotencyExceptionWhenActionRuleHasAlreadySuccessfulyExecuted()",9,1,11,0,0
+"me.umov.jaiminho.domain.model.NotificationTest.shouldReturnDelayTimeOutInMinuteEqualsWaitTimePutQueueWhenFirstTry()",9,1,10,0,0
+"me.umov.jaiminho.domain.model.ConfigurationTest.shouldCreateDefaultConfiguration()",9,1,9,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecutedTest.shouldNotReprocessWhenDataStream()",9,1,8,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecutedTest.shouldNotUpdateHistoryWhenStateProcessingNotSeccessAndisExportStatusFlagExportedIsTrue()",9,1,8,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecutedTest.shouldNotUpdateHistoryWhenStateProcessingSuccessAndisExportStatusFlagExportedIsFalse()",9,1,8,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecutedTest.shouldUpdateHistoryWhenStateProcessingSuccessAndisExportStatusFlagExportedIsTrue()",9,1,8,0,0
+"me.umov.jaiminho.domain.model.AttemptsTest.shouldIncrementOne()",9,1,8,0,0
+"me.umov.jaiminho.domain.model.NotificationTest.shouldReturnDelayTimeOutInMinuteEquals10MinuteWhenLastTry()",9,1,8,0,0
+"me.umov.jaiminho.domain.model.NotificationTest.shouldReturnDelayTimeOutInMinuteEquals5MinuteWhenSecondTry()",9,1,8,0,0
+"me.umov.jaiminho.domain.model.NotificationTest.shouldProcessingStateEqualToReprocessWhenNoRetries()",9,1,7,0,0
+"me.umov.jaiminho.application.observer.LogGeneratorTest.shouldGenerateDataStreamLogWhenIsDataStream()",9,1,6,0,0
+"me.umov.jaiminho.application.observer.LogGeneratorTest.shouldGenerateRuleLogWhenIsNotificationSentAndItIsNotDataStream()",9,1,6,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.service.XStreamServiceTest.shouldConsumeWaitSyncPhotos()",9,1,4,0,0
+"me.umov.jaiminho.domain.validators.rules.EmailFormatRuleValidationTest.shouldThrowJaiminhoBusinessExceptionWhenToEmailDoNotHaveStart()",9,1,4,0,0
+"me.umov.jaiminho.domain.validators.rules.EmailFormatRuleValidationTest.shouldThrowJaiminhoBusinessExceptionWhenToEmailEndDoNotHaveDot()",9,1,4,0,0
+"me.umov.jaiminho.domain.validators.rules.SmsTextLengthRuleValidationTest.shouldNotThrowJaiminhoBusinessExceptionWhenMessageLessThan160CharactersAndPhoneNumberValid()",9,1,4,0,0
+"me.umov.jaiminho.domain.validators.rules.SmsTextLengthRuleValidationTest.shouldThrowJaiminhoBusinessExceptionWhenMessageGreaterThan160CharactersAndPhoneNumberValid()",9,1,4,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.SendMessageTest.shouldReturnNineHundredWhenSetValueIsGreaterThanNineHundredSeconds()",9,1,3,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.SendMessageTest.shouldReturnSetTimeoutDelayWhenLessThanNineHundred()",9,1,3,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementCustomFieldTest.shouldNotReplacementCustomFieldWhenEntityIsNull()",9,1,2,0,0
+"me.umov.jaiminho.domain.model.Message.toString()",9,1,2,0,0
+"me.umov.jaiminho.infrastructure.dao.CustomFieldValueDao.findByAlternativeIdentifierAndEntityAndClientId(String alternativeIdentifier, Long entityType, Long entityId, Long clientId)",9,1,0,0,4
+"me.umov.jaiminho.application.observer.ReprocessNotificationSQSTest.shouldProcessEventWhenIsReprocessWithError()",8,1,12,0,0
+"me.umov.jaiminho.application.observer.CleanNotificationDocumentTest.shouldDeletePlataformEventDocumentWhenStateIsSuccessButIsNotDataStreamEvent()",8,1,11,0,0
+"me.umov.jaiminho.application.observer.CleanNotificationDocumentTest.shouldNotDeletePlataformEventDocumentWhenIsDataStreamEventButStateIsNotSuccess()",8,1,11,0,0
+"me.umov.jaiminho.domain.EmailTest.shouldSendEmailNotification()",8,1,10,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.FactoryAttributeMapperTest.shouldGetAgentMapperWhenEntityEqualsAgent()",8,1,8,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.FactoryAttributeMapperTest.shouldGetHistoryMapperWhenEntityEqualsActivity()",8,1,8,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.FactoryAttributeMapperTest.shouldGetServiceLocalMapperWhenEntityEqualsServiceLocal()",8,1,8,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.FactoryAttributeMapperTest.shouldGetServiceLocalMapperWhenEntityEqualsServiceLocalAndTaskIdIsNotNull()",8,1,8,0,0
+"me.umov.jaiminho.application.event.DataStreamWasProcessedTest.shoudSendMessage()",8,1,8,0,0
+"me.umov.jaiminho.application.event.DataStreamWasProcessedTest.shoudSendMessageWhenThereIsNoActionType()",8,1,8,0,0
+"me.umov.jaiminho.application.event.DataStreamWasProcessedTest.shoudSendMessageWhenThereIsNoEventId()",8,1,8,0,0
+"me.umov.jaiminho.application.observer.UpdateHistoryTest.shouldPublishUpdateHistoryHasBeenReprocessedWhenErrorProcess()",8,1,8,0,0
+"me.umov.jaiminho.infrastructure.business.JwtServiceTest.setUp()",8,1,8,0,0
+"me.umov.jaiminho.domain.event.DomainEventRegistryTest.shouldNotProcess()",8,1,7,0,0
+"me.umov.jaiminho.domain.event.DomainEventRegistryTest.shouldProcess()",8,1,7,0,0
+"me.umov.jaiminho.infrastructure.email.AwsSesMailAdapterTest.shouldIdentifyAddressesBlacklisted()",8,1,7,0,0
+"me.umov.jaiminho.infrastructure.email.MailServiceTest.shouldSendSucessfuly()",8,1,7,0,0
+"me.umov.jaiminho.domain.JaiminhoBuilderTest.shouldThrowIllegalArgumentsExceptionWhenNotificationTypeInvalid()",8,1,6,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.facade.TranslatorFactoryTest.shouldReturnCallbackTranslatorWhenAtcionTypeEqualCallback()",8,1,5,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.facade.TranslatorFactoryTest.shouldReturnMailOrSMSTranslatorWhenAtcionTypeEqualMail()",8,1,5,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.facade.TranslatorFactoryTest.shouldReturnMailOrSMSTranslatorWhenAtcionTypeEqualSMS()",8,1,5,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecutedTest.shouldNotReprocessWhenSuccess()",8,1,5,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecutedTest.shouldReprocess()",8,1,5,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.service.XStreamServiceTest.shouldConsumeCallbackParametersXML()",8,1,4,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.service.XStreamServiceTest.shouldConvertBodyExportStatusFlagExportedToFalseWhenFalgEmpty()",8,1,3,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.service.XStreamServiceTest.shouldConvertBodyExportStatusFlagExportedToFalseWhenFalgIsfalse()",8,1,3,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.service.XStreamServiceTest.shouldConvertBodyExportStatusFlagExportedTrueWhenFlagIsTrue()",8,1,3,0,0
+"me.umov.jaiminho.domain.validators.rules.SmsTextLengthRuleValidationTest.shouldNotThrowJaiminhoBusinessExceptionWhenMessageEquals160CharactersAndPhoneNumberValid()",8,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementTaskTest.shouldNotReplacementEntity()",7,1,9,0,0
+"me.umov.jaiminho.application.observer.UpdateHistoryTest.shouldNotProcessWhenUpdateHistoryFalse()",7,1,9,0,0
+"me.umov.jaiminho.infrastructure.dao.LogDaoTest.shouldNotCreateLogDataStreamAndSaveWhenMessageIsEmpty()",7,1,9,0,0
+"me.umov.jaiminho.application.observer.ReprocessNotificationSQSTest.shouldNotProcessEventWhenIsNotReprocess()",7,1,8,0,0
+"me.umov.jaiminho.domain.model.Message.Message(String from, String to, String cc, String bcc, String subject, String content, boolean isHtmlBody, boolean condition, String mediaType)",7,1,7,0,9
+"me.umov.jaiminho.anticorruption.aws.AWSFactoryTest.shouldThrowIllegalArgumentExceptionWhenTypeThereIsNoDataStreamAndThereIsNoSQS()",7,1,7,0,0
+"me.umov.jaiminho.domain.model.NotificationTest.shouldReturnIsEmptyWhenNotificationNotPerformedAndShouldNotExpectPhotos()",7,1,7,0,0
+"me.umov.jaiminho.domain.validators.MailValidatorTest.shouldReturnRulesFromMailValidator()",7,1,7,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.ProducerAWSBuilderTest.shouldReturnProducerServiceWithSQSCallbackServiceWhenSendCallback()",7,1,7,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.ProducerAWSBuilderTest.shouldReturnProducerServiceWithSQSMailServiceWhenSendMail()",7,1,7,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.ProducerAWSBuilderTest.shouldReturnProducerServiceWithSQSSMSServiceWhenSendSMS()",7,1,7,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.service.XStreamService.consumeCallbackParametersXml(String xml)",7,1,6,0,1
+"me.umov.jaiminho.domain.model.ConfigurationTest.shouldNotNotifyWhenPhotoStandbyTypeEqualsRequiredForWhileAndHavePendingPhotosAndExceededReprocessingHoursLimit()",7,1,6,0,0
+"me.umov.jaiminho.domain.model.ConfigurationTest.shouldNotProcessWhenExceededReprocessingHoursLimitAndPhotoStandbyTypeEqualsRequiredAndHavePendingPhotos()",7,1,6,0,0
+"me.umov.jaiminho.domain.model.ConfigurationTest.shouldNotifyWhenPhotoStandbyTypeEqualsRequiredForWhileAndHavePendingPhotosAndExceededReprocessingHoursLimit()",7,1,6,0,0
+"me.umov.jaiminho.domain.model.ConfigurationTest.shouldProcessWhenExceededReprocessingHoursLimitAndPhotoStandbyTypeEqualsRequiredForWhileAndHavePendingPhotos()",7,1,6,0,0
+"me.umov.jaiminho.domain.model.ConfigurationTest.shouldProcessWhenNotExceededReprocessingHoursLimitAndPhotoStandbyTypeEqualsNotRequiredAndHavePendingPhotos()",7,1,6,0,0
+"me.umov.jaiminho.domain.model.ConfigurationTest.shouldProcessWhenNotExceededReprocessingHoursLimitAndPhotoStandbyTypeEqualsRequiredAndHavePendingPhotos()",7,1,6,0,0
+"me.umov.jaiminho.domain.model.ConfigurationTest.shouldProcessWhenNotExceededReprocessingHoursLimitAndPhotoStandbyTypeEqualsRequiredAndNotHavePendingPhotos()",7,1,6,0,0
+"me.umov.jaiminho.domain.model.ConfigurationTest.shouldProcessWhenNotExceededReprocessingHoursLimitAndPhotoStandbyTypeEqualsRequiredForWhileAndHavePendingPhotos()",7,1,6,0,0
+"me.umov.jaiminho.domain.JaiminhoBuilderTest.shouldBuildJaiminhoWhenNotificationTypeCallback()",7,1,5,0,0
+"me.umov.jaiminho.domain.JaiminhoBuilderTest.shouldBuildJaiminhoWhenNotificationTypeMail()",7,1,5,0,0
+"me.umov.jaiminho.domain.JaiminhoBuilderTest.shouldBuildJaiminhoWhenNotificationTypeSMS()",7,1,5,0,0
+"me.umov.jaiminho.infrastructure.configuration.AmazonSQSConfiguration.createAmazonSQS()",7,1,5,0,0
+"me.umov.jaiminho.domain.model.ResponseNotificationTest.shouldBeFatalErrorWhenCodeEquals500()",7,1,4,0,0
+"me.umov.jaiminho.domain.model.ResponseNotificationTest.shouldBeReprocessingWhenTypeIsReprocessing()",7,1,4,0,0
+"me.umov.jaiminho.domain.model.ResponseNotificationTest.shouldBeSuccessfulWhenCodeBetween200And300()",7,1,4,0,0
+"me.umov.jaiminho.domain.model.ResponseNotificationTest.shouldBeSuccessfulWhenCodeEquals200()",7,1,4,0,0
+"me.umov.jaiminho.domain.model.ResponseNotificationTest.shouldNotBeSuccessWhenCodeEquals300()",7,1,4,0,0
+"me.umov.jaiminho.domain.model.ResponseNotificationTest.shouldNotBeSuccessWhenCodeGreaterThan300()",7,1,4,0,0
+"me.umov.jaiminho.application.observer.LogGeneratorTest.shouldGenerateRuleLogWhenItIsNotNotificationSent()",7,1,3,0,0
+"me.umov.jaiminho.infrastructure.configuration.AmazonSQSConfiguration.jmsListenerContainerFactory()",7,1,3,0,0
+"me.umov.jaiminho.infrastructure.dao.document.EventState.EventState(StateProcessingType state, String log, Long clientId, String jaiminho, String notificationType)",7,1,2,0,5
+"me.umov.jaiminho.infrastructure.email.AwsSesMailAdapterTest.shouldBuildEmailBasedOnMailRequest()",6,1,13,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.FactoryAttributeMapperTest.shouldThrowAnalyzerExceptionWhenDoNotHaveHistoryId()",6,1,7,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.FactoryAttributeMapperTest.shouldThrowAnalyzerExceptionWhenEntityInvalid()",6,1,7,0,0
+"me.umov.jaiminho.infrastructure.configuration.RestConfiguration.restTemplate()",6,1,7,0,0
+"me.umov.jaiminho.domain.Email.send(Notification notification)",6,1,6,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.FactoryAttributeMapperTest.shouldThrowExceptionWhenEntityEqualsActivityAndHistoryIdIsNull()",6,1,6,0,0
+"me.umov.jaiminho.anticorruption.aws.AWSFactoryTest.shouldReturnDataStreamToNotificationConverterWhenTypeIsDataStream()",6,1,5,0,0
+"me.umov.jaiminho.anticorruption.aws.AWSFactoryTest.shouldReturnSQSMessageToNotificationConverterWhenTypeIsSqs()",6,1,5,0,0
+"me.umov.jaiminho.domain.model.ConfigurationTest.shouldSetvalues()",6,1,5,0,0
+"me.umov.jaiminho.domain.model.NotificationTest.shouldReturnActionRuleWhenItIsNotDateStream()",6,1,5,0,0
+"me.umov.jaiminho.domain.model.NotificationTest.shouldReturnMensageIdWhenIsDateStream()",6,1,5,0,0
+"me.umov.jaiminho.domain.validators.SmsValidatorTest.shouldReturnRulesFromSmsValidator()",6,1,5,0,0
+"me.umov.jaiminho.infrastructure.configuration.JwtConfiguration.createBuilderJWTAuth()",6,1,5,0,0
+"me.umov.jaiminho.domain.model.AttemptsTest.shouldExceededReprocessingHoursLimitWhenDateTimeFirstAttemptNotWithinTimeLimit()",6,1,4,0,0
+"me.umov.jaiminho.domain.model.AttemptsTest.shouldNotExceededReprocessingHoursLimitWhenDateTimeFirstAttemptIsWithinTheTimeLimit()",6,1,4,0,0
+"me.umov.jaiminho.domain.model.AttemptsTest.shouldNotExceededReprocessingHoursLimitWhenLimitZero()",6,1,4,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.RuleTest.shouldReturnFalseWhenHistoryIdIsNullAndTaskIdIsNull()",6,1,4,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.ProducerAWSBuilderTest.shouldThrowUnsupportedAnalyzerTypeWhenTypeInvalid()",6,1,4,0,0
+"me.umov.jaiminho.domain.model.ConfigurationTest.shouldReturnZeroWaitTimePutQueueWhenSetNull()",6,1,3,0,0
+"me.umov.jaiminho.domain.model.NotificationTest.setUp()",6,1,3,0,0
+"me.umov.jaiminho.domain.model.ConfigurationTest.shouldNotNotifyWhenPhotoStandbyTypeEqualsRequiredAndHavePendingPhotos()",6,1,2,0,0
+"me.umov.jaiminho.domain.model.ConfigurationTest.shouldNotifyWhenPhotoStandbyTypeEqualsNotRequiredAndNotHavePendingPhotos()",6,1,2,0,0
+"me.umov.jaiminho.domain.model.ConfigurationTest.shouldNotifyWhenPhotoStandbyTypeEqualsNotRequiredForWhileAndHavePendingPhotos()",6,1,2,0,0
+"me.umov.jaiminho.domain.model.ConfigurationTest.shouldNotifyWhenPhotoStandbyTypeEqualsRequiredAndNotHavePendingPhotos()",6,1,2,0,0
+"me.umov.jaiminho.domain.model.ConfigurationTest.shouldNotifyWhenPhotoStandbyTypeEqualsRequiredForWhileAndNotHavePendingPhotos()",6,1,2,0,0
+"me.umov.jaiminho.domain.model.Recipient.toString()",6,1,2,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.AgentMapperTest.shouldGetEntityId()",5,1,9,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.HistoryMapper.findHistoryItem(Attribute attirbute, Rule rule)",5,1,8,0,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementActivityLink.buildLink(Task task, String reportURL, Rule rule)",5,1,6,0,3
+"me.umov.jaiminho.infrastructure.dao.LogDaoTest.shouldNotCreateLogAndSaveWhenFinishStepIsNull()",5,1,5,0,0
+"me.umov.jaiminho.infrastructure.dao.LogDaoTest.shouldNotCreateLogDataStreamAndSaveWhenLogIsNull()",5,1,5,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.AttributeConverter.writeBasicAttributes(HierarchicalStreamReader stream, Attribute entity)",5,1,4,0,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.CallbackTranslatorMessage.transform(NotificationMessageDTO notificationMessage)",5,1,4,0,1
+"me.umov.jaiminho.domain.SMS.send(Notification notification)",5,1,4,0,1
+"me.umov.jaiminho.application.dto.EventMessageTest.shouldReturnTrueIsSqs()",5,1,4,0,0
+"me.umov.jaiminho.application.dto.EventMessageTest.shouldReturnTrueIsdataStream()",5,1,4,0,0
+"me.umov.jaiminho.domain.model.AttemptsTest.shouldBeFirstAttempts()",5,1,4,0,0
+"me.umov.jaiminho.domain.model.AttemptsTest.shouldBeSecondAttempts()",5,1,4,0,0
+"me.umov.jaiminho.domain.validators.rules.PhoneLengthRuleValidationTest.shouldNotThrowJaiminhoBusinessExceptionWhenToValueGreaterThan12Character()",5,1,4,0,0
+"me.umov.jaiminho.domain.validators.rules.PhoneLengthRuleValidationTest.shouldThrowJaiminhoBusinessExceptionWhen()",5,1,4,0,0
+"me.umov.jaiminho.domain.validators.rules.ShouldSendEmailValidationTest.shouldNotThrowConditionJaiminhoBusinessExceptionWhenShouldSendEmailTrue()",5,1,4,0,0
+"me.umov.jaiminho.domain.validators.rules.ShouldSendEmailValidationTest.shouldThrowConditionJaiminhoBusinessExceptionWhenShouldSendEmailFalse()",5,1,4,0,0
+"me.umov.jaiminho.fixture.AgentFixture.withCellPhone(Long phoneIdd, Long phoneStd, Long cellphoneNumber)",5,1,3,0,3
+"me.umov.jaiminho.fixture.ServiceLocalFixture.withCellPhone(Long phoneIdd, Long phoneStd, Long cellphoneNumber)",5,1,3,0,3
+"me.umov.jaiminho.domain.Callback.send(Notification notification)",5,1,3,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.AttributeTest.shouldReturnFalseWhenFieldIsNotPhone()",5,1,3,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.AttributeTest.shouldReturnFalseWhenFieldIsNull()",5,1,3,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.AttributeTest.shouldReturnTrueWhenFieldIsPhone()",5,1,3,0,0
+"me.umov.jaiminho.infrastructure.configuration.MailSenderConfigurationTest.MailSenderConfiguration()",5,1,3,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.RuleTest.shouldReturnFalseWhenThereIsNoHistory()",5,1,3,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.RuleTest.shouldReturnTrueWhenHasHistory()",5,1,3,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.RuleTest.shouldReturnTrueWhenHistoryIdIsNotNull()",5,1,3,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.RuleTest.shouldReturnTrueWhenTaskIdIsNotNull()",5,1,3,0,0
+"me.umov.jaiminho.domain.model.ConfigurationTest.shouldExpectPhotosWhenPhotoStandbyTypeEqualsRequired()",5,1,2,0,0
+"me.umov.jaiminho.domain.model.ConfigurationTest.shouldExpectPhotosWhenPhotoStandbyTypeEqualsRequiredForWhile()",5,1,2,0,0
+"me.umov.jaiminho.domain.model.ConfigurationTest.shouldNotExpectPhotosWhenPhotoStandbyTypeEqualsNotRequired()",5,1,2,0,0
+"me.umov.jaiminho.domain.model.MessageTest.shouldFirstToSmallerTwelveCharactersEqualsFalseWhenPhoneValid()",5,1,2,0,0
+"me.umov.jaiminho.domain.model.MessageTest.shouldFirstToSmallerTwelveCharactersEqualsTrueWhenPhoneInValid()",5,1,2,0,0
+"me.umov.jaiminho.domain.model.RecipientTest.shouldHasNotToWhenToEmpty()",5,1,2,0,0
+"me.umov.jaiminho.domain.model.RecipientTest.shouldHasNotToWhenToNull()",5,1,2,0,0
+"me.umov.jaiminho.domain.model.RecipientTest.shouldHasToWhenToValid()",5,1,2,0,0
+"me.umov.jaiminho.domain.event.trigger.HistoryProcessedInError.HistoryProcessedInError(String log, Long clientId, String id)",5,1,1,0,3
+"me.umov.jaiminho.domain.event.trigger.NotificationHasBeenReprocessed.NotificationHasBeenReprocessed(String messages, Long clientId, String id)",5,1,1,0,3
+"me.umov.jaiminho.domain.model.Recipient.Recipient(String[] to, String[] cc, String[] bcc)",5,1,1,0,3
+"me.umov.jaiminho.domain.model.Identity.Identity(String id, Long clientId, String groupId)",5,1,0,0,3
+"me.umov.jaiminho.infrastructure.dao.TaskDao.findScheduleByHistoryIdByClientId(Long historyId, Long clientId)",5,1,0,0,2
+"me.umov.jaiminho.infrastructure.email.AwsSesMailAdapterTest.assertSimpleEmail(Message mailRequest, SimpleMailMessage simpleMailMessage)",4,1,9,0,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.TaskMapperTest.shouldGetEntityId()",4,1,6,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.ProducerAWSBuilder.build(Reprocess event)",4,1,5,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.CallbackTranslatorMessageTest.setUp()",4,1,4,0,0
+"me.umov.jaiminho.application.event.WorkerExecutedWithError.WorkerExecutedWithError(String message, EventMessage eventMessage)",4,1,3,0,2
+"me.umov.jaiminho.infrastructure.email.AwsSesMailAdapter.send(Message mailRequest)",4,1,3,0,1
+"me.umov.jaiminho.domain.event.DomainEventRegistryTest.setUp()",4,1,3,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.EntityMapper.processFieldReference(Attribute attribute, Rule rule)",4,1,2,0,2
+"me.umov.jaiminho.domain.model.Body.Body(String content, BodyType type)",4,1,2,0,2
+"me.umov.jaiminho.application.sqs.AWSConsumer.dataStreamNotification(@Payload Message<String> message)",4,1,2,0,1
+"me.umov.jaiminho.fixture.RuleFixture.withHistoryId(Long historyId)",4,1,2,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.MailOrSMSTranslatorMessageTest.setUp()",4,1,2,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementActivityLinkTest.setUp()",4,1,2,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementAgentLinkTest.setUp()",4,1,2,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementReportLinkTest.setUp()",4,1,2,0,0
+"me.umov.jaiminho.infrastructure.business.JwtServiceTest.shouldGetToken()",4,1,2,0,0
+"me.umov.jaiminho.infrastructure.configuration.NotificationBlacklistConfigurationTest.shouldBuildNotificationBlacklist()",4,1,2,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.ProducerAWSBuilder.createMessage(String messageSqs, NotificationType type, Integer delayTimeOutInMinute)",4,1,1,0,3
+"me.umov.jaiminho.domain.model.Identity.Identity(Long id, Long client)",4,1,1,0,2
+"me.umov.jaiminho.infrastructure.dao.document.Header.Header(String id, String eventId)",4,1,1,0,2
+"me.umov.jaiminho.infrastructure.producer.aws.ProducerServiceTest.setUp()",4,1,1,0,0
+"me.umov.jaiminho.application.dto.ReprocessExecuted.ReprocessExecuted(NotificationType type, String messageSqs)",4,1,0,0,2
+"me.umov.jaiminho.application.dto.ResultDTO.ResultDTO(String message, int statusCode)",4,1,0,0,2
+"me.umov.jaiminho.application.dto.StatusMessage.StatusMessage(StatusType status, String message)",4,1,0,0,2
+"me.umov.jaiminho.domain.model.ServiceStatus.ServiceStatus(int status, String version)",4,1,0,0,2
+"me.umov.jaiminho.domain.model.Source.Source(String app, String referenceId)",4,1,0,0,2
+"me.umov.jaiminho.infrastructure.dao.dto.NotificationMessageDTO.NotificationMessageDTO(Rule rule, Action action)",4,1,0,0,2
+"me.umov.jaiminho.infrastructure.producer.aws.SendMessage.SendMessage(String messageSqs, NotificationType type)",4,1,0,0,2
+"me.umov.jaiminho.application.sqs.service.GroupResponse.reset()",4,1,0,0,0
+"me.umov.jaiminho.infrastructure.email.MailSenderFactoryTest.shouldGetAwsSesMailAdapter()",3,1,7,0,0
+"me.umov.jaiminho.infrastructure.email.MailSenderFactoryTest.shouldGetAwsSesMailByHtmlAdapter()",3,1,7,0,0
+"me.umov.jaiminho.fixture.CallbackParametersFixture.withCredentials(boolean basicAuth, String hash)",3,1,5,0,2
+"me.umov.jaiminho.fixture.TaskFixture.withWorkspace(String workspace)",3,1,4,0,1
+"me.umov.jaiminho.infrastructure.producer.aws.ProducerAWSBuilder.getNotificationExecuted(MessageSQS event)",3,1,4,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementAgentLink.buildLink(Task task, String reportURL, Rule rule)",3,1,3,0,3
+"me.umov.jaiminho.infrastructure.dao.dto.NotificationMessageDTO.NotificationMessageDTO(ActionRule actionRuleMode, History history)",3,1,3,0,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.AgentMapperTest.shouldGetEntityType()",3,1,3,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.TaskMapperTest.shouldGetEntityType()",3,1,3,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.AttributeConverter.writeAttributes(HierarchicalStreamReader stream, Attribute entity)",3,1,2,0,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.EntityMapper.getValueByCustomField(Attribute attribute, Task task)",3,1,2,0,2
+"me.umov.jaiminho.application.sqs.AWSConsumer.executeAnalyzeCallbackService(@Payload Message<String> message)",3,1,2,0,1
+"me.umov.jaiminho.application.sqs.AWSConsumer.executeAnalyzeMailService(@Payload Message<String> message)",3,1,2,0,1
+"me.umov.jaiminho.application.sqs.AWSConsumer.executeAnalyzeSMSService(@Payload Message<String> message)",3,1,2,0,1
+"me.umov.jaiminho.domain.event.trigger.SendExecuted.SendExecuted(Notification notification)",3,1,2,0,1
+"me.umov.jaiminho.application.observer.CleanNotificationDocumentTest.shouldNotProcessWhenReceiveAndEventDifferentFromSendExecuted()",3,1,2,0,0
+"me.umov.jaiminho.application.observer.CleanNotificationDocumentTest.shouldProcessSendExecutedEvents()",3,1,2,0,0
+"me.umov.jaiminho.application.observer.LogGeneratorTest.shouldProcessNotificationHasBeenReprocessed()",3,1,2,0,0
+"me.umov.jaiminho.application.observer.LogGeneratorTest.shouldProcessSendExecuted()",3,1,2,0,0
+"me.umov.jaiminho.application.observer.LogGeneratorTest.shouldProcessWorkerExecutedWithError()",3,1,2,0,0
+"me.umov.jaiminho.application.observer.ReprocessNotificationSQSTest.shouldNotProcessClassesOtherthanNotificationWasPerformed()",3,1,2,0,0
+"me.umov.jaiminho.application.observer.ReprocessNotificationSQSTest.shouldProcessSendExecuted()",3,1,2,0,0
+"me.umov.jaiminho.application.observer.UpdateHistoryTest.shouldNotProcessWhenEventIsNull()",3,1,2,0,0
+"me.umov.jaiminho.application.observer.UpdateHistoryTest.shouldProcessSendExecuted()",3,1,2,0,0
+"me.umov.jaiminho.domain.event.trigger.NotificationNotPerformed.idLongValue()",3,1,2,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecuted.idLongValue()",3,1,2,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Credentials.isBasic()",3,1,2,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Credentials.isInternal()",3,1,2,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.AttributeConverter.canConvert(Class clazz)",3,1,1,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.AgentMapper.getEntityId(Task task)",3,1,1,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.ClientFixture.withWorkspace(String workspace)",3,1,1,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.ServiceLocalMapper.getEntityId(Task task)",3,1,1,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.TaskMapper.getEntityId(Task task)",3,1,1,0,1
+"me.umov.jaiminho.architecture.IgnoreTests.includes(Location location)",3,1,1,0,1
+"me.umov.jaiminho.fixture.ActionFixture.withActionParameter(String actionParameter)",3,1,1,0,1
+"me.umov.jaiminho.fixture.ActionFixture.withId(long id)",3,1,1,0,1
+"me.umov.jaiminho.fixture.ActionRuleFixture.wihClientId(Long clientId)",3,1,1,0,1
+"me.umov.jaiminho.fixture.ActionRuleFixture.withRule(Rule rule)",3,1,1,0,1
+"me.umov.jaiminho.fixture.AgentFixture.withId(long id)",3,1,1,0,1
+"me.umov.jaiminho.fixture.AgentFixture.withMail(String email)",3,1,1,0,1
+"me.umov.jaiminho.fixture.AttributeFixture.withEntity(String entity)",3,1,1,0,1
+"me.umov.jaiminho.fixture.AttributeFixture.withField(String field)",3,1,1,0,1
+"me.umov.jaiminho.fixture.AttributeFixture.withValue(String value)",3,1,1,0,1
+"me.umov.jaiminho.fixture.CallbackParametersFixture.withUrl(String url)",3,1,1,0,1
+"me.umov.jaiminho.fixture.CustomFieldValueFixture.withExternalValue(String externalValue)",3,1,1,0,1
+"me.umov.jaiminho.fixture.HistoryFixture.withActivityId(long activityId)",3,1,1,0,1
+"me.umov.jaiminho.fixture.HistoryFixture.withId(long id)",3,1,1,0,1
+"me.umov.jaiminho.fixture.HistoryItemFixture.withExibitionValue(String exibitionValue)",3,1,1,0,1
+"me.umov.jaiminho.fixture.HistoryItemFixture.withId(long id)",3,1,1,0,1
+"me.umov.jaiminho.fixture.MessageRequestFixture.withActionType(NotificationType actionType)",3,1,1,0,1
+"me.umov.jaiminho.fixture.MessageRequestFixture.withBody(Attribute message)",3,1,1,0,1
+"me.umov.jaiminho.fixture.MessageRequestFixture.withCondition(Attribute condition)",3,1,1,0,1
+"me.umov.jaiminho.fixture.MessageRequestFixture.withRecipients(Recipients recipients)",3,1,1,0,1
+"me.umov.jaiminho.fixture.MessageRequestFixture.withSubject(Attribute subject)",3,1,1,0,1
+"me.umov.jaiminho.fixture.NotificationMessageFixture.withAction(Action action)",3,1,1,0,1
+"me.umov.jaiminho.fixture.NotificationMessageFixture.withRule(Rule rule)",3,1,1,0,1
+"me.umov.jaiminho.fixture.RecipientsFixture.withCC(Attribute cc)",3,1,1,0,1
+"me.umov.jaiminho.fixture.RecipientsFixture.withTo(Attribute attribute)",3,1,1,0,1
+"me.umov.jaiminho.fixture.RuleFixture.withClientId(long clientId)",3,1,1,0,1
+"me.umov.jaiminho.fixture.RuleFixture.withGroup(String group)",3,1,1,0,1
+"me.umov.jaiminho.fixture.RuleFixture.withId(long id)",3,1,1,0,1
+"me.umov.jaiminho.fixture.RuleFixture.withTaskId(Long taskId)",3,1,1,0,1
+"me.umov.jaiminho.fixture.SMSFixture.withAccount(String account)",3,1,1,0,1
+"me.umov.jaiminho.fixture.SMSFixture.withId(long id)",3,1,1,0,1
+"me.umov.jaiminho.fixture.SMSFixture.withLastId(Long lastId)",3,1,1,0,1
+"me.umov.jaiminho.fixture.SMSFixture.withPassword(String password)",3,1,1,0,1
+"me.umov.jaiminho.fixture.SMSFixture.withPort(String port)",3,1,1,0,1
+"me.umov.jaiminho.fixture.ServiceLocalFixture.withId(long id)",3,1,1,0,1
+"me.umov.jaiminho.fixture.ServiceLocalFixture.withMail(String email)",3,1,1,0,1
+"me.umov.jaiminho.fixture.TaskFixture.withAgent(Agent agent)",3,1,1,0,1
+"me.umov.jaiminho.fixture.TaskFixture.withClientId(long clientId)",3,1,1,0,1
+"me.umov.jaiminho.fixture.TaskFixture.withId(long id)",3,1,1,0,1
+"me.umov.jaiminho.fixture.TaskFixture.withServiceLocal(ServiceLocal serviceLocal)",3,1,1,0,1
+"me.umov.jaiminho.fixture.TaskFixture.withToken(String tokenReport)",3,1,1,0,1
+"me.umov.jaiminho.anticorruption.aws.AWSFactoryTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.anticorruption.aws.DataStreamToNotificationConverterTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.AgentMapperTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.FactoryAttributeMapperTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.HistoryMapperTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.ServiceLocalMapperTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.SolveAttributeServiceTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.TaskMapperTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementCustomFieldTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementEntityTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementGroupTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementTaskTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.service.XStreamServiceTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.facade.TranslatorFactoryTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.application.controller.VersionController.index()",3,1,1,0,0
+"me.umov.jaiminho.application.dto.EventMessage.successfullyProcessed()",3,1,1,0,0
+"me.umov.jaiminho.application.event.DataStreamWasProcessedTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.application.event.WorkerExecutedWithError.appSource()",3,1,1,0,0
+"me.umov.jaiminho.application.event.WorkerExecutedWithError.groupId()",3,1,1,0,0
+"me.umov.jaiminho.application.event.WorkerExecutedWithError.idLongValue()",3,1,1,0,0
+"me.umov.jaiminho.application.event.WorkerExecutedWithError.isDataStream()",3,1,1,0,0
+"me.umov.jaiminho.application.event.WorkerExecutedWithError.referenceId()",3,1,1,0,0
+"me.umov.jaiminho.application.observer.CleanNotificationDocumentTest.setup()",3,1,1,0,0
+"me.umov.jaiminho.application.observer.LogGeneratorTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.application.observer.ReprocessNotificationSQSTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.application.observer.UpdateHistoryTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.application.sqs.AWSConsumerTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.application.sqs.service.GroupResponse.GroupResponse()",3,1,1,0,0
+"me.umov.jaiminho.application.sqs.service.WorkerTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.domain.CallbackTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.domain.EmailTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.domain.JaiminhoBuilderTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.domain.SMSTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.domain.SenderTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.domain.event.DomainEventRegistryTest.should()",3,1,1,0,0
+"me.umov.jaiminho.domain.event.trigger.HistoryProcessedInError.idLongValue()",3,1,1,0,0
+"me.umov.jaiminho.domain.event.trigger.NotificationHasBeenReprocessed.idLongValue()",3,1,1,0,0
+"me.umov.jaiminho.domain.event.trigger.NotificationNotPerformed.clientId()",3,1,1,0,0
+"me.umov.jaiminho.domain.event.trigger.NotificationNotPerformed.id()",3,1,1,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecuted.appSource()",3,1,1,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecuted.clientId()",3,1,1,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecuted.delayTimeOutInMinute()",3,1,1,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecuted.getMessageSqs()",3,1,1,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecuted.groupId()",3,1,1,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecuted.id()",3,1,1,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecuted.isDataStream()",3,1,1,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecuted.notificationType()",3,1,1,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecuted.referenceId()",3,1,1,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecuted.state()",3,1,1,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecuted.type()",3,1,1,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecutedTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.domain.exception.IdempotencyException.getMessage()",3,1,1,0,0
+"me.umov.jaiminho.domain.model.ConfigurationTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.domain.validators.MailValidator.getRules()",3,1,1,0,0
+"me.umov.jaiminho.domain.validators.MailValidatorTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.domain.validators.SmsValidator.getRules()",3,1,1,0,0
+"me.umov.jaiminho.domain.validators.SmsValidatorTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.domain.validators.rules.EmailFormatRuleValidationTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.domain.validators.rules.PhoneLengthRuleValidationTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.domain.validators.rules.ShouldSendEmailValidationTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.domain.validators.rules.SmsTextLengthRuleValidationTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.domain.validators.rules.SubjectRuleValidationTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.infrastructure.business.BusinessAdapterTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.infrastructure.configuration.AmazonSQSConfiguration.createSQSConnectionFactory()",3,1,1,0,0
+"me.umov.jaiminho.infrastructure.configuration.AmazonSQSConfiguration.init()",3,1,1,0,0
+"me.umov.jaiminho.infrastructure.configuration.MailSenderConfigurationTest.setup()",3,1,1,0,0
+"me.umov.jaiminho.infrastructure.configuration.NotificationBlacklistConfiguration.sesBlacklistService()",3,1,1,0,0
+"me.umov.jaiminho.infrastructure.dao.LogDaoTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.infrastructure.dao.NotificationDAOTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.infrastructure.email.AwsSesMailAdapterTest.setup()",3,1,1,0,0
+"me.umov.jaiminho.infrastructure.email.AwsSesMailByHtmlAdapterTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.infrastructure.email.MailSenderFactoryTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.infrastructure.email.MailServiceTest.setup()",3,1,1,0,0
+"me.umov.jaiminho.infrastructure.http.HttpServiceTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.ProducerAWSBuilderTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.infrastructure.sms.SMSAdapterTest.setUp()",3,1,1,0,0
+"me.umov.jaiminho.domain.exception.IdempotencyException.IdempotencyException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace)",3,1,0,0,4
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.AttributeConverter.marshal(Object arg0, HierarchicalStreamWriter arg1, MarshallingContext arg2)",3,1,0,0,3
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.TaskMapper.getValueBy(Task task, Attribute attribute)",3,1,0,0,2
+"me.umov.jaiminho.domain.model.Identity.Identity(String id, Long clientId)",3,1,0,0,2
+"me.umov.jaiminho.domain.model.TaskResult.TaskResult(int statusCode, String message)",3,1,0,0,2
+"me.umov.jaiminho.infrastructure.dao.document.MessageLog.MessageLog(Header header, List<EventState> eventState)",3,1,0,0,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Attribute.Attribute(String value)",3,1,0,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.CallbackParameters.CallbackParameters(String url)",3,1,0,0,1
+"me.umov.jaiminho.application.dto.EventMessage.setEvent(PlataformEvent event)",3,1,0,0,1
+"me.umov.jaiminho.fixture.CallbackCredentialsFixture.withBasic(boolean basicAuth)",3,1,0,0,1
+"me.umov.jaiminho.fixture.CallbackCredentialsFixture.withHash(String hash)",3,1,0,0,1
+"me.umov.jaiminho.fixture.MailRequestFixture.withBody(String body)",3,1,0,0,1
+"me.umov.jaiminho.fixture.MailRequestFixture.withCc(String cc)",3,1,0,0,1
+"me.umov.jaiminho.fixture.MailRequestFixture.withFrom(String from)",3,1,0,0,1
+"me.umov.jaiminho.fixture.MailRequestFixture.withHtml(boolean isHtmlBody)",3,1,0,0,1
+"me.umov.jaiminho.fixture.MailRequestFixture.withSubject(String subject)",3,1,0,0,1
+"me.umov.jaiminho.fixture.MailRequestFixture.withTo(String to)",3,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.document.Source.Source(String referenceId)",3,1,0,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.AgentMapper.getEntityType()",3,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.ServiceLocalMapper.getEntityType()",3,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.TaskMapper.getEntityType()",3,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.AttributeTest.setUp()",3,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementActivityLink.getStringToReplace()",3,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementAgentLink.getStringToReplace()",3,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementReportLink.getStringToReplace()",3,1,0,0,0
+"me.umov.jaiminho.application.dto.ReprocessExecuted.delayTimeOutInMinute()",3,1,0,0,0
+"me.umov.jaiminho.application.dto.ReprocessExecuted.getMessageSqs()",3,1,0,0,0
+"me.umov.jaiminho.application.dto.ReprocessExecuted.type()",3,1,0,0,0
+"me.umov.jaiminho.application.event.DataStreamWasProcessedTest.shoudThrowIllegalArgumentExceptionWhenEventMessageIsNull()",3,1,0,0,0
+"me.umov.jaiminho.application.event.WorkerExecutedWithError.clientId()",3,1,0,0,0
+"me.umov.jaiminho.application.event.WorkerExecutedWithError.id()",3,1,0,0,0
+"me.umov.jaiminho.application.event.WorkerExecutedWithError.logMessages()",3,1,0,0,0
+"me.umov.jaiminho.application.event.WorkerExecutedWithError.state()",3,1,0,0,0
+"me.umov.jaiminho.domain.event.trigger.HistoryProcessedInError.clientId()",3,1,0,0,0
+"me.umov.jaiminho.domain.event.trigger.HistoryProcessedInError.id()",3,1,0,0,0
+"me.umov.jaiminho.domain.event.trigger.HistoryProcessedInError.logMessages()",3,1,0,0,0
+"me.umov.jaiminho.domain.event.trigger.NotificationHasBeenReprocessed.clientId()",3,1,0,0,0
+"me.umov.jaiminho.domain.event.trigger.NotificationHasBeenReprocessed.id()",3,1,0,0,0
+"me.umov.jaiminho.domain.event.trigger.NotificationHasBeenReprocessed.logMessages()",3,1,0,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecuted.logMessages()",3,1,0,0,0
+"me.umov.jaiminho.infrastructure.configuration.AmazonSQSConfiguration.defaultJmsTemplate()",3,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Agent.getEntityTypeId()",3,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.RuleTest.setUp()",3,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ServiceLocal.getClientId()",3,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ServiceLocal.getEntityTypeId()",3,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Task.getEntityTypeId()",3,1,0,0,0
+"me.umov.jaiminho.domain.model.Message.Message(Message message)",2,1,12,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.EntityMapper.findCustomFieldValue(Attribute attribute, Task task)",2,1,6,0,2
+"me.umov.jaiminho.domain.model.Message.changeBody(String uriBlacklist, Long clientId)",2,1,5,0,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.replace.ReplacementReportLink.buildLink(Task task, String reportURL, Rule rule)",2,1,3,0,3
+"me.umov.jaiminho.infrastructure.http.authentication.FactorAuthenticationService.withNoMultipleFactorAuthentication(Notification notification)",2,1,3,0,1
+"me.umov.jaiminho.infrastructure.dao.document.Content.hasCC()",2,1,3,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Content.hasTo()",2,1,3,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.AttributeConverter.writeEntity(HierarchicalStreamReader stream, Attribute entity)",2,1,2,0,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.AttributeConverter.writeEntityId(HierarchicalStreamReader stream, Attribute entity)",2,1,2,0,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.AttributeConverter.writeField(HierarchicalStreamReader stream, Attribute entity)",2,1,2,0,2
+"me.umov.jaiminho.anticorruption.aws.DataStreamToNotificationConverter.hasAuth(PlataformEvent event)",2,1,2,0,1
+"me.umov.jaiminho.domain.model.Identity.Identity(Identity identity)",2,1,2,0,1
+"me.umov.jaiminho.infrastructure.dao.HistoryImplDAO.findById(Long historyId)",2,1,2,0,1
+"me.umov.jaiminho.application.event.DataStreamWasProcessed.shoudSendMessage()",2,1,2,0,0
+"me.umov.jaiminho.domain.model.Message.bodyWithGreater160Characters()",2,1,2,0,0
+"me.umov.jaiminho.domain.model.Message.firstToSmallerTwelveCharacters()",2,1,2,0,0
+"me.umov.jaiminho.domain.model.Message.hasNotSubject()",2,1,2,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Content.getCC()",2,1,2,0,0
+"me.umov.jaiminho.infrastructure.dao.dto.NotificationMessageDTO.getType()",2,1,2,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.getActionParameter()",2,1,2,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.getActionType()",2,1,2,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.getHistoryId()",2,1,2,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.getRuleId()",2,1,2,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Rule.itIsBasedOnTask()",2,1,2,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Task.getPhoneAgent()",2,1,2,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Task.getPhoneServiceLocal()",2,1,2,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.SendMessageRequestService.createSendMessageRequestCallbackService()",2,1,2,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.SendMessageRequestService.createSendMessageRequestMailervice()",2,1,2,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.SendMessageRequestService.createSendMessageRequestSMSService()",2,1,2,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.AttributeConverter.writeCustomAttributes(HierarchicalStreamReader stream, Attribute entity)",2,1,1,0,2
+"me.umov.jaiminho.domain.model.Message.setBody(String body, String mediaType)",2,1,1,0,2
+"me.umov.jaiminho.infrastructure.dao.HistoryImplDAO.markAsExported(Long historyId, Long clientId)",2,1,1,0,2
+"me.umov.jaiminho.JaiminhoApplication.main(String[] args)",2,1,1,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.converters.AttributeConverter.isBlank(String attribute)",2,1,1,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.EntityMapper.getAlternativeIdentifier(String alternativeIdentifier)",2,1,1,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.EntityMapper.isCustomField(String field)",2,1,1,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Attribute.isBlank(String value)",2,1,1,0,1
+"me.umov.jaiminho.application.dto.EventMessage.decode(String message)",2,1,1,0,1
+"me.umov.jaiminho.infrastructure.dao.SMSImplDao.save(SMS sms)",2,1,1,0,1
+"me.umov.jaiminho.infrastructure.gson.GsonWrapper.toJson(Object src)",2,1,1,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Attribute.hasValue()",2,1,1,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Attribute.isValue()",2,1,1,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Attribute.itIsPhoneField()",2,1,1,0,0
+"me.umov.jaiminho.application.dto.EventMessage.app()",2,1,1,0,0
+"me.umov.jaiminho.application.dto.EventMessage.clientId()",2,1,1,0,0
+"me.umov.jaiminho.application.dto.EventMessage.getOperation()",2,1,1,0,0
+"me.umov.jaiminho.application.dto.EventMessage.hasEventMessage()",2,1,1,0,0
+"me.umov.jaiminho.application.dto.EventMessage.id()",2,1,1,0,0
+"me.umov.jaiminho.application.dto.EventMessage.isDataStream()",2,1,1,0,0
+"me.umov.jaiminho.application.dto.EventMessage.isSqs()",2,1,1,0,0
+"me.umov.jaiminho.application.dto.EventMessage.referenceId()",2,1,1,0,0
+"me.umov.jaiminho.application.event.DataStreamWasProcessed.clientId()",2,1,1,0,0
+"me.umov.jaiminho.application.event.DataStreamWasProcessed.getMessageSqs()",2,1,1,0,0
+"me.umov.jaiminho.application.event.DataStreamWasProcessed.payload()",2,1,1,0,0
+"me.umov.jaiminho.application.event.DataStreamWasProcessed.type()",2,1,1,0,0
+"me.umov.jaiminho.domain.event.trigger.SendExecuted.isSuccess()",2,1,1,0,0
+"me.umov.jaiminho.domain.model.Identity.idLongValue()",2,1,1,0,0
+"me.umov.jaiminho.domain.model.Message.bcc()",2,1,1,0,0
+"me.umov.jaiminho.domain.model.Message.body()",2,1,1,0,0
+"me.umov.jaiminho.domain.model.Message.cc()",2,1,1,0,0
+"me.umov.jaiminho.domain.model.Message.hasFrom()",2,1,1,0,0
+"me.umov.jaiminho.domain.model.Message.hasSubject()",2,1,1,0,0
+"me.umov.jaiminho.domain.model.Message.hasTo()",2,1,1,0,0
+"me.umov.jaiminho.domain.model.Message.to()",2,1,1,0,0
+"me.umov.jaiminho.domain.model.Message.toUsedInLog()",2,1,1,0,0
+"me.umov.jaiminho.domain.model.MultipleFactorAuthentication.getType()",2,1,1,0,0
+"me.umov.jaiminho.domain.model.Recipient.ccConcatenatedWithCommas()",2,1,1,0,0
+"me.umov.jaiminho.domain.model.Recipient.hasTo()",2,1,1,0,0
+"me.umov.jaiminho.domain.model.Recipient.toConcatenatedWithCommas()",2,1,1,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Content.hasCredentials()",2,1,1,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Content.hasRecipients()",2,1,1,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Content.hasUrl()",2,1,1,0,0
+"me.umov.jaiminho.infrastructure.dao.dto.NotificationMessageDTO.getActionParameter()",2,1,1,0,0
+"me.umov.jaiminho.infrastructure.dao.dto.NotificationMessageDTO.getHistoryId()",2,1,1,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Action.getNotificationType()",2,1,1,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.History.mustChangeExportStatus()",2,1,1,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Rule.hasHistory()",2,1,1,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.SendMessageRequestService.createSendMessageRequestNotificationExecutedService()",2,1,1,0,0
+"me.umov.jaiminho.infrastructure.email.AwsSesMailAdapter.AwsSesMailAdapter(JavaMailSender mailSender, SesBlacklistService sesBlacklistService, Message mailRequest)",2,1,0,0,3
+"me.umov.jaiminho.domain.exception.IdempotencyException.IdempotencyException(String message, Throwable cause)",2,1,0,0,2
+"me.umov.jaiminho.domain.exception.JaiminhoBusinessException.JaiminhoBusinessException(String message, Throwable cause)",2,1,0,0,2
+"me.umov.jaiminho.infrastructure.business.RequestBuilder.get(Long historyIdRequest, HttpHeaders headers)",2,1,0,0,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Attribute.setEntityId(String entityId)",2,1,0,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Attribute.setField(String field)",2,1,0,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Attribute.setHasMapping(boolean hasMapping)",2,1,0,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Attribute.setInternalValue(boolean isInternalValue)",2,1,0,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Attribute.setValue(String value)",2,1,0,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.CallbackParameters.setCredentials(HttpCredentials credentials)",2,1,0,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.CallbackParameters.setUrl(String url)",2,1,0,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.CallbackProtocol.CallbackProtocol(Long historyId)",2,1,0,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.CallbackProtocol.setHistory(History history)",2,1,0,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.GeneralSettings.setExportStatusFlagExported(boolean exportStatusFlagExported)",2,1,0,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.GeneralSettings.setWaitSyncPhotos(WaitSyncPhotos waitSyncPhotos)",2,1,0,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.GeneralSettings.setWaitTimePutQueue(int waitTimePutQueue)",2,1,0,0,1
+"me.umov.jaiminho.application.dto.EventMessage.processedWithError(String message)",2,1,0,0,1
+"me.umov.jaiminho.application.dto.EventMessage.setType(ConverterType type)",2,1,0,0,1
+"me.umov.jaiminho.application.event.WorkerExecutedWithError.changeClientId(Long clientId)",2,1,0,0,1
+"me.umov.jaiminho.application.sqs.service.GroupResponse.exceededLimitBusinessErrors(int limitBusinessErrors)",2,1,0,0,1
+"me.umov.jaiminho.application.sqs.service.GroupResponse.exceededLimitFatalErrors(int limitFatalErrors)",2,1,0,0,1
+"me.umov.jaiminho.application.sqs.service.GroupResponse.exceededLimitReprocess(int limitReprocess)",2,1,0,0,1
+"me.umov.jaiminho.application.sqs.service.LimitException.LimitException(String message)",2,1,0,0,1
+"me.umov.jaiminho.domain.event.trigger.NotificationNotPerformed.NotificationNotPerformed(Notification notification)",2,1,0,0,1
+"me.umov.jaiminho.domain.exception.BlacklistValidationException.BlacklistValidationException(String message)",2,1,0,0,1
+"me.umov.jaiminho.domain.exception.IdempotencyException.IdempotencyException(Notification notification)",2,1,0,0,1
+"me.umov.jaiminho.domain.exception.IdempotencyException.IdempotencyException(String message)",2,1,0,0,1
+"me.umov.jaiminho.domain.exception.IdempotencyException.IdempotencyException(Throwable cause)",2,1,0,0,1
+"me.umov.jaiminho.domain.exception.JaiminhoBusinessException.JaiminhoBusinessException(String message)",2,1,0,0,1
+"me.umov.jaiminho.domain.exception.MailValidationException.MailValidationException(String message)",2,1,0,0,1
+"me.umov.jaiminho.domain.model.Message.setFrom(String from)",2,1,0,0,1
+"me.umov.jaiminho.domain.model.Message.setHtmlBody(boolean isHtmlBody)",2,1,0,0,1
+"me.umov.jaiminho.domain.model.Message.setSubject(String subject)",2,1,0,0,1
+"me.umov.jaiminho.domain.model.Recipient.isValid(String[] string)",2,1,0,0,1
+"me.umov.jaiminho.domain.model.Recipient.setTo(String[] to)",2,1,0,0,1
+"me.umov.jaiminho.domain.model.ServiceStatus.setServiceName(String serviceName)",2,1,0,0,1
+"me.umov.jaiminho.domain.model.ServiceStatus.setStatus(int status)",2,1,0,0,1
+"me.umov.jaiminho.domain.model.ServiceStatus.setVersion(String version)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.business.BusinessAdapterTest.getReturn(String resultProcess)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.configuration.AmazonSQSConfiguration.setConnectionFactory(SQSConnectionFactory connectionFactory)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.configuration.AmazonSQSConfiguration.setRegionName(String region)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.configuration.MailSenderConfiguration.setReplyTo(String replyTo)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.document.Content.setActionType(NotificationType actionType)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.document.Content.setBody(String body)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.document.Content.setCredentials(Credentials credentials)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.document.Content.setOperation(OperationType operation)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.document.Content.setRecipients(Recipients recipients)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.document.Content.setUrl(String url)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.document.Header.setEventId(String eventId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.document.Header.setId(String messageId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.document.MessageLog.MessageLog(Header header)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.document.MessageLog.addSource(Source source)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.document.Source.setApp(String app)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.document.Source.setClientId(Long clientId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Action.setActionParameter(String actionParameter)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Action.setId(Long id)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Action.setType(String type)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.setAction(Action action)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.setClientId(Long clientId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.setDateFirstProcessed(LocalDateTime dateFirstProcessed)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.setDateProcessed(LocalDateTime dateProcessed)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.setId(Long id)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.setMaxAttempts(Long maxAttempts)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.setRule(Rule rule)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.setStatus(Character status)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.setTotalAttempts(Long totalAttempts)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Agent.setCellphoneNumber(Long cellphoneNumber)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Agent.setClientId(Long clientId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Agent.setEmail(String email)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Agent.setId(Long id)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Agent.setName(String name)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Agent.setPhoneIdd(Long phoneIdd)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Agent.setPhoneStd(Long phoneStd)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Client.setId(Long id)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Client.setWorkspace(String workspace)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.CustomFieldValue.setClientId(Long clientId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.CustomFieldValue.setExternalValue(String externalValue)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.CustomFieldValue.setId(Long id)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.CustomFieldValue.setInternalValue(String internalValue)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.History.History(Long id)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.History.setActivityId(Long activityId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.History.setClientId(Long clientId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.History.setExportStatus(Character exportStatus)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.History.setId(Long id)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.History.setScheduleId(Long scheduleId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.History.setTotalPhotos(Long totalPhotos)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.History.setTotalPhotosReceived(Long totalPhotosReceived)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.HistoryItem.setClientId(Long clientId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.HistoryItem.setExibitionValue(String exibitionValue)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.HistoryItem.setFieldId(Long fieldId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.HistoryItem.setHistoryId(Long historyId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.HistoryItem.setId(Long id)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.HistoryItem.setValue(String value)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Rule.setClientId(Long clientId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Rule.setGroup(String group)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Rule.setHistory(History history)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Rule.setHistoryId(Long historyId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Rule.setId(Long id)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Rule.setTaskId(Long taskId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.RuleLog.setActionRuleId(Long actionRuleId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.RuleLog.setClientId(Long clientId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.RuleLog.setId(Long id)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.RuleLog.setInsertDateHour(LocalDateTime insertDateHour)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.RuleLog.setLog(String log)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.RuleLog.setRuleId(Long ruleId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.SMS.setAccount(String account)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.SMS.setId(Long id)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.SMS.setLasId(Long lasId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.SMS.setPassword(String password)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.SMS.setPort(String port)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.SMS.setUrl(String url)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.ServiceLocal.setCellphoneNumber(Long cellphoneNumber)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.ServiceLocal.setClientId(Long clientId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.ServiceLocal.setDescription(String description)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.ServiceLocal.setEmail(String email)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.ServiceLocal.setId(Long id)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.ServiceLocal.setPhoneIdd(Long phoneIdd)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.ServiceLocal.setPhoneStd(Long phoneStd)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.SystemParameter.setClientId(Long clientId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.SystemParameter.setId(Long id)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.SystemParameter.setSms(SMS sms)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Task.setAgent(Agent agent)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Task.setClient(Client client)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Task.setClientId(Long clientId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Task.setDate(LocalDate date)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Task.setGroup(String group)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Task.setHour(String hour)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Task.setId(Long id)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Task.setServiceLocal(ServiceLocal serviceLocal)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Task.setSituationId(Long situationId)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.entity.Task.setTokenReport(String tokenReport)",2,1,0,0,1
+"me.umov.jaiminho.infrastructure.producer.aws.SendMessage.changeDelayTimeout(Integer delayTimeout)",2,1,0,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.ClientFixture.build()",2,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.ClientFixture.get()",2,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Attribute.getEntity()",2,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Attribute.getEntityId()",2,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Attribute.getField()",2,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Attribute.getHasMapping()",2,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Attribute.getValue()",2,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Attribute.isInternalValue()",2,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.CallbackParameters.getCredentials()",2,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.CallbackParameters.getUrl()",2,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.CallbackProtocol.getHistory()",2,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.GeneralSettings.getWaitSyncPhotos()",2,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.GeneralSettings.getWaitTimePutQueue()",2,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.GeneralSettings.isExportStatusFlagExported()",2,1,0,0,0
+"me.umov.jaiminho.application.controller.VersionController.getVersion()",2,1,0,0,0
+"me.umov.jaiminho.application.dto.EntityDTO.getId()",2,1,0,0,0
+"me.umov.jaiminho.application.dto.EventMessage.getEventMessage()",2,1,0,0,0
+"me.umov.jaiminho.application.dto.EventMessage.getStatus()",2,1,0,0,0
+"me.umov.jaiminho.application.dto.EventMessage.payload()",2,1,0,0,0
+"me.umov.jaiminho.application.dto.ResultDTO.getMessage()",2,1,0,0,0
+"me.umov.jaiminho.application.dto.ResultDTO.getStatusCode()",2,1,0,0,0
+"me.umov.jaiminho.application.dto.StatusMessage.getMessage()",2,1,0,0,0
+"me.umov.jaiminho.application.dto.StatusMessage.getStatus()",2,1,0,0,0
+"me.umov.jaiminho.application.sqs.service.GroupResponse.addBusinessErrors()",2,1,0,0,0
+"me.umov.jaiminho.application.sqs.service.GroupResponse.addFatalErrors()",2,1,0,0,0
+"me.umov.jaiminho.application.sqs.service.GroupResponse.addReprocess()",2,1,0,0,0
+"me.umov.jaiminho.domain.exception.IdempotencyException.IdempotencyException()",2,1,0,0,0
+"me.umov.jaiminho.domain.exception.IdempotencyException.getNotification()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.AttemptsTest.setUp()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.Body.content()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.Body.type()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.Identity.clientId()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.Identity.groupId()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.Identity.id()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.Message.from()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.Message.hasBody()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.Message.isHtmlBody()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.Message.shouldNotSendMail()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.Message.subject()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.MultipleFactorAuthentication.getHash()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.MultipleFactorAuthentication.getUrl()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.Recipient.bcc()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.Recipient.cc()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.Recipient.to()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.ServiceStatus.getServiceName()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.ServiceStatus.getStatus()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.ServiceStatus.getVersion()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.Source.getApp()",2,1,0,0,0
+"me.umov.jaiminho.domain.model.Source.getReferenceId()",2,1,0,0,0
+"me.umov.jaiminho.fixture.ActionFixture.build()",2,1,0,0,0
+"me.umov.jaiminho.fixture.ActionFixture.get()",2,1,0,0,0
+"me.umov.jaiminho.fixture.ActionRuleFixture.build()",2,1,0,0,0
+"me.umov.jaiminho.fixture.ActionRuleFixture.get()",2,1,0,0,0
+"me.umov.jaiminho.fixture.AgentFixture.build()",2,1,0,0,0
+"me.umov.jaiminho.fixture.AgentFixture.get()",2,1,0,0,0
+"me.umov.jaiminho.fixture.AttributeFixture.build()",2,1,0,0,0
+"me.umov.jaiminho.fixture.AttributeFixture.get()",2,1,0,0,0
+"me.umov.jaiminho.fixture.CallbackCredentialsFixture.build()",2,1,0,0,0
+"me.umov.jaiminho.fixture.CallbackCredentialsFixture.get()",2,1,0,0,0
+"me.umov.jaiminho.fixture.CallbackParametersFixture.build()",2,1,0,0,0
+"me.umov.jaiminho.fixture.CallbackParametersFixture.get()",2,1,0,0,0
+"me.umov.jaiminho.fixture.CustomFieldValueFixture.build()",2,1,0,0,0
+"me.umov.jaiminho.fixture.CustomFieldValueFixture.get()",2,1,0,0,0
+"me.umov.jaiminho.fixture.HistoryFixture.build()",2,1,0,0,0
+"me.umov.jaiminho.fixture.HistoryFixture.get()",2,1,0,0,0
+"me.umov.jaiminho.fixture.HistoryItemFixture.build()",2,1,0,0,0
+"me.umov.jaiminho.fixture.HistoryItemFixture.get()",2,1,0,0,0
+"me.umov.jaiminho.fixture.MailRequestFixture.build()",2,1,0,0,0
+"me.umov.jaiminho.fixture.MailRequestFixture.get()",2,1,0,0,0
+"me.umov.jaiminho.fixture.MessageRequestFixture.build()",2,1,0,0,0
+"me.umov.jaiminho.fixture.MessageRequestFixture.get()",2,1,0,0,0
+"me.umov.jaiminho.fixture.NotificationMessageFixture.build()",2,1,0,0,0
+"me.umov.jaiminho.fixture.NotificationMessageFixture.get()",2,1,0,0,0
+"me.umov.jaiminho.fixture.RecipientsFixture.build()",2,1,0,0,0
+"me.umov.jaiminho.fixture.RecipientsFixture.get()",2,1,0,0,0
+"me.umov.jaiminho.fixture.RuleFixture.build()",2,1,0,0,0
+"me.umov.jaiminho.fixture.RuleFixture.buildOptional()",2,1,0,0,0
+"me.umov.jaiminho.fixture.RuleFixture.get()",2,1,0,0,0
+"me.umov.jaiminho.fixture.SMSFixture.build()",2,1,0,0,0
+"me.umov.jaiminho.fixture.SMSFixture.get()",2,1,0,0,0
+"me.umov.jaiminho.fixture.ServiceLocalFixture.build()",2,1,0,0,0
+"me.umov.jaiminho.fixture.ServiceLocalFixture.get()",2,1,0,0,0
+"me.umov.jaiminho.fixture.SimpleMailMessageFixture.build()",2,1,0,0,0
+"me.umov.jaiminho.fixture.SimpleMailMessageFixture.get()",2,1,0,0,0
+"me.umov.jaiminho.fixture.TaskFixture.build()",2,1,0,0,0
+"me.umov.jaiminho.fixture.TaskFixture.get()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.configuration.mongo.MultipleMongoProperties.getNotification()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.configuration.mongo.MultipleMongoProperties.getSentinel()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Content.getActionType()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Content.getBody()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Content.getCredentials()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Content.getOperation()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Content.getRecipients()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Content.getSubject()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Content.getUrl()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Content.hasActionType()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Content.isHtml()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Credentials.getAuth()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Credentials.getHash()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Header.getEventId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Header.getId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Header.hasEventId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Header.id()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Source.Source()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Source.getApp()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Source.getClientId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Source.getReferenceId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.dto.NotificationMessageDTO.getRule()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Action.getActionParameter()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Action.getId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Action.getType()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.getAction()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.getClientId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.getDateProcessed()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.getId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.getMaxAttempts()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.getRule()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.getStatus()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.getTotalAttempts()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ActionRule.isSuccessfuly()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Agent.getCellphoneNumber()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Agent.getClientId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Agent.getEmail()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Agent.getId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Agent.getName()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Agent.getPhoneIdd()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Agent.getPhoneStd()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Client.getId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Client.getWorkspace()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.CustomFieldValue.getClientId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.CustomFieldValue.getExternalValue()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.CustomFieldValue.getId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.CustomFieldValue.getInternalValue()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.History.History()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.History.getActivityId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.History.getClientId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.History.getExportStatus()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.History.getId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.History.getScheduleId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.HistoryItem.getClientId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.HistoryItem.getExibitionValue()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.HistoryItem.getFieldId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.HistoryItem.getHistoryId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.HistoryItem.getId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.HistoryItem.getValue()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Rule.getClientId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Rule.getGroup()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Rule.getHistory()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Rule.getId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Rule.getTaskId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.RuleLog.getActionRuleId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.RuleLog.getClientId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.RuleLog.getId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.RuleLog.getInsertDateHour()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.RuleLog.getLog()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.RuleLog.getRuleId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.SMS.getAccount()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.SMS.getId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.SMS.getLasId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.SMS.getPassword()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.SMS.getPort()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.SMS.getUrl()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ServiceLocal.getCellphoneNumber()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ServiceLocal.getDescription()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ServiceLocal.getEmail()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ServiceLocal.getId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ServiceLocal.getPhoneIdd()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.ServiceLocal.getPhoneStd()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.SystemParameter.getClientId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.SystemParameter.getId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.SystemParameter.getSms()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Task.getAgent()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Task.getClient()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Task.getClientId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Task.getDate()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Task.getGroup()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Task.getHour()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Task.getId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Task.getServiceLocal()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Task.getSituationId()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.Task.getTokenReport()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.http.authentication.exception.FactorAuthenticationNotDefinedException.FactorAuthenticationNotDefinedException()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.SendMessage.delayInSeconds()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.SendMessage.getMessageSqs()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.SendMessage.isDelayTimeout()",2,1,0,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.SendMessage.type()",2,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.Attribute.Attribute()",1,1,0,0,0
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.model.CallbackParameters.CallbackParameters()",1,1,0,0,0
+"me.umov.jaiminho.infrastructure.configuration.MailSenderConfiguration.MailSenderConfiguration()",1,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.Header.Header()",1,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.document.MessageLog.MessageLog()",1,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.HistoryItemDao.findByHistoryIdAndFieldIdAndClientId(Long historyId, Long fieldId, Long clientId)",0,1,0,0,3
+"me.umov.jaiminho.infrastructure.dao.TaskDao.existsByGroupAndSituationIdAndClientId(String group, Long situationId, Long clientId)",0,1,0,0,3
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.EntityMapper.getValueBy(Task task, Attribute attribute)",0,1,0,0,2
+"me.umov.jaiminho.domain.ports.IHttp.get(String url, HttpHeaders requestHeaders)",0,1,0,0,2
+"me.umov.jaiminho.infrastructure.dao.HistoryRepository.markAsExported(Long historyId, Long clientId)",0,1,0,0,2
+"me.umov.jaiminho.infrastructure.dao.PersinstenceHistory.markAsExported(Long clientId, Long historyId)",0,1,0,0,2
+"me.umov.jaiminho.infrastructure.dao.TaskDao.findTaskByIdAndClientId(Long taskId, Long clientId)",0,1,0,0,2
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.EntityMapper.getEntityId(Task task)",0,1,0,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.facade.NotificationTranslatorFactory.get(Action action)",0,1,0,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.facade.TranslatorMessage.transform(NotificationMessageDTO notificationMessage)",0,1,0,0,1
+"me.umov.jaiminho.application.sqs.ConverterMessageToNotification.convertFrom(EventMessage eventMessage)",0,1,0,0,1
+"me.umov.jaiminho.application.sqs.FactoryConverters.get(EventMessage eventMessage)",0,1,0,0,1
+"me.umov.jaiminho.domain.Deliverable.send(Notification notification)",0,1,0,0,1
+"me.umov.jaiminho.domain.event.trigger.FatalError.changeClientId(Long clientId)",0,1,0,0,1
+"me.umov.jaiminho.domain.ports.ApplicationListener.process(T event)",0,1,0,0,1
+"me.umov.jaiminho.domain.ports.ApplicationListener.shouldProcess(Class clazz)",0,1,0,0,1
+"me.umov.jaiminho.domain.ports.EventRegistry.publish(T event)",0,1,0,0,1
+"me.umov.jaiminho.domain.ports.ICredentials.setHeaders(MultiValueMap<String,String> headers)",0,1,0,0,1
+"me.umov.jaiminho.domain.ports.IFactorAuthentication.resolve(Notification notification)",0,1,0,0,1
+"me.umov.jaiminho.domain.ports.IHttp.exchange(IRequest rquest)",0,1,0,0,1
+"me.umov.jaiminho.domain.ports.IMailService.send(Message mailRequest)",0,1,0,0,1
+"me.umov.jaiminho.domain.ports.ISms.send(Notification notification)",0,1,0,0,1
+"me.umov.jaiminho.domain.ports.Jaiminho.send(Notification notification)",0,1,0,0,1
+"me.umov.jaiminho.domain.ports.NotificationRepository.update(Notification notification)",0,1,0,0,1
+"me.umov.jaiminho.domain.validators.RuleValidation.validate(T object)",0,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.HistoryRepository.findById(Long historyId)",0,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.SMSDao.findByClientId(Long ClientId)",0,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.SMSDao.save(SMS sms)",0,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.SystemParameterDao.findByClientId(Long ClientId)",0,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.notification.PlataformEventRepository.deleteByHeaderId(String id)",0,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.notification.PlataformEventRepository.findByHeaderId(String id)",0,1,0,0,1
+"me.umov.jaiminho.infrastructure.dao.sentinel.MessageLogRepository.findByHeaderId(String headerId)",0,1,0,0,1
+"me.umov.jaiminho.infrastructure.http.authentication.factor.FactorAuthentication.authenticate(Notification notification)",0,1,0,0,1
+"me.umov.jaiminho.infrastructure.producer.ProducerQueueBuilder.build(Reprocess event)",0,1,0,0,1
+"me.umov.jaiminho.infrastructure.producer.ProducerQueueBuilder.getNotificationExecuted(MessageSQS event)",0,1,0,0,1
+"me.umov.jaiminho.anticorruption.xstreamadapter.core.mapping.EntityMapper.getEntityType()",0,1,0,0,0
+"me.umov.jaiminho.domain.event.trigger.DomainEvent.clientId()",0,1,0,0,0
+"me.umov.jaiminho.domain.event.trigger.DomainEvent.id()",0,1,0,0,0
+"me.umov.jaiminho.domain.event.trigger.DomainEvent.idLongValue()",0,1,0,0,0
+"me.umov.jaiminho.domain.event.trigger.Log.logMessages()",0,1,0,0,0
+"me.umov.jaiminho.domain.event.trigger.NotificationSent.appSource()",0,1,0,0,0
+"me.umov.jaiminho.domain.event.trigger.NotificationSent.groupId()",0,1,0,0,0
+"me.umov.jaiminho.domain.event.trigger.NotificationSent.isDataStream()",0,1,0,0,0
+"me.umov.jaiminho.domain.event.trigger.NotificationSent.notificationType()",0,1,0,0,0
+"me.umov.jaiminho.domain.event.trigger.NotificationSent.referenceId()",0,1,0,0,0
+"me.umov.jaiminho.domain.event.trigger.NotificationSent.state()",0,1,0,0,0
+"me.umov.jaiminho.domain.event.trigger.NotificationWasPerformed.isReprocess()",0,1,0,0,0
+"me.umov.jaiminho.domain.model.MultipleFactorAuthentication.MultipleFactorAuthentication()",0,1,0,0,0
+"me.umov.jaiminho.domain.ports.ICredentials.authenticationFactor()",0,1,0,0,0
+"me.umov.jaiminho.domain.ports.ICredentials.getHash()",0,1,0,0,0
+"me.umov.jaiminho.domain.ports.ICredentials.getHeaders()",0,1,0,0,0
+"me.umov.jaiminho.domain.ports.ICredentials.hasAuth()",0,1,0,0,0
+"me.umov.jaiminho.domain.ports.ICredentials.hasMFA()",0,1,0,0,0
+"me.umov.jaiminho.domain.ports.IMailSender.send()",0,1,0,0,0
+"me.umov.jaiminho.domain.ports.IRequest.bodyToAppFormUrlencoded()",0,1,0,0,0
+"me.umov.jaiminho.domain.ports.IRequest.bodyToJson()",0,1,0,0,0
+"me.umov.jaiminho.domain.ports.IRequest.credentials()",0,1,0,0,0
+"me.umov.jaiminho.domain.ports.IRequest.getClientId()",0,1,0,0,0
+"me.umov.jaiminho.domain.ports.IRequest.isApplicationFormUrlEncoded()",0,1,0,0,0
+"me.umov.jaiminho.domain.ports.IRequest.isJson()",0,1,0,0,0
+"me.umov.jaiminho.domain.ports.IRequest.mediaType()",0,1,0,0,0
+"me.umov.jaiminho.domain.ports.IRequest.method()",0,1,0,0,0
+"me.umov.jaiminho.domain.ports.IRequest.url()",0,1,0,0,0
+"me.umov.jaiminho.domain.ports.Reprocess.delayTimeOutInMinute()",0,1,0,0,0
+"me.umov.jaiminho.domain.ports.Reprocess.getMessageSqs()",0,1,0,0,0
+"me.umov.jaiminho.domain.ports.Reprocess.type()",0,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.UsesCustomField.getClientId()",0,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.UsesCustomField.getEntityTypeId()",0,1,0,0,0
+"me.umov.jaiminho.infrastructure.dao.entity.UsesCustomField.getId()",0,1,0,0,0
+"me.umov.jaiminho.infrastructure.producer.ProducerQueue.send()",0,1,0,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.MessageSQS.getMessageSqs()",0,1,0,0,0
+"me.umov.jaiminho.infrastructure.producer.aws.MessageSQS.type()",0,1,0,0,0

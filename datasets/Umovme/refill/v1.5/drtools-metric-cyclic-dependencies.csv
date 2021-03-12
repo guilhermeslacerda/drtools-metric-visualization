@@ -1,0 +1,3 @@
+"from","to","number"
+"me.umov.refill.model.map.Marker","me.umov.refill.validator.MarkerValidator",1
+"me.umov.refill.model.map.Route","me.umov.refill.validator.RouteValidator",1

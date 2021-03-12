@@ -1,0 +1,2 @@
+"from","to","number"
+"me.umov.analyzer.application.worker.DistributionWorker","me.umov.analyzer.infrastructure.services.EntitySQSService",1

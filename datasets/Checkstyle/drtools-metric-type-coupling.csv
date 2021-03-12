@@ -319,7 +319,7 @@
 "com.puppycrawl.tools.checkstyle.checks.coding.declarationorder.InputDeclarationOrder",0,0,0,0
 "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheckTest",9,4,0,5
 "com.puppycrawl.tools.checkstyle.checks.imports.IllegalImportCheckTest",6,3,0,4
-"com.puppycrawl.tools.checkstyle.checks.finalparameters.InputFinalParameters",3,0,0,3
+"com.puppycrawl.tools.checkstyle.checks.finalparameters.InputFinalParameters",3,0,0,4
 "com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck",5,1,23,7
 "com.puppycrawl.tools.checkstyle.xpath.AttributeNodeTest",6,0,0,1
 "com.puppycrawl.tools.checkstyle.gui.MainFrame",21,1,1,8

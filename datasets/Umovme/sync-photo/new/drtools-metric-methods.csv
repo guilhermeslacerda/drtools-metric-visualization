@@ -1,0 +1,268 @@
+"method","loc","cyclo","calls","nbd","param"
+"me.umov.syncmedia.application.authentication.AuthenticationService.authenticate(HttpServletRequest request)",17,4,11,3,1
+"me.umov.syncmedia.application.authentication.AuthenticationByLogin.authenticate(HttpServletRequest request)",13,2,5,1,1
+"me.umov.syncmedia.infrastructure.activityhistorymedia.TemporaryMediaPartsMerger.mergeMediaParts(List<byte[]> mediaParts, int mediaSize)",12,2,1,1,2
+"me.umov.syncmedia.anticorruption.media.MediaOwnerConverterImpl.convertFrom(MediaAssemblerRequest request)",10,2,12,1,1
+"me.umov.syncmedia.application.eventlistener.mediaassembled.CleanTemporaryMediaAction.onApplicationEvent(MediaAssembledEvent event)",9,2,9,1,1
+"me.umov.syncmedia.application.eventlistener.mediaassembled.UpdateMediaViewerLinkAction.onApplicationEvent(MediaAssembledEvent event)",8,2,5,1,1
+"me.umov.syncmedia.application.eventlistener.mediaassembled.CreateFeedScheduleAction.onApplicationEvent(MediaAssembledEvent event)",8,2,4,1,1
+"me.umov.syncmedia.domain.media.MediaAssembler.getMediaContent(MediaMetadata metadata, MediaOwner owner)",8,2,1,1,2
+"me.umov.syncmedia.domain.mediapart.MediaPartContent.calculateChecksum()",8,2,0,1,0
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMediaRepository.exists(MediaMetadata metadata, MediaOwner owner)",7,2,7,1,2
+"me.umov.syncmedia.application.authentication.AuthenticationInterceptor.preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)",7,2,2,1,3
+"me.umov.syncmedia.application.authentication.AuthenticationInterceptor.shouldAuthenticate(Object handler)",7,2,2,1,1
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMediaRepository.getTemporaryMedias(MediaMetadata metadata, MediaOwner owner)",6,2,8,1,2
+"me.umov.syncmedia.domain.mediapart.TemporaryMediaPartCleaner.cleanByExecution(MediaPart mediaPart)",6,2,3,1,1
+"me.umov.syncmedia.domain.mediapart.TemporaryMediaPartCleaner.cleanByIdentity(MediaPart mediaPart)",6,2,3,1,1
+"me.umov.syncmedia.domain.mediapart.TemporaryMediaPartCleaner.cleanTemporaryParts(MediaPart mediaPart)",6,2,3,1,1
+"me.umov.syncmedia.domain.mediapart.MediaPartContent.verifyChecksum()",5,2,1,1,0
+"me.umov.syncmedia.domain.media.MediaAssembler.verifyIfMediaAlreadyExist(MediaMetadata metadata, MediaOwner owner)",4,2,1,1,2
+"me.umov.syncmedia.domain.media.MediaOwner.validate()",4,2,0,1,0
+"me.umov.syncmedia.domain.mediapart.MediaPartContent.verifyReceivedBytes()",4,2,0,1,0
+"me.umov.syncmedia.anticorruption.media.MediaOwnerConverterImpl.getActivityHistoryId(MediaAssemblerRequest request)",3,2,5,1,1
+"me.umov.syncmedia.domain.media.MediaAssembler.assembleMedia(MediaMetadata metadata, MediaOwner owner)",10,1,4,1,2
+"me.umov.syncmedia.domain.media.MediaOwner.MediaOwner(long clientId, long taskId, long activityId, Long activityHistoryId, Long activityHistoryItemId, String identifier)",9,1,1,1,6
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMediaRepository.save(byte[] content, MediaMetadata metadata, MediaOwner owner)",8,1,3,1,3
+"me.umov.syncmedia.domain.mediapart.MediaPartContent.MediaPartContent(byte[] content, int contentSize, long checksum)",6,1,1,1,3
+"me.umov.syncmedia.infrastructure.activityhistorymedia.TemporaryMediaPartsMerger.getCompleteMedia(List<TemporaryMedia> temporaryMedias)",5,1,9,1,1
+"me.umov.syncmedia.anticorruption.media.MediaOwnerConverterImpl.getActivityHistoryItemId(MediaAssemblerRequest request)",5,1,4,1,1
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMediaRepository.find(MediaMetadata metadata, MediaOwner owner)",5,1,2,1,2
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMediaRepository.saveInMainStorage(Long id, byte[] mediaContent, MediaMetadata metadata, MediaOwner owner)",4,1,3,1,4
+"me.umov.syncmedia.application.authentication.AuthenticationByLogin.shouldHandle(HttpServletRequest request)",4,1,3,1,1
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMediaRepository.saveInSecondaryStorage(Long id, byte[] mediaContent, MediaMetadata metadata, MediaOwner owner)",3,1,2,1,4
+"me.umov.syncmedia.domain.mediapart.MediaPartContent.validate()",3,1,2,1,0
+"me.umov.syncmedia.application.eventlistener.mediaassembled.CreateFeedScheduleAction.shouldFeed(Media media)",2,1,4,1,1
+"me.umov.syncmedia.domain.media.MediaOwner.withItem(long clientId, long taskId, long activityId, Long activityHistoryId, Long activityHistoryItemId, String identifier)",2,1,0,1,6
+"me.umov.syncmedia.domain.media.MediaOwner.withoutItem(long clientId, long taskId, long activityId, Long activityHistoryId)",2,1,0,1,4
+"me.umov.syncmedia.domain.media.MediaOwner.getActivityHistoryId()",2,1,0,1,0
+"me.umov.syncmedia.domain.media.MediaOwner.getActivityHistoryItemId()",2,1,0,1,0
+"me.umov.syncmedia.domain.media.MediaOwner.getActivityId()",2,1,0,1,0
+"me.umov.syncmedia.domain.media.MediaOwner.getClientId()",2,1,0,1,0
+"me.umov.syncmedia.domain.media.MediaOwner.getIdentifier()",2,1,0,1,0
+"me.umov.syncmedia.domain.media.MediaOwner.getTaskId()",2,1,0,1,0
+"me.umov.syncmedia.domain.media.MediaOwner.isFromMultimediaField()",2,1,0,1,0
+"me.umov.syncmedia.domain.mediapart.MediaPartContent.getChecksum()",2,1,0,1,0
+"me.umov.syncmedia.domain.mediapart.MediaPartContent.getContent()",2,1,0,1,0
+"me.umov.syncmedia.domain.mediapart.MediaPartContent.getContentSize()",2,1,0,1,0
+"me.umov.syncmedia.infrastructure.configuration.MasterDbConfiguration.masterDbEntityManager()",15,1,10,0,0
+"me.umov.syncmedia.infrastructure.configuration.MediaDbConfiguration.mediaDbEntityManager()",15,1,10,0,0
+"me.umov.syncmedia.anticorruption.media.ActivityHistoryMediaConverterImpl.convertFrom(Long id, byte[] mediaContent, MediaMetadata metadata, MediaOwner owner)",14,1,17,0,4
+"me.umov.syncmedia.anticorruption.mediapart.TemporaryMediaConverterImpl.convertFrom(MediaPart mediaPart)",11,1,12,0,1
+"me.umov.syncmedia.application.api.media.MediaAssemblerController.assembleMedia(MediaAssemblerRequest request)",10,1,11,0,1
+"me.umov.syncmedia.application.api.mediapart.SaveMediaPartRequest.addRequestParametersInLogContext()",9,1,15,0,0
+"me.umov.syncmedia.application.api.media.MediaAssemblerRequest.addRequestParametersInLogContext()",9,1,13,0,0
+"me.umov.syncmedia.anticorruption.media.FeedScheduleConverterImpl.convertFrom(Media media)",9,1,8,0,1
+"me.umov.syncmedia.infrastructure.configuration.MasterDbConfiguration.masterDbDataSource()",9,1,8,0,0
+"me.umov.syncmedia.infrastructure.configuration.MediaDbConfiguration.mediaDbDataSource()",9,1,8,0,0
+"me.umov.syncmedia.application.api.mediapart.MediaPartController.saveMediaPart(@RequestBody byte[] mediaContent, SaveMediaPartRequest request)",9,1,5,0,2
+"me.umov.syncmedia.application.api.response.GeneralResponse.mediaAssembled(Long savedMediaId, Boolean isBackMediaId)",8,1,0,0,2
+"me.umov.syncmedia.domain.mediapart.MediaPartManager.receivePart(MediaPart mediaPart)",7,1,3,0,1
+"me.umov.syncmedia.application.api.response.GeneralResponse.errorWithDelete(String message)",7,1,0,0,1
+"me.umov.syncmedia.anticorruption.mediapart.MediaPartConverterImpl.convertFrom(byte[] content, SaveMediaPartRequest request)",6,1,8,0,2
+"me.umov.syncmedia.infrastructure.configuration.MasterDbConfiguration.masterDbTransactionManager()",6,1,4,0,0
+"me.umov.syncmedia.infrastructure.configuration.MediaDbConfiguration.mediaDbTransactionManager()",6,1,4,0,0
+"me.umov.syncmedia.application.api.response.GeneralResponse.error(String message)",6,1,0,0,1
+"me.umov.syncmedia.application.api.response.GeneralResponse.savedMediaPart(int bytesReceived)",6,1,0,0,1
+"me.umov.syncmedia.application.api.mediapart.MediaPartController.addStartLog(byte[] mediaContent, SaveMediaPartRequest request)",5,1,4,0,2
+"me.umov.syncmedia.application.api.error.ErrorHandlerController.handleInconsistentMediaPartException(InconsistentMediaPartException exception)",5,1,4,0,1
+"me.umov.syncmedia.application.api.error.ErrorHandlerController.handleActivityHistoryNotFoundException(ActivityHistoryNotFoundException exception)",5,1,3,0,1
+"me.umov.syncmedia.application.api.error.ErrorHandlerController.handleEmptyMediaException(EmptyMediaException exception)",5,1,3,0,1
+"me.umov.syncmedia.application.api.error.ErrorHandlerController.handleException(Exception exception)",5,1,3,0,1
+"me.umov.syncmedia.application.api.error.ErrorHandlerController.handleMediaAlreadyExistException(MediaAlreadyExistException exception)",5,1,3,0,1
+"me.umov.syncmedia.application.api.error.ErrorHandlerController.handleUnauthorizedException(UnauthorizedRequestException exception)",5,1,3,0,1
+"me.umov.syncmedia.infrastructure.temporarymedia.DataBaseMediaPartRepository.save(MediaPart mediaPart)",5,1,2,0,1
+"me.umov.syncmedia.domain.media.Media.Media(long id, byte[] content, MediaOwner owner, MediaMetadata mediaMetadata)",5,1,0,0,4
+"me.umov.syncmedia.domain.mediapart.MediaPart.MediaPart(long taskId, long activityId, MediaPartContent content, MediaPartMetadata metadata)",5,1,0,0,4
+"me.umov.syncmedia.domain.mediapart.MediaPartMetadata.MediaPartMetadata(long code, long partBlock, String identifier, boolean isFromMultimediaField)",5,1,0,0,4
+"me.umov.syncmedia.infrastructure.mediaviewer.MediaViewerDao.generateMediaViewerUrl(Media media)",4,1,5,0,1
+"me.umov.syncmedia.application.eventlistener.mediaassembled.UpdateIntegrationFlagAction.onApplicationEvent(MediaAssembledEvent event)",4,1,3,0,1
+"me.umov.syncmedia.application.configuration.InterceptorConfig.addInterceptors(InterceptorRegistry registry)",4,1,2,0,1
+"me.umov.syncmedia.domain.media.MediaMetadata.MediaMetadata(long code, String extension, MediaType type)",4,1,0,0,3
+"me.umov.syncmedia.infrastructure.temporarymedia.DataBaseMediaPartRepository.deleteByExecutionAndPartBlock(MediaPart mediaPart)",3,1,5,0,1
+"me.umov.syncmedia.application.api.media.MediaAssemblerController.addSuccessLog(Media media)",3,1,4,0,1
+"me.umov.syncmedia.infrastructure.temporarymedia.DataBaseMediaPartRepository.deleteByExecution(MediaPart mediaPart)",3,1,4,0,1
+"me.umov.syncmedia.infrastructure.temporarymedia.DataBaseMediaPartRepository.deleteByIdentityAndPartBlock(MediaPart mediaPart)",3,1,4,0,1
+"me.umov.syncmedia.infrastructure.temporarymedia.DataBaseMediaPartRepository.deleteByIdentity(MediaPart mediaPart)",3,1,3,0,1
+"me.umov.syncmedia.application.api.media.MediaAssemblerController.addStartLog(MediaAssemblerRequest request)",3,1,2,0,1
+"me.umov.syncmedia.application.authentication.AuthenticationByToken.authenticate(HttpServletRequest request)",3,1,2,0,1
+"me.umov.syncmedia.application.authentication.AuthenticationByToken.shouldHandle(HttpServletRequest request)",3,1,2,0,1
+"me.umov.syncmedia.application.version.VersionController.version()",3,1,2,0,0
+"me.umov.syncmedia.application.interceptor.AfterRequestCompletionInterceptor.postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView)",3,1,1,0,4
+"me.umov.syncmedia.infrastructure.temporarymedia.TemporaryMediaDao.deleteByCodeAndTaskIdAndActivityIdAndPartBlock(long code, long taskId, long activityId, long partBlock)",3,1,0,0,4
+"me.umov.syncmedia.infrastructure.temporarymedia.TemporaryMediaDao.deleteByCodeAndIdentifierAndPartBlock(long code, String identifier, long partBlock)",3,1,0,0,3
+"me.umov.syncmedia.infrastructure.temporarymedia.TemporaryMediaDao.deleteByCodeAndTaskIdAndActivityId(long code, long taskId, long activityId)",3,1,0,0,3
+"me.umov.syncmedia.application.authentication.UserData.setRequestData(Long clientId, Long agentId)",3,1,0,0,2
+"me.umov.syncmedia.domain.media.MediaAssembledEvent.MediaAssembledEvent(Object source, Media media)",3,1,0,0,2
+"me.umov.syncmedia.domain.mediapart.InconsistentMediaPartException.InconsistentMediaPartException(String message, int bytesReceived)",3,1,0,0,2
+"me.umov.syncmedia.infrastructure.activityhistoryitem.ActivityHistoryItemDao.updateValueAndCleanIdentifier(@Param("id") Long id, @Param("value") String value)",3,1,0,0,2
+"me.umov.syncmedia.infrastructure.temporarymedia.TemporaryMediaDao.deleteByCodeAndIdentifier(long code, String identifier)",3,1,0,0,2
+"me.umov.syncmedia.infrastructure.activityhistory.ActivityHistoryDao.markHistoryToBeExportedAgain(@Param("activityHistoryId") long activityHistoryId)",3,1,0,0,1
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.isNew()",3,1,0,0,0
+"me.umov.syncmedia.SyncMediaApplication.main(String[] args)",2,1,1,0,1
+"me.umov.syncmedia.application.interceptor.AfterRequestCompletionInterceptor.clearLogContext()",2,1,1,0,0
+"me.umov.syncmedia.domain.media.Media.getActivityHistoryId()",2,1,1,0,0
+"me.umov.syncmedia.domain.media.Media.getActivityHistoryItemId()",2,1,1,0,0
+"me.umov.syncmedia.domain.media.Media.getActivityId()",2,1,1,0,0
+"me.umov.syncmedia.domain.media.Media.getClientId()",2,1,1,0,0
+"me.umov.syncmedia.domain.media.Media.getCode()",2,1,1,0,0
+"me.umov.syncmedia.domain.media.Media.getIdentifier()",2,1,1,0,0
+"me.umov.syncmedia.domain.media.Media.getTaskId()",2,1,1,0,0
+"me.umov.syncmedia.domain.media.Media.isFromMultimediaField()",2,1,1,0,0
+"me.umov.syncmedia.domain.mediapart.MediaPart.getChecksum()",2,1,1,0,0
+"me.umov.syncmedia.domain.mediapart.MediaPart.getCode()",2,1,1,0,0
+"me.umov.syncmedia.domain.mediapart.MediaPart.getContent()",2,1,1,0,0
+"me.umov.syncmedia.domain.mediapart.MediaPart.getContentSize()",2,1,1,0,0
+"me.umov.syncmedia.domain.mediapart.MediaPart.getIdentifier()",2,1,1,0,0
+"me.umov.syncmedia.domain.mediapart.MediaPart.getPartBlock()",2,1,1,0,0
+"me.umov.syncmedia.domain.mediapart.MediaPart.isFirstBlockPart()",2,1,1,0,0
+"me.umov.syncmedia.domain.mediapart.MediaPart.isFromMultimediaField()",2,1,1,0,0
+"me.umov.syncmedia.application.api.media.MediaAssemblerRequest.setBACK_MEDIA_ID(boolean shouldReturnMediaId)",2,1,0,0,1
+"me.umov.syncmedia.application.api.media.MediaAssemblerRequest.setEXTENSAO(String extension)",2,1,0,0,1
+"me.umov.syncmedia.application.api.media.MediaAssemblerRequest.setFOTO_COD(long code)",2,1,0,0,1
+"me.umov.syncmedia.application.api.media.MediaAssemblerRequest.setIDENTIFICADOR(String identifier)",2,1,0,0,1
+"me.umov.syncmedia.application.api.media.MediaAssemblerRequest.setIMAGE_BY_IMAGEFIELD(boolean fromMultimediaField)",2,1,0,0,1
+"me.umov.syncmedia.application.api.media.MediaAssemblerRequest.setPES_COD(long activityId)",2,1,0,0,1
+"me.umov.syncmedia.application.api.media.MediaAssemblerRequest.setTAR_COD(long taskId)",2,1,0,0,1
+"me.umov.syncmedia.application.api.media.MediaAssemblerRequest.setTIPO_MIDIA(String type)",2,1,0,0,1
+"me.umov.syncmedia.application.api.mediapart.SaveMediaPartRequest.setBLOCO_FOTO(int blockNumber)",2,1,0,0,1
+"me.umov.syncmedia.application.api.mediapart.SaveMediaPartRequest.setCHECKSUM(long checksum)",2,1,0,0,1
+"me.umov.syncmedia.application.api.mediapart.SaveMediaPartRequest.setFOTO_COD(long code)",2,1,0,0,1
+"me.umov.syncmedia.application.api.mediapart.SaveMediaPartRequest.setIDENTIFICADOR(String identifier)",2,1,0,0,1
+"me.umov.syncmedia.application.api.mediapart.SaveMediaPartRequest.setIMAGE_BY_IMAGEFIELD(boolean fromMultimediaField)",2,1,0,0,1
+"me.umov.syncmedia.application.api.mediapart.SaveMediaPartRequest.setPES_COD(long activityId)",2,1,0,0,1
+"me.umov.syncmedia.application.api.mediapart.SaveMediaPartRequest.setTAMANHO_BLOCO(int blockSize)",2,1,0,0,1
+"me.umov.syncmedia.application.api.mediapart.SaveMediaPartRequest.setTAR_COD(long taskId)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.activityhistory.ActivityHistory.setId(Long id)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.activityhistoryitem.ActivityHistoryItem.setId(Long id)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.setActivityHistoryId(Long activityHistoryId)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.setActivityHistoryItemId(Long activityHistoryItemId)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.setClientId(Long clientId)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.setExtension(String extension)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.setId(Long id)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.setImage(byte[] image)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.setNumber(Long number)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.setSize(int size)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.setStatus(Character status)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.setType(String type)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.agent.Agent.setClientId(long clientId)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.agent.Agent.setId(long id)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.client.Client.setId(long id)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.feedschedule.FeedSchedule.setActivityId(Long activityId)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.feedschedule.FeedSchedule.setClientId(Long clientId)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.feedschedule.FeedSchedule.setHistoryId(Long historyId)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.feedschedule.FeedSchedule.setOriginType(String originType)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.feedschedule.FeedSchedule.setStatus(Character status)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.temporarymedia.TemporaryMedia.setActivityId(long activityId)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.temporarymedia.TemporaryMedia.setCode(long code)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.temporarymedia.TemporaryMedia.setContent(byte[] content)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.temporarymedia.TemporaryMedia.setIdentifier(String identifier)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.temporarymedia.TemporaryMedia.setPartBlock(long partBlock)",2,1,0,0,1
+"me.umov.syncmedia.infrastructure.temporarymedia.TemporaryMedia.setTaskId(long taskId)",2,1,0,0,1
+"me.umov.syncmedia.application.api.media.MediaAssemblerRequest.getActivityId()",2,1,0,0,0
+"me.umov.syncmedia.application.api.media.MediaAssemblerRequest.getCode()",2,1,0,0,0
+"me.umov.syncmedia.application.api.media.MediaAssemblerRequest.getExtension()",2,1,0,0,0
+"me.umov.syncmedia.application.api.media.MediaAssemblerRequest.getIdentifier()",2,1,0,0,0
+"me.umov.syncmedia.application.api.media.MediaAssemblerRequest.getTaskId()",2,1,0,0,0
+"me.umov.syncmedia.application.api.media.MediaAssemblerRequest.getType()",2,1,0,0,0
+"me.umov.syncmedia.application.api.media.MediaAssemblerRequest.isFromMultimediaField()",2,1,0,0,0
+"me.umov.syncmedia.application.api.media.MediaAssemblerRequest.isShouldReturnMediaId()",2,1,0,0,0
+"me.umov.syncmedia.application.api.mediapart.SaveMediaPartRequest.getActivityId()",2,1,0,0,0
+"me.umov.syncmedia.application.api.mediapart.SaveMediaPartRequest.getBlockNumber()",2,1,0,0,0
+"me.umov.syncmedia.application.api.mediapart.SaveMediaPartRequest.getBlockSize()",2,1,0,0,0
+"me.umov.syncmedia.application.api.mediapart.SaveMediaPartRequest.getChecksum()",2,1,0,0,0
+"me.umov.syncmedia.application.api.mediapart.SaveMediaPartRequest.getCode()",2,1,0,0,0
+"me.umov.syncmedia.application.api.mediapart.SaveMediaPartRequest.getIdentifier()",2,1,0,0,0
+"me.umov.syncmedia.application.api.mediapart.SaveMediaPartRequest.getTaskId()",2,1,0,0,0
+"me.umov.syncmedia.application.api.mediapart.SaveMediaPartRequest.isFromMultimediaField()",2,1,0,0,0
+"me.umov.syncmedia.application.api.response.GeneralResponse.getBackMediaId()",2,1,0,0,0
+"me.umov.syncmedia.application.api.response.GeneralResponse.getBytesReceived()",2,1,0,0,0
+"me.umov.syncmedia.application.api.response.GeneralResponse.getMessage()",2,1,0,0,0
+"me.umov.syncmedia.application.api.response.GeneralResponse.getSavedMediaId()",2,1,0,0,0
+"me.umov.syncmedia.application.api.response.GeneralResponse.isExcludeImage()",2,1,0,0,0
+"me.umov.syncmedia.application.api.response.GeneralResponse.isStatus()",2,1,0,0,0
+"me.umov.syncmedia.application.authentication.UnauthorizedRequestException.UnauthorizedRequestException()",2,1,0,0,0
+"me.umov.syncmedia.application.authentication.UserData.getAgentId()",2,1,0,0,0
+"me.umov.syncmedia.application.authentication.UserData.getClientId()",2,1,0,0,0
+"me.umov.syncmedia.application.version.VersionController.getApplicationName()",2,1,0,0,0
+"me.umov.syncmedia.application.version.VersionController.getVersion()",2,1,0,0,0
+"me.umov.syncmedia.domain.media.ActivityHistoryNotFoundException.ActivityHistoryNotFoundException()",2,1,0,0,0
+"me.umov.syncmedia.domain.media.EmptyMediaException.EmptyMediaException()",2,1,0,0,0
+"me.umov.syncmedia.domain.media.Media.getContent()",2,1,0,0,0
+"me.umov.syncmedia.domain.media.Media.getId()",2,1,0,0,0
+"me.umov.syncmedia.domain.media.Media.getMediaMetadata()",2,1,0,0,0
+"me.umov.syncmedia.domain.media.MediaAlreadyExistException.MediaAlreadyExistException()",2,1,0,0,0
+"me.umov.syncmedia.domain.media.MediaAssembledEvent.getMedia()",2,1,0,0,0
+"me.umov.syncmedia.domain.media.MediaMetadata.getCode()",2,1,0,0,0
+"me.umov.syncmedia.domain.media.MediaMetadata.getExtension()",2,1,0,0,0
+"me.umov.syncmedia.domain.media.MediaMetadata.getType()",2,1,0,0,0
+"me.umov.syncmedia.domain.mediapart.InconsistentMediaPartException.getBytesReceived()",2,1,0,0,0
+"me.umov.syncmedia.domain.mediapart.MediaPart.getActivityId()",2,1,0,0,0
+"me.umov.syncmedia.domain.mediapart.MediaPart.getTaskId()",2,1,0,0,0
+"me.umov.syncmedia.domain.mediapart.MediaPartMetadata.getCode()",2,1,0,0,0
+"me.umov.syncmedia.domain.mediapart.MediaPartMetadata.getIdentifier()",2,1,0,0,0
+"me.umov.syncmedia.domain.mediapart.MediaPartMetadata.getPartBlock()",2,1,0,0,0
+"me.umov.syncmedia.domain.mediapart.MediaPartMetadata.isFromMultimediaField()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.activityhistory.ActivityHistory.getExportStatus()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.activityhistory.ActivityHistory.getId()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.activityhistoryitem.ActivityHistoryItem.getId()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.activityhistoryitem.ActivityHistoryItem.getIdentifier()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.activityhistoryitem.ActivityHistoryItem.getValue()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.activityhistoryitem.ActivityHistoryItem.getVisibleValue()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.getActivityHistoryId()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.getActivityHistoryItemId()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.getClientId()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.getExtension()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.getId()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.getImage()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.getNumber()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.getSize()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.getStatus()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMedia.getType()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.agent.Agent.getClientId()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.agent.Agent.getId()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.client.Client.getId()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.configuration.MasterDbConfiguration.createJpaTransactionManager()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.configuration.MasterDbConfiguration.createLocalContainerEntityManagerFactoryBean()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.configuration.MediaDbConfiguration.createJpaTransactionManager()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.configuration.MediaDbConfiguration.createLocalContainerEntityManagerFactoryBean()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.feedschedule.FeedSchedule.getActivityId()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.feedschedule.FeedSchedule.getClientId()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.feedschedule.FeedSchedule.getHistoryId()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.feedschedule.FeedSchedule.getId()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.feedschedule.FeedSchedule.getOriginType()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.feedschedule.FeedSchedule.getStatus()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.temporarymedia.TemporaryMedia.getActivityId()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.temporarymedia.TemporaryMedia.getCode()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.temporarymedia.TemporaryMedia.getContent()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.temporarymedia.TemporaryMedia.getId()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.temporarymedia.TemporaryMedia.getIdentifier()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.temporarymedia.TemporaryMedia.getPartBlock()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.temporarymedia.TemporaryMedia.getTaskId()",2,1,0,0,0
+"me.umov.syncmedia.infrastructure.feedschedule.FeedScheduleDao.fieldsToFeedQuantity(@Param("clientId") long clientId, @Param("activityId") long activityId)",1,1,0,0,2
+"me.umov.syncmedia.infrastructure.agent.AgentDao.validateAgentToken(@Param("token") String token)",1,1,0,0,1
+"me.umov.syncmedia.infrastructure.activityhistorymedia.masterdb.MasterDbActivityHistoryMediaDao.getNextActivityHistoryMediaId()",1,1,0,0,0
+"me.umov.syncmedia.infrastructure.activityhistorymedia.ActivityHistoryMediaConverter.convertFrom(Long id, byte[] mediaContent, MediaMetadata metadata, MediaOwner owner)",0,1,0,0,4
+"me.umov.syncmedia.domain.media.MediaRepository.save(byte[] content, MediaMetadata metadata, MediaOwner owner)",0,1,0,0,3
+"me.umov.syncmedia.infrastructure.activityhistory.ActivityHistoryDao.findByTaskIdAndActivityIdAndIdentifier(long taskId, long activityId, String identifier)",0,1,0,0,3
+"me.umov.syncmedia.infrastructure.temporarymedia.TemporaryMediaDao.findByCodeAndTaskIdAndActivityIdOrderById(long code, long taskId, long activityId)",0,1,0,0,3
+"me.umov.syncmedia.application.api.mediapart.MediaPartConverter.convertFrom(byte[] mediaContent, SaveMediaPartRequest request)",0,1,0,0,2
+"me.umov.syncmedia.domain.media.MediaAssemblerPort.assembleMedia(MediaMetadata metadata, MediaOwner owner)",0,1,0,0,2
+"me.umov.syncmedia.domain.media.MediaRepository.exists(MediaMetadata metadata, MediaOwner owner)",0,1,0,0,2
+"me.umov.syncmedia.domain.media.MediaRepository.find(MediaMetadata metadata, MediaOwner owner)",0,1,0,0,2
+"me.umov.syncmedia.infrastructure.activityhistorymedia.masterdb.MasterDbActivityHistoryMediaDao.existsActivityHistoryMediaByNumberAndActivityHistoryId(long code, Long activityHistoryId)",0,1,0,0,2
+"me.umov.syncmedia.infrastructure.activityhistorymedia.masterdb.MasterDbActivityHistoryMediaDao.existsActivityHistoryMediaByNumberAndActivityHistoryItemId(long code, Long activityHistoryItemId)",0,1,0,0,2
+"me.umov.syncmedia.infrastructure.agent.AgentDao.findByClientIdAndAliasIgnoreCase(long clientId, String login)",0,1,0,0,2
+"me.umov.syncmedia.infrastructure.temporarymedia.TemporaryMediaDao.findByCodeAndIdentifierOrderById(long code, String identifier)",0,1,0,0,2
+"me.umov.syncmedia.application.api.media.MediaOwnerConverter.convertFrom(MediaAssemblerRequest request)",0,1,0,0,1
+"me.umov.syncmedia.application.authentication.AuthenticationMode.authenticate(HttpServletRequest request)",0,1,0,0,1
+"me.umov.syncmedia.application.authentication.AuthenticationMode.shouldHandle(HttpServletRequest request)",0,1,0,0,1
+"me.umov.syncmedia.application.eventlistener.mediaassembled.FeedScheduleConverter.convertFrom(Media media)",0,1,0,0,1
+"me.umov.syncmedia.domain.mediapart.MediaPartManagerPort.receivePart(MediaPart media)",0,1,0,0,1
+"me.umov.syncmedia.domain.mediapart.MediaPartRepository.deleteByExecution(MediaPart media)",0,1,0,0,1
+"me.umov.syncmedia.domain.mediapart.MediaPartRepository.deleteByExecutionAndPartBlock(MediaPart media)",0,1,0,0,1
+"me.umov.syncmedia.domain.mediapart.MediaPartRepository.deleteByIdentity(MediaPart media)",0,1,0,0,1
+"me.umov.syncmedia.domain.mediapart.MediaPartRepository.deleteByIdentityAndPartBlock(MediaPart media)",0,1,0,0,1
+"me.umov.syncmedia.domain.mediapart.MediaPartRepository.save(MediaPart media)",0,1,0,0,1
+"me.umov.syncmedia.infrastructure.activityhistoryitem.ActivityHistoryItemDao.findByIdentifierAndIdentifierIsNotNull(String identifier)",0,1,0,0,1
+"me.umov.syncmedia.infrastructure.client.ClientDao.findByAliasIgnoreCase(String alias)",0,1,0,0,1
+"me.umov.syncmedia.infrastructure.temporarymedia.TemporaryMediaConverter.convertFrom(MediaPart mediaPart)",0,1,0,0,1
