@@ -1,5 +1,5 @@
 // Project: DR Tools Metric
-var optionsProject = {
+/*var optionsProject = {
     "projectName" : "DR Tools Metric",
     "datasetDir": "./datasets/DrToolsMetric/",
     "datasetSummary" : "./datasets/DrToolsMetric/drtools-metric-summary.csv",
@@ -12,10 +12,10 @@ var optionsProject = {
     "datasetMethods" : "./datasets/DrToolsMetric/drtools-metric-methods-top60.csv",
     "datasetInternalTypeDependencies" : "./datasets/DrToolsMetric/drtools-metric-internal-dependencies.json",
     "datasetInternalDependencies" : "./datasets/DrToolsMetric/drtools-metric-internal-dependencies.json"
-};
+};*/
 
 // Project: Software Pathfinder
-/*var optionsProject = {
+var optionsProject = {
     "projectName" : "Software Pathfinder",
     "datasetDir": "./datasets/Pathfinder/",
     "datasetSummary" : "./datasets/Pathfinder/drtools-metric-summary.csv",
@@ -25,12 +25,15 @@ var optionsProject = {
     "datasetNamespaceDependencyI" : "./datasets/Pathfinder/drtools-metric-architectural-dependencies.dot",
     "datasetNamespaceDependencyII" : "./datasets/Pathfinder/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/Pathfinder/drtools-metric-typesTop30.csv",
+    "datasetStatisticOfNamespace" : "./datasets/Pathfinder/drtools-metric-statistics-namespace.csv",
+    "datasetStatisticOfType" : "./datasets/Pathfinder/drtools-metric-statistics-type.csv",
+    "datasetStatisticOfMethod" : "./datasets/Pathfinder/drtools-metric-statistics-method.csv",
     //"datasetTypes" : "./datasets/Pathfinder/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/Pathfinder/drtools-metric-methodsTop30.csv",
     //"datasetMethods" : "./datasets/Pathfinder/drtools-metric-methods.csv",
     "datasetInternalTypeDependencies" : "./datasets/Pathfinder/drtools-metric-internal-dependencies.json", 
     "datasetInternalDependencies" : "./datasets/Pathfinder/drtools-metric-internal-dependencies.json",
-};*/
+};
 
 // Project: Findbugs
 /*var optionsProject = {
