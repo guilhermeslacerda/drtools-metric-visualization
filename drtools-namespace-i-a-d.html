@@ -25,6 +25,15 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      .text_table {
+        font-family: 'Poppins', Arial, sans-serif;
+        font-size: 13px;
+        line-height: 1.8;
+        font-weight: 400;
+        color: #000;
+      }
+    </style>
 </head>
 <body class="text-center">
   <section class="ftco-section" id="header-section">
@@ -41,6 +50,9 @@
     <div class="text">
         <strong class="text-error"><div id="errorMessage"></div></strong>
     </div>
+  </section>  
+
+  <section class="ftco-section" id="graph-section">
     <div class="text">
         <table>
           <tr>
@@ -53,6 +65,40 @@
         <div id="dashboard_div"></div>
     </div>      
   </section>
+
+  <section class="ftco-section" id="namespace-coupling-section">
+    <div class="col-md-12 text-center heading-section ftco-animate">
+        <b>NAMESPACE COUPLING THRESHOLDS</b>
+    </div>
+    <div>    
+        <table class="table table-hover text_table">
+        <thead>
+            <tr>
+            <th scope="col">Acronym</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">I</th>
+            <td>Package Instability</td>
+            <td>range between 0=Maximally stability and 1=Maximally instability</td>
+            </tr>
+            <tr>
+            <th scope="row">A</th>
+            <td>Abstractness Degree</td>
+            <td>range between 0=Minimally abstractness and 1=Maximally abstractness</td>
+            </tr>
+            <tr>
+            <th scope="row">D</th>
+            <td>Normalized Distance</td>
+            <td>range between 0=exactly located in the main sequence and 1=far from the main sequence</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+  </section>   
 
 <script src="js/jquery-migrate-3.0.1.min.js"></script>
 <script src="js/popper.min.js"></script>
@@ -156,6 +202,5 @@ else {
   };
 }
 </script>
-<div id="chart_div" style="width: 1300px; height: 700px; font-family: 'Poppins', sans-serif"></div>
 </body>
 </html>

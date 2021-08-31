@@ -25,6 +25,15 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      .text_table {
+        font-family: 'Poppins', Arial, sans-serif;
+        font-size: 13px;
+        line-height: 1.8;
+        font-weight: 400;
+        color: #000;
+      }
+    </style>
 </head>
 <body class="text-center">
   <section class="ftco-section" id="header-section">
@@ -41,6 +50,9 @@
     <div class="text">
         <strong class="text-error"><div id="errorMessage"></div></strong>
     </div>
+  </section>
+  
+  <section class="ftco-section" id="graph-section">
     <div class="text">
       <table>
         <tr>
@@ -52,6 +64,37 @@
           <div id="dashboard_div"></div>
     </div>      
   </section>
+
+  <section class="ftco-section" id="namespace-coupling-section">
+    <div class="col-md-12 text-center heading-section ftco-animate">
+        <b>NAMESPACE COUPLING THRESHOLDS</b>
+    </div>
+    <div>    
+        <table class="table table-hover text_table">
+        <thead>
+            <tr>
+            <th scope="col">Acronym</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">CA</th>
+            <td>Afferent Coupling</td>
+            <td>Good: &lt;= 7; Regular: between 7 and 39; Bad: &gt; 39</td>
+            </tr>
+            <tr>
+            <th scope="row">CE</th>
+            <td>Efferent Coupling</td>
+            <td>Good: &lt;= 6; Regular: between 6 and 16; Bad: &gt; 16</td>
+            </tr>
+            <tr>
+        </tbody>
+        </table>
+    </div>
+  </section>   
+  
 
 <script src="js/jquery-migrate-3.0.1.min.js"></script>
 <script src="js/popper.min.js"></script>
@@ -132,6 +175,5 @@ else {
   };
 }
 </script>
-<div id="chart_div" style="width: 1300px; height: 600px; font-family: 'Poppins', sans-serif"></div>
 </body>
 </html>
