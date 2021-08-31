@@ -88,6 +88,18 @@
             <label class="form-check-label" for="textNamespaces">Disable name of namespaces/types</label>
         </div>						
     </section>
+
+    <section class="ftco-section" id="graph-section">                
+        <svg width="1100" height="1100"></svg>
+    </section>
+        
+    <section class="ftco-section" id="metrics-section">
+        <div class="col-md-12 text-center heading-section ftco-animate">
+            <b>Statistics of Metrics</b>
+        </div>
+        <div id="table_metrics"></div>
+    </section>    
+
         
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -102,8 +114,6 @@
     <script src="js/scrollax.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/drtools/drtools-utils.js"></script>
-                  
-    <svg width="1100" height="1100"></svg>
 
     <script>
     if (!optionsProject.datasetResonance || 0 === optionsProject.datasetResonance.length === ''
@@ -201,13 +211,6 @@
         }
     }    
     </script>
-
-    <section class="ftco-section" id="metrics-section">
-        <div class="col-md-12 text-center heading-section ftco-animate">
-            <b>Statistics of Metrics</b>
-        </div>
-        <div id="table_metrics"></div>
-    </section>    
 
     <script>
         $.ajax({
