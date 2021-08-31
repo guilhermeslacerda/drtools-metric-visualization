@@ -89,13 +89,6 @@
         </div>						
     </section>
         
-    <section class="ftco-section" id="metrics-section">
-        <div class="col-md-12 text-center heading-section ftco-animate">
-            <b>Statistics of Metrics</b>
-        </div>
-        <div id="table_metrics"></div>
-    </section>    
-
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -109,52 +102,6 @@
     <script src="js/scrollax.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/drtools/drtools-utils.js"></script>
-
-    <script>
-        $.ajax({
-                url: optionsProject.datasetStatisticOfType,
-                dataType: 'text',
-            }).done(readStatisticTable);
-
-        function readStatisticTable(data) {
-            var allRows = data.split(/\r?\n|\r/);
-            var table = '<table class="table table-hover text_table">';
-            table += '<thead>';
-            table += '<tr>';
-            table += '<th scope="col">Metric</th>';
-            table += '<th scope="col">1st Quartile</th>';
-            table += '<th scope="col">3rd Quartile</th>';
-            table += '<th scope="col">Average</th>';
-            table += '<th scope="col">Median</th>';
-            table += '<th scope="col">Min Value</th>';
-            table += '<th scope="col">Max Value</th>';
-            table += '<th scope="col">Amplitude</th>';
-            table += '<th scope="col">Standard Deviation</th>';
-            table += '<th scope="col">Upper Fence</th>';
-            table += '<th scope="col">Threshold (greater than = bad)</th>';
-            table += '</tr>';
-            table += '</thead>';
-            table += '<tbody>';
-                    
-            for (var singleRow = 1; singleRow < allRows.length; singleRow++) {
-                table += '<tr>';
-                var rowCells = allRows[singleRow].split(',');
-                for (var rowCell = 0; rowCell < rowCells.length; rowCell++) {
-                    if (rowCells[0] ==='"SLOC"' || rowCells[0] === '"WMC"') {
-                        table += '<td scope="col">';
-                        if (rowCell === 0)  table += rowCells[rowCell].replace(/^"|"$/g, '');
-                        else    table += rowCells[rowCell];
-                    table += '</td>';
-                    }
-                }
-                table += '</tr>';
-            } 
-            table += '</tbody>';
-            table += '</table>';
-            $('#table_metrics').append(table);
-        }
-            
-    </script>
                   
     <svg width="1100" height="1100"></svg>
 
@@ -253,6 +200,59 @@
             svg.selectAll("text").style("opacity", 1);
         }
     }    
+    </script>
+
+    <section class="ftco-section" id="metrics-section">
+        <div class="col-md-12 text-center heading-section ftco-animate">
+            <b>Statistics of Metrics</b>
+        </div>
+        <div id="table_metrics"></div>
+    </section>    
+
+    <script>
+        $.ajax({
+                url: optionsProject.datasetStatisticOfType,
+                dataType: 'text',
+            }).done(readStatisticTable);
+
+        function readStatisticTable(data) {
+            var allRows = data.split(/\r?\n|\r/);
+            var table = '<table class="table table-hover text_table">';
+            table += '<thead>';
+            table += '<tr>';
+            table += '<th scope="col">Metric</th>';
+            table += '<th scope="col">1st Quartile</th>';
+            table += '<th scope="col">3rd Quartile</th>';
+            table += '<th scope="col">Average</th>';
+            table += '<th scope="col">Median</th>';
+            table += '<th scope="col">Min Value</th>';
+            table += '<th scope="col">Max Value</th>';
+            table += '<th scope="col">Amplitude</th>';
+            table += '<th scope="col">Standard Deviation</th>';
+            table += '<th scope="col">Upper Fence</th>';
+            table += '<th scope="col">Threshold (greater than = bad)</th>';
+            table += '</tr>';
+            table += '</thead>';
+            table += '<tbody>';
+                    
+            for (var singleRow = 1; singleRow < allRows.length; singleRow++) {
+                table += '<tr>';
+                var rowCells = allRows[singleRow].split(',');
+                for (var rowCell = 0; rowCell < rowCells.length; rowCell++) {
+                    if (rowCells[0] ==='"SLOC"' || rowCells[0] === '"WMC"') {
+                        table += '<td scope="col">';
+                        if (rowCell === 0)  table += rowCells[rowCell].replace(/^"|"$/g, '');
+                        else    table += rowCells[rowCell];
+                    table += '</td>';
+                    }
+                }
+                table += '</tr>';
+            } 
+            table += '</tbody>';
+            table += '</table>';
+            $('#table_metrics').append(table);
+        }
+            
     </script>
 </body>
 </html>
