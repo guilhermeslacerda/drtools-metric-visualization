@@ -33,6 +33,13 @@
       .bubbles:hover {
         stroke: black;
       }
+      .text_table {
+        font-family: 'Poppins', Arial, sans-serif;
+        font-size: 13px;
+        line-height: 1.8;
+        font-weight: 400;
+        color: #000;
+      }
     </style>
 </head>
 <body class="text-center">
@@ -50,12 +57,21 @@
 		<div class="text">
         <strong class="text-error"><div id="errorMessage"></div></strong>
     </div>
+  </section>  
+
+  <section class="ftco-section" id="metrics-section">
+    <div class="col-md-12 text-center heading-section ftco-animate">
+        <b>Statistics of Metrics</b>
+    </div>
+    <div id="table_metrics"></div>
+  </section>
+
+  <section class="ftco-section" id="graph-section">
     <div class="text">
       <table>
         <tr>
           <td><div class="mr-sm-2" id="noc" style="padding-left: 50px"></div></td>
           <td><div class="mr-sm-2" id="nac"></div></td>
-
         </tr>
       </table>
           <div id="chart_div"></div>
@@ -76,6 +92,49 @@
 <script src="js/scrollax.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/drtools/drtools-utils.js"></script>
+
+<script>
+  $.ajax({
+          url: optionsProject.datasetStatisticOfNamespace,
+          dataType: 'text',
+      }).done(readStatisticTable);
+
+  function readStatisticTable(data) {
+      var allRows = data.split(/\r?\n|\r/);
+      var table = '<table class="table table-hover text_table">';
+      table += '<thead>';
+      table += '<tr>';
+      table += '<th scope="col">Metric</th>';
+      table += '<th scope="col">1st Quartile</th>';
+      table += '<th scope="col">3rd Quartile</th>';
+      table += '<th scope="col">Average</th>';
+      table += '<th scope="col">Median</th>';
+      table += '<th scope="col">Min Value</th>';
+      table += '<th scope="col">Max Value</th>';
+      table += '<th scope="col">Amplitude</th>';
+      table += '<th scope="col">Standard Deviation</th>';
+      table += '<th scope="col">Upper Fence</th>';
+      table += '<th scope="col">Threshold (greater than = bad)</th>';
+      table += '</tr>';
+      table += '</thead>';
+      table += '<tbody>';
+              
+      for (var singleRow = 1; singleRow < allRows.length; singleRow++) {
+          table += '<tr>';
+          var rowCells = allRows[singleRow].split(',');
+          for (var rowCell = 0; rowCell < rowCells.length; rowCell++) {
+            table += '<td scope="col">';
+            if (rowCell === 0)  table += rowCells[rowCell].replace(/^"|"$/g, '');
+            else    table += rowCells[rowCell];
+            table += '</td>';
+          }
+          table += '</tr>';
+      } 
+      table += '</tbody>';
+      table += '</table>';
+      $('#table_metrics').append(table);
+  }      
+</script>
 
 <script>
 if (!optionsProject.datasetNamespaces || 0 === optionsProject.datasetNamespaces.length === ''
