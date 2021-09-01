@@ -99,7 +99,6 @@
         </div>
         <div id="table_metrics"></div>
     </section>    
-
         
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -245,7 +244,7 @@
                     if (rowCells[0] ==='"SLOC"' || rowCells[0] === '"WMC"') {
                         table += '<td scope="col">';
                         if (rowCell === 0)  table += rowCells[rowCell].replace(/^"|"$/g, '');
-                        else    table += rowCells[rowCell];
+                        else    table += parseFloat(rowCells[rowCell]).toFixed(2);
                     table += '</td>';
                     }
                 }

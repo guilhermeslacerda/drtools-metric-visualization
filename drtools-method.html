@@ -130,7 +130,7 @@
             if (rowCells[0] ==='"MLOC"' || rowCells[0] === '"CYCLO"' || rowCells[0] === '"CALLS"' || rowCells[0] === '"NBD"') {
               table += '<td scope="col">';
               if (rowCell === 0)  table += rowCells[rowCell].replace(/^"|"$/g, '');
-              else    table += rowCells[rowCell];
+              else    table += parseFloat(rowCells[rowCell]).toFixed(2);
               table += '</td>';
             }
           }

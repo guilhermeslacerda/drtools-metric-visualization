@@ -125,7 +125,7 @@
           for (var rowCell = 0; rowCell < rowCells.length; rowCell++) {
             table += '<td scope="col">';
             if (rowCell === 0)  table += rowCells[rowCell].replace(/^"|"$/g, '');
-            else    table += rowCells[rowCell];
+            else    table += parseFloat(rowCells[rowCell]).toFixed(2);
             table += '</td>';
           }
           table += '</tr>';

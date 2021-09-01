@@ -131,7 +131,7 @@
               if (rowCells[0] ==='"FAN-IN"' || rowCells[0] === '"FAN-OUT"' || rowCells[0] === '"DEP"' || rowCells[0] === '"I-DEP"') {
                 table += '<td scope="col">';
                 if (rowCell === 0)  table += rowCells[rowCell].replace(/^"|"$/g, '');
-                else    table += rowCells[rowCell];
+                else    table += parseFloat(rowCells[rowCell]).toFixed(2);
                 table += '</td>';
               }
             }

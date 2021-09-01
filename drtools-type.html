@@ -131,7 +131,7 @@
             if (rowCells[0] ==='"SLOC"' || rowCells[0] === '"WMC"' || rowCells[0] === '"NOM"' || rowCells[0] === '"DEP"') {
               table += '<td scope="col">';
               if (rowCell === 0)  table += rowCells[rowCell].replace(/^"|"$/g, '');
-              else    table += rowCells[rowCell];
+              else    table += parseFloat(rowCells[rowCell]).toFixed(2);
               table += '</td>';
             }
           }
