@@ -1,14 +1,5 @@
 "namespace","ca","ce","instability","abstractness","distance"
-"jdepend.framework",4,0,0.0,0.13333333333333333,0.8666666666666667
+"jdepend.framework",4,0,0.0,0.16666666666666666,0.8333333333333334
 "jdepend.swingui",0,1,1.0,0.125,0.125
-"epayment.framework",6,0,0.0,0.8333333333333334,0.16666666666666663
-"epayment.commands",0,0,0.0,0.0,1.0
-"epayment.adapters",0,2,1.0,0.0,0.0
-"epayment.processor",0,1,1.0,0.0,0.0
-"epayment.request",0,1,1.0,0.0,0.0
-"epayment.response",2,1,0.3333333333333333,0.0,0.6666666666666667
 "jdepend.textui",0,1,1.0,0.0,0.0
 "jdepend.xmlui",0,1,1.0,0.0,0.0
-"jdepend.framework.p1",0,0,0.0,0.0,1.0
-"jdepend.framework.p2",0,0,0.0,0.0,1.0
-"jdepend.framework.p3",0,0,0.0,0.0,1.0

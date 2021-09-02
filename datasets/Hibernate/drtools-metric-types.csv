@@ -4487,7 +4487,7 @@
 "org.hibernate.envers.test.integration.inheritance.single.relation.ReferencedEntity",44,6,6,10,6,0,1,1,2,0.9
 "org.hibernate.envers.test.integration.manytoone.bidirectional.BiRefedOptionalEntity",44,6,6,10,7,0,1,1,2,1.1
 "org.hibernate.spatial.dialect.oracle.SDOObjectMethod",44,6,6,10,6,5,2,7,2,0.9
-"null.EventPublishingServiceImpl",44,5,5,5,0,0,0,5,6,0.375
+"EventPublishingServiceImpl",44,5,5,1,0,0,1,5,6,0.375
 "org.hibernate.cache.cfg.internal.NaturalIdDataCachingConfigImpl",44,5,4,8,6,4,1,7,3,0.75
 "org.hibernate.engine.jdbc.SerializableBlobProxy",44,5,4,7,7,1,1,4,2,1.0
 "org.hibernate.engine.jdbc.SerializableClobProxy",44,5,4,7,7,1,2,4,2,1.125
@@ -4697,7 +4697,7 @@
 "org.hibernate.test.bytecode.enhancement.lazy.group.LGMB_To",41,6,6,6,8,0,0,0,3,0.8
 "org.hibernate.test.hql.Mammal",41,6,6,13,1,0,21,1,2,0.9
 "org.hibernate.test.id.usertype.inet.Inet",41,6,6,9,4,0,4,3,1,1.0
-"null.LatestAndGreatestConnectionProviderImpl",41,5,5,5,1,0,0,4,3,0.75
+"LatestAndGreatestConnectionProviderImpl",41,5,5,1,1,0,1,4,3,0.75
 "org.hibernate.userguide.mapping.generated.CreationTimestampTest",41,5,4,11,9,1,0,2,2,0.875
 "org.hibernate.boot.model.source.internal.hbm.PluralAttributeElementSourceOneToManyImpl",41,5,5,6,5,3,1,6,3,0.75
 "org.hibernate.query.criteria.internal.expression.UnaryArithmeticOperation",41,5,5,6,6,4,1,7,3,0.75
@@ -5724,7 +5724,7 @@
 "org.hibernate.spatial.testing.dialects.h2geodb.GeoDBGeometryEquality",31,3,1,8,3,1,1,3,0,0.0
 "org.hibernate.boot.jaxb.internal.UrlXmlSource",31,2,2,2,10,6,1,7,1,1.0
 "org.hibernate.hql.internal.QueryTranslatorFactoryInitiator",31,2,2,2,9,7,2,8,2,1.5
-"null.NoPackageTest",31,2,2,2,5,2,0,3,0,0.0
+"NoPackageTest",31,2,2,1,5,2,0,3,0,0.0
 "org.hibernate.id.CreateDeleteTest",31,2,2,2,9,3,0,4,0,0.0
 "org.hibernate.jpa.test.emops.FlushModeTest",31,2,2,2,6,1,0,3,0,0.0
 "org.hibernate.jpa.test.emops.RefreshTest",31,2,2,2,4,1,0,2,0,0.0
@@ -6141,7 +6141,7 @@
 "org.hibernate.test.timestamp.JdbcTimestampWithDefaultUTCTimeZoneTest",27,3,0,3,5,3,0,4,1,1.5
 "org.hibernate.envers.internal.entities.mapper.relation.component.MiddleDummyComponentMapper",27,3,3,3,4,3,1,4,0,0.0
 "org.hibernate.spatial.JTSGeometryType",27,3,3,3,3,2,9,5,0,0.0
-"null.EventPublishingServiceInitiator",27,2,2,3,0,0,0,1,2,1.5
+"EventPublishingServiceInitiator",27,2,2,1,0,0,1,1,2,1.5
 "org.hibernate.userguide.mapping.converter.hbm.MoneyConverterHbmTest",27,2,1,2,3,1,0,2,0,0.0
 "org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformResolverInitiator",27,2,2,3,7,5,2,7,2,1.5
 "org.hibernate.id.Assigned",27,2,2,4,7,5,2,7,1,1.0
@@ -6789,7 +6789,7 @@
 "org.hibernate.type.descriptor.java.ImmutableMutabilityPlan",22,4,4,4,1,0,4,1,1,1.3333333333333333
 "org.hibernate.type.LocaleType",22,4,3,4,4,3,5,6,1,1.3333333333333333
 "org.hibernate.type.NClobType",22,4,2,4,3,2,4,3,1,1.3333333333333333
-"null.AnnotationMappedNoPackageEntity",22,4,4,4,3,0,0,0,2,0.8333333333333334
+"AnnotationMappedNoPackageEntity",22,4,4,1,3,0,0,0,2,0.8333333333333334
 "org.hibernate.jpa.test.cascade.multicircle.G",22,4,4,4,0,0,1,1,3,1.0
 "org.hibernate.jpa.test.criteria.components.joins.ManyToOneType",22,4,4,4,3,0,1,0,2,0.8333333333333334
 "org.hibernate.jpa.test.criteria.fetchscroll.ProductId",22,4,4,4,2,0,1,0,2,0.8333333333333334
@@ -7955,7 +7955,7 @@
 "org.hibernate.envers.test.integration.basic.ClassicQueryTranslatorFactoryTest",13,1,0,1,4,2,0,4,0,0.0
 "org.hibernate.envers.test.integration.query.EntityWithChangesQueryStoreDeletionDataTest",13,1,0,1,3,1,0,2,0,0.0
 "org.hibernate.spatial.testing.dialects.hana.HANAExpressionTemplate",13,1,1,1,3,3,1,6,1,0.0
-"null.DefaultPackageTest",13,1,1,1,5,1,0,2,0,0.0
+"DefaultPackageTest",13,1,1,1,5,1,0,2,0,0.0
 "org.hibernate.jpamodelgen.test.embeddable.EmbeddableEntity",13,1,1,1,4,0,0,0,1,0.0
 "org.hibernate.jpamodelgen.test.generics.GenericsTest",13,1,1,1,4,1,0,2,0,0.0
 "org.hibernate.jpamodelgen.test.inheritance.basic.AbstractEntity",13,1,1,1,3,0,1,0,2,0.0
@@ -8103,7 +8103,7 @@
 "org.hibernate.jpamodelgen.test.collectionbasictype.StringToUppercaseConverter",12,2,2,3,1,0,0,2,0,0.0
 "org.hibernate.jpamodelgen.test.util.CompilationTest",12,2,2,2,2,0,40,0,0,0.0
 "org.hibernate.jpamodelgen.test.xmlmapped.Building",12,2,2,2,2,2,0,3,1,1.0
-"null.null",12,1,1,1,0,0,0,1,0,0.0
+"null",12,1,1,1,0,0,0,1,0,0.0
 "org.hibernate.bytecode.spi.ClassTransformer",12,1,1,1,2,0,1,1,0,0.0
 "org.hibernate.dialect.function.AnsiTrimFunction",12,1,0,1,1,1,3,3,0,0.0
 "org.hibernate.event.spi.PostCollectionRecreateEvent",12,1,1,1,2,2,7,3,0,0.0
@@ -8524,7 +8524,7 @@
 "org.hibernate.type.ProcedureParameterExtractionAware",9,3,3,3,3,1,4,1,0,0.0
 "org.hibernate.envers.configuration.internal.metadata.reader.PersistentPropertiesSource",9,3,3,3,3,1,2,1,0,0.0
 "org.hibernate.envers.internal.reader.AuditReaderImplementor",9,3,3,3,3,3,53,4,0,0.0
-"null.DisabledEventPublishingServiceImpl",9,2,1,2,0,0,0,1,1,2.0
+"DisabledEventPublishingServiceImpl",9,2,1,1,0,0,1,1,1,2.0
 "org.hibernate.userguide.proxy.tuplizer.Country",9,2,2,2,2,0,0,0,0,0.0
 "org.hibernate.AnnotationException",9,2,2,2,0,0,50,1,0,0.0
 "org.hibernate.criterion.Conjunction",9,2,1,2,0,0,3,1,0,0.0
@@ -8818,7 +8818,7 @@
 "org.hibernate.transform.ResultTransformer",7,2,2,2,2,0,32,0,0,0.0
 "org.hibernate.usertype.UserVersionType",7,2,2,2,2,1,2,2,0,0.0
 "org.hibernate.testing.jdbc.leak.IdleConnectionCounter",7,2,2,2,2,1,4,1,0,0.0
-"null.EventPublishingServiceContributor",7,1,1,1,0,0,0,1,0,0.0
+"EventPublishingServiceContributor",7,1,1,1,0,0,0,1,0,0.0
 "org.hibernate.boot.archive.scan.internal.StandardScanParameters",7,1,0,1,1,1,4,2,1,0.0
 "org.hibernate.boot.model.naming.IllegalIdentifierException",7,1,1,1,1,1,3,2,0,0.0
 "org.hibernate.bytecode.spi.NotInstrumentedException",7,1,1,1,1,1,3,2,0,0.0
@@ -8908,7 +8908,7 @@
 "org.hibernate.test.onetoone.singletable.Address",7,0,0,1,0,0,2,0,4,0.0
 "org.hibernate.test.schemaupdate.inheritance.tableperclass.Category",7,0,0,1,2,0,0,1,0,0.0
 "org.hibernate.envers.test.integration.inheritance.joined.relation.unidirectional.SetEntity",7,0,0,1,2,0,1,1,0,0.0
-"null.DefaultPackageEntity",7,0,0,1,2,0,0,0,1,0.0
+"DefaultPackageEntity",7,0,0,1,2,0,0,0,1,0.0
 "org.hibernate.jpamodelgen.test.mappedsuperclass.embeddablemappedsuperclass.EmbeddableAndMappedSuperClass",7,0,0,1,2,0,0,0,0,0.0
 "org.hibernate.jpamodelgen.test.mixedmode.Coordinates",7,0,0,1,1,0,0,0,2,0.0
 "org.hibernate.jpamodelgen.test.separatecompilationunits.superclass.MappedSuperclass",7,0,0,1,1,0,2,0,1,0.0
@@ -9406,7 +9406,7 @@
 "org.hibernate.query.procedure.spi.ProcedureParameterBindingImplementor",4,0,0,1,1,1,0,2,0,0.0
 "org.hibernate.resource.jdbc.spi.PhysicalJdbcTransaction",4,0,0,1,1,1,1,2,0,0.0
 "org.hibernate.service.Service",4,0,0,1,1,0,56,0,0,0.0
-"null.NoPackageEntity",4,0,0,1,0,0,0,0,2,0.0
+"NoPackageEntity",4,0,0,1,0,0,0,0,2,0.0
 "org.hibernate.boot.registry.classloading.internal.MyService",4,0,0,1,1,1,1,2,0,0.0
 "org.hibernate.internal.util.hib3rnat3.null",4,0,0,1,0,0,0,0,1,0.0
 "org.hibernate.jpa.test.metamodel.attributeInSuper.Entity",4,0,0,1,0,0,0,1,0,0.0
@@ -9429,7 +9429,7 @@
 "org.hibernate.osgi.test.client.SomeService",4,0,0,1,1,1,2,2,0,0.0
 "org.hibernate.spatial.dialect.mysql.MySQL56InnoDBSpatialDialect",4,0,0,1,0,0,0,1,0,0.0
 "org.hibernate.spatial.dialect.postgis.PostgisDialect",4,0,0,1,0,0,3,1,0,0.0
-"null.EventPublishingService",3,1,1,1,0,0,0,1,0,0.0
+"EventPublishingService",3,1,1,1,0,0,2,1,0,0.0
 "org.hibernate.boot.archive.scan.spi.ScanParameters",3,0,0,1,0,0,5,0,0,0.0
 "org.hibernate.boot.jaxb.hbm.spi.SingularAttributeInfo",3,0,0,1,0,0,1,2,0,0.0
 "org.hibernate.boot.model.naming.ImplicitIndexNameSource",3,0,0,1,0,0,2,1,0,0.0

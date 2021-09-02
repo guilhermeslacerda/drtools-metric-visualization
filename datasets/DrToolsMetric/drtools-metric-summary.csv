@@ -1,6 +1,6 @@
 "description",value,percent,median,std_dev
-"total_namespaces",11,100,0.0,0.0
-"total_types",45,4,3.0,4.144098661833266
-"total_sloc",3007,66,25.0,81.73923004527913
-"total_methods",418,9,3.0,5.816547180501219
-"total_cyclo",667,14,0.0,0.0
+"total_namespaces",18,100,0.0,0.0
+"total_types",57,3,3.0,1.8929694486000912
+"total_sloc",3810,66,28.0,85.01285547238056
+"total_methods",540,9,3.0,5.711208086316994
+"total_cyclo",801,14,0.0,0.0

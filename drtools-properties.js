@@ -10,12 +10,15 @@
     "datasetNamespaceDependencyII" : "./datasets/DrToolsMetric/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/DrToolsMetric/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/DrToolsMetric/drtools-metric-methods-top60.csv",
+    "datasetStatisticOfNamespace" : "./datasets/DrToolsMetric/drtools-metric-statistics-namespace.csv",
+    "datasetStatisticOfType" : "./datasets/DrToolsMetric/drtools-metric-statistics-type.csv",
+    "datasetStatisticOfMethod" : "./datasets/DrToolsMetric/drtools-metric-statistics-method.csv",
     "datasetInternalTypeDependencies" : "./datasets/DrToolsMetric/drtools-metric-internal-dependencies.json",
     "datasetInternalDependencies" : "./datasets/DrToolsMetric/drtools-metric-internal-dependencies.json"
 };*/
 
 // Project: Software Pathfinder
-var optionsProject = {
+/*var optionsProject = {
     "projectName" : "Software Pathfinder",
     "datasetDir": "./datasets/Pathfinder/",
     "datasetSummary" : "./datasets/Pathfinder/drtools-metric-summary.csv",
@@ -33,10 +36,10 @@ var optionsProject = {
     //"datasetMethods" : "./datasets/Pathfinder/drtools-metric-methods.csv",
     "datasetInternalTypeDependencies" : "./datasets/Pathfinder/drtools-metric-internal-dependencies.json", 
     "datasetInternalDependencies" : "./datasets/Pathfinder/drtools-metric-internal-dependencies.json",
-};
+};*/
 
 // Project: Findbugs
-/*var optionsProject = {
+var optionsProject = {
     "projectName" : "Findbugs 3.0.1",
     "datasetDir": "./datasets/FindBugs/",
     "datasetSummary" : "./datasets/FindBugs/drtools-metric-summary.csv",
@@ -47,10 +50,13 @@ var optionsProject = {
     "datasetNamespaceDependencyII" : "./datasets/FindBugs/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/FindBugs/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/FindBugs/drtools-metric-methods.csv",
+    "datasetStatisticOfNamespace" : "./datasets/FindBugs/drtools-metric-statistics-namespace.csv",
+    "datasetStatisticOfType" : "./datasets/FindBugs/drtools-metric-statistics-type.csv",
+    "datasetStatisticOfMethod" : "./datasets/FindBugs/drtools-metric-statistics-method.csv",
     "datasetInternalTypeDependencies" : "", 
     "datasetInternalDependencies" : "./datasets/FindBugs/drtools-metric-internal-dependenciesTop40.json",
     "datasetCyclicDependencies" : "./datasets/FindBugs/drtools-metric-cyclic-dependencies.csv"
-};*/
+};
 
 // Project: JDepend
 /*var optionsProject = {
@@ -64,6 +70,9 @@ var optionsProject = {
     "datasetNamespaceDependencyII" : "./datasets/JDepend/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/JDepend/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/JDepend/drtools-metric-methods.csv",
+    "datasetStatisticOfNamespace" : "./datasets/JDepend/drtools-metric-statistics-namespace.csv",
+    "datasetStatisticOfType" : "./datasets/JDepend/drtools-metric-statistics-type.csv",
+    "datasetStatisticOfMethod" : "./datasets/JDepend/drtools-metric-statistics-method.csv",
     "datasetInternalTypeDependencies" : "./datasets/JDepend/drtools-metric-internal-dependencies.json", 
     "datasetInternalDependencies" : "./datasets/JDepend/drtools-metric-internal-dependencies.json",
     "datasetCyclicDependencies" : ""
@@ -80,6 +89,9 @@ var optionsProject = {
     "datasetNamespaceDependencyII" : "./datasets/Hibernate/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/Hibernate/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/Hibernate/drtools-metric-methodsTop100.csv",
+    "datasetStatisticOfNamespace" : "./datasets/Hibernate/drtools-metric-statistics-namespace.csv",
+    "datasetStatisticOfType" : "./datasets/Hibernate/drtools-metric-statistics-type.csv",
+    "datasetStatisticOfMethod" : "./datasets/Hibernate/drtools-metric-statistics-method.csv",
     "datasetInternalTypeDependencies" : "", 
     "datasetInternalDependencies" : "./datasets/Hibernate/drtools-metric-internal-dependencies.json",
     "datasetCyclicDependencies" : "./datasets/Hibernate/drtools-metric-cyclic-dependencies.csv"
@@ -96,6 +108,9 @@ var optionsProject = {
     "datasetNamespaceDependencyII" : "./datasets/Sneer/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/Sneer/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/Sneer/drtools-metric-methods.csv",
+    "datasetStatisticOfNamespace" : "./datasets/Sneer/drtools-metric-statistics-namespace.csv",
+    "datasetStatisticOfType" : "./datasets/Sneer/drtools-metric-statistics-type.csv",
+    "datasetStatisticOfMethod" : "./datasets/Sneer/drtools-metric-statistics-method.csv",
     "datasetInternalTypeDependencies" : "", 
     "datasetInternalDependencies" : "./datasets/Sneer/drtools-metric-internal-dependencies.json",
     "datasetCyclicDependencies" : "./datasets/Sneer/drtools-metric-cyclic-dependencies.csv"
@@ -112,6 +127,9 @@ var optionsProject = {
     "datasetNamespaceDependencyII" : "./datasets/HuntBugs/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/HuntBugs/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/HuntBugs/drtools-metric-methods.csv",
+    "datasetStatisticOfNamespace" : "./datasets/HuntBugs/drtools-metric-statistics-namespace.csv",
+    "datasetStatisticOfType" : "./datasets/HuntBugs/drtools-metric-statistics-type.csv",
+    "datasetStatisticOfMethod" : "./datasets/HuntBugs/drtools-metric-statistics-method.csv",
     "datasetInternalTypeDependencies" : "", 
     "datasetInternalDependencies" : "./datasets/HuntBugs/drtools-metric-internal-dependencies.json",
     "datasetCyclicDependencies" : "./datasets/HuntBugs/drtools-metric-cyclic-dependencies.csv"
@@ -128,6 +146,9 @@ var optionsProject = {
     "datasetNamespaceDependencyII" : "./datasets/Checkstyle/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/Checkstyle/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/Checkstyle/drtools-metric-methods.csv",
+    "datasetStatisticOfNamespace" : "./datasets/Checkstyle/drtools-metric-statistics-namespace.csv",
+    "datasetStatisticOfType" : "./datasets/Checkstyle/drtools-metric-statistics-type.csv",
+    "datasetStatisticOfMethod" : "./datasets/Checkstyle/drtools-metric-statistics-method.csv",
     "datasetInternalTypeDependencies" : "", 
     "datasetInternalDependencies" : "./datasets/Checkstyle/drtools-metric-internal-dependencies.json",
     "datasetCyclicDependencies" : "./datasets/Checkstyle/drtools-metric-cyclic-dependencies.csv"
@@ -144,6 +165,9 @@ var optionsProject = {
     "datasetNamespaceDependencyII" : "./datasets/Sonarqube/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/Sonarqube/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/Sonarqube/drtools-metric-methods.csv",
+    "datasetStatisticOfNamespace" : "./datasets/Sonarqube/drtools-metric-statistics-namespace.csv",
+    "datasetStatisticOfType" : "./datasets/Sonarqube/drtools-metric-statistics-type.csv",
+    "datasetStatisticOfMethod" : "./datasets/Sonarqube/drtools-metric-statistics-method.csv",
     "datasetInternalTypeDependencies" : "", 
     "datasetInternalDependencies" : "./datasets/Sonarqube/drtools-metric-internal-dependencies.json",
     "datasetCyclicDependencies" : "./datasets/Sonarqube/drtools-metric-cyclic-dependencies.csv"
@@ -160,6 +184,9 @@ var optionsProject = {
     "datasetNamespaceDependencyII" : "./datasets/PMD/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/PMD/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/PMD/drtools-metric-methods.csv",
+    "datasetStatisticOfNamespace" : "./datasets/PMD/drtools-metric-statistics-namespace.csv",
+    "datasetStatisticOfType" : "./datasets/PMD/drtools-metric-statistics-type.csv",
+    "datasetStatisticOfMethod" : "./datasets/PMD/drtools-metric-statistics-method.csv",
     "datasetInternalTypeDependencies" : "", 
     "datasetInternalDependencies" : "./datasets/PMD/drtools-metric-internal-dependencies.json",
     "datasetCyclicDependencies" : "./datasets/PMD/drtools-metric-cyclic-dependencies.csv"
@@ -176,6 +203,9 @@ var optionsProject = {
     "datasetNamespaceDependencyII" : "./datasets/JFreechart/drtools-metric-namespaces-dependencies.json",
     "datasetTypes" : "./datasets/JFreechart/drtools-metric-types.csv",
     "datasetMethods" : "./datasets/JFreechart/drtools-metric-methods.csv",
+    "datasetStatisticOfNamespace" : "./datasets/JFreechart/drtools-metric-statistics-namespace.csv",
+    "datasetStatisticOfType" : "./datasets/JFreechart/drtools-metric-statistics-type.csv",
+    "datasetStatisticOfMethod" : "./datasets/JFreechart/drtools-metric-statistics-method.csv",
     "datasetInternalTypeDependencies" : "", 
     "datasetInternalDependencies" : "./datasets/JFreechart/drtools-metric-internal-dependencies.json",
     "datasetCyclicDependencies" : "./datasets/JFreechart/drtools-metric-cyclic-dependencies.csv"

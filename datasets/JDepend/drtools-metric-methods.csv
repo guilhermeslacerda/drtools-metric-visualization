@@ -49,11 +49,9 @@
 "jdepend.framework.ClassFileParser.getConstantPoolEntry(int entryIndex)",7,3,0,3,1
 "jdepend.framework.ClassFileParser.addImport(String importPackage)",4,3,3,3,1
 "jdepend.framework.PackageFilter.accept(String packageName)",16,3,5,2,1
-"jdepend.framework.ProfilingHarness.main(String[] args)",11,3,7,2,1
 "jdepend.framework.JavaPackage.addAfferent(JavaPackage jPackage)",11,3,5,2,1
 "jdepend.framework.JavaPackage.getAbstractClassCount()",11,3,4,2,0
 "jdepend.framework.JavaPackage.getConcreteClassCount()",11,3,4,2,0
-"jdepend.framework.CycleTest.printCycles(List list)",10,3,8,2,1
 "jdepend.framework.PackageFilter.addPackage(String packageName)",8,3,6,2,1
 "jdepend.framework.JavaPackage.addEfferent(JavaPackage jPackage)",6,3,5,2,1
 "jdepend.swingui.EfferentNode.isChild(JavaPackage jPackage)",19,3,2,1,1
@@ -98,20 +96,14 @@
 "jdepend.framework.FileManager.addFile(File f, Collection files)",4,2,2,3,2
 "jdepend.framework.JavaPackage.instability()",13,2,3,2,0
 "jdepend.framework.JavaPackage.abstractness()",10,2,3,2,0
-"jdepend.framework.CycleTest.assertListEquals(List list, String names[])",7,2,5,2,2
 "jdepend.framework.JavaPackage.equals(Object other)",6,2,3,2,1
 "jdepend.framework.PackageFilter.addPackages(Collection packageNames)",4,2,4,2,1
-"jdepend.framework.ExampleTest.testAllPackagesDistance()",16,2,7,1,0
-"jdepend.framework.ExampleTest.setUp()",16,2,5,1,0
 "jdepend.swingui.AfferentNode.toString()",13,2,4,1,0
 "jdepend.swingui.EfferentNode.toString()",13,2,4,1,0
-"jdepend.framework.JDependTestCase.setUp()",13,2,3,1,0
 "jdepend.swingui.DependTree.valueChanged(TreeSelectionEvent te)",13,2,2,1,1
 "jdepend.framework.PackageComparator.compare(Object p1, Object p2)",10,2,5,1,2
 "jdepend.framework.AbstractParser.onParsedJavaClass(JavaClass jClass)",10,2,4,1,1
-"epayment.processor.PaymentProcessor.getProcessor()",10,2,0,1,0
 "jdepend.framework.JavaClass.equals(Object other)",8,2,3,1,1
-"jdepend.framework.CollectAllCyclesTest.assertListEquals(List list, String names[])",7,2,5,1,2
 "jdepend.swingui.DependTree.getTree()",6,2,1,1,0
 "jdepend.framework.AbstractParser.getFilter()",5,2,1,1,0
 "jdepend.framework.JavaClass.addImportedPackage(JavaPackage jPackage)",4,2,5,1,1
@@ -249,12 +241,6 @@
 "jdepend.framework.ClassFileParser.ClassFileParser()",2,1,0,3,0
 "jdepend.framework.JDepend.JDepend()",2,1,0,3,0
 "jdepend.framework.JavaClassBuilder.JavaClassBuilder()",2,1,0,3,0
-"jdepend.framework.CycleTest.test5Node2BranchCycle()",40,1,31,2,0
-"jdepend.framework.CycleTest.test3Node2BranchCycle()",26,1,19,2,0
-"jdepend.framework.CycleTest.test3Node1BranchCycle()",24,1,18,2,0
-"jdepend.framework.CycleTest.test3Node1BranchSubCycle()",24,1,18,2,0
-"jdepend.framework.CycleTest.test2Node1BranchCycle()",17,1,12,2,0
-"jdepend.framework.CycleTest.testNoCycles()",16,1,11,2,0
 "jdepend.framework.PackageFilter.PackageFilter(File f)",10,1,2,2,1
 "jdepend.framework.JavaPackage.dependsUpon(JavaPackage imported)",9,1,2,2,1
 "jdepend.framework.PackageFilter.PackageFilter()",9,1,2,2,0
@@ -270,7 +256,6 @@
 "jdepend.framework.JavaPackage.addClass(JavaClass clazz)",2,1,1,2,1
 "jdepend.framework.JavaPackage.containsCycle()",2,1,1,2,0
 "jdepend.framework.JavaPackage.getClassCount()",2,1,1,2,0
-"jdepend.framework.CycleTest.CycleTest(String name)",2,1,0,2,1
 "jdepend.framework.JavaPackage.JavaPackage(String name)",2,1,0,2,1
 "jdepend.framework.JavaPackage.setAfferents(Collection afferents)",2,1,0,2,1
 "jdepend.framework.JavaPackage.setEfferents(Collection efferents)",2,1,0,2,1
@@ -279,221 +264,59 @@
 "jdepend.framework.JavaPackage.getEfferents()",2,1,0,2,0
 "jdepend.framework.JavaPackage.getName()",2,1,0,2,0
 "jdepend.framework.JavaPackage.toString()",2,1,0,2,0
-"jdepend.framework.CollectAllCyclesTest.test5Node2BranchCycle()",40,1,31,1,0
-"jdepend.framework.ExampleTest.testDependencyConstraint()",39,1,25,1,0
-"jdepend.framework.ClassFileParserTest.testConcreteClass()",37,1,50,1,0
-"jdepend.framework.CollectAllCyclesTest.test3Node2BranchCycle()",26,1,19,1,0
-"jdepend.framework.CollectAllCyclesTest.test3Node1BranchCycle()",25,1,18,1,0
-"jdepend.framework.CollectAllCyclesTest.test3Node1BranchSubCycle()",24,1,18,1,0
-"jdepend.framework.ClassFileParserTest.testAbstractClass()",23,1,26,1,0
-"jdepend.framework.ClassFileParserTest.testInterfaceClass()",22,1,24,1,0
-"jdepend.framework.ClassFileParserTest.testInnerClass()",19,1,14,1,0
-"jdepend.framework.ClassFileParserTest.testPackageClass()",18,1,14,1,0
-"jdepend.framework.CollectAllCyclesTest.test2Node1BranchCycle()",17,1,12,1,0
-"epayment.processor.PaymentProcessor.PaymentProcessor()",17,1,3,1,0
-"jdepend.framework.CollectAllCyclesTest.testNoCycles()",16,1,11,1,0
 "jdepend.swingui.DependTree.DependTree(DependTreeModel model)",16,1,8,1,1
-"jdepend.framework.ExampleTest.testOnePackageDistance()",15,1,5,1,0
 "jdepend.swingui.DependTree.createTree()",15,1,5,1,0
-"jdepend.framework.ClassFileParserTest.testInvalidClassFile()",13,1,5,1,0
-"jdepend.framework.JarFileParserTest.testInvalidJarFile()",13,1,4,1,0
-"jdepend.framework.JarFileParserTest.testInvalidZipFile()",13,1,4,1,0
-"epayment.processor.PaymentProcessor.process(IPaymentCommand command)",13,1,1,1,1
-"jdepend.framework.ExampleTest.testOnePackageHasNoCycles()",12,1,5,1,0
-"jdepend.framework.FileManagerTest.testInvalidDirectory()",12,1,5,1,0
-"jdepend.framework.JarFileParserTest.testJarFileWithoutInnerClasses()",11,1,5,1,0
-"jdepend.framework.JarFileParserTest.testZipFileWithoutInnerClasses()",11,1,5,1,0
-"jdepend.framework.JarFileParserTest.testCountClasses()",10,1,8,1,0
 "jdepend.swingui.DependTree.setModel(DependTreeModel model)",10,1,6,1,1
-"jdepend.framework.FileManagerTest.testNonExistentDirectory()",10,1,4,1,0
 "jdepend.swingui.AfferentNode.makeNode(PackageNode parent, JavaPackage jPackage)",10,1,0,1,2
 "jdepend.swingui.EfferentNode.makeNode(PackageNode parent, JavaPackage jPackage)",10,1,0,1,2
-"jdepend.framework.ExampleConcreteClass.f()",10,1,0,1,0
-"jdepend.framework.JarFileParserTest.testJarFile()",9,1,5,1,0
-"jdepend.framework.JarFileParserTest.testZipFile()",9,1,5,1,0
-"jdepend.framework.ExampleTest.testAllPackagesHaveNoCycles()",9,1,3,1,0
 "jdepend.swingui.AfferentNode.AfferentNode(PackageNode parent, JavaPackage jPackage)",9,1,0,1,2
 "jdepend.swingui.EfferentNode.EfferentNode(PackageNode parent, JavaPackage jPackage)",9,1,0,1,2
 "jdepend.swingui.AfferentNode.getCoupledPackages()",8,1,2,1,0
 "jdepend.swingui.EfferentNode.getCoupledPackages()",8,1,2,1,0
-"epayment.processor.PaymentProcessor.PaymentProcessor(IGatewayAdapter adapter)",8,1,1,1,1
 "jdepend.swingui.DependTree.createScrollPane()",8,1,1,1,0
-"jdepend.framework.JarFileParserTest.assertClassesExist(Collection classes)",7,1,6,1,1
 "jdepend.swingui.DependTree.addTreeSelectionListener(TreeSelectionListener l)",7,1,2,1,1
 "jdepend.swingui.DependTree.getModel()",7,1,2,1,0
-"epayment.processor.PaymentProcessor.setGatewayAdapter(IGatewayAdapter adapter)",7,1,0,1,1
 "jdepend.framework.JavaClass.JavaClass(String name)",6,1,0,1,1
-"jdepend.framework.FileManagerTest.testJar()",5,1,5,1,0
-"jdepend.framework.FileManagerTest.testWar()",5,1,5,1,0
-"jdepend.framework.FileManagerTest.testZip()",5,1,5,1,0
-"jdepend.framework.FileManagerTest.testClassFile()",5,1,4,1,0
 "jdepend.framework.JavaClass$ClassComparator.compare(Object a, Object b)",5,1,3,1,2
-"jdepend.framework.JarFileParserTest.setUp()",5,1,3,1,0
-"jdepend.framework.ExampleConcreteClass.a()",5,1,0,1,0
 "jdepend.swingui.DependTree.DependTree()",5,1,0,1,0
-"jdepend.framework.FileManagerTest.setUp()",4,1,2,1,0
-"jdepend.framework.ClassFileParserTest.setUp()",4,1,1,1,0
 "jdepend.framework.AbstractParser.parse(InputStream is)",4,1,0,1,1
-"jdepend.framework.FileManagerTest.testBuildDirectory()",3,1,5,1,0
-"jdepend.framework.FileManagerTest.testInvalidClassFile()",3,1,3,1,0
-"jdepend.framework.FileManagerTest.testNonExistentClassFile()",3,1,3,1,0
-"jdepend.framework.JarFileParserTest.assertInnerClassesExist(Collection classes)",3,1,2,1,1
-"jdepend.framework.ClassFileParserTest.testExampleClassFileFromTimDrury()",3,1,2,1,0
 "jdepend.framework.AbstractParser.AbstractParser(PackageFilter filter)",3,1,1,1,1
-"jdepend.framework.ExampleConcreteClass.c(BigDecimal bd, byte[] bytes)",3,1,0,1,2
-"jdepend.framework.ExampleConcreteClass.d()",3,1,0,1,0
-"jdepend.framework.ExampleConcreteClass.e()",3,1,0,1,0
-"jdepend.framework.FileManagerTest.testEmptyFileManager()",2,1,3,1,0
-"jdepend.framework.ClassFileParserTest.testExampleClassFile2()",2,1,2,1,0
 "jdepend.framework.JavaClass.hashCode()",2,1,2,1,0
 "jdepend.framework.AbstractParser.addParseListener(ParserListener listener)",2,1,1,1,1
-"jdepend.framework.ExampleTest.main(String[] args)",2,1,1,1,1
-"jdepend.framework.ClassFileParserTest.tearDown()",2,1,1,1,0
-"jdepend.framework.FileManagerTest.tearDown()",2,1,1,1,0
-"jdepend.framework.JDependTestCase.tearDown()",2,1,1,1,0
-"jdepend.framework.JarFileParserTest.tearDown()",2,1,1,1,0
 "jdepend.framework.JavaClass.getImportedPackages()",2,1,1,1,0
-"jdepend.framework.ExampleConcreteClass.b(String[] s, java.text.NumberFormat nf)",2,1,0,1,2
 "jdepend.framework.AbstractParser.setFilter(PackageFilter filter)",2,1,0,1,1
-"jdepend.framework.ClassFileParserTest.ClassFileParserTest(String name)",2,1,0,1,1
-"jdepend.framework.CollectAllCyclesTest.CollectAllCyclesTest(String name)",2,1,0,1,1
-"jdepend.framework.ExampleTest.ExampleTest(String name)",2,1,0,1,1
-"jdepend.framework.FileManagerTest.FileManagerTest(String name)",2,1,0,1,1
-"jdepend.framework.JDependTestCase.JDependTestCase(String name)",2,1,0,1,1
-"jdepend.framework.JarFileParserTest.JarFileParserTest(String name)",2,1,0,1,1
 "jdepend.framework.JavaClass.isAbstract(boolean isAbstract)",2,1,0,1,1
 "jdepend.framework.JavaClass.setName(String name)",2,1,0,1,1
 "jdepend.framework.JavaClass.setPackageName(String name)",2,1,0,1,1
 "jdepend.framework.JavaClass.setSourceFile(String name)",2,1,0,1,1
 "jdepend.framework.PackageComparator.PackageComparator(PackageComparator byWhat)",2,1,0,1,1
 "jdepend.framework.AbstractParser.AbstractParser()",2,1,0,1,0
-"jdepend.framework.JDependTestCase.getBuildDir()",2,1,0,1,0
-"jdepend.framework.JDependTestCase.getHomeDir()",2,1,0,1,0
-"jdepend.framework.JDependTestCase.getPackageSubDir()",2,1,0,1,0
-"jdepend.framework.JDependTestCase.getTestDataDir()",2,1,0,1,0
-"jdepend.framework.JDependTestCase.getTestDir()",2,1,0,1,0
 "jdepend.framework.JavaClass.getName()",2,1,0,1,0
 "jdepend.framework.JavaClass.getPackageName()",2,1,0,1,0
 "jdepend.framework.JavaClass.getSourceFile()",2,1,0,1,0
 "jdepend.framework.JavaClass.isAbstract()",2,1,0,1,0
 "jdepend.framework.PackageComparator.byName()",2,1,0,1,0
 "jdepend.framework.PackageComparator.byWhat()",2,1,0,1,0
-"jdepend.framework.ExampleConcreteClass.ExampleConcreteClass()",1,1,0,1,0
 "jdepend.framework.PackageComparator.PackageComparator()",1,1,0,1,0
 "jdepend.swingui.AboutDialog.AboutDialog(JFrame parent)",58,1,30,0,1
-"epayment.adapters.ABCGatewayAdapter.authorize(IPaymentRequest request)",58,1,0,0,1
-"epayment.adapters.XYZGatewayAdapter.authorize(IPaymentRequest request)",58,1,0,0,1
-"jdepend.framework.ConstraintTest.testJDependConstraints()",34,1,28,0,0
 "jdepend.xmlui.JDepend.printStatistics(JavaPackage jPackage)",26,1,45,0,1
-"jdepend.framework.ConstraintTest.testMatchFail()",22,1,11,0,0
-"epayment.processor.PaymentProcessorConfigurator.configure(PaymentProcessor processor)",21,1,1,0,1
-"jdepend.framework.ComponentTest.assertJDependPackage()",20,1,36,0,0
 "jdepend.swingui.AboutDialog.createConstraints(int x, int y)",20,1,0,0,2
-"jdepend.framework.ConstraintTest.testMatchPass()",18,1,8,0,0
-"jdepend.framework.AllTests.suite()",17,1,11,0,0
 "jdepend.swingui.AboutDialog.createButton(String label)",17,1,1,0,1
-"epayment.request.PaymentRequest.toString()",16,1,6,0,0
-"jdepend.framework.MetricTest.testConfiguredVolatility()",15,1,15,0,0
-"jdepend.framework.ComponentTest.testJDependComponents()",15,1,11,0,0
-"epayment.adapters.ABCGatewayAdapter.capture(IPaymentRequest request)",14,1,0,0,1
-"epayment.adapters.ABCGatewayAdapter.credit(IPaymentRequest request)",14,1,0,0,1
-"epayment.adapters.ABCGatewayAdapter.sale(IPaymentRequest request)",14,1,0,0,1
-"epayment.adapters.ABCGatewayAdapter.voidSale(IPaymentRequest request)",14,1,0,0,1
-"epayment.adapters.XYZGatewayAdapter.capture(IPaymentRequest request)",14,1,0,0,1
-"epayment.adapters.XYZGatewayAdapter.credit(IPaymentRequest request)",14,1,0,0,1
-"epayment.adapters.XYZGatewayAdapter.sale(IPaymentRequest request)",14,1,0,0,1
-"epayment.adapters.XYZGatewayAdapter.voidSale(IPaymentRequest request)",14,1,0,0,1
-"jdepend.framework.MetricTest.assertFrameworkPackage()",13,1,24,0,0
-"jdepend.framework.MetricTest.assertSwingUIPackage()",13,1,23,0,0
-"jdepend.framework.MetricTest.assertTextUIPackage()",13,1,23,0,0
-"jdepend.framework.MetricTest.assertXmlUIPackage()",13,1,23,0,0
-"jdepend.framework.PropertyConfiguratorTest.testDefaultPackages()",13,1,10,0,0
-"jdepend.framework.MetricTest.assertAnalyzePackages()",13,1,9,0,0
-"jdepend.framework.FilterTest.testCollection()",12,1,9,0,0
-"epayment.response.PaymentResponse.toString()",12,1,3,0,0
-"epayment.commands.AuthorizeCommand.execute(IGatewayAdapter adapter)",12,1,2,0,1
-"epayment.commands.CaptureCommand.execute(IGatewayAdapter adapter)",12,1,2,0,1
-"epayment.commands.CreditCommand.execute(IGatewayAdapter adapter)",12,1,2,0,1
-"epayment.commands.SaleCommand.execute(IGatewayAdapter adapter)",12,1,2,0,1
-"epayment.commands.VoidSaleCommand.execute(IGatewayAdapter adapter)",12,1,2,0,1
 "jdepend.swingui.StatusPanel.setStatusComponent(JComponent component)",11,1,4,0,1
-"epayment.request.PaymentRequest.PaymentRequest()",11,1,0,0,0
-"jdepend.framework.ComponentTest.assertJUnitPackage()",10,1,11,0,0
-"jdepend.framework.ComponentTest.assertJavaPackage()",10,1,11,0,0
-"jdepend.framework.ComponentTest.assertJavaxPackage()",10,1,11,0,0
 "jdepend.xmlui.JDepend.JDepend(PrintWriter writer)",10,1,2,0,1
-"jdepend.framework.MetricTest.setUp()",9,1,4,0,0
-"epayment.framework.AbstractPaymentCommand.execute(IGatewayAdapter adapter)",9,1,0,0,1
-"epayment.framework.IGatewayAdapter.authorize(IPaymentRequest request)",9,1,0,0,1
-"epayment.framework.IGatewayAdapter.capture(IPaymentRequest request)",9,1,0,0,1
-"epayment.framework.IGatewayAdapter.credit(IPaymentRequest request)",9,1,0,0,1
-"epayment.framework.IGatewayAdapter.sale(IPaymentRequest request)",9,1,0,0,1
-"epayment.framework.IGatewayAdapter.voidSale(IPaymentRequest request)",9,1,0,0,1
-"epayment.framework.IPaymentCommand.execute(IGatewayAdapter adapter)",9,1,0,0,1
-"jdepend.framework.PropertyConfiguratorTest.testFiltersFromFile()",8,1,5,0,0
-"epayment.commands.AuthorizeCommand.AuthorizeCommand(IPaymentRequest request)",8,1,0,0,1
-"epayment.commands.CaptureCommand.CaptureCommand(IPaymentRequest request)",8,1,0,0,1
-"epayment.commands.CreditCommand.CreditCommand(IPaymentRequest request)",8,1,0,0,1
-"epayment.commands.SaleCommand.SaleCommand(IPaymentRequest request)",8,1,0,0,1
-"epayment.commands.VoidSaleCommand.VoidSaleCommand(IPaymentRequest request)",8,1,0,0,1
-"epayment.framework.IPaymentRequest.setAccountNumber(String number)",8,1,0,0,1
-"epayment.framework.PaymentException.PaymentException(String message)",8,1,0,0,1
-"jdepend.framework.PropertyConfiguratorTest.assertFiltersExist(Collection filters)",7,1,12,0,1
-"jdepend.framework.FilterTest.testFile()",7,1,5,0,0
-"epayment.adapters.ABCGatewayAdapter.setHost(String host)",7,1,0,0,1
-"epayment.adapters.XYZGatewayAdapter.setHost(String host)",7,1,0,0,1
-"epayment.framework.IPaymentRequest.setAmount(double amount)",7,1,0,0,1
-"epayment.request.PaymentRequest.setAccountName(String name)",7,1,0,0,1
-"epayment.request.PaymentRequest.setAccountNumber(String number)",7,1,0,0,1
-"epayment.request.PaymentRequest.setAmount(double amount)",7,1,0,0,1
-"epayment.request.PaymentRequest.setComment(String comment)",7,1,0,0,1
-"epayment.request.PaymentRequest.setUserId(String id)",7,1,0,0,1
-"epayment.request.PaymentRequest.setUserPassword(String password)",7,1,0,0,1
-"epayment.response.PaymentResponse.setProcessedDate(String date)",7,1,0,0,1
-"epayment.response.PaymentResponse.setResponseMessage(String message)",7,1,0,0,1
-"epayment.framework.AbstractPaymentCommand.getPaymentRequest()",7,1,0,0,0
-"epayment.request.PaymentRequest.getAccountName()",7,1,0,0,0
-"epayment.request.PaymentRequest.getAccountNumber()",7,1,0,0,0
-"epayment.request.PaymentRequest.getAmount()",7,1,0,0,0
-"epayment.request.PaymentRequest.getComment()",7,1,0,0,0
-"epayment.request.PaymentRequest.getUserId()",7,1,0,0,0
-"epayment.request.PaymentRequest.getUserPassword()",7,1,0,0,0
-"epayment.response.PaymentResponse.PaymentResponse()",7,1,0,0,0
-"epayment.response.PaymentResponse.getProcessedDate()",7,1,0,0,0
-"epayment.response.PaymentResponse.getResponseMessage()",7,1,0,0,0
 "jdepend.xmlui.JDepend.printClassName(JavaClass jClass)",6,1,11,0,1
-"jdepend.framework.FilterTest.assertFiltersExist(PackageFilter filter)",6,1,10,0,1
-"jdepend.framework.ConstraintTest.setUp()",6,1,3,0,0
 "jdepend.swingui.StatusPanel.StatusPanel()",6,1,1,0,0
-"epayment.framework.AbstractPaymentCommand.AbstractPaymentCommand(IPaymentRequest request)",6,1,0,0,1
 "jdepend.framework.ParserListener.onParsedJavaClass(JavaClass parsedClass)",6,1,0,0,1
-"jdepend.framework.FilterTest.testCollectionSubset()",5,1,4,0,0
 "jdepend.xmlui.JDepend.main(String args[])",5,1,1,0,1
-"epayment.framework.IGatewayAdapter.setHost(String host)",5,1,0,0,1
-"epayment.framework.IPaymentRequest.setAccountName(String name)",5,1,0,0,1
-"epayment.framework.IPaymentRequest.setComment(String comment)",5,1,0,0,1
-"epayment.framework.IPaymentRequest.setUserId(String id)",5,1,0,0,1
-"epayment.framework.IPaymentRequest.setUserPassword(String password)",5,1,0,0,1
-"epayment.adapters.ABCGatewayAdapter.ABCGatewayAdapter()",5,1,0,0,0
-"epayment.adapters.XYZGatewayAdapter.XYZGatewayAdapter()",5,1,0,0,0
-"epayment.framework.IPaymentResponse.getProcessedDate()",5,1,0,0,0
-"epayment.framework.IPaymentResponse.getResponseMessage()",5,1,0,0,0
 "jdepend.xmlui.JDepend.JDepend()",5,1,0,0,0
 "jdepend.xmlui.JDepend.printPackageHeader(JavaPackage jPackage)",4,1,5,0,1
-"jdepend.framework.FilterTest.testDefault()",4,1,4,0,0
-"jdepend.framework.PropertyConfiguratorTest.testDefaultFilters()",4,1,4,0,0
-"jdepend.framework.PropertyConfiguratorTest.setUp()",4,1,3,0,0
 "jdepend.xmlui.JDepend.printNoStats()",4,1,3,0,0
-"jdepend.framework.ComponentTest.setUp()",4,1,2,0,0
-"epayment.processor.PaymentProcessorConfigurator.PaymentProcessorConfigurator()",4,1,0,0,0
 "jdepend.xmlui.JDepend.printCycleContributor(JavaPackage jPackage)",3,1,4,0,1
 "jdepend.xmlui.JDepend.printCycleHeader(JavaPackage jPackage)",3,1,4,0,1
 "jdepend.xmlui.JDepend.printPackageName(JavaPackage jPackage)",3,1,4,0,1
 "jdepend.xmlui.JDepend.printCycleFooter()",3,1,4,0,0
 "jdepend.xmlui.JDepend.printCyclesHeader()",3,1,4,0,0
 "jdepend.xmlui.JDepend.printHeader()",3,1,4,0,0
-"jdepend.framework.FilterTest.setUp()",3,1,3,0,0
-"jdepend.framework.MetricTest.testAnalyzeClassFiles()",3,1,3,0,0
 "jdepend.xmlui.JDepend.printPackageFooter(JavaPackage jPackage)",2,1,3,0,1
 "jdepend.xmlui.JDepend.printAbstractClassesFooter()",2,1,3,0,0
 "jdepend.xmlui.JDepend.printAbstractClassesHeader()",2,1,3,0,0
@@ -506,29 +329,8 @@
 "jdepend.xmlui.JDepend.printEfferentsHeader()",2,1,3,0,0
 "jdepend.xmlui.JDepend.printPackagesFooter()",2,1,3,0,0
 "jdepend.xmlui.JDepend.printPackagesHeader()",2,1,3,0,0
-"jdepend.framework.AllTests.main(String[] args)",2,1,2,0,1
 "jdepend.xmlui.JDepend.printFooter()",2,1,2,0,0
-"jdepend.framework.ComponentTest.format(float f)",2,1,1,0,1
-"jdepend.framework.MetricTest.format(float f)",2,1,1,0,1
 "jdepend.xmlui.JDepend.printCycleTarget(JavaPackage jPackage)",2,1,1,0,1
-"jdepend.framework.ComponentTest.tearDown()",2,1,1,0,0
-"jdepend.framework.FilterTest.tearDown()",2,1,1,0,0
-"jdepend.framework.MetricTest.tearDown()",2,1,1,0,0
-"jdepend.framework.PropertyConfiguratorTest.tearDown()",2,1,1,0,0
-"jdepend.framework.ExampleAbstractClass.b(String[] s, java.text.NumberFormat nf)",2,1,0,0,2
-"jdepend.framework.ExampleAbstractClass.c(BigDecimal bd, byte[] b)",2,1,0,0,2
-"jdepend.framework.ComponentTest.ComponentTest(String name)",2,1,0,0,1
-"jdepend.framework.ConstraintTest.ConstraintTest(String name)",2,1,0,0,1
-"jdepend.framework.FilterTest.FilterTest(String name)",2,1,0,0,1
-"jdepend.framework.MetricTest.MetricTest(String name)",2,1,0,0,1
-"jdepend.framework.PropertyConfiguratorTest.PropertyConfiguratorTest(String name)",2,1,0,0,1
 "jdepend.xmlui.JDepend.printSummary(Collection packages)",2,1,0,0,1
-"jdepend.framework.ExampleAbstractClass.a()",2,1,0,0,0
 "jdepend.xmlui.JDepend.printAfferentsError()",2,1,0,0,0
 "jdepend.xmlui.JDepend.printEfferentsError()",2,1,0,0,0
-"jdepend.framework.ExampleAbstractClass.ExampleAbstractClass()",1,1,0,0,0
-"jdepend.framework.ExampleInterface.b(String[] s, java.text.NumberFormat nf)",0,1,0,0,2
-"jdepend.framework.ExampleInterface.c(BigDecimal bd, byte[] b)",0,1,0,0,2
-"jdepend.framework.ExampleAbstractClass.d()",0,1,0,0,0
-"jdepend.framework.ExampleInterface.a()",0,1,0,0,0
-"jdepend.framework.ExampleInterface.d()",0,1,0,0,0

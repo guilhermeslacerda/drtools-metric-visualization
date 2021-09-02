@@ -1,14 +1,5 @@
 "namespace","noc","nac"
-"jdepend.framework",30,4
+"jdepend.framework",12,2
 "jdepend.swingui",8,1
-"epayment.framework",6,5
-"epayment.commands",5,0
-"epayment.adapters",2,0
-"epayment.processor",2,0
-"epayment.request",1,0
-"epayment.response",1,0
 "jdepend.textui",1,0
 "jdepend.xmlui",1,0
-"jdepend.framework.p1",1,0
-"jdepend.framework.p2",1,0
-"jdepend.framework.p3",1,0
