@@ -1,3 +1,0 @@
-"from","to","number"
-"br.com.trevisantecnologia.umov.watcher.feeder.domain.builder.Builder","br.com.trevisantecnologia.umov.watcher.feeder.domain.model.FeedRuleMapping",1
-"br.com.trevisantecnologia.umov.watcher.feeder.domain.model.FeedRuleMapping","br.com.trevisantecnologia.umov.watcher.feeder.domain.port.IFeederService",1
